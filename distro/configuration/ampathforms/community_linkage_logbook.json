@@ -1,0 +1,310 @@
+{
+	"name": "A. 4 - Community linkage",
+	"referencedForms": [],
+	"description": "Community linkage",
+	"version": "1.0.0",
+	"published": true,
+	"retired": false,
+	"encounter": "Community linkage",
+	"pages": [
+		{
+			"label": "Client Details",
+			"sections": [
+				{
+					"label": "Visit Details",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Visit Date",
+							"type": "encounterDatetime",
+							"questionOptions": {
+								"rendering": "ui-select-extended"
+							},
+							"id": "encDate",
+							"validators": [
+								{
+									"type": "date",
+									"allowFutureDates": "false"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Client details",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Category of the client",
+							"type": "obs",
+							"required": false,
+							"id": "clientCategory",
+							"questionOptions": {
+								"rendering": "checkbox-searchable",
+								"concept": "579c3be1-7012-4956-b25d-77b686b70081",
+								"conceptMappings": [],
+								"answers": [
+									{
+										"concept": "65057ee0-acf4-4536-bf60-a9675fb96d42",
+										"label": "Breastfeeding Woman"
+									},
+									{
+										"concept": "50e0276f-9c7b-4982-9edb-1ba7895efc5f",
+										"label": "Children"
+									},
+									{
+										"concept": "54f0a4fb-477a-4bb2-977d-59b6ec3d4b34",
+										"label": "New Client"
+									},
+									{
+										"concept": "63f89d17-0157-4489-8fc8-966d66324c12",
+										"label": "Old Client"
+									},
+									{
+										"concept": "2826a1bd-df43-4488-b72b-bc53d6331674",
+										"label": "Pregnant Mother"
+									},
+									{
+										"concept": "f12f1fe4-1dfc-41ac-97f2-042bd140c4d3",
+										"label": "Return after treatment interruption"
+									},
+									{
+										"concept": "ce97a3fe-fae2-45e3-99b5-35e7ba121805",
+										"label": "Unsuppressed VL"
+									},
+									{
+										"concept": "674058f9-7136-459a-a2df-fa1d3f4aa53e",
+										"label": "Key population (KP)"
+									}
+								]
+							},
+							"validators": []
+						},
+						{
+							"id": "communityCadre",
+							"label": "Community Cadre",
+							"required": false,
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "checkbox-searchable",
+								"concept": "802b7dcb-0092-48fa-a4e2-7b18489924fb",
+								"answers": [
+									{
+										"concept": "0bcdfa76-570d-4731-aa1e-b76e3f9c486d",
+										"label": "Community HIV Service Officer"
+									},
+									{
+										"concept": "31f9b45c-ead7-49da-929e-50b790f612a6",
+										"label": "Senior Mentor Mother"
+									},
+									{
+										"concept": "ca0f0f35-e572-4980-b8ec-a00cf56427b8",
+										"label": "Mentor Mother"
+									},
+									{
+										"concept": "11e6ac1b-147d-4423-8495-5dd47e777dce",
+										"label": "Community outreach worker"
+									}
+								]
+							},
+							"validators": [
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "(communityCadre && communityCadre.length > 2) || (communityCadre.includes('31f9b45c-ead7-49da-929e-50b790f612a6') && !communityCadre.includes('ca0f0f35-e572-4980-b8ec-a00cf56427b8'))",
+									"message": "You can't have more than 2 Community Cadre, Also if you select Senior Mentor Mother you should also have a Mentor Mother"
+								}
+							]
+						},
+						{
+							"id": "nameSMM",
+							"label": "Name of SMM",
+							"required": false,
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "7195aadf-e227-4f3d-96c9-955fd4687a1b"
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "!(communityCadre && communityCadre.includes('31f9b45c-ead7-49da-929e-50b790f612a6'))"
+							}
+						},
+						{
+							"id": "phoneNumberSmm",
+							"label": "SMM Phone Number",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "726e7bf8-a0b6-4e3b-af90-d1f5558c4b64"
+							},
+							"validators": [
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "phoneNumberSmm && !phoneNumberSmm.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+									"message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+								}
+							],
+							"hide": {
+								"hideWhenExpression": "!(communityCadre && communityCadre.includes('31f9b45c-ead7-49da-929e-50b790f612a6'))"
+							},
+							"alert": {
+								"alertWhenExpression": "phoneNumberSmm && !phoneNumberSmm.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+								"message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+							}
+						},
+						{
+							"id": "nameCHSO",
+							"label": "Name of CHSO",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "d5e8716f-9cd1-4d01-9377-aa6480d2c433"
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "!(communityCadre && communityCadre.includes('0bcdfa76-570d-4731-aa1e-b76e3f9c486d'))"
+							}
+						},
+						{
+							"id": "phoneNumberChso",
+							"label": "CHSO Phone Number",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "a9a8c479-2c11-437d-ae08-26158b194461"
+							},
+							"validators": [
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "phoneNumberChso && !phoneNumberChso.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+									"message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+								}
+							],
+							"hide": {
+								"hideWhenExpression": "!(communityCadre && communityCadre.includes('0bcdfa76-570d-4731-aa1e-b76e3f9c486d'))"
+							},
+							"alert": {
+								"alertWhenExpression": "phoneNumberChso && !phoneNumberChso.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+								"message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+							}
+						},
+						{
+							"id": "nameOfMm",
+							"label": "Name of MM",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "fd68a9dd-5cd9-4b77-8f02-f93fcbd04370"
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "!(communityCadre && communityCadre.includes('ca0f0f35-e572-4980-b8ec-a00cf56427b8'))"
+							}
+						},
+						{
+							"id": "phoneNumberMM",
+							"label": "MM Phone Number",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "a1e7127b-5895-4b56-af77-94dbdf0e54e7"
+							},
+							"validators": [
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "phoneNumberMM && !phoneNumberMM.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+									"message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+								}
+							],
+							"hide": {
+								"hideWhenExpression": "!(communityCadre && communityCadre.includes('ca0f0f35-e572-4980-b8ec-a00cf56427b8'))"
+							},
+							"alert": {
+								"alertWhenExpression": "phoneNumberMM && !phoneNumberMM.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+								"message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+							}
+						},
+						{
+							"id": "addressOfMm",
+							"label": "Address of MM",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "71d7aa03-28bb-44a9-bf9b-e0b3e5d4f40f"
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "!(communityCadre && communityCadre.includes('ca0f0f35-e572-4980-b8ec-a00cf56427b8'))"
+							}
+						},
+						{
+							"id": "nameOfCow",
+							"label": "Name of COW",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "006d7edc-5a6c-4b00-96b8-5bc6c194b44d"
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "!(communityCadre && communityCadre.includes('11e6ac1b-147d-4423-8495-5dd47e777dce'))"
+							}
+						},
+						{
+							"id": "phoneNumberCow",
+							"label": "COW Phone Number",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "5f7ffbb8-53c7-40e0-9df0-5036b6eb536b"
+							},
+							"validators": [
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "phoneNumberCow && !phoneNumberCow.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+									"message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+								}
+							],
+							"hide": {
+								"hideWhenExpression": "!(communityCadre && communityCadre.includes('11e6ac1b-147d-4423-8495-5dd47e777dce'))"
+							},
+							"alert": {
+								"alertWhenExpression": "phoneNumberCow && !phoneNumberCow.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+								"message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+							}
+						},
+						{
+							"id": "addressOfCow",
+							"label": "Address of COW",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "885a341c-068c-4a39-9543-f56e7cd3633c"
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "!(communityCadre && communityCadre.includes('11e6ac1b-147d-4423-8495-5dd47e777dce'))"
+							}
+						},
+						{
+							"label": "Date of Linkage",
+							"type": "obs",
+							"required": false,
+							"id": "dateClientMetCov",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "fef6ef98-6d8d-4921-80f2-93255a7a5faf",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"processor": "EncounterFormProcessor",
+	"encounterType": "3c2df02e-6856-11ee-8c99-0242ac120002",
+	"uuid": "xxxxx"
+}

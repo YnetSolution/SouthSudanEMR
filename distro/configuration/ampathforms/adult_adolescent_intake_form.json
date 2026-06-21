@@ -1,0 +1,1636 @@
+{
+  "name": "D. 7.1 - Adult and Adolescent intake Form ",
+  "version": "1.0.0",
+  "published": true,
+  "retired": false,
+  "encounter": "Adult and Adolescent intake Form",
+  "pages": [
+    {
+      "label": "Visit details",
+      "sections": [
+        {
+          "label": "Visit details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit Date",
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encDate",
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Date of Enrollment",
+              "type": "obs",
+              "required": false,
+              "id": "dateOfEnrollment",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "73779d67-7e8f-46fe-b723-8879838da5f8",
+                "conceptMappings": [],
+                "answers": [],
+                "calculate": {
+                  "calculateExpression": "api.getLatestObs(patient.id, '73779d67-7e8f-46fe-b723-8879838da5f8', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueDateTime)"
+                }
+              },
+              "validators": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Past Medical History",
+      "sections": [
+        {
+          "label": "",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Past medical history",
+              "type": "obs",
+              "required": false,
+              "id": "medicalHistory",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "9af72d4e-8f50-4545-b154-7dd12fea2ea4",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "bff040c5-7865-4756-8fdc-2fe2cec784c1",
+                    "label": "Persistent Generalized Lymphadenopathy (PGL)",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "d8ce02ab-9d65-4efb-aa04-4fce6a1c82fd",
+                    "label": "Unexplained persistent diarrhea (>14 days)",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "f5acb290-917f-4b3d-92f7-7c29552f00ba",
+                    "label": "Pneumocystis pneumonia (PCP)",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "68993e4b-581e-43a6-ac9b-45bcb8f4a185",
+                    "label": "Recurrent or chronic Bacterial URTIs (Sinusitis, Otitis Media, Ottorhea, Tonsillitis)",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "cc35f955-3e7a-44e4-999d-df181a5e4a11",
+                    "label": "Oral Candidiasis",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "469408fd-bc9e-457f-b4f9-e7a78e04cbfa",
+                    "label": "Oral hairy leukoplakia",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "cc646a0a-36aa-44a7-abae-a531082c3dc0",
+                    "label": "Chronic herpes simplex virus infection (orolabial or visceral)",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "37a734d2-227f-43af-b3cb-1bb936a275bd",
+                    "label": "Persistent Parotid enlargement",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "318aa6ec-edf3-4369-943d-c8f2a508e045",
+                    "label": "Fever (> 1 month, unexplained)",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "f6083b46-8b38-46c4-a44b-5a28db07ae54",
+                    "label": "Cryptococcal meningitis",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "8b7dd03f-5c59-4118-9565-ecd990263258",
+                    "label": "Oral Ulcer",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "d946be39-07d1-4e1b-9990-6f626445b8a7",
+                    "label": "Angular cheilitis",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "b213e6bd-14fe-40a1-83a6-53e5d8742efc",
+                    "label": "Extra pulmonary TB",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "ab89262b-afe0-4aef-ae81-ea79ab236deb",
+                    "label": "Lymph node TB",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "2623106d-a067-414a-9c61-8084599f855b",
+                    "label": "Toxoplasmosis Herpes simplex (>1 month)",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "7ff0ed86-3414-418d-9cbd-73d94cde0290",
+                    "label": "Extensive Molluscum Contagiosum",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "fa428486-cd06-4ccc-811c-623c5eaac561",
+                    "label": "Extensive warts",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "f32d0fa8-f53e-42b1-b83d-fcaed08174be",
+                    "label": "Severe Recurrent bacterial pneumonia",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "65a52277-09b3-4157-b2a1-9cca33f66ac8",
+                    "label": "Severe Bacterial Infections excluding pneumonia",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "49b1128f-5d64-4373-a6ea-9d329e2e54a6",
+                    "label": "Herpes Zoster",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "b33300b5-2dc1-45e9-b70e-9d08ef16474e",
+                    "label": "Acute necrotizing Ulcerative gingivitis or periodontitis",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "12e8cb0d-f421-4778-b49d-6781c105cca4",
+                    "label": "Kaposi sarcoma",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "cc23bab5-d6eb-4e16-948b-25a366080dba",
+                    "label": "Papular pruritic eruption",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "35a99b2b-4b1a-4815-adb8-36446842289a",
+                    "label": "Extra pulmonary TB except Lymph node TB",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "951c142f-e9e8-4e03-8e87-4f571aa99e8f",
+                    "label": "HIV Associated Dementia (HIV Encephalopathy)",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "e7c704d0-9bf0-47b2-8371-d74c87f93eec",
+                    "label": "Fungal nail infection",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "924652f0-26c5-4a2b-a2bc-67ddb9607dbf",
+                    "label": "Chronic herpes simplex virus infection (orolabial, genital or anorectal)",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "13216581-b1cd-4087-9297-1eb4b55b40ce",
+                    "label": "Esophageal Candidiasis",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "ee4f01d5-819f-4130-b5e2-fbebf2b00e11",
+                    "label": "Pulmonary TB",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "9d2bfb0c-807c-4f43-8c63-06debd52cf3e",
+                    "label": "Recurrent bacterial pneumonia",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "1661d025-dfca-451e-a914-626cdfae6336",
+                    "label": "Recurrent Bacterial URTIs (Sinusitis, Otitis Media, Tonsillopharyngitis )",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "82a4cd70-96be-4c8d-9e7e-9c871e1e4953",
+                    "label": "Seborrheic dermatitis",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "82950d3b-18a8-40a5-9bb2-fefbcd2d8c78",
+                    "label": "Severe Bacterial Infections (Pneumonia, Septic arthritis, osteomyelitis, Pyomyositis, PID)",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "901d53c5-fd75-40c7-a39b-b5e25b6255fd",
+                    "label": "Unexplained chronic diarrhea (>1 month)",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "c5120716-e297-40f6-9eb5-ef432cc791c0",
+                    "label": "Other Past Medical History(Specify)",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "label": "No information",
+                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Other medical history Specify",
+              "type": "obs",
+              "required": false,
+              "id": "otherMedicalHistorySpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "f16c6a11-453f-44a2-a7a5-77aeaa93e67d",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(medicalHistory) || !arrayContains(medicalHistory, 'c5120716-e297-40f6-9eb5-ef432cc791c0')",
+                "validators": []
+              }
+            }
+          ],
+          "validators": []
+        }
+      ]
+    },
+    {
+      "label": "Current Symptoms Screen",
+      "sections": [
+        {
+          "label": "",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Current symptoms screen",
+              "type": "obs",
+              "required": false,
+              "id": "currentSymptoms",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "aa25ca53-21b8-4e2f-b44b-61c2c20d4dee",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "1fc47a4b-e35d-4f89-953e-52c4c6a69eb5",
+                    "label": "Weight loss",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "147b8be8-d657-4e46-8970-6f9983b27722",
+                    "label": "Current Cough",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "47be2dc7-acfc-43e8-8c27-4331856164db",
+                    "label": "Persistent headaches",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "2934795c-486e-4819-a4ac-b476630c710c",
+                    "label": "Chronic fatigue",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "cca3e06d-37fc-4dfb-90e7-bf799d073d25",
+                    "label": "Difficulty breathing",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "b50b5dc9-9a05-4190-9db3-f157477ed2d5",
+                    "label": "Irritability",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "140238AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Fever",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "ecee97e6-47af-44c0-a941-804afa11bbd0",
+                    "label": "Dysphagia or Odynophagia",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "5e20b5a6-571f-483d-95f2-822a66ff77b1",
+                    "label": "Neck pain",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "886c7ef0-b104-49bf-bd54-23429eec070d",
+                    "label": "Night Sweats",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "142412AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Diarrhea",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "2584edf4-6e85-4be8-93ba-6c27692ea0be",
+                    "label": "Numbness/tingling",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "f20b15b2-4e14-11e4-8a57-0800271c1b75",
+                    "label": "Jaundice",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "203d9e67-4e15-11e4-8a57-0800271c1b75",
+                    "label": "Nausea w/ vomiting",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "ef463179-467b-4d67-a4f6-adb5095c21da",
+                    "label": "Mental confusion",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "44a3c656-5584-4044-9cad-e265a8f90a01",
+                    "label": "Ear pain, discharge or decreased hearing",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "1dfb0948-4e15-11e4-8a57-0800271c1b75",
+                    "label": "Abdominal pain",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "978573fd-04cb-4fa2-aa79-53064e6d0aea",
+                    "label": "Abdominal swelling",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "39acc2a5-564b-4879-ac91-eb719a752084",
+                    "label": "loss of consciousness",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "ceaa3f86-23e4-4ca0-bb8f-b095d5831677",
+                    "label": "Sore mouth or throat",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "0df5db1f-a1fe-4dbb-82aa-c3beeb84ad31",
+                    "label": "Skin lesions/Pruritus",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "65d9c0b5-a9a3-4bb8-b20c-5244c917fcb4",
+                    "label": "Weakness of extremities",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "64122e23-ca4a-4603-839b-af4197aef9a4",
+                    "label": "Neck or Armpit swellings",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "91657cbc-e603-4187-818e-a6f9b2a62e54",
+                    "label": "Neurodevelopmental delay or regression",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "c8a795fb-ba79-43d3-a85e-e79c367ec97c",
+                    "label": "Pain on micturition",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "8f91cfe8-8920-47b0-858f-bd36726643ae",
+                    "label": "Genital ulcer/vesicles",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "e77f0416-4e14-11e4-8a57-0800271c1b75",
+                    "label": "Dyspepsia",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "19909766-298e-4595-942e-f8df8c293231",
+                    "label": "Dyspnea",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "1f6a5ea9-4e15-11e4-8a57-0800271c1b75",
+                    "label": "Hemoptysis",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "974188d4-5caa-4a1a-a2e2-4076aa018eb6",
+                    "label": "Inguinal swellings",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "2bba04c7-d7c0-417d-9736-f34acaa489e1",
+                    "label": "Photophobia",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "fc4a6283-70f2-49fd-82fb-d8c8a6bbd5ba",
+                    "label": "Rheumatoid Arthritis, Joint Pain or Joint Swelling Today",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "concept": "785f673e-c961-4b0b-90d7-c2f7c94c4166",
+                    "label": "Urethral discharge/Vaginal discharge",
+                    "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "label": "No information",
+                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Weight loss/Failure to thrive(% of body weight)",
+              "type": "obs",
+              "required": false,
+              "id": "percentageOfBodyWeight",
+              "questionOptions": {
+                "rendering": "numeric",
+                "concept": "83557c06-044a-45e6-9947-8aab137ecde9",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(currentSymptoms) || !arrayContains(currentSymptoms, '1fc47a4b-e35d-4f89-953e-52c4c6a69eb5')",
+                "validators": []
+              }
+            },
+            {
+              "label": "Current Cough Duration (Days)",
+              "type": "obs",
+              "required": false,
+              "id": "currentCoughDuration",
+              "questionOptions": {
+                "rendering": "numeric",
+                "concept": "9125f7ff-f703-42f1-8a6d-ae6a4c2b5b94",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(currentSymptoms) || !arrayContains(currentSymptoms, '147b8be8-d657-4e46-8970-6f9983b27722')",
+                "validators": []
+              }
+            },
+            {
+              "label": "Fever Duration (Days)",
+              "type": "obs",
+              "required": false,
+              "id": "feverDuration",
+              "questionOptions": {
+                "rendering": "numeric",
+                "concept": "74ffce7d-e863-4e02-9081-64cefaf2e28a",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(currentSymptoms) || !arrayContains(currentSymptoms, '140238AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
+                "validators": []
+              }
+            },
+            {
+              "label": "Diarrhea duration (Days)",
+              "type": "obs",
+              "required": false,
+              "id": "diarrheaDuration",
+              "questionOptions": {
+                "rendering": "numeric",
+                "concept": "c0810998-e30c-4b10-adfe-8cef59afbfc1",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(currentSymptoms) || !arrayContains(currentSymptoms, '142412AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
+                "validators": []
+              }
+            }
+          ],
+          "validators": []
+        }
+      ]
+    },
+    {
+      "label": "Physical Examination",
+      "sections": [
+        {
+          "label": "General appearance",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "General appearance",
+              "type": "obs",
+              "required": false,
+              "id": "generalAppearance",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "fc7a725d-9d0e-4254-abf7-bcc25d1866ec",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "3655ba19-dff1-44bf-b8e4-b1d0240f653c",
+                    "label": "Acutely ill"
+                  },
+                  {
+                    "concept": "339805ae-3d57-4821-ba96-5c2f4e31624b",
+                    "label": "Chronically ill"
+                  },
+                  {
+                    "concept": "ff115f4e-c296-4d79-b9cf-4a6e5d9fa5e0",
+                    "label": "Healthy"
+                  },
+                  {
+                    "label": "No information",
+                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
+                  }
+                ]
+              },
+              "validators": []
+            }
+          ]
+        },
+        {
+          "label": "Vital signs",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "BP Systolic(mmHg)",
+              "type": "obs",
+              "required": false,
+              "id": "bpSystolic",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": 0,
+                "conceptMappings": [],
+                "answers": []
+              },
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue >= 130.5 || myValue < 119.5)",
+                "message": "Systolic is out of range (Normal range 120-130)"
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "bpSystolic < 0",
+                  "message": "Blood Pressure Systolic should not be less than 0"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+              }
+            },
+            {
+              "label": "BP diastolic(mmHg)",
+              "type": "obs",
+              "required": false,
+              "id": "bpDiastolic",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": 0,
+                "conceptMappings": [],
+                "answers": []
+              },
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue >= 85.5 || myValue < 79.5)",
+                "message": "Diastolic is out of range (Normal range 80-85)"
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "bpDiastolic < 0",
+                  "message": "Boold Pressure Diastolic should not be less than 0"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+              }
+            },
+            {
+              "label": "RR (breaths/min)",
+              "type": "obs",
+              "required": false,
+              "id": "rr",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": 0,
+                "conceptMappings": [],
+                "answers": []
+              },
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue >= 16.5 || myValue < 11.5)",
+                "message": "Respiratory Rate is out of range (Normal range 12-16)"
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "rr < 0",
+                  "message": "Respiratory Rate should not be less than 0"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+              }
+            },
+            {
+              "label": "Temperature (°C)",
+              "type": "obs",
+              "required": false,
+              "id": "temperature",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "alert": [
+                {
+                  "alertWhenExpression": "temperature < 35",
+                  "message": "Low temperature (Hypopyrexia), treat immediately"
+                },
+                {
+                  "alertWhenExpression": "temperature > 38",
+                  "message": "High temperature (Hyperpyrexia), treat immediately"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+              }
+            }
+          ],
+          "hide": {
+            "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+          }
+        },
+        {
+          "label": "Weight and Height",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Weight(Kg)",
+              "type": "obs",
+              "required": false,
+              "id": "weightForBMI",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [],
+                "answers": [],
+                "calculate": {
+                  "calculateExpression": "api.getLatestObs(patient.id, '5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueNumeric)"
+                }
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+              }
+            },
+            {
+              "label": "Height(cm)",
+              "type": "obs",
+              "required": false,
+              "id": "heightForBMI",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [],
+                "answers": [],
+                "calculate": {
+                  "calculateExpression": "api.getLatestObs(patient.id, '5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueNumeric)"
+                }
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+              }
+            },
+            {
+              "label": "BMI (kg / m²)",
+              "type": "obs",
+              "required": false,
+              "id": "bmi",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1342AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "calculate": {
+                  "calculateExpression": "calcBMI(heightForBMI,weightForBMI)"
+                },
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "bmi < 0",
+                  "message": "BMI should not be less than 0"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Systemic findings",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "HEENT",
+              "type": "obs",
+              "required": false,
+              "id": "heent",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "aacc89a1-1da4-4331-aea8-6b0399074db6",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Abnormal"
+                  },
+                  {
+                    "concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Specify HEENT Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "heentAbnormalSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "87dc3313-51ca-46bd-aeb7-059b1fc27bf6"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "heent !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Lymphoglandular system",
+              "type": "obs",
+              "required": false,
+              "id": "lymphSystem",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "6caa7efe-8acd-4fcb-b3d2-55e670effee6",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Abnormal"
+                  },
+                  {
+                    "concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Specify Lymphoglandular system Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "lymphSystemAbnormalSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "ae12c2b8-b34c-45f3-b479-4032e3cc598b"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "lymphSystem !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Respiratory",
+              "type": "obs",
+              "required": false,
+              "id": "respiratory",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "a68c104e-0e7b-4c04-966d-a9e37a1d6f71",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Abnormal"
+                  },
+                  {
+                    "concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Specify Respiratory Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "respiratoryAbnormalSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "9d590669-1920-416c-b929-1177943995b2"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "respiratory !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Cardiovascular system",
+              "type": "obs",
+              "required": false,
+              "id": "cardiovascularSystem",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "5936d7e8-6902-4952-8ce5-51cd90d762b3",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Abnormal"
+                  },
+                  {
+                    "concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Specify Cardiovascular system Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "cardiovascularSystemAbnormalSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "9486f6d7-a54f-430b-b9cc-433f0144e2f1"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "cardiovascularSystem !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Abdomen",
+              "type": "obs",
+              "required": false,
+              "id": "abdomen",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "05c4679b-2531-44db-82c0-35022a3b9606",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Abnormal"
+                  },
+                  {
+                    "concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Specify Abdomen Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "abdomenAbnormalSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "eb6897e0-055e-459a-b7a3-d229f3db76fc"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "abdomen !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Genitourinary system",
+              "type": "obs",
+              "required": false,
+              "id": "genitourinarySystem",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "2675bfa2-b7fa-48ec-b53e-6374155e967d",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Abnormal"
+                  },
+                  {
+                    "concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Specify Genitourinary system Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "genitourinarySystemAbnormalitySpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "82e685e0-1131-448e-8d56-5e17c8f87285"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "genitourinarySystem !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Musculoskeletal   system",
+              "type": "obs",
+              "required": false,
+              "id": "musculoskeletalSystem",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "79c990dd-4fc7-4ac5-b026-fc868c5a9d6d",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Abnormal"
+                  },
+                  {
+                    "concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Specify Musculoskeletal system Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "musculoskeletalSystemAbnormality",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "e1f351e5-b81b-4e71-abf3-14a29c17065b"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "musculoskeletalSystem !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Skin",
+              "type": "obs",
+              "required": false,
+              "id": "skin",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "9caf9ca8-c9c5-49ca-a98a-fbb8e15269c6",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Abnormal"
+                  },
+                  {
+                    "concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Specify Skin Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "skinAbnormality",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "328ba182-8737-4956-9a52-5a9c7a4b0bb4"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "skin !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Nervous system",
+              "type": "obs",
+              "required": false,
+              "id": "nervousSystem",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "e5f785d7-0e0c-4e3e-a88e-e642d24bbf3e",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Abnormal"
+                  },
+                  {
+                    "concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Specify Nervous system Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "nervousSystemAbnormality",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "5b822b80-1a1e-41bf-bdd0-f62fadd65752"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "nervousSystem !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Baseline Laboratory  findings ",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Is CD4 Done?",
+              "required": true,
+              "type": "obs",
+              "id": "cd4Done",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "2652c9e7-72c5-48ae-b6ee-0bd3dcb65fca",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "CD4 Count",
+              "id": "cd4Count",
+              "required": false,
+              "questionOptions": {
+                "answers": [],
+                "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
+                "rendering": "numeric",
+                "min": 0
+              },
+              "type": "obs",
+              "hide": {
+                "hideWhenExpression": "age <= 5 || cd4Done !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "cd4Count < 0",
+                  "message": "CD4 Count should not be less than 0"
+                }
+              ]
+            },
+            {
+              "label": "CD4 %",
+              "id": "cd4CountPercentage",
+              "required": false,
+              "questionOptions": {
+                "answers": [],
+                "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
+                "rendering": "numeric",
+                "min": 0
+              },
+              "type": "obs",
+              "hide": {
+                "hideWhenExpression": "age > 5 || cd4Done !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "cd4CountPercentage < 0 || cd4CountPercentage > 100",
+                  "message": "CD4% should not be less than 0 or above 100%"
+                }
+              ]
+            },
+            {
+              "label": "CBC Done?",
+              "type": "obs",
+              "required": false,
+              "id": "cbcDone",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "131cf572-4664-49f9-9655-6023fc629a33",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "CBC",
+              "type": "obs",
+              "required": false,
+              "id": "cbc",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "874452af-4d24-483a-a3c0-6c6de76274cc",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "cbcDone !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Is the Client Pregnant?",
+              "type": "obs",
+              "required": false,
+              "id": "clientPregnant",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "5dcb1bc9-ee89-4b57-9493-a1f245c5ee8b",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "sex === 'M' || age < 10"
+              }
+            },
+            {
+              "label": "Pregnancy Test",
+              "type": "obs",
+              "required": false,
+              "id": "pregnancyTest",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "f9e6254d-fd14-4831-9ee0-85099a72b3e8",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "clientPregnant !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "MUAC(cm)",
+              "type": "obs",
+              "required": false,
+              "id": "muac",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": 0,
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "muac < 0",
+                  "message": "MUAC should not be less than 0"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "clientPregnant !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "HBsAg",
+              "type": "obs",
+              "required": false,
+              "id": "HBsAg",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "33a340e7-67e7-4bc0-a669-6a5f6a6abe88",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": []
+            },
+            {
+              "label": "HCV Antibody",
+              "type": "obs",
+              "required": false,
+              "id": "hcv",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "8218c436-897e-4298-be27-c58016b00e7a",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": []
+            },
+            {
+              "label": "Sputum AFB (if needed)",
+              "type": "obs",
+              "required": false,
+              "id": "sputumAFB",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "151384b6-2f71-45be-b296-2b1fbee700a1",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "POSITIVE"
+                  },
+                  {
+                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "NEGATIVE"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Other clinical findings?",
+              "type": "obs",
+              "required": false,
+              "id": "otherClinicalFindings",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "ec694822-57e1-4739-b1d8-7055b4a5b22a",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Record Other clinical findings",
+              "type": "obs",
+              "required": false,
+              "id": "recordOtherClinicalFindings",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "91ef252c-7ecf-4272-8197-3bada6cdb65b",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "otherClinicalFindings !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "WHO Clinical Staging",
+      "sections": [
+        {
+          "label": "",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "WHO clinical stage",
+              "type": "obs",
+              "required": false,
+              "id": "whoClinicalStage",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('a90652b2-f2c7-471f-a287-64495d2a6791')) ? '' : HD.getObject('prevEnc').getValue('a90652b2-f2c7-471f-a287-64495d2a6791')",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "a90652b2-f2c7-471f-a287-64495d2a6791",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "87045f3e-ae61-4e53-8d8f-d14e92f06d0d",
+                    "label": "Clinical stage 1 "
+                  },
+                  {
+                    "concept": "e7112b84-4321-41a9-8c04-c96c427dd7b6",
+                    "label": "Clinical stage 2"
+                  },
+                  {
+                    "concept": "4ca4d221-cb9d-4fcb-9c4f-ebc89eb0c7c3",
+                    "label": "Clinical stage 3"
+                  },
+                  {
+                    "concept": "489ff20e-5f04-4ca2-a46c-a86acd29567b",
+                    "label": "Clinical stage 4"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Clinical stage 1",
+              "type": "obs",
+              "required": false,
+              "id": "whoStage1",
+              "questionOptions": {
+                "rendering": "multiCheckbox",
+                "concept": "87045f3e-ae61-4e53-8d8f-d14e92f06d0d",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "491d6883-3078-47b9-b8d0-872641bd9d27",
+                    "label": "Asymptomatic"
+                  },
+                  {
+                    "concept": "bff040c5-7865-4756-8fdc-2fe2cec784c1",
+                    "label": "Persistent Generalized Lymphadenopathy (PGL)"
+                  },
+                  {
+                    "label": "No information",
+                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
+                  }
+                ]
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "whoClinicalStage !== '87045f3e-ae61-4e53-8d8f-d14e92f06d0d'"
+              }
+            },
+            {
+              "label": "Clinical stage 2",
+              "type": "obs",
+              "required": false,
+              "id": "whoStage2",
+              "questionOptions": {
+                "rendering": "multiCheckbox",
+                "concept": "e7112b84-4321-41a9-8c04-c96c427dd7b6",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "d946be39-07d1-4e1b-9990-6f626445b8a7",
+                    "label": "Angular cheilitis"
+                  },
+                  {
+                    "concept": "e7c704d0-9bf0-47b2-8371-d74c87f93eec",
+                    "label": "Fungal nail infection"
+                  },
+                  {
+                    "concept": "49b1128f-5d64-4373-a6ea-9d329e2e54a6",
+                    "label": "Herpes Zoster"
+                  },
+                  {
+                    "concept": "57269afa-42d1-48ae-a320-66ae12c7e1e4",
+                    "label": "Moderate unexplained weight loss (< 10% of body weight)"
+                  },
+                  {
+                    "concept": "cc23bab5-d6eb-4e16-948b-25a366080dba",
+                    "label": "Papular pruritic eruption"
+                  },
+                  {
+                    "concept": "2f08824f-742f-4a0e-a954-360785142bfb",
+                    "label": "Recurrent bacterial upper respiratory tract infections (two or more in last 6 months): sinusitis, otitis media, tonsillopharyngitis"
+                  },
+                  {
+                    "concept": "fd058231-e7bf-4c3b-a0d5-7649b83fcb52",
+                    "label": "Recurrent oral ulcerations (two or more episodes in last 6 months)"
+                  },
+                  {
+                    "concept": "82a4cd70-96be-4c8d-9e7e-9c871e1e4953",
+                    "label": "Seborrheic dermatitis"
+                  },
+                  {
+                    "label": "No information",
+                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
+                  }
+                ]
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "whoClinicalStage !== 'e7112b84-4321-41a9-8c04-c96c427dd7b6'"
+              }
+            },
+            {
+              "label": "Clinical stage 3",
+              "type": "obs",
+              "required": false,
+              "id": "whoStage3",
+              "questionOptions": {
+                "rendering": "multiCheckbox",
+                "concept": "4ca4d221-cb9d-4fcb-9c4f-ebc89eb0c7c3",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "a4b796d7-603a-49a4-b48a-30398dfaab7e",
+                    "label": "Acute necrotizing ulcerative stomatitis, gingivitis or periodontitis"
+                  },
+                  {
+                    "concept": "0ad0e066-3a2e-4cef-a0e2-4c40e322f6af",
+                    "label": "Current Pulmonary TB"
+                  },
+                  {
+                    "concept": "cc35f955-3e7a-44e4-999d-df181a5e4a11",
+                    "label": "Oral Candidiasis"
+                  },
+                  {
+                    "concept": "469408fd-bc9e-457f-b4f9-e7a78e04cbfa",
+                    "label": "Oral hairy leukoplakia"
+                  },
+                  {
+                    "concept": "d30bda0e-4bff-4b0a-afd1-6bbe9e546f7e",
+                    "label": "Severe bacterial infection (e.g. pneumonia, meningitis, empyema, pyomyositis, bone or joint infection, bacteremia, severe pelvic inflammatory disease)"
+                  },
+                  {
+                    "concept": "9c8548a8-172c-4652-93bb-134f1189869e",
+                    "label": "Severe unexplained weight loss (more than 10% of body weight)"
+                  },
+                  {
+                    "concept": "ec041227-6e44-47f6-8ba5-aa5178dfd4de",
+                    "label": "Unexplained anemia (below 8g/dl), neutropenia (below 500/microliter) and/or chronic (more than 1 month) thrombocytopenia (below 50,000/microliter)"
+                  },
+                  {
+                    "concept": "2051c8e0-c175-44b3-be53-b4e1799364c3",
+                    "label": "Unexplained chronic diarrhea for longer than 1 month"
+                  },
+                  {
+                    "concept": "1bb7493d-4819-4879-87e0-447966b7f912",
+                    "label": "Unexplained persistent fever (intermittent or constant and lasting for longer than 1 month)"
+                  },
+                  {
+                    "label": "No information",
+                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
+                  }
+                ]
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "whoClinicalStage !== '4ca4d221-cb9d-4fcb-9c4f-ebc89eb0c7c3'"
+              }
+            },
+            {
+              "label": "Clinical stage 4",
+              "type": "obs",
+              "required": false,
+              "id": "whoStage4",
+              "questionOptions": {
+                "rendering": "multiCheckbox",
+                "concept": "489ff20e-5f04-4ca2-a46c-a86acd29567b",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "367262c1-6920-4ba1-a766-9493af4c387a",
+                    "label": "Atypical disseminated leishmaniasis"
+                  },
+                  {
+                    "concept": "b5acd4c1-7e10-4656-8665-0c971196f862",
+                    "label": "Chronic herpes simplex virus (HSV) infection (orolabial, genital or anorectal) > 1 month"
+                  },
+                  {
+                    "concept": "a4bc80b0-0a49-467b-b0d1-1180cd36cc3b",
+                    "label": "Chronic isosporiasis"
+                  },
+                  {
+                    "concept": "be72eac2-bbda-46d7-95f5-b24e8e147031",
+                    "label": "CNS toxoplasmosis"
+                  },
+                  {
+                    "concept": "cba2331f-5fe9-4a7b-a2d5-c0788e6a29de",
+                    "label": "Cryptosporidiosis (with diarrhea lasting > 1 month)"
+                  },
+                  {
+                    "concept": "3d88e381-50c6-41cd-a65c-c032016c3b12",
+                    "label": "Cytomegalovirus disease (retinitis)"
+                  },
+                  {
+                    "concept": "4d6002ec-6e76-41fc-a486-5d52f9ad3499",
+                    "label": "Disseminated mycosis (coccidiomycosis, histoplasmosis)"
+                  },
+                  {
+                    "concept": "71cfd0bd-397c-492e-bbac-4a84ec78cd2d",
+                    "label": "Disseminated nontuberculous mycobacteria infection"
+                  },
+                  {
+                    "concept": "13216581-b1cd-4087-9297-1eb4b55b40ce",
+                    "label": "Esophageal Candidiasis"
+                  },
+                  {
+                    "concept": "b213e6bd-14fe-40a1-83a6-53e5d8742efc",
+                    "label": "Extra pulmonary TB"
+                  },
+                  {
+                    "concept": "dd7edc39-59d0-4b78-bf96-ee577c81bc50",
+                    "label": "Extra-pulmonary cryptococcosis (including meningitis)"
+                  },
+                  {
+                    "concept": "951c142f-e9e8-4e03-8e87-4f571aa99e8f",
+                    "label": "HIV Associated Dementia (HIV Encephalopathy)"
+                  },
+                  {
+                    "concept": "e0a05f7e-3999-4edf-9334-df0c0bbc4ebb",
+                    "label": "HIV wasting syndrome (>10% weight loss + chronic diarrhea or chronic fever)"
+                  },
+                  {
+                    "concept": "9bad96e6-7838-4e33-81c3-f4c8881aaf30",
+                    "label": "HIV-associated cardiomyopathy"
+                  },
+                  {
+                    "concept": "5815ef40-1adc-4623-a820-be214aa85d41",
+                    "label": "HIV-associated nephropathy"
+                  },
+                  {
+                    "concept": "e4397ff0-3f94-4add-a3ce-0022425d4c54",
+                    "label": "Invasive cervical carcinoma"
+                  },
+                  {
+                    "concept": "12e8cb0d-f421-4778-b49d-6781c105cca4",
+                    "label": "Kaposi sarcoma"
+                  },
+                  {
+                    "concept": "0b6b6093-2ab3-4722-9785-b75c8099e0cb",
+                    "label": "Lymphoma (cerebral or B cell non-Hodgkin) or other solid HIV associated tumors"
+                  },
+                  {
+                    "concept": "f5acb290-917f-4b3d-92f7-7c29552f00ba",
+                    "label": "Pneumocystis pneumonia (PCP)"
+                  },
+                  {
+                    "concept": "1757f546-14b9-4f5d-b32f-6c0ad8a169b1",
+                    "label": "Progressive multifocal leukoencephalopathy (PML)"
+                  },
+                  {
+                    "concept": "5583dc05-734d-43d1-ac3b-f77f573cd442",
+                    "label": "Recurrent bacterial pneumonia (this episode plus one or more episodes in last 6 months)"
+                  },
+                  {
+                    "label": "No information",
+                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
+                  }
+                ]
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "whoClinicalStage !== '489ff20e-5f04-4ca2-a46c-a86acd29567b'"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "b645dbdd-7d58-41d4-9b11-eeff023b8ee5",
+  "referencedForms": [],
+  "uuid": "xxxxx",
+  "description": "Adult and adolescent intake form"
+}

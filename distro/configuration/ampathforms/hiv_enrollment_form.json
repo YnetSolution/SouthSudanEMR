@@ -1,0 +1,204 @@
+{
+  "name": "B. 5 - HIV testing information",
+  "retired": true,
+	"encounter": "HIV testing information",
+  "published": false,
+  "pages": [
+    {
+      "label": "Client identification data",
+      "sections": [
+        {
+          "label": "",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date first tested HIV++",
+              "type": "obs",
+              "required": true,
+              "id": "dateFirstTestedHIVPositive",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "7482b976-56fe-44b0-b30f-1e957cc0cbb0",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Place",
+              "type": "encounterLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "placeFirstTestedHIVPositive"
+            },
+            {
+              "label": "Entry point",
+              "type": "obs",
+              "required": true,
+              "id": "entryPointOfHIVTestedPositive",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f1a35737-434c-46e9-8c46-4e17b98e305d",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "17f90888-9c88-4db2-8750-edb1d760a9ca",
+                    "label": "ANC"
+                  },
+                  {
+                    "concept": "cb976d23-ab3e-4369-a88f-73f56505783b",
+                    "label": "CBTC"
+                  },
+                  {
+                    "concept": "62cceeab-adf9-4f3b-bdb3-89687557ecab",
+                    "label": "In Patient"
+                  },
+                  {
+                    "concept": "8fc10249-842b-4944-8018-c758bd0263d8",
+                    "label": "Index Testing"
+                  },
+                  {
+                    "concept": "675702bb-8456-4e10-86ca-65ee8b70d1bd",
+                    "label": "Nutrition"
+                  },
+                  {
+                    "concept": "8244fd10-f813-4e52-a13e-9e3df7cd599c",
+                    "label": "OPD"
+                  },
+                  {
+                    "concept": "26560ed4-3ccc-4f85-85f1-f2c9f9238d3b",
+                    "label": "Pediatric"
+                  },
+                  {
+                    "concept": "dfa49cd5-3859-4184-84cc-ada016092680",
+                    "label": "STI"
+                  },
+                  {
+                    "concept": "04c64451-9e19-43e9-ac3d-9333824bc1dd",
+                    "label": "TB"
+                  },
+                  {
+                    "concept": "ec5d13de-ee22-4d8a-b39c-bdee6cd3d88c",
+                    "label": "VCT"
+                  },
+                  {
+                    "concept": "0464a6fd-d3c5-427b-b147-3f156ac86d63",
+                    "label": "Other Entry Point"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Other Entry Point (Specify)",
+              "type": "obs",
+              "required": false,
+              "id": "otherEntryPoint",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "80732fbe-6f6f-4fca-bbd6-3507e411af92",
+                "conceptMapping": [],
+                "answers": []
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "entryPointOfHIVTestedPositive !== '0464a6fd-d3c5-427b-b147-3f156ac86d63'"
+              }
+            },
+            {
+              "label": "Date of HIV Re-testing before ART",
+              "type": "obs",
+              "required": true,
+              "id": "dateOfHIVRetestingBeforeART",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "fee1095f-a0a7-4694-a352-4e88d6ce6c7c",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Place",
+              "type": "encounterLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "placeOfHIVRetestingBeforeART"
+            },
+            {
+              "label": "Is transferred in on ART from another treatment site in the national programme",
+              "type": "control",
+              "required": false,
+              "id": "transferredInOnARTFromAnotherProgramme",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "735cd395-0ef1-4832-a58c-e8afb567d3b3",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Place",
+              "type": "encounterLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "placeTransferredInOnARTFromAnotherProgramme",
+              "hide": {
+                "hideWhenExpression": "transferredInOnARTFromAnotherProgramme !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Date transferred in",
+              "type": "obs",
+              "required": false,
+              "id": "dateTransferreIn",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "2509d668-caa1-4223-8f70-b0b61eb5b39e",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "transferredInOnARTFromAnotherProgramme !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "f469b65f-a4f6-4723-989a-46090de6a0e5",
+  "referencedForms": [],
+  "uuid": "xxxxx",
+  "description": "HIV and ART Enrollment form",
+  "version": "1.0.0"
+}

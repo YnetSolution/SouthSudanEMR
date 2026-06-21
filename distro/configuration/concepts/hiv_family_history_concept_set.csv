@@ -1,0 +1,94 @@
+Uuid,Answers,Members,Fully specified name:en,Short name:en,Data class,Data type,_version:1,_order:1200
+fdcd966e-0870-4d5d-a506-121efc0c39fb,"Marital Status - Single ;Married , Monogamous ; Married , Polygamous ; Divorced/Separated; Not Applicable ",,Marital Status,,Question,Coded,,
+c221869a-3f10-11e4-adec-0800271c1b75,Occupation - Unemployed ; Occupation - Student ; Occupation - Housewife ; Occupation - Military Personnel ; Occupation - Other uniformed forces ; Occupation - Farmer ; Occupation - Business/trader; Salaried Employee ; Occupation - Other (Specify),,Occupation,,Question,Coded,,
+9e9df8b6-3bad-454e-a2fc-04842d02d62a,,,Other - Occupation,Specify,Question,Text,,
+1d8f0541-f69d-483f-accc-2e2d48bd5f52,, Occupation ; Other - Occupation,Family History Marital Status And Occupation,Occupation and Family History,Misc,N/A,,
+48751525-8bf4-463d-b196-43493fe043e4,Male ; Female,,Sexual Partner - Sex,Sex,Question,Coded,,
+d969948d-6671-4149-a234-7b991c70e1c1,Male ; Female,,Family Member - Sex,Sex,Question,Coded,,
+2eed6753-c2b7-4b85-a099-a78beb4eaff3,Husband ; Wife ; Mother ; Father  ; Sexual ; Brother; Sister ; Child ; Spouse,,Family Member - Relationship,Relationship,Question,Coded,,
+b572e300-9022-4755-8213-b43e0e920a5f,Yes ; No,,Was Family Member Contact Contacted?,Was Family Member Contacted?,Question,Coded,,
+4e630d67-b330-468d-8354-5041f877d9c3,Yes ; No,,Was Sexual Partner Contacted?,Was Sexual Partner Contacted?,Question,Coded,,
+031d0265-b3d3-4d15-ab07-e0cb0b98b549,Yes ; No,,Was Family Member Contact Tested?,Was Family Member Contact Tested?,Question,Coded,,
+1d37d37a-590a-46fc-b65f-0bf2b9276f0c,Yes; No,,Was Sexual Partner Tested?,Was Sexual Partner Tested?,Question,Coded,,
+735cd395-0ef1-4832-a58c-e8afb567d3b3,Yes; No,,,Is transferred in on ART from another treatment site in the national programme,Question,Coded,,
+160f21c0-9a96-4ffd-a72c-aabed02b6a53,Positive;Negative;Not Known,,Family Member - HIV Status,HIV Status,Question,Coded,,
+e9f1178e-ed0f-493c-ad1c-7d1b41d768f4,Positive;Negative;Not Known,,Sexual Partner - HIV Status,HIV Status,Question,Coded,,
+7a55ed45-6de2-4c3a-b88e-4de25a898148,Yes ; No,,HTS Tested?,HTS Tested,Question,Coded,,
+75e39180-fe17-4075-9642-f389e6d1ea20,Positive ; Negative;Inconclusive,,Result of HTS,Result of HTS,Question,Coded,,
+0550290d-4172-4cdc-bb77-d0de6fe8027f ,Positive ; Negative,,Sexual Partner - Result of HTS,Result of HTS,Question,Coded,,
+7fe26f23-bccd-4e45-969e-8108f2e3d867,Positive ; Negative,,Sexual Partner - HIV Result,HIV Result,Question,Coded,,
+86b66218-b6bd-4b48-8408-fa717ccfa0c4,Positive ; Negative ; HEI,,Result,,Question,Coded,,
+da4c7442-f1b1-4d82-947a-1cdca78a35b4,Yes; No,,Sexual Partner?,,Question,Coded,,
+e2f0fc53-de7a-48b7-88fb-1d2c93527829,Spouse; Specify other sexual Partners,,Sexual Partner Relationship,Relationship,Question,Coded,,
+4a30682d-93e1-4afa-93e6-c87e3c99c31d,,,Family Phone Number Unknown,Family Phone Number Unknown,Misc,N/A,,
+c91e78ca-dee2-4149-b0c9-3270bfff5357,,,Family Phone Number Known,Family Phone Number Known,Misc,N/A,,
+cce02a4f-9212-4a85-8e55-0d8f6814e393,Family Phone Number Known;Family Phone Number Unknown;,,Family Member Phone Number,,Question,Coded,,
+03ae7466-a616-42d8-b827-46024c88a831,Known;Unknown;,,HIV status during mapping,,Question,Coded,,
+48741238-7ad4-42f0-a1f4-d2bb6b355614,Yes ; No,,Is Family Member in ART Care?,,Question,Coded,,
+e916b8fb-f170-43ac-9583-c60504b1438d,Yes ; No,,Is Sexual Partner in ART Care?,,Question,Coded,,
+8fe438e5-7316-4b25-af6a-a9a84563d273,Positive ; Negative,,Family Member - Contacts Status,Status,Question,Coded,,
+63ec7ffb-8a42-42ec-9aaa-4758955205b2,,"Sexual Partner?; 
+Sexual Partner Relationship;
+Other sexual Partner Relationship Specify;
+Sexual partner names ;
+Family Member names;
+Family Member age Known?;
+Family Member - Age ; 
+Family Member DOB;
+Sexual Partner - Age ; 
+Family Member - Sex ;
+Sexual Partner - Sex ; 
+Family Member,Phone Number ;
+Sexual Partner, Phone Number ; 
+Was Sexual Partner Contacted? ; 
+Was Sexual Partner Tested? ; 
+Family Member - Relationship ; 
+Specify other Family Member Relationship  ; 
+Was Family Member Contact Contacted? ; 
+Was Family Member Contact Tested? ; 
+Family Member - HIV Status  ;
+Sexual Partner - HIV Status ;  
+Result ;Sexual Partner - HIV Result ;  
+Is Family Member in ART Care?;
+Is Sexual Partner in ART Care? ; 
+Family Member ART Number;
+Sexual Partner - ART Number ; 
+Date Tested HIV ;
+Sexual Partner - Date Tested HIV ; 
+Result of HTS ; 
+Sexual Partner - Result of HTS; 
+Unique ART No/HEI No",General Family Information,,Misc,N/A,,
+c2a6c127-e3ba-426f-a4ae-83713dde0736,,Family History Marital Status And Occupation ; General Family Information,HIV CARE - Family History Data,,Misc,N/A,,
+0ca3ffa7-0d29-4043-8b78-3dd40f5806d1,Yes ; No,,Drug Allergies,,Question,Coded,,
+1c0765df-7108-4353-9970-06cf3ce0782e,,"Index - Family Member Name (Close Members);
+Index Family Member age Known?
+Index - Family Member Age (Close Members);
+Index - Family Member DOB (Close Members);
+Index - Family Member Sex (Close Members);
+Family Member - Relationship;
+Index - Family Member HIV Status (Close Members);
+Family Member,Phone Number;
+Family Member Phone Number;
+HIV status during mapping;
+Date Tested HIV;
+HTS Tested?;
+Result of HTS;
+Is Family Member in ART Care?;
+Index - Family Member Unique ART No/HEI No (Close Members)",Index Family Member Information (Close Family),Index Family Member Information (Close Family),Misc,N/A,,
+3480554d-fd52-462d-b3fd-e1c551d6a3eb,,"Index - Family Member Name (Close Members);
+Index Family Member age Known?;
+Index - Family Member Age (Close Members);
+Index - Family Member DOB (Close Members);
+Index - Family Member Sex (Close Members);
+Family Member - Relationship;
+Family Member Phone Number;
+Family Member,Phone Number;
+HIV status during mapping;
+Index - Family Member HIV Status (Close Members);
+Date Tested HIV;
+HTS Tested?;
+Result of HTS;
+Is Family Member in ART Care?;
+Unique ART No/HEI No",Index-Family Information,Index-Family Information,Misc,N/A,,
+320d6da4-b148-4392-ab22-0564d898f9a1,Yes ; No,,Family Member age Known?,Family Member age Known?,Question,Coded,,
+5f047a36-063c-4ad5-bbb6-65641a37fe75,Yes ; No,,Index Family Member age Known?,,Question,Coded,,

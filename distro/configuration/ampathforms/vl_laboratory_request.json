@@ -1,0 +1,636 @@
+{
+	"name": "G. 9 - VL laboratory request form",
+	"published": true,
+	"retired": false,
+	"encounter": "VL laboratory request form",
+	"pages": [
+		{
+			"label": "Visit Details",
+			"sections": [
+				{
+					"label": "Visit Details",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Visit Date",
+							"type": "encounterDatetime",
+							"questionOptions": {
+								"rendering": "ui-select-extended"
+							},
+							"id": "encDate",
+							"validators": [
+								{
+									"type": "date",
+									"allowFutureDates": "false"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"label": "Sample information",
+			"sections": [
+				{
+					"label": "",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Date of sample collection",
+							"type": "obs",
+							"required": false,
+							"id": "dateOfSampleCol",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "ed520e2d-acb4-4ea9-8ae5-16ca27ace96d",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
+						},
+						{
+							"label": "Time Sample Collected",
+							"type": "obs",
+							"required": false,
+							"id": "timesampleCol",
+							"questionOptions": {
+								"rendering": "time",
+								"concept": "9fc84874-ec1c-4f15-9e0d-5a73dd416667",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": []
+						},
+						{
+							"label": "Sample type",
+							"type": "obs",
+							"required": false,
+							"id": "sampleType",
+							"questionOptions": {
+								"rendering": "select",
+								"concept": "7b532bef-9232-4675-a359-7b1310b66d3a",
+								"conceptMappings": [],
+								"answers": [
+									{
+										"concept": "c7b68a75-903e-4740-9482-bffc01fb844a",
+										"label": "Sample Type ,DBS"
+									},
+									{
+										"concept": "f0da3750-83bc-400e-b3f0-a0ced2e7e47f",
+										"label": "Sample Type ,Plasma"
+									},
+									{
+										"concept": "ff67ca7f-4e07-42f3-884e-7e36878b344e",
+										"label": "Sample Type,Whole Blood"
+									}
+								]
+							},
+							"validators": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"label": "Treatment Information",
+			"sections": [
+				{
+					"label": "",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Date of treatment Initiation",
+							"type": "obs",
+							"required": false,
+							"id": "dateTreatmentInitiation",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "44dba186-7507-41d4-811f-79eae073cdcc",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
+						},
+						{
+							"label": "Date of Initiation of Current Regimen",
+							"type": "obs",
+							"required": false,
+							"id": "dateInitiateReg",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "30f1f347-d72c-4920-9962-6d55d138e8e5",
+								"conceptMappings": [],
+								"answers": [],
+								"calculate": {
+									"calculateExpression": "api.getLatestObs(patient.id, '73779d67-7e8f-46fe-b723-8879838da5f8').then(obs => obs.valueDateTime)"
+								}
+							},
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
+						},
+						{
+							"label": "Is patient pregnant",
+							"type": "obs",
+							"required": false,
+							"id": "pregnant",
+							"questionOptions": {
+								"rendering": "radio",
+								"concept": "235a6246-6179-4309-ba84-6f0ec337eb48",
+								"conceptMappings": [],
+								"answers": [
+									{
+										"concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Yes"
+									},
+									{
+										"concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "No"
+									}
+								]
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "sex === 'M' || age < 15"
+							}
+						},
+						{
+							"label": "Is patient breastfeeding?",
+							"type": "obs",
+							"required": false,
+							"id": "breastFeeding",
+							"questionOptions": {
+								"rendering": "select",
+								"concept": "e288fc7d-bbc5-479a-b94d-857e3819f926",
+								"conceptMappings": [],
+								"answers": [
+									{
+										"concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Yes"
+									},
+									{
+										"concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "No"
+									}
+								]
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "sex === 'M' || age < 15"
+							}
+						},
+						{
+							"label": "ARV Adherence ",
+							"type": "obs",
+							"required": false,
+							"id": "arvAdherence",
+							"questionOptions": {
+								"rendering": "select",
+								"concept": "e126652c-8d02-4c4b-a49d-5bac03eb4d03",
+								"conceptMappings": [],
+								"answers": [
+									{
+										"concept": "82a03cc2-89aa-4c6a-85d4-66bba07a6334",
+										"label": "Good > 95 %"
+									},
+									{
+										"concept": "53b5adc3-a342-48fc-bff9-5981db672d06",
+										"label": "Fair  85 - 95 %"
+									},
+									{
+										"concept": "c253579e-c9ad-4c83-b322-6b1c34ce81c2",
+										"label": "Poor < 85 %"
+									}
+								]
+							},
+							"validators": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"label": "Indication for VL testing",
+			"sections": [
+				{
+					"label": "Routine monitoring ",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Last VL date",
+							"type": "obs",
+							"required": false,
+							"id": "vlDateMonitoring",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "0ffdbc2e-8883-4648-905a-68ceab83bb6f",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
+						},
+						{
+							"label": "VL Results",
+							"required": false,
+							"type": "obs",
+							"id": "valueMonitoringResult",
+							"questionOptions": {
+								"rendering": "select",
+								"concept": "8b5ef5c4-3c88-49b8-87e5-cb8d30caa77d",
+								"answers": [
+									{
+										"concept": "62df0577-a1f7-493e-80d2-e458998f1a2f",
+										"label": "Below Detectable (BDL)"
+									},
+									{
+										"concept": "12e201ff-c83a-4f3f-920e-37288d39fa55",
+										"label": "Viral Load value"
+									}
+								]
+							}
+						},
+						{
+							"label": "Record Viral Load value",
+							"type": "obs",
+							"required": false,
+							"id": "valueMonitoring",
+							"questionOptions": {
+								"rendering": "numeric",
+								"concept": "01c3ce55-b7eb-45f5-93d5-bace353e3cfd"
+							},
+							"hide": {
+								"hideWhenExpression": "valueMonitoringResult !== '12e201ff-c83a-4f3f-920e-37288d39fa55'"
+							},
+							"alert": {
+								"alertWhenExpression": "valueMonitoring >= 1000",
+								"message": "VL Value is above 1000, please fill the EAC Form"
+							}
+						}
+					]
+				},
+				{
+					"label": "Repeat VL test after suspected treatment failure & adherence counselling ",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Last VL date",
+							"type": "obs",
+							"required": false,
+							"id": "vlDateRepeat",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "acfbb9f8-8b3c-4f97-b47a-51851b063367",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
+						},
+						{
+							"label": "VL Results",
+							"required": false,
+							"type": "obs",
+							"id": "ValueRepeatVL",
+							"questionOptions": {
+								"rendering": "select",
+								"concept": "8b5ef5c4-3c88-49b8-87e5-cb8d30caa77d",
+								"answers": [
+									{
+										"concept": "62df0577-a1f7-493e-80d2-e458998f1a2f",
+										"label": "Below Detectable (BDL)"
+									},
+									{
+										"concept": "12e201ff-c83a-4f3f-920e-37288d39fa55",
+										"label": "Viral Load value"
+									}
+								]
+							}
+						},
+						{
+							"label": "Record Viral Load value",
+							"type": "obs",
+							"required": false,
+							"id": "ValueRepeatVLValue",
+							"questionOptions": {
+								"rendering": "numeric",
+								"concept": "01c3ce55-b7eb-45f5-93d5-bace353e3cfd"
+							},
+							"hide": {
+								"hideWhenExpression": "ValueRepeatVL !== '12e201ff-c83a-4f3f-920e-37288d39fa55'"
+							},
+							"alert": {
+								"alertWhenExpression": "ValueRepeatVLValue >= 1000",
+								"message": "VL Value is above 1000, please fill the EAC Form"
+							}
+						}
+					]
+				},
+				{
+					"label": "Suspected treatment failure",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Last VL date",
+							"type": "obs",
+							"required": false,
+							"id": "vldateSusTreatFailure",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "b3b195ff-0e6c-420f-bf60-483f24902066",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
+						},
+						{
+							"label": "VL Results",
+							"required": false,
+							"type": "obs",
+							"id": "valueTreatFailure",
+							"questionOptions": {
+								"rendering": "select",
+								"concept": "8b5ef5c4-3c88-49b8-87e5-cb8d30caa77d",
+								"answers": [
+									{
+										"concept": "62df0577-a1f7-493e-80d2-e458998f1a2f",
+										"label": "Below Detectable (BDL)"
+									},
+									{
+										"concept": "12e201ff-c83a-4f3f-920e-37288d39fa55",
+										"label": "Viral Load value"
+									}
+								]
+							}
+						},
+						{
+							"label": "Record Viral Load value",
+							"type": "obs",
+							"required": false,
+							"id": "valueTreatFailureValue",
+							"questionOptions": {
+								"rendering": "numeric",
+								"concept": "01c3ce55-b7eb-45f5-93d5-bace353e3cfd"
+							},
+							"hide": {
+								"hideWhenExpression": "valueTreatFailure !== '12e201ff-c83a-4f3f-920e-37288d39fa55'"
+							},
+							"alert": {
+								"alertWhenExpression": "valueTreatFailureValue >= 1000",
+								"message": "VL Value is above 1000, please fill the EAC Form"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"label": "Requesting Clinician",
+			"sections": [
+				{
+					"label": "",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Clinician Name",
+							"type": "obs",
+							"required": false,
+							"id": "clinicianName",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "611d6c22-7c6d-47cf-a74e-190f9e3cdd47",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": []
+						},
+						{
+							"label": "Phone",
+							"type": "obs",
+							"required": false,
+							"id": "clinicianPhone",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "4f968437-31cf-4cd9-bccf-c594618d12f5",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": [
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "clinicianPhone && !clinicianPhone.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+									"message": "The phone number should start with a country code, e.g., +211, and should be at least 9 digits after the country code."
+								}
+							],
+							"alert": {
+								"alertWhenExpression": "clinicianPhone && !clinicianPhone.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+								"message": "The phone number should start with a country code, e.g., +211, and should be at least 9 digits after the country code."
+							}
+						},
+						{
+							"label": "Request Date",
+							"type": "obs",
+							"required": false,
+							"id": "dateRequested",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "b853ddc3-3d8c-4b0b-99ac-497624c9904d",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"label": "Viral Load (VL) Details",
+			"sections": [
+				{
+					"label": "",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "VL Focal Person ",
+							"type": "obs",
+							"required": false,
+							"id": "vlFocalPerson",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "db73e6cd-57e7-4cca-83b7-7d4c532c5621",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": []
+						},
+						{
+							"label": "VL Focal Person Phone",
+							"type": "obs",
+							"required": false,
+							"id": "focalPersonPhone",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "dff0ffef-5c14-458a-a4db-8b106daf3876",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": [
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "focalPersonPhone && !focalPersonPhone.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+									"message": "The phone number should start with a country code, e.g., +211, and should be at least 9 digits after the country code."
+								}
+							],
+							"alert": {
+								"alertWhenExpression": "focalPersonPhone && !focalPersonPhone.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+								"message": "The phone number should start with a country code, e.g., +211, and should be at least 9 digits after the country code."
+							}
+						}
+					]
+				},
+				{
+					"label": "Email for HF",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Email for HF",
+							"type": "obs",
+							"required": false,
+							"id": "emailHF",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "dfcedbb1-11fe-4e19-969c-f88539ebc31f",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": [
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "emailHF && !emailHF.match(/^[\\w.-]+@[\\w-]+(\\.[\\w-]+)+$/)",
+									"message": "Invalid email address. Please provide a valid email address e.g example@gmail.com."
+								}
+							],
+							"alert": {
+								"alertWhenExpression": "emailHF && !emailHF.match(/^[\\w.-]+@[\\w-]+(\\.[\\w-]+)+$/)",
+								"message": "Invalid email address. Please provide a valid email address in the correct format e.g example@gmail.com."
+							}
+						},
+						{
+							"label": "Date sample received at testing Lab",
+							"type": "obs",
+							"required": false,
+							"id": "dateSampleRecievedLab",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "0bfdbae3-ea5d-4173-a4e1-7f42d50e0bc6",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
+						},
+						{
+							"label": "Date Results Dispatched",
+							"type": "obs",
+							"required": false,
+							"id": "dateResultDispatched",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "4db52045-d459-4c3e-b0b4-b7d00b18ed1e",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": [
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "new Date(dateResultDispatched) < new Date(dateSampleRecievedLab)",
+									"message": "Date Dispatched can't be before the date sample received"
+								},
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
+						},
+						{
+							"label": "Rejection",
+							"type": "obs",
+							"required": false,
+							"id": "rejection",
+							"questionOptions": {
+								"rendering": "select",
+								"concept": "b5d1c0b4-6cce-4a23-9754-60b6da6b5d88",
+								"conceptMappings": [],
+								"answers": [
+									{
+										"concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Yes"
+									},
+									{
+										"concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "No"
+									}
+								]
+							},
+							"validators": []
+						},
+						{
+							"label": "Reason for rejection",
+							"type": "obs",
+							"required": false,
+							"id": "reasonForRejection",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "1754e917-3956-4032-b7f9-e54edfa1f9d0",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "rejection !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"processor": "EncounterFormProcessor",
+	"encounterType": "82024e00-3f10-11e4-adec-0800271c1b75",
+	"referencedForms": [],
+	"uuid": "xxxxx",
+	"description": "VL Labaratory request form",
+	"version": "1.0.0"
+}

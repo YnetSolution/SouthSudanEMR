@@ -1,0 +1,78 @@
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:3,_order:126,Data class,Data type,Answers
+32d995db-14d2-4f80-a25c-a8822cbc60db,,Primary Education,Primary Education,,,,,Misc,N/A,
+118ad39e-85ad-4509-bad2-b88ed67fa22a,,Secondary Education,Secondary Education,,,,,Misc,N/A,
+685a7288-9863-44ed-8d35-6378dbb2bd25,,Tertiary Institution,Tertiary Institution,,,,,Misc,N/A,
+0ec46fe5-7195-4c00-a205-d8cf709036d1,,University,University,,,,,Misc,N/A,
+d426049e-8982-4bd6-b4d5-0ec54dc3b641,,Education Level Literate,Education Level Literate,,,,,Question,Coded,"Primary Education;
+Secondary Education;
+Tertiary Institution;
+University"
+73779d67-7e8f-46fe-b723-8879838da5f8,,ART Start Date (Date of Enrolment),ART Start Date (Date of Enrolment),,,,,Question,Date,
+1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Yes,Yes,,,,,Misc,N/A,
+1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,No,No,,,,,Misc,N/A,
+4d1b1fcb-2f88-4c54-b81c-b80faea42146,,Barriers,Barriers,,,,,Question,Coded,"Alcohol/Drugs;
+Child Behaviour/Refusing for Children on ART;
+Concurrent illness;
+Depression;
+Drug Stock Out;
+Failure To Adjust To food Insecurity;
+Fear Disclosure;
+Feeling Better;
+Forgot;
+Health/Beliefs/Alternate Remedies;
+Knowledge;
+Lack of Familiy/Partner Support;
+Long Wait;
+Lost/Damaged;
+Other First EAC Barrier Reason;
+Pill Burden;
+Political Crisis;
+Ran out Of Medcation;
+Scheduling;
+Sharing Medications;
+Side Effects;
+Stigma;
+Transport"
+65536958-fc01-4002-8839-af4b6ab0489b,,EAC Session,EAC Session,,,,,Question,Coded,"First EAC Session;
+Second EAC Session;
+Third EAC Session;
+Extended session of EAC"
+7ccc6227-f42f-4c45-822a-e11961ada35a,,Pill intake,Pill intake,,,,,Question,Numeric,
+fb428d3c-fb82-4182-9eca-d864a317c785,,Behavioural,Behavioural,,,,,Question,Coded,"Yes;
+No"
+824ebb29-6640-4b3f-b1dd-6f8a6c5063f5,,Cognitive,Cognitive,,,,,Question,Coded,"Yes;
+No"
+3891c093-0daf-42a7-a140-571224c43678,,Socio-economic,Socio-economic,,,,,Question,Coded,"Yes;
+No"
+32c19f52-dbcc-49f5-a017-f5ce589b7216,,Emotional,Emotional,,,,,Question,Coded,"Yes;
+No"
+c7369d4b-ff53-4cb5-b6e8-f053eb01c2cc,,Identified Barriers to adherence attended,Identified Barriers to adherence attended,,,,,Question,Text,
+c3659bf9-3f10-11e4-adec-0800271c1b75,,Comments,Comments,,,,,Question,Text,
+0fa5669b-041d-446d-9ae6-8e88a980858,,Date of extra session,Date of extra session,,,,,Question,Date,
+7ccc6227-f42f-4c45-822a-e11961ada35a,,Pill intake,Pill intake,,,,,Question,Numeric,
+b2e88abb-5e64-406d-8f01-1a80b7af22e6,,Agreed plan of action,Agreed plan of action,,,,,Question,Text,
+c8ef861f-cdcb-4605-83ae-29a95b1d5e27,,Date of collection of repeat Viral Load,Date of collection of repeat Viral Load,,,,,Question,Date,
+7d6f2311-5eb3-49fe-acda-9d591447ceb0,,Counsellor,Counsellor,,,,,Question,Text,
+71d64d77-f53f-4093-9651-2952c5777275,,Date of assessment,Date of assessment,,,,,Question,Date,
+68c60487-62b5-45af-9773-0bc163b9e076,,Repeat Viral Load result,Repeat Viral Load result,,,,,Question,Numeric,
+ae23fa12-b7fc-49e0-be21-aa2f5bc32f97,,<1000c/ml,<1000c/ml,,,,,Misc,N/A,
+edaf153d-70ff-44f2-8c6e-7242dfd36f5f,,≥1000c/ml,≥1000c/ml,,,,,Misc,N/A,
+a1b9b338-fd39-4a8d-9f3a-aef2a9b0bce4,,"Repeat Viral Load result <1000c/ml, ≥1000c/ml","Repeat Viral Load result <1000c/ml, ≥1000c/ml",,,,,Question,Coded,"<1000c/ml;
+≥1000c/ml"
+06cee3e6-daaa-48cf-aa53-296254ee61a3,,Repeat Viral Load date,Repeat Viral Load date,,,,,Question,Date,
+417b7273-8d62-4720-9fb6-075e9d1530ec,,Is Client Dead?,Death,,,,,Question,Coded,"Yes;
+No"
+bced5365-80f5-4a27-a287-60296c4e4ff9,,Date of death,Date of death,,,,,Question,Date,
+98fb1bba-dc86-4a68-a098-f1dfe593d933,,Specify Other infectious and parasitic disease,Specify Other infectious and parasitic disease,,,,,Question,Text,
+68f68ae1-272c-44e4-85af-009e46e60015,,Transfer out,Transfer out,,,,,Question,Coded,"Yes;
+No"
+7053eaca-fc21-4b73-b246-b6e9ae3b3f67,,Lost to follow-up (28+ days),Lost to follow-up (28+ days),,,,,Question,Coded,"Yes;
+No"
+235a6246-6179-4309-ba84-6f0ec337eb48,,Is patient pregnant,Is patient pregnant,,,,,Question,Coded,"Yes;
+No"
+f53940f7-5fbb-45a2-a567-26a64240b42b,,Phone,Phone,,,,,Question,Text,
+d3522e54-bbea-47e8-bc0d-c275cc00427b,,VL Focal Person Phone,VL Focal Person Phone,,,,,Question,Text,
+298d22a4-dc21-4f3a-a081-ee6f1c393d0a,,Second EAC Pill Intake,Pill Intake Second EAC,,,,,Question,Numeric,
+5ef9ac25-5db3-4e02-904b-3dce31dc0b06,,Second EAC Pill Percentage,Second EAC Pill percentage,,,,,Question,Numeric,
+05f55c2f-ce57-4738-8ca3-10260725a9dc,,Third EAC Pill Intake,Pill Intake THird EAC,,,,,Question,Numeric,
+46c39500-d2d9-447a-a159-707ca3d61519,,Third EAC Pill Percentage,Third EAC Pill percentage,,,,,Question,Numeric,

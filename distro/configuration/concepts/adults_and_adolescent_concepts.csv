@@ -1,0 +1,335 @@
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:126,Data class,Data type,Answers
+131cf572-4664-49f9-9655-6023fc629a33,,Is CBC Done?,Is CBC Done?,,,,,Finding,Coded,"Yes;
+No"
+874452af-4d24-483a-a3c0-6c6de76274cc,,CBC,CBC,,,,,Finding,Text,
+150f69fd-140d-4559-85b7-6be94f371167,,Is the Client Pregnant,Is the Client Pregnant,,,,,Finding,Coded,"Yes;
+No"
+f9e6254d-fd14-4831-9ee0-85099a72b3e8,,Pregnancy Test,Pregnancy Test,,,,,Finding,Text,
+33a340e7-67e7-4bc0-a669-6a5f6a6abe88,,HBsAg,HBsAg,,,,,Finding,Text,
+8218c436-897e-4298-be27-c58016b00e7a,,HCV Antibody,HCV Antibody,,,,,Finding,Text,
+3aeed9a2-4c74-4945-9067-63da3386b102,,Positive,Positive,,,,,Misc,N/A,
+80008f38-5991-4170-9ddf-9490dbcbe064,,Negative,Negative,,,,,Misc,N/A,
+9202b40e-349a-4033-a6b5-7305dbf9dc96,,Unknown,Unknown,,,,,Misc,N/A,
+151384b6-2f71-45be-b296-2b1fbee700a1,,Sputum AFB (if needed),Sputum AFB (if needed),,,,,Question,Coded,"Positive;
+Negative;
+Unknown"
+87045f3e-ae61-4e53-8d8f-d14e92f06d0d,,Clinical stage 1,Clinical stage 2,,,,,Misc,N/A,
+e7112b84-4321-41a9-8c04-c96c427dd7b6,,Clinical stage 2,Clinical stage 3,,,,,Misc,N/A,
+4ca4d221-cb9d-4fcb-9c4f-ebc89eb0c7c3,,Clinical stage 3,Clinical stage 4,,,,,Misc,N/A,
+489ff20e-5f04-4ca2-a46c-a86acd29567b,,Clinical stage 4,Clinical stage 5,,,,,Misc,N/A,
+a90652b2-f2c7-471f-a287-64495d2a6791,,WHO clinical stage,WHO clinical stage,,,,,Question,Coded,"Clinical stage 1;
+Clinical stage 2;
+Clinical stage 3;
+Clinical stage 4"
+e27f8561-e242-4744-9193-b84d752dd86d,,Date of Enrollment,Date of Enrollment,,,,,Question,Date,
+b33300b5-2dc1-45e9-b70e-9d08ef16474e,,Acute necrotizing Ulcerative gingivitis or periodontitis,Acute necrotizing Ulcerative gingivitis or periodontitis,,,,,Misc,N/A,
+d946be39-07d1-4e1b-9990-6f626445b8a7,,Angular cheilitis,Angular cheilitis,,,,,Misc,N/A,
+924652f0-26c5-4a2b-a2bc-67ddb9607dbf,,"Chronic herpes simplex virus infection (orolabial, genital or anorectal)","Chronic herpes simplex virus infection (orolabial, genital or anorectal)",,,,,Misc,N/A,
+f6083b46-8b38-46c4-a44b-5a28db07ae54,,Cryptococcal meningitis,Cryptococcal meningitis,,,,,Misc,N/A,
+13216581-b1cd-4087-9297-1eb4b55b40ce,,Esophageal Candidiasis,Esophageal Candidiasis,,,,,Misc,N/A,
+b213e6bd-14fe-40a1-83a6-53e5d8742efc,,Extra pulmonary TB,Extra pulmonary TB,,,,,Misc,N/A,
+318aa6ec-edf3-4369-943d-c8f2a508e045,,"Fever (> 1 month, unexplained)","Fever (> 1 month, unexplained)",,,,,Misc,N/A,
+e7c704d0-9bf0-47b2-8371-d74c87f93eec,,Fungal nail infection,Fungal nail infection,,,,,Misc,N/A,
+49b1128f-5d64-4373-a6ea-9d329e2e54a6,,Herpes Zoster,Herpes Zoster,,,,,Misc,N/A,
+951c142f-e9e8-4e03-8e87-4f571aa99e8f,,HIV Associated Dementia (HIV Encephalopathy),HIV Associated Dementia (HIV Encephalopathy),,,,,Misc,N/A,
+12e8cb0d-f421-4778-b49d-6781c105cca4,,Kaposi sarcoma,Kaposi sarcoma,,,,,Misc,N/A,
+cc35f955-3e7a-44e4-999d-df181a5e4a11,,Oral Candidiasis,Oral Candidiasis,,,,,Misc,N/A,
+469408fd-bc9e-457f-b4f9-e7a78e04cbfa,,Oral hairy leukoplakia,Oral hairy leukoplakia,,,,,Misc,N/A,
+8b7dd03f-5c59-4118-9565-ecd990263258,,Oral Ulcer,Oral Ulcer,,,,,Misc,N/A,
+cc23bab5-d6eb-4e16-948b-25a366080dba,,Papular pruritic eruption,Papular pruritic eruption,,,,,Misc,N/A,
+bff040c5-7865-4756-8fdc-2fe2cec784c1,,Persistent Generalized Lymphadenopathy (PGL),Persistent Generalized Lymphadenopathy (PGL),,,,,Misc,N/A,
+d8ce02ab-9d65-4efb-aa04-4fce6a1c82fd,,Unexplained persistent diarrhea (>14 days),Unexplained persistent diarrhea (>14 days),,,,,Misc,N/A,
+f5acb290-917f-4b3d-92f7-7c29552f00ba,,Pneumocystis pneumonia (PCP),Pneumocystis pneumonia (PCP),,,,,Misc,N/A,
+ee4f01d5-819f-4130-b5e2-fbebf2b00e11,,Pulmonary TB,Pulmonary TB,,,,,Misc,N/A,
+9d2bfb0c-807c-4f43-8c63-06debd52cf3e,,Recurrent bacterial pneumonia,Recurrent bacterial pneumonia,,,,,Misc,N/A,
+1661d025-dfca-451e-a914-626cdfae6336,,"Recurrent Bacterial URTIs (Sinusitis, Otitis Media, Tonsillopharyngitis )","Recurrent Bacterial URTIs (Sinusitis, Otitis Media, Tonsillopharyngitis )",,,,,Misc,N/A,
+68993e4b-581e-43a6-ac9b-45bcb8f4a185,,"Recurrent or chronic Bacterial URTIs (Sinusitis, Otitis Media, Ottorhea, Tonsillitis)","Recurrent or chronic Bacterial URTIs (Sinusitis, Otitis Media, Ottorhea, Tonsillitis)",,,,,Misc,N/A,
+82a4cd70-96be-4c8d-9e7e-9c871e1e4953,,Seborrheic dermatitis,Seborrheic dermatitis,,,,,Misc,N/A,
+82950d3b-18a8-40a5-9bb2-fefbcd2d8c78,,"Severe Bacterial Infections (Pneumonia, Septic arthritis, osteomyelitis, Pyomyositis, PID)","Severe Bacterial Infections (Pneumonia, Septic arthritis, osteomyelitis, Pyomyositis, PID)",,,,,Misc,N/A,
+2623106d-a067-414a-9c61-8084599f855b,,Toxoplasmosis Herpes simplex (>1 month),Toxoplasmosis Herpes simplex (>1 month),,,,,Misc,N/A,
+901d53c5-fd75-40c7-a39b-b5e25b6255fd,,Unexplained chronic diarrhea (>1 month),Unexplained chronic diarrhea (>1 month),,,,,Misc,N/A,
+35a99b2b-4b1a-4815-adb8-36446842289a,,Extra pulmonary TB except Lymph node TB,Extra pulmonary TB except Lymph node TB,,,,,Misc,N/A,
+65a52277-09b3-4157-b2a1-9cca33f66ac8,,Severe Bacterial Infections excluding pneumonia,Severe Bacterial Infections excluding pneumonia,,,,,Misc,N/A,
+f32d0fa8-f53e-42b1-b83d-fcaed08174be,,Severe Recurrent bacterial pneumonia,Severe Recurrent bacterial pneumonia,,,,,Misc,N/A,
+fa428486-cd06-4ccc-811c-623c5eaac561,,Extensive warts,Extensive warts,,,,,Misc,N/A,
+7ff0ed86-3414-418d-9cbd-73d94cde0290,,Extensive Molluscum Contagiosum,Extensive Molluscum Contagiosum,,,,,Misc,N/A,
+ab89262b-afe0-4aef-ae81-ea79ab236deb,,Lymph node TB,Lymph node TB,,,,,Misc,N/A,
+37a734d2-227f-43af-b3cb-1bb936a275bd,,Persistent Parotid enlargement,Persistent Parotid enlargement,,,,,Misc,N/A,
+cc646a0a-36aa-44a7-abae-a531082c3dc0,,Chronic herpes simplex virus infection (orolabial or visceral),Chronic herpes simplex virus infection (orolabial or visceral),,,,,Misc,N/A,
+c5120716-e297-40f6-9eb5-ef432cc791c0,,Other Past Medical History,Other Past Medical History,,,,,Misc,N/A,
+9af72d4e-8f50-4545-b154-7dd12fea2ea4,,Past Medical History,Past Medical History,,,,,Question,Coded,"Acute necrotizing Ulcerative gingivitis or periodontitis;
+Angular cheilitis;
+Chronic herpes simplex virus infection (orolabial, genital or anorectal);
+Cryptococcal meningitis;
+Esophageal Candidiasis;
+Extra pulmonary TB;
+Fever (> 1 month, unexplained);
+Fungal nail infection;
+Herpes Zoster;
+HIV Associated Dementia (HIV Encephalopathy);
+Kaposi sarcoma;
+Oral Candidiasis;
+Oral hairy leukoplakia;
+Oral Ulcer;
+Papular pruritic eruption;
+Persistent Generalized Lymphadenopathy (PGL);
+Unexplained persistent diarrhea (>14 days);
+Pneumocystis pneumonia (PCP);
+Pulmonary TB;
+Recurrent bacterial pneumonia;
+Recurrent Bacterial URTIs (Sinusitis, Otitis Media, Tonsillopharyngitis );
+Recurrent or chronic Bacterial URTIs (Sinusitis, Otitis Media, Ottorhea, Tonsillitis);
+Seborrheic dermatitis;
+Severe Bacterial Infections (Pneumonia, Septic arthritis, osteomyelitis, Pyomyositis, PID);
+Toxoplasmosis Herpes simplex (>1 month);
+Unexplained chronic diarrhea (>1 month);
+Extra pulmonary TB except Lymph node TB;
+Severe Bacterial Infections excluding pneumonia;
+Severe Recurrent bacterial pneumonia;
+Extensive warts;
+Extensive Molluscum Contagiosum;
+Lymph node TB;
+Persistent Parotid enlargement;
+Chronic herpes simplex virus infection (orolabial or visceral);
+Other Past Medical History"
+f16c6a11-453f-44a2-a7a5-77aeaa93e67d,,Specify Other Past Medical History,,,,,,Question,Text,
+759e2ceb-0311-46bd-9f00-5df5b2897f71,,Past Medical History Section,Past Medical History Section,,,,,Misc,N/A,
+74926ae2-dbb8-4ae4-9148-7dc189502e4b,,Current Symptoms Screen section,,,,,,Misc,N/A,
+1dfb0948-4e15-11e4-8a57-0800271c1b75,,Abdominal pain,,,,,,Misc,N/A,
+2934795c-486e-4819-a4ac-b476630c710c,,Chronic fatigue,,,,,,Misc,N/A,
+147b8be8-d657-4e46-8970-6f9983b27722,,Current Cough,,,,,,Misc,Coded,Yes; No
+8166b90f-671c-4787-a3a4-d4ea8fd74f43,,Diarrhea,,,,,,Misc,N/A,
+e77f0416-4e14-11e4-8a57-0800271c1b75,,Dyspepsia,,,,,,Misc,N/A,
+ecee97e6-47af-44c0-a941-804afa11bbd0,,Dysphagia or Odynophagia,,,,,,Misc,N/A,
+19909766-298e-4595-942e-f8df8c293231,,Dyspnea,,,,,,Misc,N/A,
+44a3c656-5584-4044-9cad-e265a8f90a01,,"Ear pain, discharge or decreased hearing",,,,,,Misc,N/A,
+140238AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Fever,,,,,,Misc,N/A,
+8f91cfe8-8920-47b0-858f-bd36726643ae,,Genital ulcer/vesicles,,,,,,Misc,N/A,
+1f6a5ea9-4e15-11e4-8a57-0800271c1b75,,Hemoptysis,,,,,,Misc,N/A,
+974188d4-5caa-4a1a-a2e2-4076aa018eb6,,Inguinal swellings,,,,,,Misc,N/A,
+f20b15b2-4e14-11e4-8a57-0800271c1b75,,Jaundice,,,,,,Misc,N/A,
+39acc2a5-564b-4879-ac91-eb719a752084,,loss of consciousness,,,,,,Misc,N/A,
+ef463179-467b-4d67-a4f6-adb5095c21da,,Mental confusion,,,,,,Misc,N/A,
+203d9e67-4e15-11e4-8a57-0800271c1b75,,Nausea and vomiting,,,,,,Misc,N/A,
+64122e23-ca4a-4603-839b-af4197aef9a4,,Neck or Armpit swellings,,,,,,Misc,N/A,
+5e20b5a6-571f-483d-95f2-822a66ff77b1,,Neck pain,,,,,,Misc,N/A,
+886c7ef0-b104-49bf-bd54-23429eec070d,,Night Sweats,,,,,,Misc,N/A,
+2584edf4-6e85-4be8-93ba-6c27692ea0be,,Numbness/tingling,,,,,,Misc,N/A,
+47be2dc7-acfc-43e8-8c27-4331856164db,,Persistent headaches,,,,,,Misc,N/A,
+2bba04c7-d7c0-417d-9736-f34acaa489e1,,Photophobia,,,,,,Misc,N/A,
+fc4a6283-70f2-49fd-82fb-d8c8a6bbd5ba,,Joint pain and/or swelling,,,,,,Misc,N/A,
+0df5db1f-a1fe-4dbb-82aa-c3beeb84ad31,,Skin lesions/Pruritus,,,,,,Misc,N/A,
+ceaa3f86-23e4-4ca0-bb8f-b095d5831677,,Sore mouth or throat,,,,,,Misc,N/A,
+785f673e-c961-4b0b-90d7-c2f7c94c4166,,Urethral discharge/Vaginal discharge,,,,,,Misc,N/A,
+65d9c0b5-a9a3-4bb8-b20c-5244c917fcb4,,Weakness of extremities,,,,,,Misc,N/A,
+1fc47a4b-e35d-4f89-953e-52c4c6a69eb5,,Weight loss,,,,,,Misc,N/A,
+c8a795fb-ba79-43d3-a85e-e79c367ec97c,,Pain on micturition,,,,,,Misc,N/A,
+91657cbc-e603-4187-818e-a6f9b2a62e54,,Neurodevelopmental delay or regression,,,,,,Misc,N/A,
+978573fd-04cb-4fa2-aa79-53064e6d0aea,,Abdominal swelling,,,,,,Misc,N/A,
+b50b5dc9-9a05-4190-9db3-f157477ed2d5,,Irritability,,,,,,Misc,N/A,
+cca3e06d-37fc-4dfb-90e7-bf799d073d25,,Difficulty breathing,,,,,,Misc,N/A,
+aa25ca53-21b8-4e2f-b44b-61c2c20d4dee,,Current symptoms screen,,,,,,Question,Coded,"Abdominal pain;
+Chronic fatigue;
+Current Cough;
+Diarrhea;
+Dyspepsia;
+Dysphagia or Odynophagia;
+Dyspnea;
+Ear pain, discharge or decreased hearing;
+Fever;
+Genital ulcer/vesicles;
+Hemoptysis;
+Inguinal swellings;
+Jaundice;
+loss of consciousness;
+Mental confusion;
+Nausea and vomiting;
+Neck or Armpit swellings;
+Neck pain;
+Night Sweats;
+Numbness/tingling;
+Persistent headaches;
+Photophobia;
+Joint pain and/or swelling;
+Skin lesions/Pruritus;
+Sore mouth or throat;
+Urethral discharge/Vaginal discharge;
+Weakness of extremities;
+Weight loss;
+Pain on micturition;
+Neurodevelopmental delay or regression;
+Abdominal swelling;
+Irritability;
+Difficulty breathing"
+9125f7ff-f703-42f1-8a6d-ae6a4c2b5b94,,Duration for Current Cough,,,,,,Question,Numeric,
+74ffce7d-e863-4e02-9081-64cefaf2e28a,,Duration for Fever,,,,,,Question,Numeric,
+c0810998-e30c-4b10-adfe-8cef59afbfc1,,Duration for Diarrhoea,,,,,,Question,Numeric,
+5396bc8f-12ab-4310-a2ff-6fac9f07e804,,Duration for Weight Loss,,,,,,Question,Numeric,
+83557c06-044a-45e6-9947-8aab137ecde9,,Percentage of Weight Loss,,,,,,Question,Numeric,
+c45a7e4b-3f10-11e4-adec-0800271c1b75,,LMP,,,,,,Question,Date,
+12118225-edad-45e2-9313-a5bca2cb4995,,If Pregnant: EDD,,,,,,Question,Date,
+3655ba19-dff1-44bf-b8e4-b1d0240f653c,,Acutely ill,,,,,,Misc,N/A,
+339805ae-3d57-4821-ba96-5c2f4e31624b,,Chronically ill,,,,,,Misc,N/A,
+ff115f4e-c296-4d79-b9cf-4a6e5d9fa5e0,,Healthy,,,,,,Misc,N/A,
+fc7a725d-9d0e-4254-abf7-bcc25d1866ec,,General appearance,,,,,,Question,Coded,"Acutely ill;
+Chronically ill;
+Healthy"
+1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Abnormal,,,,,,Misc,N/A,
+1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Normal,,,,,,Misc,N/A,
+aacc89a1-1da4-4331-aea8-6b0399074db6,,HEENT,,,,,,Question,Coded,"Abnormal;
+Normal"
+87dc3313-51ca-46bd-aeb7-059b1fc27bf6,,Specify HEENT Abnormality,,,,,,Question,Text,
+6caa7efe-8acd-4fcb-b3d2-55e670effee6,,Lymphoglandular system,,,,,,Question,Coded,"Abnormal;
+Normal"
+ae12c2b8-b34c-45f3-b479-4032e3cc598b,,Specify Lymphoglandular Abnormality,,,,,,Question,Text,
+a68c104e-0e7b-4c04-966d-a9e37a1d6f71,,Respiratory System,,,,,,Question,Coded,"Abnormal;
+Normal"
+9d590669-1920-416c-b929-1177943995b2,,Specify Respiratory Abnormality,,,,,,Question,Text,
+5936d7e8-6902-4952-8ce5-51cd90d762b3,,Cardiovascular system,,,,,,Question,Coded,"Abnormal;
+Normal"
+9486f6d7-a54f-430b-b9cc-433f0144e2f1,,Specify Cardiovascular system Abnormality,,,,,,Question,Text,
+05c4679b-2531-44db-82c0-35022a3b9606,,Abdomen,,,,,,Question,Coded,"Abnormal;
+Normal"
+eb6897e0-055e-459a-b7a3-d229f3db76fc,,Specify Abdomen Abnormality,,,,,,Question,Text,
+2675bfa2-b7fa-48ec-b53e-6374155e967d,,Genitourinary system,,,,,,Question,Coded,"Abnormal;
+Normal"
+82e685e0-1131-448e-8d56-5e17c8f87285,,Specify Genitourinary system Abnormality,,,,,,Question,Text,
+79c990dd-4fc7-4ac5-b026-fc868c5a9d6d,,Musculoskeletal   system,,,,,,Question,Coded,"Abnormal;
+Normal"
+e1f351e5-b81b-4e71-abf3-14a29c17065b,,Specify Musculoskeletal system Abnormality,,,,,,Question,Text,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,,,,,,Misc,N/A,
+0d568029-1a63-4389-be18-019a3853eebf,,Normal weight,,,,,,Misc,N/A,
+9caf9ca8-c9c5-49ca-a98a-fbb8e15269c6,,Skin,,,,,,Question,Coded,"Abnormal;
+Normal weight"
+328ba182-8737-4956-9a52-5a9c7a4b0bb4,,Specify Skin Abnormality,,,,,,Question,Text,
+e5f785d7-0e0c-4e3e-a88e-e642d24bbf3e,,Nervous system,,,,,,Question,Coded,"Abnormal;
+Normal"
+5b822b80-1a1e-41bf-bdd0-f62fadd65752,,Specify Nervous system Abnormality,,,,,,Question,Text,
+78763e68-104e-465d-8ce3-35f9edfb083d,,Yes,Yes,,,,,Misc,N/A,
+b497171e-0410-4d8d-bbd4-7e1a8f8b504e,,No,No,,,,,Misc,N/A,
+ec694822-57e1-4739-b1d8-7055b4a5b22a,,Other clinical findings?,Other clinical findings?,,,,,Question,Coded,"Yes;
+No"
+91ef252c-7ecf-4272-8197-3bada6cdb65b,,Record Other clinical findings,Record Other clinical findings,,,,,Question,Text,
+491d6883-3078-47b9-b8d0-872641bd9d27,,Asymptomatic,,,,,,Misc,N/A,
+bff040c5-7865-4756-8fdc-2fe2cec784c1,,Persistent Generalized Lymphadenopathy (PGL),Persistent Generalized Lymphadenopathy (PGL),,,,,Misc,N/A,
+87045f3e-ae61-4e53-8d8f-d14e92f06d0d,,Clinical stage 1,Clinical stage 1,,,,,Question,Coded,"Asymptomatic;
+Persistent Generalized Lymphadenopathy (PGL)"
+d946be39-07d1-4e1b-9990-6f626445b8a7,,Angular cheilitis,Angular cheilitis,,,,,Misc,N/A,
+e7c704d0-9bf0-47b2-8371-d74c87f93eec,,Fungal nail infection,Fungal nail infection,,,,,Misc,N/A,
+49b1128f-5d64-4373-a6ea-9d329e2e54a6,,Herpes Zoster,Herpes Zoster,,,,,Misc,N/A,
+57269afa-42d1-48ae-a320-66ae12c7e1e4,,Moderate unexplained weight loss (< 10% of body weight),Moderate unexplained weight loss (< 10% of body weight),,,,,Misc,N/A,
+cc23bab5-d6eb-4e16-948b-25a366080dba,,Papular pruritic eruption,Papular pruritic eruption,,,,,Misc,N/A,
+2f08824f-742f-4a0e-a954-360785142bfb,,"Recurrent bacterial upper respiratory tract infections (two or more in last 6 months): sinusitis, otitis media, tonsillopharyngitis","Recurrent bacterial upper respiratory tract infections (two or more in last 6 months): sinusitis, otitis media, tonsillopharyngitis",,,,,Misc,N/A,
+fd058231-e7bf-4c3b-a0d5-7649b83fcb52,,Recurrent oral ulcerations (two or more episodes in last 6 months),Recurrent oral ulcerations (two or more episodes in last 6 months),,,,,Misc,N/A,
+82a4cd70-96be-4c8d-9e7e-9c871e1e4953,,Seborrheic dermatitis,Seborrheic dermatitis,,,,,Misc,N/A,
+48bcb0b6-46a5-42e5-a50c-d572f28badda,,lineal gingival erythema,lineal gingival erythema,,,,,Misc,N/A,
+5bd38576-57c2-4488-966e-8d1e303deb06,,extensive wart virus infection,extensive wart virus infection,,,,,Misc,N/A,
+7ff0ed86-3414-418d-9cbd-73d94cde0290,,extensive molluscum contagiosum,extensive molluscum contagiosum,,,,,Misc,N/A,
+def9e08f-00f4-49b1-9d47-2a22e0129303,,Unexplained Persistent  hepatsoplenomegaly,Unexplained Persistent  hepatsoplenomegaly ,,,,,Misc,N/A,
+65ea0d8c-d600-4af2-906d-6d2984bac229,,unexplained persistent parotid enlargement,unexplained persistent parotid enlargement,,,,,Misc,N/A,
+e7112b84-4321-41a9-8c04-c96c427dd7b6,,Clinical stage 2,Clinical stage 2,,,,,Question,Coded,"Angular cheilitis;
+Fungal nail infection;
+Herpes Zoster;
+Moderate unexplained weight loss (< 10% of body weight);
+Papular pruritic eruption;
+Recurrent bacterial upper respiratory tract infections (two or more in last 6 months): sinusitis, otitis media, tonsillopharyngitis;
+Recurrent oral ulcerations (two or more episodes in last 6 months);
+Seborrheic dermatitis;
+lineal gingival erythema;
+extensive wart virus infection;
+extensive molluscum contagiosum;
+Unexplained Persistent  hepatsoplenomegaly ;
+unexplained persistent parotid enlargement"
+a4b796d7-603a-49a4-b48a-30398dfaab7e,,"Acute necrotizing ulcerative stomatitis, gingivitis or periodontitis","Acute necrotizing ulcerative stomatitis, gingivitis or periodontitis",,,,,Misc,N/A,
+0ad0e066-3a2e-4cef-a0e2-4c40e322f6af,,Current Pulmonary TB,Current Pulmonary TB,,,,,Misc,N/A,
+cc35f955-3e7a-44e4-999d-df181a5e4a11,,Oral Candidiasis,Oral Candidiasis,,,,,Misc,N/A,
+469408fd-bc9e-457f-b4f9-e7a78e04cbfa,,Oral hairy leukoplakia,Oral hairy leukoplakia,,,,,Misc,N/A,
+d30bda0e-4bff-4b0a-afd1-6bbe9e546f7e,,"Severe bacterial infection (e.g. pneumonia, meningitis, empyema, pyomyositis, bone or joint infection, bacteremia, severe pelvic inflammatory disease)","Severe bacterial infection (e.g. pneumonia, meningitis, empyema, pyomyositis, bone or joint infection, bacteremia, severe pelvic inflammatory disease)",,,,,Misc,N/A,
+9c8548a8-172c-4652-93bb-134f1189869e,,Severe unexplained weight loss (more than 10% of body weight),Severe unexplained weight loss (more than 10% of body weight),,,,,Misc,N/A,
+ec041227-6e44-47f6-8ba5-aa5178dfd4de,,"Unexplained anemia (below 8g/dl), neutropenia (below 500/microliter) and/or chronic (more than 1 month) thrombocytopenia (below 50,000/microliter)","Unexplained anemia (below 8g/dl), neutropenia (below 500/microliter) and/or chronic (more than 1 month) thrombocytopenia (below 50,000/microliter)",,,,,Misc,N/A,
+2051c8e0-c175-44b3-be53-b4e1799364c3,,Unexplained chronic diarrhea for longer than 1 month,Unexplained chronic diarrhea for longer than 1 month,,,,,Misc,N/A,
+1bb7493d-4819-4879-87e0-447966b7f912,,Unexplained persistent fever (intermittent or constant and lasting for longer than 1 month),Unexplained persistent fever (intermittent or constant and lasting for longer than 1 month),,,,,Misc,N/A,
+5e3bf91b-e729-456e-bf0f-dca3d8ee3f95,,unexplained moderate malnutrition or wasting not adequately  responding to standard therapy,unexplained moderate malnutrition or wasting not adequately  responding to standard therapy,,,,,Misc,N/A,
+345a2154-06a7-4bb6-b6a0-701980a9660b,,unexplained persistent diarrhea(14 days or more),unexplained persistent diarrhea(14 days or more),,,,,Misc,N/A,
+a9a71427-16c1-4645-81f7-9f93779447cf,,persistent oral candidiasis(after 6-8 weks of life),persistent oral candidiasis(after 6-8 weks of life),,,,,Misc,N/A,
+3c6bdb10-454f-4d79-bc34-17063848ff79,,lymph node Tuberculosis,lymph node Tuberculosis,,,,,Misc,N/A,
+f32d0fa8-f53e-42b1-b83d-fcaed08174be,,severe recurrent bacterial pneumonia,severe recurrent bacterial pneumonia,,,,,Misc,N/A,
+990f92e1-1e50-484f-b7b0-82f01e5b3cb8,,Symptomatic  lymphoid interstitial pneumonitis,Symptomatic  lymphoid interstitial pneumonitis,,,,,Misc,N/A,
+4aad5db8-837b-4695-9248-f61063d857ba,,Chronic HIV-associated lung disease  including  brnchiectasis,Chronic HIV-associated lung disease  including  brnchiectasis,,,,,Misc,N/A,
+20d35542-9cb5-4a29-90d2-7c534b487930,,"Unexplained anemia(<8d/dl), neutropenia(<0.5 *10^9 per liter), and or chronic thrombocytopenia(<50 * 10^9)","Unexplained anemia(<8d/dl), neutropenia(<0.5 *10^9 per liter), and or chronic thrombocytopenia(<50 * 10^9)",,,,,Misc,N/A,
+4ca4d221-cb9d-4fcb-9c4f-ebc89eb0c7c3,,Clinical stage 3,Clinical stage 3,,,,,Question,Coded,"Acute necrotizing ulcerative stomatitis, gingivitis or periodontitis;
+Current Pulmonary TB;
+Oral Candidiasis;
+Oral hairy leukoplakia;
+Severe bacterial infection (e.g. pneumonia, meningitis, empyema, pyomyositis, bone or joint infection, bacteremia, severe pelvic inflammatory disease);
+Severe unexplained weight loss (more than 10% of body weight);
+Unexplained anemia (below 8g/dl), neutropenia (below 500/microliter) and/or chronic (more than 1 month) thrombocytopenia (below 50,000/microliter);
+Unexplained chronic diarrhea for longer than 1 month;
+Unexplained persistent fever (intermittent or constant and lasting for longer than 1 month);
+unexplained moderate malnutrition or wasting not adequately  responding to standard therapy;
+unexplained persistent diarrhea(14 days or more);
+persistent oral candidiasis(after 6-8 weks of life);
+lymph node Tuberculosis;
+severe recurrent bacterial pneumonia;
+Symptomatic  lymphoid interstitial pneumonitis;
+Chronic HIV-associated lung disease  including  brnchiectasis;
+Unexplained anemia(<8d/dl), neutropenia(<0.5 *10^9 per liter), and or chronic thrombocytopenia(<50 * 10^9)"
+367262c1-6920-4ba1-a766-9493af4c387a,,Atypical disseminated leishmaniasis,Atypical disseminated leishmaniasis,,,,,Misc,N/A,
+b5acd4c1-7e10-4656-8665-0c971196f862,,"Chronic herpes simplex virus (HSV) infection (orolabial, genital or anorectal) > 1 month","Chronic herpes simplex virus (HSV) infection (orolabial, genital or anorectal) > 1 month",,,,,Misc,N/A,
+a4bc80b0-0a49-467b-b0d1-1180cd36cc3b,,Chronic isosporiasis,Chronic isosporiasis,,,,,Misc,N/A,
+be72eac2-bbda-46d7-95f5-b24e8e147031,,CNS toxoplasmosis,CNS toxoplasmosis,,,,,Misc,N/A,
+cba2331f-5fe9-4a7b-a2d5-c0788e6a29de,,Cryptosporidiosis (with diarrhea lasting > 1 month),Cryptosporidiosis (with diarrhea lasting > 1 month),,,,,Misc,N/A,
+3d88e381-50c6-41cd-a65c-c032016c3b12,,Cytomegalovirus disease (retinitis),Cytomegalovirus disease (retinitis),,,,,Misc,N/A,
+4d6002ec-6e76-41fc-a486-5d52f9ad3499,,"Disseminated mycosis (coccidiomycosis, histoplasmosis)","Disseminated mycosis (coccidiomycosis, histoplasmosis)",,,,,Misc,N/A,
+71cfd0bd-397c-492e-bbac-4a84ec78cd2d,,Disseminated nontuberculous mycobacteria infection,Disseminated nontuberculous mycobacteria infection,,,,,Misc,N/A,
+13216581-b1cd-4087-9297-1eb4b55b40ce,,Esophageal Candidiasis,Esophageal Candidiasis,,,,,Misc,N/A,
+b213e6bd-14fe-40a1-83a6-53e5d8742efc,,Extra pulmonary TB,Extra pulmonary TB,,,,,Misc,N/A,
+dd7edc39-59d0-4b78-bf96-ee577c81bc50,,Extra-pulmonary cryptococcosis (including meningitis),Extra-pulmonary cryptococcosis (including meningitis),,,,,Misc,N/A,
+951c142f-e9e8-4e03-8e87-4f571aa99e8f,,HIV Associated Dementia (HIV Encephalopathy),HIV Associated Dementia (HIV Encephalopathy),,,,,Misc,N/A,
+e0a05f7e-3999-4edf-9334-df0c0bbc4ebb,,HIV wasting syndrome (>10% weight loss + chronic diarrhea or chronic fever),HIV wasting syndrome (>10% weight loss + chronic diarrhea or chronic fever),,,,,Misc,N/A,
+9bad96e6-7838-4e33-81c3-f4c8881aaf30,,HIV-associated cardiomyopathy,HIV-associated cardiomyopathy,,,,,Misc,N/A,
+e9f0bee4-93a9-478d-8f8e-0060087355b7,,unexplained severe wasting,unexplained severe wasting,,,,,Misc,N/A,
+5815ef40-1adc-4623-a820-be214aa85d41,,HIV-associated nephropathy,HIV-associated nephropathy,,,,,Misc,N/A,
+e4397ff0-3f94-4add-a3ce-0022425d4c54,,Invasive cervical carcinoma,Invasive cervical carcinoma,,,,,Misc,N/A,
+12e8cb0d-f421-4778-b49d-6781c105cca4,,Kaposi sarcoma,Kaposi sarcoma,,,,,Misc,N/A,
+0b6b6093-2ab3-4722-9785-b75c8099e0cb,,Lymphoma (cerebral or B cell non-Hodgkin) or other solid HIV associated tumors,Lymphoma (cerebral or B cell non-Hodgkin) or other solid HIV associated tumors,,,,,Misc,N/A,
+f5acb290-917f-4b3d-92f7-7c29552f00ba,,Pneumocystis pneumonia (PCP),Pneumocystis pneumonia (PCP),,,,,Misc,N/A,
+1757f546-14b9-4f5d-b32f-6c0ad8a169b1,,Progressive multifocal leukoencephalopathy (PML),Progressive multifocal leukoencephalopathy (PML),,,,,Misc,N/A,
+5583dc05-734d-43d1-ac3b-f77f573cd442,,Recurrent bacterial pneumonia (this episode plus one or more episodes in last 6 months),Recurrent bacterial pneumonia (this episode plus one or more episodes in last 6 months),,,,,Misc,N/A,
+97a89f11-806c-4bb8-b9e8-656b3b978b56,,stunting or severe malnutrition not responding  to standard therapy,stunting or severe malnutrition not responding  to standard therapy,,,,,Misc,N/A,
+dcf9e760-acae-4272-b936-6bf016385dc4,,"recurrent severe bacterial infections(such as  empyema, pyomyositis, bone or  joint infection  or meningitis  but excluding  pneumonia)","recurrent severe bacterial infections(such as  empyema, pyomyositis, bone or  joint infection  or meningitis  but excluding  pneumonia)",,,,,Misc,N/A,
+d8ace34f-9952-44e8-8ac9-d6cc27633ec0,,central nervous system toxoplasmosis(after one month of life),central nervous system toxoplasmosis(after one month of life),,,,,Misc,N/A,
+894f0a9a-d3fa-4137-a135-3f01f19ab5a5,,HIV encephalopathy,HIV encephalopathy,,,,,Misc,N/A,
+52cd5a57-147b-46eb-9aff-0ebab3605524,,Disseminated endemic mycosis(coccidiomycosis or histoplasmosis),Disseminated endemic mycosis(coccidiomycosis or histoplasmosis),,,,,Misc,N/A,
+fcc6d64f-0008-41f1-8957-c82076ae7910,,chronic  cryptosporidiosis(with diarrhea),chronic  cryptosporidiosis(with diarrhea),,,,,Misc,N/A,
+d7798e59-bf62-49da-b511-e639115ab881,,cerebral  or B-cell non- Hodgkin lymphoma,cerebral  or B-cell non- Hodgkin lymphoma,,,,,Misc,N/A,
+489ff20e-5f04-4ca2-a46c-a86acd29567b,,Clinical stage 4,Clinical stage 4,,,,,Question,Coded,"Atypical disseminated leishmaniasis;
+Chronic herpes simplex virus (HSV) infection (orolabial, genital or anorectal) > 1 month;
+Chronic isosporiasis;
+CNS toxoplasmosis;
+Cryptosporidiosis (with diarrhea lasting > 1 month);
+Cytomegalovirus disease (retinitis);
+Disseminated mycosis (coccidiomycosis, histoplasmosis);
+Disseminated nontuberculous mycobacteria infection;
+Esophageal Candidiasis;
+Extra pulmonary TB;
+Extra-pulmonary cryptococcosis (including meningitis);
+HIV Associated Dementia (HIV Encephalopathy);
+HIV wasting syndrome (>10% weight loss + chronic diarrhea or chronic fever);
+HIV-associated cardiomyopathy;
+HIV-associated nephropathy;
+Invasive cervical carcinoma;
+Kaposi sarcoma;
+Lymphoma (cerebral or B cell non-Hodgkin) or other solid HIV associated tumors;
+Pneumocystis pneumonia (PCP);
+Progressive multifocal leukoencephalopathy (PML);
+Recurrent bacterial pneumonia (this episode plus one or more episodes in last 6 months);
+unexplained severe wasting;
+stunting or severe malnutrition not responding  to standard therapy;
+recurrent severe bacterial infections(such as  empyema, pyomyositis, bone or  joint infection  or meningitis  but excluding  pneumonia);
+central nervous system toxoplasmosis(after one month of life);
+HIV encephalopathy;
+Disseminated endemic mycosis(coccidiomycosis or histoplasmosis);
+chronic  cryptosporidiosis(with diarrhea);
+cerebral  or B-cell non- Hodgkin lymphoma"
+7f77c914-aff6-4378-ad07-755ccf99353a,,Provider,Provider,,,,,Question,Text,

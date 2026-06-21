@@ -1,0 +1,1502 @@
+{
+  "name": "C. 6 - Personal, Family, and treatment history",
+  "published": true,
+  "retired": false,
+  "encounter": "Personal Family and treatment history",
+  "pages": [
+    {
+      "label": "Personal history",
+      "sections": [
+        {
+          "label": "Visit Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit Date",
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encDate",
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Personal history",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Is the Client Literate",
+              "type": "obs",
+              "required": true,
+              "id": "isPersonLiterate",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "159400AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Level of Education",
+              "type": "obs",
+              "required": false,
+              "id": "levelOfEducation",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "d426049e-8982-4bd6-b4d5-0ec54dc3b641",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Primary Education",
+                    "concept": "32d995db-14d2-4f80-a25c-a8822cbc60db"
+                  },
+                  {
+                    "label": "Secondary Education",
+                    "concept": "118ad39e-85ad-4509-bad2-b88ed67fa22a"
+                  },
+                  {
+                    "label": "Tertiary Institution",
+                    "concept": "685a7288-9863-44ed-8d35-6378dbb2bd25"
+                  },
+                  {
+                    "label": "University",
+                    "concept": "0ec46fe5-7195-4c00-a205-d8cf709036d1"
+                  }
+                ]
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "isPersonLiterate !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Clients Alcohol intake",
+              "type": "obs",
+              "required": true,
+              "id": "alcoholIntake",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "f77b636b-21e7-4568-9719-bbdd67c3c736",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "ec6c8192-0fa3-4d43-aecc-0ec700b8acfa",
+                    "label": "Habitual"
+                  },
+                  {
+                    "concept": "ec9aef4b-2cd1-40d6-83d8-d331e682ca9e",
+                    "label": "Social"
+                  },
+                  {
+                    "concept": "d228c63f-212d-4214-a68f-6880297a29a0",
+                    "label": "Not Use"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Drug allergies",
+              "type": "obs",
+              "required": true,
+              "id": "drugAllergies",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "0ca3ffa7-0d29-4043-8b78-3dd40f5806d1",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Drug allergic to",
+              "type": "obs",
+              "required": false,
+              "id": "drugAllergicTo",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "ca1c450e-8be4-4c95-8055-e7229836ebbd",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "hide": {
+                "hideWhenExpression": "drugAllergies !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
+              "validators": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Family history",
+      "sections": [
+        {
+          "label": "",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Marital status",
+              "type": "obs",
+              "required": true,
+              "id": "maritialStatus",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "fdcd966e-0870-4d5d-a506-121efc0c39fb",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Single",
+                    "concept": "c0009f16-4675-4474-bd56-ff6766eda682"
+                  },
+                  {
+                    "label": "Married, monogamous",
+                    "concept": "2a328f83-cbe4-457e-b0f3-5063aff3d6bf"
+                  },
+                  {
+                    "label": "Married, polygamous",
+                    "concept": "f6025192-1116-4184-b281-bd7fbd975881"
+                  },
+                  {
+                    "label": "Divorced/separated",
+                    "concept": "3b451011-f8e9-4d9e-8dc7-432e8cc69243"
+                  },
+                  {
+                    "label": "Windowed",
+                    "concept": "fcf34be1-20fd-41b0-8562-8e123ed40145"
+                  },
+                  {
+                    "label": "Not applicable",
+                    "concept": "608f6df4-bc19-4afa-a1ff-58f407389221"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Occupation",
+              "type": "obs",
+              "required": true,
+              "id": "occupation",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "c221869a-3f10-11e4-adec-0800271c1b75",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "c2222941-3f10-11e4-adec-0800271c1b75",
+                    "label": "Unemployed"
+                  },
+                  {
+                    "concept": "0819d4ce-4da6-4b89-9c6c-e2878b842f85",
+                    "label": "Student"
+                  },
+                  {
+                    "concept": "d56c17b5-501a-4d2d-b1bb-2cb80e4da056",
+                    "label": "Housewife"
+                  },
+                  {
+                    "concept": "f3518564-c580-4663-acce-021369fea26f",
+                    "label": "Salaried Employee"
+                  },
+                  {
+                    "concept": "3be283c2-a773-419f-98e0-9b912d26f5f9",
+                    "label": "Military Personnel"
+                  },
+                  {
+                    "concept": "3d124657-7776-4f0d-9e96-49f14b20d7f4",
+                    "label": "Other uniformed forces"
+                  },
+                  {
+                    "concept": "94d8dc78-0e00-4525-81bc-31db6961bc5e",
+                    "label": "Business/trader"
+                  },
+                  {
+                    "concept": "0c493079-9882-47e5-9a10-361405560678",
+                    "label": "Farmer"
+                  },
+                  {
+                    "concept": "f6ae430a-a197-426e-b54f-08f45fae0ad0",
+                    "label": "Other (Specify)"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Other Occupation",
+              "type": "obs",
+              "required": false,
+              "id": "otherSpecifyOccupation",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "9e9df8b6-3bad-454e-a2fc-04842d02d62a",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "hide": {
+                "hideWhenExpression": "occupation !== 'f6ae430a-a197-426e-b54f-08f45fae0ad0'"
+              },
+              "validators": []
+            },
+            {
+              "label": "General Family Info",
+              "type": "obsGroup",
+              "required": false,
+              "id": "generalFamilyInfo",
+              "questionOptions": {
+                "rendering": "repeating",
+                "concept": "63ec7ffb-8a42-42ec-9aaa-4758955205b2"
+              },
+              "questions": [
+                {
+                  "label": "Family Member Name",
+                  "id": "familyMembersNames",
+                  "required": false,
+                  "questionOptions": {
+                    "answers": [],
+                    "concept": "1074cef5-e4f9-470d-aaea-a4d8d7436c49",
+                    "rendering": "text"
+                  },
+                  "type": "obs",
+                  "validators": []
+                },
+                {
+                  "label": "Family Member Date of Birth Known?",
+                  "id": "familyMemberAgeKnown",
+                  "required": false,
+                  "questionOptions": {
+                    "concept": "320d6da4-b148-4392-ab22-0564d898f9a1",
+                    "rendering": "radio",
+                    "answers": [
+                      {
+                        "label": "Yes",
+                        "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      },
+                      {
+                        "label": "No",
+                        "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      }
+                    ]
+                  },
+                  "type": "obs",
+                  "validators": []
+                },
+                {
+                  "label": "Family Member DOB",
+                  "id": "familyMemberDOB",
+                  "required": false,
+                  "questionOptions": {
+                    "concept": "c6bc4aaa-2389-43c7-b108-40b00abf80e3",
+                    "rendering": "date"
+                  },
+                  "type": "obs",
+                  "validators": [
+                    {
+                      "type": "date",
+                      "allowFutureDates": "false"
+                    }
+                  ],
+                  "hide": {
+                    "hideWhenExpression": "familyMemberAgeKnown !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  }
+                },
+                {
+                  "label": "Estimate Family Member Age",
+                  "id": "familyMemberAge",
+                  "required": false,
+                  "questionOptions": {
+                    "answers": [],
+                    "concept": "db25b3c5-10da-49a9-9137-cc8a2507585a",
+                    "rendering": "number",
+                    "min": "0",
+                    "max": "120"
+                  },
+                  "type": "obs",
+                  "validators": [
+                    {
+                      "type": "js_expression",
+                      "failsWhenExpression": "familyMemberAge < 0 || familyMemberAge > 120",
+                      "message": "Age cannot be negative and cannot exceed 120"
+                    }
+                  ],
+                  "hide": {
+                    "hideWhenExpression": "familyMemberAgeKnown !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  }
+                },
+                {
+                  "label": "Sex",
+                  "id": "familyMemberSex",
+                  "required": false,
+                  "questionOptions": {
+                    "answers": [
+                      {
+                        "label": "Male",
+                        "concept": "544634f2-4c08-48b0-9b2b-35251189a59b"
+                      },
+                      {
+                        "label": "Female",
+                        "concept": "e74aebd1-51b5-424f-b9f0-339fd8cd3588"
+                      }
+                    ],
+                    "concept": "d969948d-6671-4149-a234-7b991c70e1c1",
+                    "rendering": "radio"
+                  },
+                  "type": "obs",
+                  "validators": []
+                },
+                {
+                  "label": "HIV Status",
+                  "id": "familyMemberHIVStatus",
+                  "questionOptions": {
+                    "answers": [
+                      {
+                        "label": "Positive",
+                        "concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      },
+                      {
+                        "label": "Negative",
+                        "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      },
+                      {
+                        "label": "Do not know",
+                        "concept": "9024e06b-ec26-4d13-a876-70ea1eebfa3e"
+                      }
+                    ],
+                    "concept": "160f21c0-9a96-4ffd-a72c-aabed02b6a53",
+                    "rendering": "radio"
+                  },
+                  "type": "obs",
+                  "validators": []
+                },
+                {
+                  "label": "On ART",
+                  "id": "familyMemberOnART",
+                  "required": false,
+                  "questionOptions": {
+                    "concept": "48741238-7ad4-42f0-a1f4-d2bb6b355614",
+                    "rendering": "radio",
+                    "answers": [
+                      {
+                        "label": "Yes",
+                        "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      },
+                      {
+                        "label": "No",
+                        "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      }
+                    ]
+                  },
+                  "type": "obs",
+                  "validators": [],
+                  "hide": {
+                    "hideWhenExpression": "familyMemberHIVStatus !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  }
+                },
+                {
+                  "label": "Unique ART No",
+                  "type": "obs",
+                  "required": false,
+                  "id": "artOrHeiNo",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "7bec5791-6cdc-4fe4-bfbb-89cbf3ab03b4"
+                  },
+                  "hide": {
+                    "hideWhenExpression": "isEmpty(familyMemberOnART) || familyMemberOnART !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  },
+                  "validators": [
+                    {
+                      "type": "js_expression",
+                      "failsWhenExpression": "artOrHeiNo && !artOrHeiNo.match(/^(?:TI-)?[A-Z]{2,8}\\/[A-Z]{2,4}\\/[0-9]{5}$/)",
+                      "message": "The patient identifier should match the following format 'CES/JHT/00005' or 'TI-CES/JHT/00005' for transfer in clients"
+                    }
+                  ],
+                  "alert": {
+                    "alertWhenExpression": "artOrHeiNo && !artOrHeiNo.match(/^(?:TI-)?[A-Z]{2,8}\\/[A-Z]{2,4}\\/[0-9]{5}$/)",
+                    "message": "The patient identifier should match the following format 'CES/JHT/00005' or 'TI-CES/JHT/00005' for transfer in clients"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Index Mapping",
+      "sections": [
+        {
+          "label": "Index client Partner(s) and biological child(ren) mapping and testing form",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Family Info",
+              "type": "obsGroup",
+              "required": false,
+              "id": "indexFamilyInfo",
+              "questionOptions": {
+                "rendering": "repeating",
+                "concept": "1c0765df-7108-4353-9970-06cf3ce0782e"
+              },
+              "questions": [
+                {
+                  "label": "Individual name",
+                  "id": "indexFamilyMembersNames",
+                  "required": false,
+                  "questionOptions": {
+                    "answers": [],
+                    "concept": "375ea4eb-6932-42a2-b675-aa6d347f975e",
+                    "rendering": "text"
+                  },
+                  "type": "obs",
+                  "validators": []
+                },
+                {
+                  "label": "Family Member Date of Birth Known?",
+                  "id": "indexFamilyMemberAgeKnown",
+                  "required": false,
+                  "questionOptions": {
+                    "concept": "5f047a36-063c-4ad5-bbb6-65641a37fe75",
+                    "rendering": "radio",
+                    "answers": [
+                      {
+                        "label": "Yes",
+                        "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      },
+                      {
+                        "label": "No",
+                        "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      }
+                    ]
+                  },
+                  "type": "obs",
+                  "validators": []
+                },
+                {
+                  "label": "Index Family Member DOB",
+                  "id": "indexFamilyMemberDOB",
+                  "required": false,
+                  "questionOptions": {
+                    "concept": "831b34f3-9f76-400c-abdb-92164bc40fcf",
+                    "rendering": "date"
+                  },
+                  "type": "obs",
+                  "validators": [
+                    {
+                      "type": "date",
+                      "isAllowedFutureDates": "false"
+                    }
+                  ],
+                  "hide": {
+                    "hideWhenExpression": "indexFamilyMemberAgeKnown !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  }
+                },
+                {
+                  "label": "Estimate Index - Family Member Age",
+                  "id": "indexFamilyMemberAge",
+                  "required": false,
+                  "questionOptions": {
+                    "answers": [],
+                    "concept": "638fc8c1-bde8-433f-a50c-7562385b580c",
+                    "rendering": "number",
+                    "min": "0",
+                    "max": "120"
+                  },
+                  "type": "obs",
+                  "validators": [
+                    {
+                      "type": "js_expression",
+                      "failsWhenExpression": "indexFamilyMemberAge < 0 || indexFamilyMemberAge > 120",
+                      "message": "Age cannot be negative and cannot exceed 120"
+                    }
+                  ],
+                  "hide": {
+                    "hideWhenExpression": "indexFamilyMemberAgeKnown !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  }
+                },
+                {
+                  "label": "Sex",
+                  "id": "indexFamilyMemberSex",
+                  "required": false,
+                  "questionOptions": {
+                    "answers": [
+                      {
+                        "label": "Male",
+                        "concept": "544634f2-4c08-48b0-9b2b-35251189a59b"
+                      },
+                      {
+                        "label": "Female",
+                        "concept": "e74aebd1-51b5-424f-b9f0-339fd8cd3588"
+                      }
+                    ],
+                    "concept": "9d030f9b-a181-41c9-a52b-2a965b2a5836",
+                    "rendering": "radio"
+                  },
+                  "type": "obs",
+                  "validators": []
+                },
+                {
+                  "label": "Relationship",
+                  "type": "obs",
+                  "id": "indexFamilyMemberrelationship",
+                  "required": false,
+                  "questionOptions": {
+                    "rendering": "select",
+                    "concept": "2eed6753-c2b7-4b85-a099-a78beb4eaff3",
+                    "conceptMappings": [],
+                    "answers": [
+                      {
+                        "concept": "16b2b91e-a357-4407-b3c1-d9d634ff1e5d",
+                        "label": "Mother"
+                      },
+                      {
+                        "concept": "e3036b78-b41e-45b8-965e-6ae87584a7be",
+                        "label": "Father"
+                      },
+                      {
+                        "concept": "fe01b63c-289f-4e87-9e6d-46376cb3dcf6",
+                        "label": "Sexual"
+                      },
+                      {
+                        "concept": "5fd33475-6a79-4987-9376-5651de230262",
+                        "label": "Brother"
+                      },
+                      {
+                        "concept": "10c9b5c5-80b7-432a-97f6-a15e711e9832",
+                        "label": "Sister"
+                      },
+                      {
+                        "concept": "7d563689-1e2f-4d18-8407-c08361397d93",
+                        "label": "Child"
+                      },
+                      {
+                        "concept": "14467f43-c872-414b-945f-ad316a6ddf1b",
+                        "label": "Spouse"
+                      }
+                    ]
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "Phone Number",
+                  "id": "indexFamilyMemberPhoneNumberKnownUnknown",
+                  "required": false,
+                  "type": "obs",
+                  "questionOptions": {
+                    "answers": [
+                      {
+                        "label": "Known",
+                        "concept": "c91e78ca-dee2-4149-b0c9-3270bfff5357"
+                      },
+                      {
+                        "label": "Unknown",
+                        "concept": "4a30682d-93e1-4afa-93e6-c87e3c99c31d"
+                      }
+                    ],
+                    "concept": "cce02a4f-9212-4a85-8e55-0d8f6814e393",
+                    "rendering": "radio"
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "Enter Phone Number",
+                  "id": "familyMemberPhoneNumber",
+                  "required": false,
+                  "questionOptions": {
+                    "answers": [],
+                    "concept": "ea7dbf27-e84d-43a3-bbac-d7bb06ff1f23",
+                    "rendering": "text"
+                  },
+                  "type": "obs",
+                  "hide": {
+                    "hideWhenExpression": "isEmpty(indexFamilyMemberPhoneNumberKnownUnknown) || indexFamilyMemberPhoneNumberKnownUnknown !== 'c91e78ca-dee2-4149-b0c9-3270bfff5357' "
+                  },
+                  "validators": [
+                    {
+                      "type": "js_expression",
+                      "failsWhenExpression": "familyMemberPhoneNumber && !(/^\\+[0-9]{1,3}[0-9]{9,9}$/).test(familyMemberPhoneNumber)",
+                      "message": "The phone number should start with a country code, e.g., +211, and should be at least 9 digits after the country code."
+                    }
+                  ],
+                  "alert": {
+                    "alertWhenExpression": "familyMemberPhoneNumber && !(/^\\+[0-9]{1,3}[0-9]{9,9}$/).test(familyMemberPhoneNumber)",
+                    "message": "The phone number should start with a country code, e.g., +211, and should be at least 9 digits after the country code."
+                  }
+                },
+                {
+                  "label": "HIV status during mapping",
+                  "id": "indexFamilyMemberHivDuringMapping",
+                  "required": false,
+                  "type": "obs",
+                  "questionOptions": {
+                    "answers": [
+                      {
+                        "label": "Known",
+                        "concept": "c1c0789b-eaee-4e25-bd1a-600b2c15a19f"
+                      },
+                      {
+                        "label": "Unknown",
+                        "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      }
+                    ],
+                    "concept": "03ae7466-a616-42d8-b827-46024c88a831",
+                    "rendering": "radio"
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "HIV Status",
+                  "id": "indexFamilyMemberHIVStatus",
+                  "required": false,
+                  "questionOptions": {
+                    "answers": [
+                      {
+                        "label": "Positive",
+                        "concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      },
+                      {
+                        "label": "Negative",
+                        "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      }
+                    ],
+                    "concept": "a3014f0a-31ce-4477-9ae4-d686f0e6cea8",
+                    "rendering": "radio"
+                  },
+                  "type": "obs",
+                  "hide": {
+                    "hideWhenExpression": "isEmpty(indexFamilyMemberHivDuringMapping) || indexFamilyMemberHivDuringMapping !== 'c1c0789b-eaee-4e25-bd1a-600b2c15a19f' "
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "Date HIV Tested",
+                  "type": "obs",
+                  "required": false,
+                  "id": "dateHivTested",
+                  "questionOptions": {
+                    "rendering": "date",
+                    "concept": "11dc9dd8-bba8-4e4e-a2a3-528d9082d153",
+                    "conceptMappings": [],
+                    "answers": []
+                  },
+                  "hide": {
+                    "hideWhenExpression": "isEmpty(indexFamilyMemberHivDuringMapping) || indexFamilyMemberHivDuringMapping !== 'c1c0789b-eaee-4e25-bd1a-600b2c15a19f'"
+                  },
+                  "validators": [
+                    {
+                      "type": "date",
+                      "allowFutureDates": "false"
+                    }
+                  ]
+                },
+                {
+                  "label": "HTS Tested?",
+                  "id": "htsTested",
+                  "required": false,
+                  "questionOptions": {
+                    "answers": [
+                      {
+                        "label": "Yes",
+                        "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      },
+                      {
+                        "label": "No",
+                        "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      }
+                    ],
+                    "concept": "7a55ed45-6de2-4c3a-b88e-4de25a898148",
+                    "rendering": "radio"
+                  },
+                  "type": "obs",
+                  "hide": {
+                    "hideWhenExpression": "indexFamilyMemberHIVStatus !== '9024e06b-ec26-4d13-a876-70ea1eebfa3e'"
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "Results of HTS",
+                  "id": "resultsOfHts",
+                  "required": false,
+                  "questionOptions": {
+                    "answers": [
+                      {
+                        "label": "Positive",
+                        "concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      },
+                      {
+                        "label": "Negative",
+                        "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      },
+                      {
+                        "label": "Inconclusive",
+                        "concept": "f2c2cdcf-550f-427c-96af-52b6a12c3d42"
+                      }
+                    ],
+                    "concept": "75e39180-fe17-4075-9642-f389e6d1ea20",
+                    "rendering": "radio"
+                  },
+                  "type": "obs",
+                  "hide": {
+                    "hideWhenExpression": "htsTested !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "On ART",
+                  "id": "indexFamilyMemberOnART",
+                  "type": "obs",
+                  "required": false,
+                  "questionOptions": {
+                    "concept": "48741238-7ad4-42f0-a1f4-d2bb6b355614",
+                    "rendering": "radio",
+                    "answers": [
+                      {
+                        "label": "Yes",
+                        "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      },
+                      {
+                        "label": "No",
+                        "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      }
+                    ]
+                  },
+                  "hide": {
+                    "hideWhenExpression": "indexFamilyMemberHIVStatus !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || resultsOfHts === '4e863543-07ed-4e81-9452-9e309007e713'"
+                  }
+                },
+                {
+                  "label": "Unique ART No/HEI No",
+                  "type": "obs",
+                  "required": false,
+                  "id": "indexFamilyMemberARTNo",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "218e861d-393a-4871-9bc3-c9d0effdb073"
+                  },
+                  "hide": {
+                    "hideWhenExpression": "indexFamilyMemberOnART !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  }
+                }
+              ],
+              "validators": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Antiretroviral Treatment History",
+      "sections": [
+        {
+          "label": "",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Were ARVs received before",
+              "type": "obs",
+              "required": true,
+              "id": "arvReceived",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "4ba4ea3a-a4dc-41c0-94ab-89a1985f9354",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "If Yes, ARVs Received in",
+              "type": "obs",
+              "required": false,
+              "id": "arvReceivedYesMale",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "6d75a232-9d41-46b6-a986-0551ce0b99c1",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "PEP",
+                    "concept": "bcb584dd-d241-4c2f-a6b6-88b01a1ae13f"
+                  },
+                  {
+                    "label": "Earlier ART not Transfer in",
+                    "concept": "066b35ad-f206-4d00-992a-b068ff9f8089"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'F' || isEmpty(arvReceived) || arvReceived !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
+              "validators": []
+            },
+            {
+              "label": "If Yes, ARVs Received in",
+              "type": "obs",
+              "required": false,
+              "id": "arvReceivedYesFemaleChild",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "6d75a232-9d41-46b6-a986-0551ce0b99c1",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "PEP",
+                    "concept": "bcb584dd-d241-4c2f-a6b6-88b01a1ae13f"
+                  },
+                  {
+                    "label": "Earlier ART not Transfer in",
+                    "concept": "066b35ad-f206-4d00-992a-b068ff9f8089"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'M' || age > 15 || isEmpty(arvReceived) || arvReceived !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
+              "validators": []
+            },
+            {
+              "label": "If Yes, ARVs Received in",
+              "type": "obs",
+              "required": false,
+              "id": "arvReceivedYes",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "6d75a232-9d41-46b6-a986-0551ce0b99c1",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "PMTCT",
+                    "concept": "650ae97a-24cb-4745-b9b6-ef4e941793c1"
+                  },
+                  {
+                    "label": "PEP",
+                    "concept": "bcb584dd-d241-4c2f-a6b6-88b01a1ae13f"
+                  },
+                  {
+                    "label": "Earlier ART not Transfer in",
+                    "concept": "066b35ad-f206-4d00-992a-b068ff9f8089"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'M' || age <= 15 || isEmpty(arvReceived) || arvReceived !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
+              "validators": []
+            },
+            {
+              "label": "Place",
+              "type": "obs",
+              "required": false,
+              "id": "placeARVRecieved",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "368dfc46-41a0-4a43-b945-f10ede2ac683",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Private Health Facility",
+                    "concept": "7bd302fa-343c-4b1b-8270-70d96468e6a6"
+                  },
+                  {
+                    "label": "Government",
+                    "concept": "c223fe8d-3f10-11e4-adec-0800271c1b75"
+                  },
+                  {
+                    "label": "other healthcare facility",
+                    "concept": "4fdc5b5b-ff7a-4bdf-920f-92276ef6c07f"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(arvReceived) || arvReceived !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
+              "validators": []
+            },
+            {
+              "label": "Other healthcare facility, Specify",
+              "type": "obs",
+              "required": false,
+              "id": "otherHealthCareFacility",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "c1e201d9-9031-4e19-8b7b-17cde30a3f66",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(placeARVRecieved) || placeARVRecieved !== '4fdc5b5b-ff7a-4bdf-920f-92276ef6c07f'"
+              },
+              "validators": []
+            },
+            {
+              "label": "Drugs and Duration, Start Date",
+              "type": "obs",
+              "required": false,
+              "id": "drugsAndDurationStartDate",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "f7514566-e818-4034-a40e-f9d992d2860a",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(arvReceived) || arvReceived !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
+              "validators": []
+            },
+            {
+              "label": "Drugs and Duration, Stop Date",
+              "type": "obs",
+              "required": false,
+              "id": "drugsAndDurationStopDate",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "7528b97c-ad0b-41c7-8bed-6c41acb20272",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(arvReceived) || arvReceived !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
+              "validators": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "CTX or Daspone",
+      "sections": [
+        {
+          "label": "CTX or Daspone Start Date",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Is CTX/Dapsone given?",
+              "type": "obs",
+              "required": true,
+              "id": "sectionBlank",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "dc60a613-0676-410b-a3aa-54a9ccfa822f",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "CTX or Daspone Start Date",
+              "type": "obs",
+              "required": false,
+              "id": "ctxStartDate",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "1f228c68-9628-4426-845b-0eca70d003df",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(sectionBlank) || sectionBlank !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Milestones",
+      "sections": [
+        {
+          "label": "",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "At Start of ART Date",
+              "id": "mileStonesDate",
+              "required": true,
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('73779d67-7e8f-46fe-b723-8879838da5f8')) ? '' : HD.getObject('prevEnc').getValue('73779d67-7e8f-46fe-b723-8879838da5f8')",
+              "questionOptions": {
+                "answers": [],
+                "concept": "73779d67-7e8f-46fe-b723-8879838da5f8",
+                "rendering": "date"
+              },
+              "type": "obs",
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "WHO Stage",
+              "id": "whoStage",
+              "required": true,
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('e38e6ce2-92d9-4382-927b-5555ff9fa850')) ? '' : HD.getObject('prevEnc').getValue('e38e6ce2-92d9-4382-927b-5555ff9fa850')",
+              "questionOptions": {
+                "concept": "e38e6ce2-92d9-4382-927b-5555ff9fa850",
+                "rendering": "select",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "WHO Stage 1",
+                    "concept": "88f2a6ea-367d-45dc-942a-b809b0d17275"
+                  },
+                  {
+                    "label": "WHO Stage 2",
+                    "concept": "17a3b24b-e107-49fe-8b0d-69c3b7e60f4c"
+                  },
+                  {
+                    "label": "WHO Stage 3",
+                    "concept": "ebd187f8-d15a-4fad-8849-9f74da5c3fc9"
+                  },
+                  {
+                    "label": "WHO Stage 4",
+                    "concept": "831d263e-4dfb-4f05-bcfb-629961c07844"
+                  }
+                ]
+              },
+              "type": "obs",
+              "validators": []
+            },
+            {
+              "label": "Weight(Kg)",
+              "id": "weight",
+              "required": false,
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? '' : HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
+              "questionOptions": {
+                "answers": [],
+                "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "numeric"
+              },
+              "type": "obs",
+              "validators": []
+            },
+            {
+              "label": "Height(cm)",
+              "id": "height",
+              "required": false,
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? '' : HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
+              "questionOptions": {
+                "answers": [],
+                "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "numeric"
+              },
+              "type": "obs",
+              "hide": {
+                "hideWhenExpression": "age < 2"
+              },
+              "validators": []
+            },
+            {
+              "label": "Length for child < 2yrs",
+              "id": "lengthChild",
+              "required": false,
+              "questionOptions": {
+                "answers": [],
+                "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "numeric"
+              },
+              "type": "obs",
+              "hide": {
+                "hideWhenExpression": "age >= 2"
+              },
+              "validators": []
+            },
+            {
+              "label": "Is CD4 Done?",
+              "required": true,
+              "type": "obs",
+              "id": "cd4Done",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "2652c9e7-72c5-48ae-b6ee-0bd3dcb65fca",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "CD4 Count",
+              "id": "cd4Count",
+              "required": false,
+              "questionOptions": {
+                "answers": [],
+                "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
+                "rendering": "numeric",
+                "min": 0
+              },
+              "type": "obs",
+              "hide": {
+                "hideWhenExpression": "age <= 5 || cd4Done !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "cd4Count < 0",
+                  "message": "CD4 Count should not be less than 0"
+                }
+              ]
+            },
+            {
+              "label": "CD4 %",
+              "id": "cd4CountPercentage",
+              "required": false,
+              "questionOptions": {
+                "answers": [],
+                "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
+                "rendering": "numeric",
+                "min": 0
+              },
+              "type": "obs",
+              "hide": {
+                "hideWhenExpression": "age > 5 || cd4Done !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "cd4CountPercentage < 0 || cd4CountPercentage > 100",
+                  "message": "CD4% should not be less than 0 or above 100%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Antiretroviral Treatment ",
+      "sections": [
+        {
+          "label": "",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "ART readiness confirmed by",
+              "id": "artReadinessConfirmed",
+              "required": true,
+              "questionOptions": {
+                "answers": [],
+                "concept": "14a4cf16-3781-4d5b-8a50-8e095d6a7cc6",
+                "rendering": "text"
+              },
+              "type": "obs",
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "!/[a-zA-Z]/.test(artReadinessConfirmed)",
+                  "message": "Input must include at least one letter."
+                }
+              ]
+            },
+            {
+              "label": "ART Readiness Confirmation Date",
+              "id": "artReadiness",
+              "required": true,
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('436e5ca5-a5ad-42e3-9a73-4325b82693ca')) ? '' : HD.getObject('prevEnc').getValue('436e5ca5-a5ad-42e3-9a73-4325b82693ca')",
+              "questionOptions": {
+                "answers": [],
+                "concept": "436e5ca5-a5ad-42e3-9a73-4325b82693ca",
+                "rendering": "date"
+              },
+              "type": "obs",
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Initial ART regimen",
+              "id": "intialArtRegimen",
+              "required": true,
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('23322fd6-3dbb-410e-8bee-6210dfcd5f71')) ? '' : HD.getObject('prevEnc').getValue('23322fd6-3dbb-410e-8bee-6210dfcd5f71')",
+              "questionOptions": {
+                "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
+                "rendering": "select",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "1a = AZT/3TC+EFV",
+                    "concept": "9062c6d9-a650-44d2-8929-da84f617c427"
+                  },
+                  {
+                    "label": "1b = AZT/3TC/NVP",
+                    "concept": "c22e6700-a937-4909-b4ad-e82ff51325ac"
+                  },
+                  {
+                    "label": "1c = TDF/3TC/DTG",
+                    "concept": "a00d9620-e88b-4c2f-9293-b1ac9e5943f2"
+                  },
+                  {
+                    "label": "1d=ABC/3TC (600/300)/DTG",
+                    "concept": "5d500ca2-350a-49ee-a3d4-f340db32ff31"
+                  },
+                  {
+                    "label": "1e = AZT/3TC +DTG",
+                    "concept": "3fd242a8-7ade-463c-8919-d82573ea8526"
+                  },
+                  {
+                    "label": "1f = TDF/3TC+EFV",
+                    "concept": "91f5d0d6-eb81-484f-9376-4bfb926a5a81"
+                  },
+                  {
+                    "label": "1g = TDF/3TC+NVP",
+                    "concept": "0dd3e78f-e1fc-47de-95bc-1f489d0dfcc5"
+                  },
+                  {
+                    "label": "1h = TDF/FTC/EFV",
+                    "concept": "4a86fbee-07a9-422a-bf69-16256c0c2b8b"
+                  },
+                  {
+                    "label": "1J = TDF/FTC+NVP",
+                    "concept": "03224cae-f115-4814-bd53-c99c72288446"
+                  },
+                  {
+                    "label": "2a=AZT/3TC+DTG",
+                    "concept": "bd97cacd-4a91-4901-8803-3a4a2e5f1ca8"
+                  },
+                  {
+                    "label": "2b=ABC/3TC+DTG",
+                    "concept": "ad6ff4ef-769e-4aec-b8bb-7f033fe6aaaa"
+                  },
+                  {
+                    "label": "2c=TDF+3TC+LPV/r",
+                    "concept": "47167ec1-4957-4d0a-a58c-3894bdeb93ff"
+                  },
+                  {
+                    "label": "2d=TDF/3TC+ATV/r",
+                    "concept": "e649a0ec-e193-4af0-bb49-02687107a893"
+                  },
+                  {
+                    "label": "2e=TDF/FTC-LPV/r",
+                    "concept": "accca537-b8ee-41ec-b902-7de814d099b2"
+                  },
+                  {
+                    "label": "2f=TDF/FTC-ATV/r",
+                    "concept": "77f201fc-aefc-4068-baa7-cb3284782a38"
+                  },
+                  {
+                    "label": "2g=AZT/3TC+LPV/r",
+                    "concept": "cb0f9fcd-fb52-493f-95aa-d0197387fbdb"
+                  },
+                  {
+                    "label": "2h=AZT/3TC+ATV/r",
+                    "concept": "28790bde-81db-4490-806b-ac10c17b41dc"
+                  },
+                  {
+                    "label": "2i=ABC/3TC+LPV/r",
+                    "concept": "aae69cae-2806-4e8b-a916-f22ed733a19b"
+                  },
+                  {
+                    "label": "2j=ABC/3TC+ATV/r",
+                    "concept": "64336206-c9bc-4d37-accf-c7abac7a37f6"
+                  },
+                  {
+                    "label": "2k=TDF/3TC/DTG",
+                    "concept": "25f0cca5-902d-4e36-9e4f-5ce5da744a75"
+                  },
+                  {
+                    "label": "4a = AZT/3TC+NVP",
+                    "concept": "c224b116-27ec-4156-93ba-d4838a3ac1c0"
+                  },
+                  {
+                    "label": "4b = AZT/3TC +EFV",
+                    "concept": "5efe8d99-c65e-4136-8820-5f3646437ff7"
+                  },
+                  {
+                    "label": "4c = ABC/3TC (120/60) + LPV/r",
+                    "concept": "f8f64be8-ccb4-404d-b99e-3c4975155da5"
+                  },
+                  {
+                    "label": "4d = ABC/3TC (120/60) +DTG",
+                    "concept": "28c5d192-ba71-4ef5-8604-ecf6bd177126"
+                  },
+                  {
+                    "label": "4e = ABC/3TC (120/60)+DTG10",
+                    "concept": "3eaf04dc-e284-42f7-860e-02cda37cf230"
+                  },
+                  {
+                    "label": "4f = ABC/3TC +NVP",
+                    "concept": "0372f3fb-5e8a-474f-8250-01af7a485778"
+                  },
+                  {
+                    "label": "4g = TDF/3TC (120/60) + EFV (200mg)",
+                    "concept": "ce2412c4-a041-4328-bfaa-35e041ca4802"
+                  },
+                  {
+                    "label": "4h = TDF/FTC/EFV",
+                    "concept": "6ed47806-8809-4c5a-a1b6-fe2ec0158563"
+                  },
+                  {
+                    "label": "4i = ABC/3TC +LPV/r",
+                    "concept": "f6b1c6ea-b0a2-46a0-b7e0-3038d268356c"
+                  },
+                  {
+                    "label": "4J = AZT/3TC (60/30)+LPV/r",
+                    "concept": "2e1ab9d3-7fe1-48ba-a12c-fd8d26bc161d"
+                  },
+                  {
+                    "label": "4k = TDF/3TC+NVP",
+                    "concept": "99f54f96-e761-4d86-bb1b-0abc2a24fa16"
+                  },
+                  {
+                    "label": "4l = ABC +3TC + AZT",
+                    "concept": "5287f2a4-23e5-4314-b60c-0a4b91753ec6"
+                  },
+                  {
+                    "label": "5a = AZT/3TC+LPV/r",
+                    "concept": "b23cf614-dfec-48c9-a12f-ba577e28347d"
+                  },
+                  {
+                    "label": "5b = AZT/3TC +RAL",
+                    "concept": "dabc93c3-8c3d-41e1-b3e3-d7e14c4765b6"
+                  },
+                  {
+                    "label": "5c = ABC/3TC (120/60) + RAL",
+                    "concept": "da3c6710-c431-4582-a444-a466d54693ec"
+                  },
+                  {
+                    "label": "5d = AZT/3TC +ATV/r",
+                    "concept": "6c383d11-2b29-4cc2-bfa4-811ff7a988f1"
+                  },
+                  {
+                    "label": "5e = ABC/3TC + ATV/r",
+                    "concept": "82725d14-00c6-4864-bf8b-ad5db0b3c3fa"
+                  },
+                  {
+                    "label": "5f = TDF/3TC + ATV/r",
+                    "concept": "140ede93-5691-463b-9d17-2dc8834621f8"
+                  },
+                  {
+                    "label": "5g = AZT/3TC +DTG",
+                    "concept": "06017ac1-2ce8-4689-a3bf-4e9f3d54978f"
+                  },
+                  {
+                    "label": "5h = ABC/3TC + DTG*",
+                    "concept": "2c0a5b91-7b2a-4f8e-86fd-a8007841fca8"
+                  },
+                  {
+                    "label": "5i = ABC/3TC +LPV/r",
+                    "concept": "50b60d77-186d-4a0d-8784-659ee2d60ec9"
+                  },
+                  {
+                    "label": "5j = AZT/3TC (120/60) + DTG10",
+                    "concept": "78e49624-0e33-4374-93b7-60b132b26dae"
+                  },
+                  {
+                    "label": "Other",
+                    "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
+                  }
+                ]
+              },
+              "type": "obs",
+              "validators": []
+            },
+            {
+              "label": "Other ARV Regimen Specify",
+              "id": "otherInitialRegimenSpecify",
+              "required": false,
+              "questionOptions": {
+                "answers": [],
+                "concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
+                "rendering": "text"
+              },
+              "type": "obs",
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "intialArtRegimen !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
+              }
+            },
+            {
+              "label": "Cohort (MM/YYYY)",
+              "id": "cohort",
+              "required": true,
+              "questionOptions": {
+                "concept": "9683e455-6f3b-4ee9-b2b3-a4a8d77fcef8",
+                "rendering": "text"
+              },
+              "type": "obs",
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "cohort && !cohort.match(/^(0[1-9]|1[0-2])\\/\\d{4}$/)",
+                  "message": "The cohort should match the format 'MM/YYYY' (e.g., '02/2024')"
+                }
+              ],
+              "alert": {
+                "alertWhenExpression": "cohort && !cohort.match(/^(0[1-9]|1[0-2])\\/\\d{4}$/)",
+                "message": "The cohort should match the format 'MM/YYYY' (e.g., '02/2024')"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "0e9f540d-92cb-43c9-a95c-9407f5bf3f2a",
+  "referencedForms": [],
+  "uuid": "xxxxx",
+  "description": "A form to capture HIV Care and ART card information",
+  "version": "1.0.0"
+}

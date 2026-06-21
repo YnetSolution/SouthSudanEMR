@@ -1,0 +1,257 @@
+{
+  "name": "I. 11 - Return to treatment form",
+  "published": true,
+  "retired": false,
+  "encounter": "ART treatment interruption",
+  "pages": [
+    {
+      "label": "Return to treatment form",
+      "sections": [
+        {
+          "label": "Visit Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit Date",
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encDate",
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Return to treatment form",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date Client became IIT",
+              "type": "obs",
+              "required": false,
+              "id": "dateOfLastVisit",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "773cd838-7b21-4f34-9b33-0a071140f817",
+                "conceptMappings": [],
+                "answers": [],
+                "calculate": {
+                  "calculateExpression": "api.getLatestObs(patient.id, '494915d8-4cf3-4c24-9efa-371710992cb3').then(obs => obs && obs.valueDateTime ? new Date(new Date(obs.valueDateTime).setDate(new Date(obs.valueDateTime).getDate() + 28)).toISOString().split('T')[0] : '')"
+                }
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Restarted?",
+              "type": "obs",
+              "required": true,
+              "id": "restartedInTreatment",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "4913c7f0-3362-4407-8d48-4b115f2f59dd",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Date if restarted",
+              "type": "obs",
+              "required": false,
+              "id": "dateIfRestarted",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "fa954f61-ffaf-426c-a70b-3da7fddafbf8",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "restartedInTreatment !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "No of Days Lost?",
+              "type": "obs",
+              "required": false,
+              "id": "daysLost",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "e0dbc1f3-f7c4-46cc-a763-7b587a9d8702",
+                "disallowDecimals": true,
+                "calculate": {
+                  "calculateExpression": "(new Date(dateIfRestarted) - new Date(dateOfLastVisit)) / (1000 * 60 * 60 * 24)"
+                }
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "daysLost < 0",
+                  "message": "Number of days Lost can't be less than 0"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "restartedInTreatment !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Reason for ART Interruption",
+              "type": "obs",
+              "required": true,
+              "id": "reasonForARTInt",
+              "questionOptions": {
+                "rendering": "multiCheckbox",
+                "concept": "949c3f14-03af-4a00-9647-5f7575ed0719",
+                "answers": [
+                  {
+                    "label": "Toxicity/side effects",
+                    "concept": "a4b7b40d-bd4a-4b7a-9826-593088f1e3af"
+                  },
+                  {
+                    "label": "Patient lack finance",
+                    "concept": "fa2e953a-90f8-47b7-882b-c3c4a6cd518f"
+                  },
+                  {
+                    "label": "Pregnancy",
+                    "concept": "2afdbb1f-4f2f-48fd-ad92-090f1a5332cc"
+                  },
+                  {
+                    "label": "Travelled",
+                    "concept": "28c002e2-d3b1-4c39-bf40-eb4ebdda1a23"
+                  },
+                  {
+                    "label": "Treatment failure",
+                    "concept": "a75406fc-ba04-4da1-86ad-ce89982bf2de"
+                  },
+                  {
+                    "label": "Planned Rx interruption",
+                    "concept": "5d6b4766-dc66-4472-9a59-d7f6b28661ad"
+                  },
+                  {
+                    "label": "Getting from another facility",
+                    "concept": "ae9c4b50-cf63-4d7e-a7c2-9b6deb74ccdc"
+                  },
+                  {
+                    "label": "Getting from family member",
+                    "concept": "c3bd1d31-fbad-4e75-aabf-4f9000acb36e"
+                  },
+                  {
+                    "label": "Poor adherence",
+                    "concept": "624d8fa6-d7a6-4c34-8284-525611d5623c"
+                  },
+                  {
+                    "label": "Illness, hospitalization",
+                    "concept": "c3103ad9-a5ff-4e8f-b382-90c8c6030e67"
+                  },
+                  {
+                    "label": "Drugs out of stock",
+                    "concept": "b6d43865-1a80-4f69-97b9-4425c019e435"
+                  },
+                  {
+                    "label": "Transport challenge",
+                    "concept": "6fc682fa-e683-42de-ba48-719430065f56"
+                  },
+                  {
+                    "label": "Lack of food",
+                    "concept": "cd20a916-e12f-435d-afef-6b29f48c4057"
+                  },
+                  {
+                    "label": "Drug abuse",
+                    "concept": "3d2e64cc-9262-49be-aab7-082b18cd2601"
+                  },
+                  {
+                    "label": "Staff attitude towards clients",
+                    "concept": "42f493ad-29a5-47d1-9518-61164b10aa1b"
+                  },
+                  {
+                    "label": "Stigma and disclosure issue",
+                    "concept": "8b3e209c-3557-4137-a127-583d8bbbd290"
+                  },
+                  {
+                    "label": "Knowledge gap",
+                    "concept": "9ddab9bb-93e6-438b-9b13-ff85fe25169c"
+                  },
+                  {
+                    "label": "Traditional/Religious believes",
+                    "concept": "92bb7cf8-3a50-4003-8535-77a2bca3f1a9"
+                  },
+                  {
+                    "label": "Co-infection treatment/ Pill burden",
+                    "concept": "b4a3e18d-71ee-4e73-8502-e2962d215bb1"
+                  },
+                  {
+                    "label": "Health System Challenges",
+                    "concept": "8a9f51ef-08f1-4c3a-98e1-20c6444d9b53"
+                  },
+                  {
+                    "label": "Psychological Factors",
+                    "concept": "9c125fc3-9c99-488b-85e5-182b43593727"
+                  },
+                  {
+                    "label": "Substance Abuse",
+                    "concept": "9cee5302-2399-4f3d-9bfe-cc8fbfd8c4d7"
+                  },
+                  {
+                    "label": "Migration and Mobility",
+                    "concept": "fb137449-ee69-492a-8b04-024f52a15d15"
+                  },
+                  {
+                    "label": "Other",
+                    "concept": "f6ae430a-a197-426e-b54f-08f45fae0ad0"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Other Reason Specify",
+              "type": "obs",
+              "required": false,
+              "id": "interruptionWhy",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "0498d422-dbf7-4d64-9daf-e09e08a3be49",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "isEmpty(reasonForARTInt) || !arrayContains(reasonForARTInt, 'f6ae430a-a197-426e-b54f-08f45fae0ad0')"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "81852aee-3f10-11e4-adec-0800271c1b75",
+  "referencedForms": [],
+  "uuid": "xxxxx",
+  "description": "Return to treatment form",
+  "version": "1.0.0"
+}

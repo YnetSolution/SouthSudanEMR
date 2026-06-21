@@ -1,0 +1,134 @@
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:122,Data class,Data type,Answers
+7482b976-56fe-44b0-b30f-1e957cc0cbb0,,Date First Tested HIV + ,Date Tested HIV + ,Date First Tested HIV + ,,,,Question,Date,
+2e528392-b1dc-4bcc-bf7a-cc8250082174,,Place Tested HIV + ,Place,Place,,,,Question,Text,
+8bcf0a4f-3c18-4858-9129-957e6ed2eecc,,VCT Clinic registration Date,VCT Clinic registration Date,VCT Clinic registration Date,,,,Question,Date,
+a407b0c4-4c65-4c28-8326-523760890823,,TB Clincic Registration Date,TB Clincic Registration Date,TB Clincic Registration Date,,,,Question,Date,
+c2d47add-bc15-41d7-9270-5d5f7d157693,,STI Clinic Registration Date,STI Clinic Registration Date,STI Clinic Registration Date,,,,Question,Date,
+bde6d490-23fc-40b9-b13a-4d889514f316,,ANC Clinic Registration Date,ANC Clinic Registration Date,ANC Clinic Regstration Date,,,,Question,Date,
+350871d6-92fc-4d64-b1b6-adc336ec39f0,,In Patient Registration Date,In Patient Registration Date,In Patient Registration Date,,,,Question,Date,
+0ab49af1-3303-4afe-b23d-1517bea77355,,Pediatric Clinic Registration Date,Pediatric Clinic Registration Date,Pediatric Clinic Registration Date,,,,Question,Date,
+c7589211-fba6-46f5-aca9-57b825a6a350,,OPD Registration Date,OPD Registration Date,OPD Registration Date,,,,Question,Date,
+62c871fa-24dc-42eb-a976-5661e88d66c5,,CBTC Registration Date,CBTC Registration Date,CBTC Registration Date,,,,Question,Date,
+403ee0c0-f119-4a2c-91d5-b5274a5e611a,,Index Testing Date,Index Testing Date,Index Testing Date,,,,Question,Date,
+4322253f-85aa-4e59-abf1-1fa3e6a0a810,,Emergency ward Registration Date,Emergency ward Registration Date,Emergency ward registration date,,,,Question,Date,
+9500a606-2d70-47d1-a238-935d3c228a16,,Malnutrion facilities entry date,Malnutrion facility entry date,Malnutrion facilities entry date,,,,Question,Date,
+62cceeab-adf9-4f3b-bdb3-89687557ecab,,In Patient,In Patient,In Patient,,,,Misc,N/A,
+8eaae386-92dd-47df-b39e-89e60a42d00b,,First HIV Test Information,First HIV Test Information,First HIV Test Information,,,,Misc,N/A,
+04c64451-9e19-43e9-ac3d-9333824bc1dd,,TB Clinic,TB Clinic,TB Clinic,,,,Misc,N/A,
+dfa49cd5-3859-4184-84cc-ada016092680,,STI Clinic,STI Clinic,STI Clinic,,,,Misc,N/A,
+675702bb-8456-4e10-86ca-65ee8b70d1bd,,Nutrition - Entry Point,Nutrition - Entry Point,Nutrition - Entry Point,,,,Misc,N/A,
+ec5d13de-ee22-4d8a-b39c-bdee6cd3d88c,,VCT Clinic,VCT,VCT Clinic,,,,Misc,N/A,
+17f90888-9c88-4db2-8750-edb1d760a9ca,,ANC Clinic,ANC,ANC Clinic,,,,Misc,N/A,
+6ecce064-414c-4bf8-9048-21d6cd55ee51,yes,Padeatric,Padeatric,Padeatric,,,,Misc,N/A,
+26560ed4-3ccc-4f85-85f1-f2c9f9238d3b,,Pediatric Clinic ,Pediatric Clinic ,Pediatric Clinic ,,,,Misc,N/A,
+8244fd10-f813-4e52-a13e-9e3df7cd599c,,Entry Point - OPD,OPD,Entry Point - OPD,,,,Misc,N/A,
+23784478-47f6-11ea-8584-9b5a4858c6c1,,Malnutrition Facilities,Malnutrition Facilities,,,,,Misc,N/A,
+1da6f29c-47f6-11ea-b8c4-7747c45cb2fb,,"Emergency, entry point",Emergency,,,,,Misc,N/A,
+cb976d23-ab3e-4369-a88f-73f56505783b,,CBTC,CBTC,CBTC,,,,Misc,N/A,
+8fc10249-842b-4944-8018-c758bd0263d8,,Index Testing,Index Testing,Index Testing,,,,Misc,N/A,
+0464a6fd-d3c5-427b-b147-3f156ac86d63,,Other Entry Point (Specify),Other (Specify),Other Entry Point (Specify),,,,Misc,N/A,
+f1a35737-434c-46e9-8c46-4e17b98e305d,,HIV - Entry Point,Entry Point,Entry Point,,,,Question,Coded,"VCT Clinic;
+TB Clinic ; 
+Nutrition - Entry Point ;
+STI Clinic ; 
+ANC Clinic ; 
+In Patient ; 
+Pediatric Clinic  ; 
+Entry Point - OPD; 
+CBTC ; 
+Index Testing ; 
+Other Entry Point (Specify)"
+80732fbe-6f6f-4fca-bbd6-3507e411af92,,Other Entry Point,Other,"Other Entry Point, Other",,,,Question,Text,
+fee1095f-a0a7-4694-a352-4e88d6ce6c7c,,Date of HIV Retesting Before ART,Date of Hiv Retesting Before ART,Date of Hiv Retesting Before ART,,,,Question,Date,
+13d6e54e-c8bb-41b2-902b-6ad193f77f40,,Place of HIV Retesting Before ART,Place,Place of Hiv Retesting Before ART,,,,Question,Text,
+78763e68-104e-465d-8ce3-35f9edfb083d,,Yes,Yes,,,,,Misc,N/A,
+b497171e-0410-4d8d-bbd4-7e1a8f8b504e,,No,No,,,,,Misc,N/A,
+01c6969b-2457-4851-ad9c-77362ef9071d,,Tested as Couple,Tested as Couple?,Tested as Couple,,,,Question,Coded,"Yes ; 
+No"
+78763e68-104e-465d-8ce3-35f9edfb083d,,Yes,Yes,,,,,Misc,N/A,
+b497171e-0410-4d8d-bbd4-7e1a8f8b504e,,No,No,,,,,Misc,N/A,
+3886c786-c857-4b55-a57a-ab4c96b52327,,Joint Couple Pre-testing Counselling,Joint Couple Pre-testing Counselling?,Joint Couple Pre-testing Counselling,,,,Question,Coded,"Yes ; 
+No"
+78763e68-104e-465d-8ce3-35f9edfb083d,,Yes,Yes,,,,,Misc,N/A,
+b497171e-0410-4d8d-bbd4-7e1a8f8b504e,,No,No,,,,,Misc,N/A,
+b0c04b40-7322-4fa3-92d4-13583c6ba68a,,HIV Retesting Information,HIV Retesting Information,HIV Retesting Information,,,,Misc,N/A,
+1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Yes,Yes,,,,,Misc,N/A,
+1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,No,No,,,,,Misc,N/A,
+1d2b7c28-eada-404a-9fab-2075a91ce069,,Transferred in on ART?,Transferred in on ART?,Transferred in on ART?,,,,Question,Coded,"Yes ; 
+No"
+475590a2-1eab-4c3b-98d9-177bb873381c,,Already On ART,Already On ART,Already On ART,,,,Misc,N/A,
+a5da1f5d-516e-4db4-adfb-a9758de916e7,,New On ART,New On ART,New On ART,,,,Misc,N/A,
+a8fc166c-638c-4669-b486-0b2cd8eca561,,Treatment Status,Treatment Status,Treatment Status,,,,Question,Coded,Already On ART ; New On ART 
+14026b25-6642-4002-a5ed-2049fb82afb2,,Name of Clinic,Name of Clinic,Name of Clinic,,,,Question,Text,
+2509d668-caa1-4223-8f70-b0b61eb5b39e,,Date Transferred in,Date Transferred in,Date Transferred in,,,,Question,Date,
+1ce0afd4-f6d2-4b80-b61a-11da81c760ce,,ART Transfer Information,ART Transfer Information,ART Transfer Information,,,,Misc,N/A,
+3c262fa2-e1e7-4ec3-9377-b9ddf3184991,,HIV Testing History,HIV Testing History,HIV Testing History,,,,Misc,N/A,
+1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Yes,Yes,,,,,Misc,N/A,
+1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,No,No,,,,,Misc,N/A,
+159400AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Literate,Literate,Literate,,,,Question,Coded,"Yes ; 
+No"
+9afd07d4-89b0-455a-9d5f-bcc3f49ba3a4,,Education Level - Primary,Primary,Education Level - Primary,,,,Misc,N/A,
+345896b3-d11d-4051-a080-6a3405176d52,,Education Level - Secondary,Secondary,Education Level - Secondary,,,,Misc,N/A,
+82788e4d-f478-4a98-ab85-6d43c1a99606,,Education Level - University/College,University / College,Education Level - University/College,,,,Misc,N/A,
+1712AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Education Level,Education Level,Education Level,,,,Question,Coded,Education Level - Primary ; Education Level - Secondary  ; Education Level - University/College
+ec6c8192-0fa3-4d43-aecc-0ec700b8acfa,,Alcohol Intake - Habitual,Habitual,Alcohol Intake - Habitual,,,,Misc,N/A,
+ec9aef4b-2cd1-40d6-83d8-d331e682ca9e,,Alcohol Intake - Social,Social,Alcohol Intake - Social,,,,Misc,N/A,
+d228c63f-212d-4214-a68f-6880297a29a0,,Alcohol Intake - Not Use,Not Use,Alcohol Intake - Not Use,,,,Misc,N/A,
+f77b636b-21e7-4568-9719-bbdd67c3c736,,HIV Care - Alcohol Intake,Alcohol Intake,HIV Care - Alcohol Intake,,,,Question,Coded,Alcohol Intake - Habitual ; Alcohol Intake - Social ;Alcohol Intake - Not Use
+1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Yes,Yes,,,,,Misc,N/A,
+1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,No,No,,,,,Misc,N/A,
+0ca3ffa7-0d29-4043-8b78-3dd40f5806d1,,Drug Allergies,Drug Allergies,Drug Allergies,,,,Question,Coded,"Yes ; 
+No"
+ca1c450e-8be4-4c95-8055-e7229836ebbd,,Drug allergic to,Drug allergic to,,,,,Question,Text,
+4f0579ef-d9cd-4f09-ad16-0eb7a6ac9710,,HIV Care -Drug Allergies Notes,Drug Allergies,HIV Care -Drug Allergies Notes,,,,Question,Text,
+b3b5cc6c-6bf8-4984-839d-83059e30b622,,"Personal History, HIV",Personal History,"Personal History, HIV",,,,Misc,N/A,
+55c92dcd-5af3-4f20-b828-a309b16b28c3,,HIV AND PERSONAL HISTORY FORM,HIV AND PERSONAL HISTORY FORM,HIV AND PERSONAL HISTORY FORM,,,,Misc,N/A,
+c0009f16-4675-4474-bd56-ff6766eda682,,Single,Single,,,,,Misc,N/A,
+2a328f83-cbe4-457e-b0f3-5063aff3d6bf,,Married-monogamous,"Married, monogamous",,,,,Misc,N/A,
+f6025192-1116-4184-b281-bd7fbd975881,,Married-polygamous,"Married, polygamous",,,,,Misc,N/A,
+3b451011-f8e9-4d9e-8dc7-432e8cc69243,,Divorced/separated,Divorced/separated,,,,,Misc,N/A,
+fcf34be1-20fd-41b0-8562-8e123ed40145,,Windowed,Windowed,,,,,Misc,N/A,
+608f6df4-bc19-4afa-a1ff-58f407389221,,Not applicable,Not applicable,,,,,Misc,N/A,
+fdcd966e-0870-4d5d-a506-121efc0c39fb,,Marital status,Marital status,,,,,Question,Coded,"Single;
+Married-monogamous;
+Married-polygamous;
+Divorced/separated;
+Windowed;
+Not applicable"
+703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Positive,Positive,,,,,Misc,N/A,
+664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Negative,Negative,,,,,Misc,N/A,
+f2c2cdcf-550f-427c-96af-52b6a12c3d42,,Inconclusive,Inconclusive,,,,,Misc,N/A,
+9024e06b-ec26-4d13-a876-70ea1eebfa3e,,Not Known,Not Known,,,,,Misc,N/A,
+160f21c0-9a96-4ffd-a72c-aabed02b6a53,,Family Member - HIV Status,Family Member - HIV Status,,,,,Question,Coded,"Positive;
+Negative;
+Not Known"
+78763e68-104e-465d-8ce3-35f9edfb083d,,Yes,Yes,,,,,Misc,N/A,
+b497171e-0410-4d8d-bbd4-7e1a8f8b504e,,No,No,,,,,Misc,N/A,
+7a55ed45-6de2-4c3a-b88e-4de25a898148,,HTS Tested?,HTS Tested?,,,,,Question,Coded,"Yes ; 
+No"
+1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Yes,Yes,,,,,Misc,N/A,
+1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,No,No,,,,,Misc,N/A,
+b572e300-9022-4755-8213-b43e0e920a5f,,Was Family Member Contact Contacted?,Was Family Member Contact Contacted?,,,,,Question,Coded,"Yes ; 
+No"
+1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Yes,Yes,,,,,Misc,N/A,
+1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,No,No,,,,,Misc,N/A,
+4e630d67-b330-468d-8354-5041f877d9c3,,Was Sexual Partner Contacted?,Was Sexual Partner Contacted?,,,,,Question,Coded,"Yes ; 
+No"
+1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Yes,Yes,,,,,Misc,N/A,
+1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,No,No,,,,,Misc,N/A,
+031d0265-b3d3-4d15-ab07-e0cb0b98b549,,Was Family Member Contact Tested?,Was Family Member Contact Tested?,,,,,Question,Coded,"Yes ; 
+No"
+1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Yes,Yes,,,,,Misc,N/A,
+1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,No,No,,,,,Misc,N/A,
+1d37d37a-590a-46fc-b65f-0bf2b9276f0c,,Was Sexual Partner Tested?,Was Sexual Partner Tested?,,,,,Question,Coded,"Yes ; 
+No"
+375ea4eb-6932-42a2-b675-aa6d347f975e,,Index - Family Member Name (Close Members),Index - Family Member Name (Close Members),,,,,Question,Text,
+638fc8c1-bde8-433f-a50c-7562385b580c,,Index - Family Member Age (Close Members),Index - Family Member Age (Close Members),,,,,Question,Text,
+831b34f3-9f76-400c-abdb-92164bc40fcf,,Index - Family Member DOB (Close Members),Index - Family Member DOB (Close Members),,,,,Question,Date,
+9d030f9b-a181-41c9-a52b-2a965b2a5836,,Index - Family Member Sex (Close Members),Index - Family Member Sex (Close Members),,,,,Question,Coded,"Male;
+Female"
+a3014f0a-31ce-4477-9ae4-d686f0e6cea8,,Index - Family Member HIV Status (Close Members),Index - Family Member HIV Status (Close Members),,,,,Question,Coded,"Positive;
+Negative"
+218e861d-393a-4871-9bc3-c9d0effdb073,,Index - Family Member Unique ART No/HEI No (Close Members),Index - Family Member Unique ART No/HEI No (Close Members),,,,,Question,Text,
+7bec5791-6cdc-4fe4-bfbb-89cbf3ab03b4,,Unique ART No/HEI No,Unique ART No/HEI No,,,,,Question,Text,
+9683e455-6f3b-4ee9-b2b3-a4a8d77fcef8,,Cohort(MM/YYYY),Cohort(MM/YYYY),,,,,Question,Text,

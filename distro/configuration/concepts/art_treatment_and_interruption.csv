@@ -1,0 +1,335 @@
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:110,Data class,Data type,Answers
+14a4cf16-3781-4d5b-8a50-8e095d6a7cc6,,ART Readiness Confirmed By,ART Readiness Confirmed By,ART Readiness Confirmed By,,,,Question,Text,
+436e5ca5-a5ad-42e3-9a73-4325b82693ca,,ART Readiness Confirmation Date,Date,ART REadiness Confirmation Date,,,,Question,Date,
+d0214403-61a6-46dd-b8b1-bd8e8dfacd38,,Cohort,Cohort,Cohort,,,,Question,Date,
+75cb96fc-c15c-48a8-a989-a84fa53ea11d,,Switched Regimen,Switched Regimen,Switched Regimen,,,,Question,Coded,"Yes;
+No"
+bfb1f736-7e74-4adf-96ac-02c38093827b,,Regimen Switched To (Adult First Line),First Line,Regimen Switched To (Adult First Line),,,,Misc,N/A,
+6e93c7cb-d3f0-4934-9427-10edf29a4abf,,Regimen Switched To (Adult Second Line),Second Line,Regimen Switched To (Adult Second Line),,,,Misc,N/A,
+846b66b2-1073-4377-b787-580db9b3ccde,,Regimen Switched To,Regimen Switched To,Regimen Switched To,,,,Question,Coded,Regimen Switched To (Adult First Line) ; Regimen Switched To (Adult Second Line)
+ad884e26-5e18-4ec3-b471-c1cd1374387f,,ART First Line Switch  Date,,ART First Line Switch  Date,,,,Question,Date,
+fdb79be1-587a-4034-8865-318ef8dc4b0e,,ART Second Line Switch Date,,ART Second Line Switch Date,,,,Question,Date,
+84c23dc4-40f4-4d9a-a2f5-ebeb4b4f3250,,ART Treatment Stop/Lost Date,Date,ART Treatment Stop/Lost Date,,,,Question,Date,
+ea8ec95f-2097-401f-9126-e4de1197d0ff,,ART Stop Date,Date,ART Stop Date,,,,Question,Date,
+d6f602ca-4ef8-4a84-a94b-00506b5ee79d,,Date when ART Drugs Lost,Date,Date when ART Drugs Lost,,,,Question,Date,
+9062c6d9-a650-44d2-8929-da84f617c427,,1a = AZT/3TC + EFV,1a = AZT/3TC + EFV,,,,,Misc,N/A,
+c22e6700-a937-4909-b4ad-e82ff51325ac,,1b = AZT/3TC/NVP,1b = AZT/3TC/NVP,,,,,Misc,N/A,
+a00d9620-e88b-4c2f-9293-b1ac9e5943f2,,1c = TDF/3TC/DTG,1c = TDF/3TC/DTG,,,,,Misc,N/A,
+5d500ca2-350a-49ee-a3d4-f340db32ff31,,1d = ABC/3TC (600/300) /DTG,1d = ABC/3TC (600/300) /DTG,,,,,Misc,N/A,
+3fd242a8-7ade-463c-8919-d82573ea8526,,1e = AZT/3TC + DTG,1e = AZT/3TC + DTG,,,,,Misc,N/A,
+91f5d0d6-eb81-484f-9376-4bfb926a5a81,,1f = TDF/3TC/EFV,1f = TDF/3TC/EFV,,,,,Misc,N/A,
+0dd3e78f-e1fc-47de-95bc-1f489d0dfcc5,,1g = TDF/3TC + NVP,1g = TDF/3TC + NVP,,,,,Misc,N/A,
+4a86fbee-07a9-422a-bf69-16256c0c2b8b,,1h = TDF/FTC/ EFV,1h = TDF/FTC/ EFV,,,,,Misc,N/A,
+03224cae-f115-4814-bd53-c99c72288446,,1J = TDF/FTC + NVP,1J = TDF/FTC + NVP,,,,,Misc,N/A,
+d75c973c-06d4-43d2-a57d-6340fc8c0100,,Other ART Regimen,Other ART Regimen,Other ART Regimen,,,,Misc,N/A,
+42cd702e-33b2-45e8-968e-f3918ac5c86b,,Substitution Regimen For Adults(First Line),Substitution Regimen(1st Line Adults),Substitution Regimen,,,,Question,Coded,"1a = AZT/3TC + EFV;
+1b = AZT/3TC/NVP;
+1c = TDF/3TC/DTG;
+1d = ABC/3TC (600/300) /DTG;
+1e = AZT/3TC + DTG;
+1f = TDF/3TC/EFV;
+1g = TDF/3TC + NVP;
+1h = TDF/FTC/ EFV;
+1J = TDF/FTC + NVP;
+Other ART Regimen"
+d1f02073-460c-4cd4-89b0-c16766e06334,,Initial ART Regimen (Adult),Initial ART Regimen,Initial ART Regimen (Adult),,,,Question,Coded,"1a = AZT/3TC + EFV;
+1b = AZT/3TC/NVP;
+1c = TDF/3TC/DTG;
+1d = ABC/3TC (600/300) /DTG;
+1e = AZT/3TC + DTG;
+1f = TDF/3TC/EFV;
+1g = TDF/3TC + NVP;
+1h = TDF/FTC/ EFV;
+1J = TDF/FTC + NVP;
+Other ART Regimen"
+d110f0ef-18bd-42a3-a4db-58f9d8469a39,,Other ART Regimen Specify,Other ART Regimen Specify,Other ART Regimen Specify,,,,Question,Text,
+9f1aadeb-f23f-45fb-b50a-dd34e918303b,,Regimen Change Date,Date,Date,,,,Question,Date,
+b4d8805f-40ff-4c9d-9118-feeab45ad8be,,Other Reason For Regimen Change(First Line),Other Reason (Specify),Other Reason (Specify),,,,Misc,N/A,
+e1a04b37-f80b-4e27-968c-02e2566c7d82,,Other Reason For Regimen Change(Second Line),Other Reason (Specify),Other Reason (Specify),,,,Misc,N/A,
+f0941906-3277-4ca0-891a-a58efb541c66,,Reason For Regimen Change(First Line),Reason,Reason For Regimen Change,,,,Question,Coded,"Toxicity/side effects; 
+Pregnancy ; 
+Risk of pregnancy ; 
+Newly diagnosed TB ; 
+New drug available; 
+Drug stockout ; 
+Other Reason For Regimen Change(First Line)"
+847b1998-5b2f-4818-a6c0-4284e2f85403,,Reason For Regimen Change(Second Line),Reason,Reason For Regimen Change,,,,Question,Coded,"Toxicity/side effects; 
+Pregnancy ; 
+Risk of pregnancy ; 
+Newly diagnosed TB ; 
+New drug available; 
+Drug stockout ; 
+Other Reason For Regimen Change(First Line)"
+23074a22-84d7-4515-a295-6906773f058f,,Initial Regimen Change Reason,Regimen Change Reason,Regimen Change Reason,,,,Question,Coded,"Toxicity/side effects; 
+Pregnancy ; 
+Risk of pregnancy ; 
+Newly diagnosed TB ; 
+New drug available; 
+Drug stockout ; 
+Other Reason For Regimen Change(First Line)"
+29bfdd61-7a8d-4bdc-87ea-48ee3643ad7a,,Other Reason(Second Regimen Change),Reason,Other Reason(Second Regimen Change),,,,Question,Text,
+b59fff1c-ab4f-4686-9435-783994432356,,Other Reason(First Line Regimen Change),Other Reason (Specify),Reason For Regimen Change,,,,Question,Text,
+bd97cacd-4a91-4901-8803-3a4a2e5f1ca8,,2a = AZT/3TC + DTG,2a = AZT/3TC + DTG,,,,,Misc,N/A,
+ad6ff4ef-769e-4aec-b8bb-7f033fe6aaaa,,2b = ABC/3TC + DTG,2b = ABC/3TC + DTG,,,,,Misc,N/A,
+47167ec1-4957-4d0a-a58c-3894bdeb93ff,,2c = TDF+3TC + LPV/r,2c = TDF+3TC + LPV/r,,,,,Misc,N/A,
+e649a0ec-e193-4af0-bb49-02687107a893,,2d = TDF/3TC + ATV/r,2d = TDF/3TC + ATV/r,,,,,Misc,N/A,
+accca537-b8ee-41ec-b902-7de814d099b2,,2e = TDF/FTC-LPV/r,2e = TDF/FTC-LPV/r,,,,,Misc,N/A,
+77f201fc-aefc-4068-baa7-cb3284782a38,,2f = TDF/FTC-ATV/r,2f = TDF/FTC-ATV/r,,,,,Misc,N/A,
+cb0f9fcd-fb52-493f-95aa-d0197387fbdb,,2g = AZT/3TC + LPV/r,2g = AZT/3TC + LPV/r,,,,,Misc,N/A,
+28790bde-81db-4490-806b-ac10c17b41dc,,2h = AZT/3TC + ATV/r,2h = AZT/3TC + ATV/r,,,,,Misc,N/A,
+aae69cae-2806-4e8b-a916-f22ed733a19b,,2i = ABC/3TC + LPV/r,2i = ABC/3TC + LPV/r,,,,,Misc,N/A,
+64336206-c9bc-4d37-accf-c7abac7a37f6,,2J = ABC/3TC + ATV/r,2J = ABC/3TC + ATV/r,,,,,Misc,N/A,
+25f0cca5-902d-4e36-9e4f-5ce5da744a75,,2k = TDF/3TC/DTG,2k = TDF/3TC/DTG,,,,,Misc,N/A,
+d110f0ef-18bd-42a3-a4db-58f9d8469a39,,Other Regimen,Other Regimen,Other Regimen,,,,Misc,N/A,
+2a48b138-13ae-481b-8716-a3700626460d,,Substitution Regimen (2nd Line Adults),Substitution Regimen(2nd Line Adults),Substitution Regimen (2nd Line Adults),,,,Question,Coded,"2a = AZT/3TC + DTG;
+2b = ABC/3TC + DTG;
+2c = TDF+3TC + LPV/r;
+2d = TDF/3TC + ATV/r;
+2e = TDF/FTC-LPV/r;
+2f = TDF/FTC-ATV/r;
+2g = AZT/3TC + LPV/r;
+2h = AZT/3TC + ATV/r;
+2i = ABC/3TC + LPV/r;
+2J = ABC/3TC + ATV/r;
+2k = TDF/3TC/DTG;
+Other ART Regimen"
+d4a9cb9a-c7ce-4c4b-bada-fc6698ff7d3e,,Regimen Changed to(Adults),Regimen Changed to,Regimen Changed to(Adults),,,,Question,Coded,"2a = AZT/3TC + DTG;
+2b = ABC/3TC + DTG;
+2c = TDF+3TC + LPV/r;
+2d = TDF/3TC + ATV/r;
+2e = TDF/FTC-LPV/r;
+2f = TDF/FTC-ATV/r;
+2g = AZT/3TC + LPV/r;
+2h = AZT/3TC + ATV/r;
+2i = ABC/3TC + LPV/r;
+2J = ABC/3TC + ATV/r;
+2k = TDF/3TC/DTG;
+Other ART Regimen"
+ea1c7482-ad23-49b7-9eee-c7b320d7cbd1,,ART Regimen(Switch to 2nd Line),ART Regimen(Switch to 2nd Line),ART Regimen(Switch to 2nd Line),,,,Misc,N/A,
+c224b116-27ec-4156-93ba-d4838a3ac1c0,,4a = AZT/3TC/NVP,4a = AZT/3TC/NVP,,,,,Misc,N/A,
+5efe8d99-c65e-4136-8820-5f3646437ff7,,4b = AZT/3TC + EFV,4b = AZT/3TC + EFV,,,,,Misc,N/A,
+f8f64be8-ccb4-404d-b99e-3c4975155da5,,4c = ABC/3TC (120/60) + LPV/r,4c = ABC/3TC (120/60) + LPV/r,,,,,Misc,N/A,
+28c5d192-ba71-4ef5-8604-ecf6bd177126,,4d = ABC/3TC (120/60) + DTG50,4d = ABC/3TC (120/60) + DTG50,,,,,Misc,N/A,
+3eaf04dc-e284-42f7-860e-02cda37cf230,,4e = ABC/3TC (120/60)+DTG10,4e = ABC/3TC (120/60)+DTG10,,,,,Misc,N/A,
+0372f3fb-5e8a-474f-8250-01af7a485778,,4f = ABC/3TC + NVP,4f = ABC/3TC + NVP,,,,,Misc,N/A,
+ce2412c4-a041-4328-bfaa-35e041ca4802,,4g = ABC/3TC (120/60) + EFV (200mg),4g = ABC/3TC (120/60) + EFV (200mg),,,,,Misc,N/A,
+6ed47806-8809-4c5a-a1b6-fe2ec0158563,,4h = TDF/3TC/EFV,4h = TDF/3TC/EFV,,,,,Misc,N/A,
+f6b1c6ea-b0a2-46a0-b7e0-3038d268356c,,4i = ABC/3TC + LPV/r,4i = ABC/3TC + LPV/r,,,,,Misc,N/A,
+2e1ab9d3-7fe1-48ba-a12c-fd8d26bc161d,,4j = AZT/3TC (60/30) + LPV/r,4j = AZT/3TC (60/30) + LPV/r,,,,,Misc,N/A,
+99f54f96-e761-4d86-bb1b-0abc2a24fa16,,4k = TDF/3TC + NVP,4k = TDF/3TC + NVP,,,,,Misc,N/A,
+5287f2a4-23e5-4314-b60c-0a4b91753ec6,,4l = ABC/3TC + AZT,4l = ABC/3TC + AZT,,,,,Misc,N/A,
+4f97efba-0b28-46ff-8f2e-97ef3eee5814,,Child Regimens (First Line),Children 1st Line Regimens,Child 1st Line Regimens,,,,Question,Coded,"4a = AZT/3TC/NVP;
+4b = AZT/3TC + EFV;
+4c = ABC/3TC (120/60) + LPV/r;
+4d = ABC/3TC (120/60) + DTG50;
+4e = ABC/3TC (120/60)+DTG10;
+4f = ABC/3TC + NVP;
+4g = ABC/3TC (120/60) + EFV (200mg);
+4h = TDF/3TC/EFV;
+4i = ABC/3TC + LPV/r;
+4j = AZT/3TC (60/30) + LPV/r;
+4k = TDF/3TC + NVP;
+4l = ABC/3TC + AZT;
+Other ART Regimen"
+4f921b9d-4f29-4a7f-b506-f4d55d04d29e,,Initial ART Regimen For Children,Initial ART Regimen,Initial ART Regimen(Children),,,,Question,Coded,"4a = AZT/3TC/NVP;
+4b = AZT/3TC + EFV;
+4c = ABC/3TC (120/60) + LPV/r;
+4d = ABC/3TC (120/60) + DTG50;
+4e = ABC/3TC (120/60)+DTG10;
+4f = ABC/3TC + NVP;
+4g = ABC/3TC (120/60) + EFV (200mg);
+4h = TDF/3TC/EFV;
+4i = ABC/3TC + LPV/r;
+4j = AZT/3TC (60/30) + LPV/r;
+4k = TDF/3TC + NVP;
+4l = ABC/3TC + AZT;
+Other ART Regimen"
+b23cf614-dfec-48c9-a12f-ba577e28347d,,5a = AZT/3TC+LPV/r,5a = AZT/3TC+LPV/r,,,,,Misc,N/A,
+dabc93c3-8c3d-41e1-b3e3-d7e14c4765b6,,5b = AZT/3TC + RAL,5b = AZT/3TC + RAL,,,,,Misc,N/A,
+da3c6710-c431-4582-a444-a466d54693ec,,5c = ABC/3TC (120/60) + RAL,5c = ABC/3TC (120/60) + RAL,,,,,Misc,N/A,
+6c383d11-2b29-4cc2-bfa4-811ff7a988f1,,5d = AZT/3TC + ATV/r,5d = AZT/3TC + ATV/r,,,,,Misc,N/A,
+82725d14-00c6-4864-bf8b-ad5db0b3c3fa,,5e = ABC/3TC + ATV/r,5e = ABC/3TC + ATV/r,,,,,Misc,N/A,
+140ede93-5691-463b-9d17-2dc8834621f8,,5f = TDF/ 3TC + ATV/r,5f = TDF/ 3TC + ATV/r,,,,,Misc,N/A,
+06017ac1-2ce8-4689-a3bf-4e9f3d54978f,,5g = AZT/3TC + DTG50,5g = AZT/3TC + DTG50,,,,,Misc,N/A,
+2c0a5b91-7b2a-4f8e-86fd-a8007841fca8,,5h = ABC/3TC + DTG50,5h = ABC/3TC + DTG50,,,,,Misc,N/A,
+50b60d77-186d-4a0d-8784-659ee2d60ec9,,5i = ABC/3TC + LPV/r,5i = ABC/3TC + LPV/r,,,,,Misc,N/A,
+78e49624-0e33-4374-93b7-60b132b26dae,,5j = AZT/3TC (120/60)+DTG10,5j = AZT/3TC (120/60)+DTG11,,,,,Misc,N/A,
+d75c973c-06d4-43d2-a57d-6340fc8c0100,,Other ART Regimen,Other ART Regimen,,,,,Misc,N/A,
+bed19764-a7aa-42b9-8248-5ef68cc102ab,,Children Second Line Regimens,Child 2nd Line Regimens,Child 2nd Line Regimens,,,,Question,Coded,"5a = AZT/3TC+LPV/r;
+5b = AZT/3TC + RAL;
+5c = ABC/3TC (120/60) + RAL;
+5d = AZT/3TC + ATV/r;
+5e = ABC/3TC + ATV/r;
+5f = TDF/ 3TC + ATV/r;
+5g = AZT/3TC + DTG50;
+5h = ABC/3TC + DTG50;
+5i = ABC/3TC + LPV/r;
+5j = AZT/3TC (120/60)+DTG10;
+Other ART Regimen"
+46444ee5-74f6-4e74-945b-e1ccaa0ae515,,Child Regimen Information,Child Regimen Information,Child Regimen Information,,,,Misc,N/A,
+6bde1029-3d73-4214-abd8-90650bda75c1,,Stop,Stop,Stop,,,,Misc,N/A,
+48e7693b-d128-475a-a5f5-ad00ae913fdc,,Lost,Lost,Lost,,,,Misc,N/A,
+93e4aff2-d952-448e-88e3-ee138e13abd4,,Poor Adherence Interruption,Poor Adherence Interruption,Poor Adherence Interruption,,,,Misc,N/A,
+6633ce0b-0237-4f6a-b092-787f42d86464,,Illness Hospitalisation,Illness Hospitalisation,Illness Hospitalisation,,,,Misc,N/A,
+c25a938d-a1d9-4e01-879a-0ed00ec5bd07,,Patient Lack Finances,Patient Lack Finances,Patient Lack Finances,,,,Misc,N/A,
+ad422a59-e314-4283-8b0e-5f3d6b524eb5,,Other Patient Decision,Other Patient Decision,Other Patient Decision,,,,Misc,N/A,
+81449847-0d25-4d0d-a2eb-b4dc6cbfc0fa,,Planned Treatment,Planned Treatment,Planned Treatment,,,,Misc,N/A,
+6584dc5b-e82b-4a70-8564-a7732ccfc723,,Other Reason For ART Stop,Other,Other Reason For ART Stop,,,,Misc,N/A,
+dede40dc-2a4a-4f40-ad29-845e8d50be58,,Changed Regimen,Changed Regimen,Changed Regimen,,,,Misc,N/A,
+55337ca1-c8b5-43e4-bed3-845a01463020,,Regimen Change Date(Adults),Regimen Change Date,Regimen Change Date(Adults),,,,Question,Date,
+a7f113ad-f18b-41fe-a1ea-5f468c911b1d,,ART Treatment Reasons For Stop,Reason,ART Treatment Reasons For Stop,,,,Question,Coded,Toxic Side Effect ; Pregnancy ;  Failure of Treatment ; Poor Adherence Interruption ; Illness Hospitalisation ; Drug stockout ; Patient Lack Finances ; Other Reason For ART Stop
+2b19035d-46a7-4007-b63b-87753dd5b6d3,,Interruption Type,Interruption Type,Interruption Type,,,,Question,Coded,Stop ; Lost ; Changed Regimen
+a4b7b40d-bd4a-4b7a-9826-593088f1e3af,,Toxicity/side effects,,,,,,Misc,N/A,
+fa2e953a-90f8-47b7-882b-c3c4a6cd518f,,Patient lack finance,,,,,,Misc,N/A,
+2afdbb1f-4f2f-48fd-ad92-090f1a5332cc,,Pregnancy,,,,,,Misc,N/A,
+28c002e2-d3b1-4c39-bf40-eb4ebdda1a23,,Travelled,,,,,,Misc,N/A,
+a75406fc-ba04-4da1-86ad-ce89982bf2de,,Treatment failure,,,,,,Misc,N/A,
+5d6b4766-dc66-4472-9a59-d7f6b28661ad,,Planned Rx interruption,,,,,,Misc,N/A,
+ae9c4b50-cf63-4d7e-a7c2-9b6deb74ccdc,,Getting from another facility,,,,,,Misc,N/A,
+c3bd1d31-fbad-4e75-aabf-4f9000acb36e,,Getting from family member,,,,,,Misc,N/A,
+624d8fa6-d7a6-4c34-8284-525611d5623c,,Poor adherence,,,,,,Misc,N/A,
+c3103ad9-a5ff-4e8f-b382-90c8c6030e67,,"Illness, hospitalization",,,,,,Misc,N/A,
+b6d43865-1a80-4f69-97b9-4425c019e435,,Drugs out of stock,,,,,,Misc,N/A,
+6fc682fa-e683-42de-ba48-719430065f56,,Transport challenge,,,,,,Misc,N/A,
+cd20a916-e12f-435d-afef-6b29f48c4057,,Lack of food,,,,,,Misc,N/A,
+3d2e64cc-9262-49be-aab7-082b18cd2601,,Drug abuse,,,,,,Misc,N/A,
+42f493ad-29a5-47d1-9518-61164b10aa1b,,Staff attitude towards clients,,,,,,Misc,N/A,
+8b3e209c-3557-4137-a127-583d8bbbd290,,Stigma and disclosure issue,,,,,,Misc,N/A,
+9ddab9bb-93e6-438b-9b13-ff85fe25169c,,Knowledge gap,,,,,,Misc,N/A,
+92bb7cf8-3a50-4003-8535-77a2bca3f1a9,,Traditional/Religious believes,,,,,,Misc,N/A,
+b4a3e18d-71ee-4e73-8502-e2962d215bb1,,Co-infection treatment/ Pill burden,,,,,,Misc,N/A,
+8a9f51ef-08f1-4c3a-98e1-20c6444d9b53,,Health System Challenges,,,,,,Misc,N/A,
+9c125fc3-9c99-488b-85e5-182b43593727,,Psychological Factors,,,,,,Misc,N/A,
+9cee5302-2399-4f3d-9bfe-cc8fbfd8c4d7,,Substance Abuse,,,,,,Misc,N/A,
+fb137449-ee69-492a-8b04-024f52a15d15,,Migration and Mobility,,,,,,Misc,N/A,
+f6ae430a-a197-426e-b54f-08f45fae0ad0,,Other (specify),,,,,,Misc,N/A,
+949c3f14-03af-4a00-9647-5f7575ed0719,,Reasons for ART Interruption,Reasons for ART Interruption,,,,,Question,Coded,"Toxicity/side effects;
+Patient lack finance;
+Pregnancy;
+Travelled;
+Treatment failure;
+Planned Rx interruption;
+Getting from another facility;
+Getting from family member;
+Poor adherence;
+Illness, hospitalization;
+Drugs out of stock;
+Transport challenge;
+Lack of food;
+Drug abuse;
+Staff attitude towards clients;
+Stigma and disclosure issue;
+Knowledge gap;
+Traditional/Religious believes;
+Co-infection treatment/ Pill burden;
+Health System Challenges;
+Psychological Factors;
+Substance Abuse;
+Migration and Mobility;
+Other (specify)"
+0498d422-dbf7-4d64-9daf-e09e08a3be49,,Specify Reason For Art Stop,Specify Reason For Art Stop,Specify Reason For Art Stop,,,,Question,Text,
+fa954f61-ffaf-426c-a70b-3da7fddafbf8,,Date If Restarted,Date If Restarted,Date If Restarted,,,,Question,Date,
+4e350390-7055-4e71-924f-a80e2de4f192,,ART Treatment Interruption Stop or Lost,ART Treatment Interruption Stop or Lost,ART Treatment Interruption Stop or Lost,,,,Misc,N/A,
+f367e08c-2c0c-45ab-93a8-9f8f3cefda6e,,AntiRetroviral Treatment,AntiRetroviral Treatment,AntiRetroviral Treatment,,,,Misc,N/A,
+94550110-9649-4cc4-92fc-227d9e9a9c8d,,ART Regimen - Substitution within 1st Line,ART Regimen - Substitution within 1st Line,ART Regimen - Substitution within 1st Line,,,,Misc,N/A,
+f97d06ef-6b9d-484b-b338-1be4b4ffa0bb,,ART Treatment And Interruptions Form,ART Treatment And Interruptions Form,ART Treatment And Interruptions Form,,,,Misc,N/A,
+29e0c25a-02c8-4ee8-aa43-8296e9b341d4,,Reactive,Reactive,,,,,Misc,N/A,
+f38da408-7312-4f4f-8536-f197cc5c3405,,Non-Reactive,Non-Reactive,,,,,Misc,N/A,
+9202b40e-349a-4033-a6b5-7305dbf9dc96,,Unknown,Unknown,,,,,Misc,N/A,
+5eedf493-6d2c-4c0d-8ea6-d43b539b39da,,Maternal HIV Status,Maternal HIV Status,,,,,Question,Coded,"Reactive;
+Non-Reactive;
+Unknown"
+78763e68-104e-465d-8ce3-35f9edfb083d,,Yes,Yes,,,,,Misc,N/A,
+b497171e-0410-4d8d-bbd4-7e1a8f8b504e,,No,No,,,,,Misc,N/A,
+a5cf84c1-495d-431a-b1a6-28d943e389f8,,Immunization Given?,Immunization Given?,,,,,Question,Coded,"Yes;
+No"
+b8b2bd85-52eb-4b80-9842-88fd177befe3,,Breast milk only,Breast milk only,,,,,Misc,N/A,
+99d19260-c316-11e9-9cb5-2a2ae2dbcce4,,Mixed Feeding(> 6 Months),Mixed Feeding,,,,,Misc,N/A,
+99d18ffe-c316-11e9-9cb5-2a2ae2dbcce4,,RF-Replacement feeding(Never Breastfeed),Replacement feeding(Never Breastfeed),,,,,Misc,N/A,
+74717127-b986-42e5-a125-139d4655c108,,Feeding pattern in the first 6 months of life,,"                ""concept"": """",",,,,Question,Coded,"Breast milk only;
+Mixed Feeding(> 6 Months);
+RF-Replacement feeding(Never Breastfeed)"
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,,,,,Misc,N/A,
+54798d14-ae3b-4666-8667-a9be973f9996,,Moderate Acute Malnutrition,Moderate Acute Malnutrition,,,,,Misc,N/A,
+258d897f-da46-4d35-ae1f-f6517117bd01,,Severe Acute Malnutrition,Severe Acute Malnutrition,,,,,Misc,N/A,
+ef666995-65d6-4031-b4b8-8e6c13d39b84,,Nutritional Status,Nutritional Status,,,,,Question,Coded,"Normal;
+Moderate Acute Malnutrition;
+Severe Acute Malnutrition"
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,,,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,,,,,,Misc,N/A,
+388fc432-954d-4bcd-9c32-dc14d6b55891,,Systemic finding - Head,Systemic finding - Head,,,,,Question,Coded,"Normal;
+Abnormal"
+a1d22675-5dad-4d72-bea7-77e4f23ea3c2,,Thin sparse hair,,,,,,Misc,N/A,
+02b1784b-75bf-4cd1-ab72-5e25382a2b33,,White scaly scalp lesion,,,,,,Misc,N/A,
+c6b7d217-b492-4035-a7d9-e091179ec510,,Abnormal Other,,,,,,Misc,N/A,
+45a12fc0-b4f0-4f94-a3c0-4161f24f2d54,,Abnormal Findings - Head,Abnormal Findings - Head,,,,,Question,Coded,"Thin sparse hair;
+White scaly scalp lesion;
+Abnormal Other"
+f76d4b85-5ede-4640-80f7-24dc5267087a,,Systemic finding - Ear,Systemic finding - Ear,,,,,Question,Coded,"Normal;
+Abnormal"
+11d82ec3-055a-455f-858f-f12866464422,,Ear Discharge(L/R),Ear Discharge(L/R),,,,,Misc,N/A,
+cda45ab5-2a42-4a08-b4df-52ea9e2914ee,,Tympanic membrane bulge/redness (L/R),Tympanic membrane bulge/redness (L/R),,,,,Misc,N/A,
+c6b7d217-b492-4035-a7d9-e091179ec510,,Abnormal Other,,,,,,Misc,N/A,
+31a06818-7bf0-4b1f-8e55-9521f4f01a5f,,Abnormal Findings - Ears,Abnormal Findings - Ears,,,,,Question,Coded,"Ear Discharge(L/R);
+Tympanic membrane bulge/redness (L/R);
+Abnormal Other"
+e81e6f97-6593-492c-98ad-1d33115653e7,,Finding - Eyes,Finding - Eyes,,,,,Question,Coded,"Normal;
+Abnormal"
+06438d7c-6a3d-4a2b-92a3-8fb3aa91b31e,,Yellow sclera,,,,,,Misc,N/A,
+624b68f2-9400-473f-8e63-36e9125e89a5,,purulent discharge,,,,,,Misc,N/A,
+5b06ecdd-44da-456c-b46e-590de978030c,,pale conjunctivae,,,,,,Misc,N/A,
+acc97509-010a-4de4-92ef-6df03d0b7d76,,Abnormal Findings - Eyes,,,,,,Question,Coded,"Yellow sclera;
+purulent discharge;
+pale conjunctivae;
+Abnormal Other"
+b0503a1c-384f-4316-ad74-5fdab11fec0a,,Findings - Nose,,,,,,Question,Coded,"Normal;
+Abnormal"
+da8d7a4d-a7ff-4bcb-9d35-9e86947fa761,,Abnormal findings Nose specify,,,,,,Question,Text,
+36230828-399c-49b3-8ab5-790076c8572b,,Findings - Mouth,,,,,,Question,Coded,"Normal;
+Abnormal"
+d946be39-07d1-4e1b-9990-6f626445b8a7,,Angular cheilitis,,,,,,Misc,N/A,
+6aa356a1-7f6d-4fff-a48d-063273bd75bc,,Gingival edema and bleeding,,,,,,Misc,N/A,
+ec7b937c-6e4b-4533-8c75-281c806d791a,,Oral thrash,,,,,,Misc,N/A,
+8b7dd03f-5c59-4118-9565-ecd990263258,,Oral Ulcer,,,,,,Misc,N/A,
+fa6b9635-8458-4902-8a70-ee54ce610058,,Abnormal Findings - Mouth,,,,,,Question,Coded,"Angular cheilitis;
+Gingival edema and bleeding;
+Oral thrash;
+Oral Ulcer;
+Abnormal Other"
+fe0b57e1-4cf3-48e1-90b1-298f2ec68bf8,,Findings - Throat,,,,,,Question,Coded,"Normal;
+Abnormal"
+740c587b-5121-4cbc-a2c7-63b804490ada,,Exudative tonsillitis,,,,,,Misc,N/A,
+53d771b5-b353-492a-a7bd-71218eaa870b,,Abnormal Findings - Throat,,,,,,Question,Coded,"Exudative tonsillitis;
+Abnormal Other"
+ab5fd965-cf7a-4cd5-948b-5ac0ce4b7f21,,Findings - Lymph nodes/ Glands,,,,,,Question,Coded,"Normal;
+Abnormal"
+1e306d0c-37f6-4f81-9720-7c2c5fe36b57,,Generalized LAP,,,,,,Misc,N/A,
+5277e38f-6b88-4407-b27c-1817111eac45,,Localized LAP,,,,,,Misc,N/A,
+d78f8a85-153b-43f8-a763-86b7dd3a6203,,Parotid Enlargement Unilateral,,,,,,Misc,N/A,
+bd25632c-cd83-4753-9e72-b3215931d7aa,,Parotid Enlargement Bilateral,,,,,,Misc,N/A,
+986ab3f0-2d7b-4d68-9f57-abac24a88371,,Abnormal Findings - Lymph nodes/ Glands,,,,,,Question,Coded,"Generalized LAP;
+Localized LAP;
+Parotid Enlargement Unilateral;
+Parotid Enlargement Bilateral"
+a68c104e-0e7b-4c04-966d-a9e37a1d6f71,,Findings - Respiratory/Chest,,,,,,Question,Coded,"Normal;
+Abnormal"
+17aded46-0c88-4434-ab3d-37858affbaee,,Retractions(Chest in drawing),,,,,,Misc,N/A,
+9584a97a-29e2-4ced-9995-e975ba399920,,Cyanosis,,,,,,Misc,N/A,
+224b7592-4e15-11e4-8a57-0800271c1b75,,Wheezing,,,,,,Misc,N/A,
+5bcc8c89-37b6-4ac6-94fd-3f4b39081394,,Abnormal Findings - Respiratory/Chest,,,,,,Question,Coded,"Retractions(Chest in drawing);
+Cyanosis;
+Wheezing;
+Abnormal Other"
+c5cc6779-7b23-40ef-8d39-28f92d70a144,,Findings - CVS/Heart,,,,,,Question,Coded,"Normal;
+Abnormal"
+05c4679b-2531-44db-82c0-35022a3b9606,,Findings - Abdomen,,,,,,Question,Coded,"Normal;
+Abnormal"
+80a1d3c1-588c-405d-ab6c-1c33df571f75,,Hepatomegaly,,,,,,Misc,N/A,
+b861a0f1-40d3-4fba-8500-a3edeefc414c,,Splenomegaly,,,,,,Misc,N/A,
+1cca1230-3125-4d21-93c0-12ba43d566d9,,Ascites,,,,,,Misc,N/A,
+be31e243-c2a5-4fa4-9f93-d5e06bc78293,,Abnormal Findings - Abdomen,,,,,,Question,Coded,"Hepatomegaly;
+Splenomegaly;
+Ascites;
+Abnormal Other"
+4913c7f0-3362-4407-8d48-4b115f2f59dd,,Restarted In Treatment,Restarted In Treatment,,,,,Question,Coded,Yes; No
+e0dbc1f3-f7c4-46cc-a763-7b587a9d8702,,Number of Days Lost,Number of Days Lost,,,,,Question,Numeric,

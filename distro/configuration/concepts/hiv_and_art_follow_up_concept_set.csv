@@ -1,0 +1,159 @@
+Uuid,Answers,Members,Fully specified name:en,Data class,Data type,_version:3,_order:127
+609d59f7-79d1-4748-ad86-57c831dbff60,"Condoms;
+Implant;
+Depo;
+I-Injectable;
+ECP-Emergency contraceptive pills;
+OC-Oral contraceptive pills;
+IUD-Intrauterine device;
+LAM-Lactational Amenorrhea Method;
+D-Diaphragm/Cervical cap;
+FA-Fertility awareness method;
+TL-Tubal Ligation;
+V-Vasectomy (Partner's);
+UND-Undecided",,FP Method,Question,Coded,,
+1c44444b-ac9a-4d2a-bb83-9299ab05668c,2HRZE/4RH ; 2SHRZE/1HRZE/5RH,,TB Regimen On,Question,Coded,,
+4199b8d5-ab1f-4623-9083-a6764059f424,2HRZE/10RH,,TB Regimen For Children,Question,Coded,,
+5ba046b4-42e9-4ffb-81a2-6cd4fc03ee70,4 Am-Mfx-Pto-Clz-Z-H high-dose-E/5 Mfx-Cfx-Cfz-Z-E,,TB Regimen Second Line,Question,Coded,,
+e360501a-123a-4efb-93ef-4dc19d031921,Adherence Good ; Adherence Fair ; Adherence Poor,,CTX Adherence,Question,Coded,,
+e38e6ce2-92d9-4382-927b-5555ff9fa850,Stage 1 ;Stage 2 ;Stage 3;Stage 4,,WHO Stage,Question,Coded,,
+23322fd6-3dbb-410e-8bee-6210dfcd5f71,"1a = AZT/3TC + EFV;
+1b = AZT/3TC/NVP;
+1c = TDF/3TC/DTG;
+1d = ABC/3TC (600/300) /DTG;
+1e = AZT/3TC + DTG;
+1f = TDF/3TC/EFV;
+1g = TDF/3TC + NVP;
+1h = TDF/FTC/ EFV;
+1J = TDF/FTC + NVP;
+2a = AZT/3TC + DTG;
+2b = ABC/3TC + DTG;
+2c = TDF+3TC + LPV/r;
+2d = TDF/3TC + ATV/r;
+2e = TDF/FTC-LPV/r;
+2f = TDF/FTC-ATV/r;
+2g = AZT/3TC + LPV/r;
+2h = AZT/3TC + ATV/r;
+2i = ABC/3TC + LPV/r;
+2J = ABC/3TC + ATV/r;
+2k = TDF/3TC/DTG;
+4a = AZT/3TC/NVP;
+4b = AZT/3TC + EFV;
+4c = ABC/3TC (120/60) + LPV/r;
+4d = ABC/3TC (120/60) + DTG50;
+4e = ABC/3TC (120/60)+DTG10;
+4f = ABC/3TC + NVP;
+4g = ABC/3TC (120/60) + EFV (200mg);
+4h = TDF/3TC/EFV;
+4i = ABC/3TC + LPV/r;
+4j = AZT/3TC (60/30) + LPV/r;
+4k = TDF/3TC + NVP;
+4l = ABC/3TC + AZT;
+5a = AZT/3TC+LPV/r;
+5b = AZT/3TC + RAL;
+5c = ABC/3TC (120/60) + RAL;
+5d = AZT/3TC + ATV/r;
+5e = ABC/3TC + ATV/r;
+5f = TDF/ 3TC + ATV/r;
+5g = AZT/3TC + DTG50;
+5h = ABC/3TC + DTG50;
+5i = ABC/3TC + LPV/r;
+5j = AZT/3TC (120/60)+DTG10;
+Other ART Regimen",,ARV Regimen,Question,Coded,,
+cf5c7deb-f67c-4406-82ea-d619e502f47c,Yes; No,,Currently Breastfeeding?,Question,Coded,,
+5dcb1bc9-ee89-4b57-9493-a1f245c5ee8b,Yes; No,,Is the client Pregnant?,Question,Coded,,
+7ddb08f2-09e8-48ef-a08f-3744467fec48,Yes; No,,INH,Question,Coded,,
+da20f4fc-94b4-421c-896c-cf16a834227a,Yes; No,,Enroll Patient To PMTCT,Question,Coded,,
+1d593268-8a2d-4030-bf1d-9c341d47f875,Yes; No,,PMTCT - HIV & ART Follow up,Question,Coded,,
+da20f4fc-94b4-421c-896c-cf16a834227a,Yes; No,,Enroll Patient To PMTCT,Question,Coded,,
+58ab89cd-6674-480b-95a0-5b761b0275cb,Yes; No,,On TB Treatment,Question,Coded,,
+147b8be8-d657-4e46-8970-6f9983b27722,Yes; No,,Current Cough,Question,Coded,,
+6e259aec-edea-4ee0-8aa8-4e03f266cd60,Yes; No,,Is the client on CTX,Question,Coded,,
+0cb0b2c1-6609-4d98-9ebf-72ba3f33118d,Yes; No,,Is the client on Dapsone,Question,Coded,,
+9a67ecbf-5229-4de0-a533-382a87c01d76,Yes; No,,Any other Medications Given?,Question,Coded,,
+32fb9948-d296-4eec-8dfd-699539ba5b05,Yes; No,,Other Investigations Done?,Question,Coded,,
+b6ae8e33-aa58-47e4-84be-5b8599a177b7,,"FP Pregnant ; EDD ;PMTCT - HIV & ART Follow up ; Enroll Patient To PMTCT; Current on FP ; FP Method ;Currently Breastfeeding?;  On TB Treatment ;Date Started TB Treatment ; TB Unit Number;TB Clinic Enrolled;Date Started TB RX  ; TB Regimen For Children;Side Effects ; New OI (other Problems);WHO Stage ; Cotrimoxazole/Dapsone,ART Followup; CTX Adherence; Reason why Adherence is Fair; Reason why Adherence is Poor;CTX Dose;INH ; Number of Pill Dispensed(INH) ;ARV Regimen ; Number of Days Dispensed",ART Follow up - Information,Misc,N/A,,
+1a07bffa-2e01-43bb-880e-c68c02300b36,Adherence Good ; Adherence Fair ; Adherence Poor,,EAC Results,Question,Coded,,
+46ae050e-e1b6-48e6-aa1f-bba975347f5a,Adherence Good ; Adherence Fair ; Adherence Poor,,Classification Of Adherence(First EAC session),Question,Coded,,
+7c9976a3-f646-4ed4-8d2f-ab133ea9b292,Adherence Good ; Adherence Fair ; Adherence Poor,,Classification Of Adherence(Second EAC session),Question,Coded,,
+6851bf56-ded4-4b89-ba93-d9d380927e15,Adherence Good ; Adherence Fair ; Adherence Poor,,Classification Of Adherence(Third EAC session),Question,Coded,,
+ee910383-e469-4eab-a634-76a2f7a762c9,Adherence Good ; Adherence Fair ; Adherence Poor,,Classification Of Adherence After EAC,Question,Coded,,
+eeb4976d-704f-4dd0-a84b-34cfb06a52d6,Yes;No,,MDT Held?,Question,Coded,,
+85221b4d-ae80-402a-9d9a-8c9ba504771c,Extending EAC;Switch Regimen,,MDT Outcome,Question,Coded,,
+d5d1d355-9e77-4e11-b733-884974f51169,Yes;No,,was counselling done?,Question,Coded,,
+02e3c15a-c756-4a66-9b2f-bb75140eec3e,,"Date VL Sample Collected? ; Viral Load Result Received?; Date Viral Load Results Received; VL Results, Follow Up; VL Results",Investigations,Misc,N/A,,
+07bee146-a5c0-432a-aa39-6c8bb0818634,,"Date VL Sample Collected? ; Viral Load Result Received?; Date Viral Load Results Received; VL Results, Follow Up; VL Results","Viral Load Information,",Misc,N/A,,
+0fc3cc86-6c9f-4d79-9c39-900dab27a33c,"Refer ; 
+Consult ;
+Link/Provide;
+None",,Patient Plan,Question,Coded,,
+9890cc1e-dbaf-49ec-82bb-1093dcf92ab6,,Plan;Hospitalised; Number of Days Hospitalized ; Clinician Name,Follow up Information,Misc,N/A,,
+beffd410-b9a4-4cfd-9a29-22512980de1b,,"ART Follow up - Information ; Viral Load Information, ; Follow up Information",HIV AND ART FOLLOW UP FORM,Misc,N/A,,
+13498474-ba95-4fec-8010-c8c5e24748ff,"Nausea;
+Rash;
+Diarrhoea;
+Anaemia;
+FAT changes;
+B, N burning/numb/tingling;
+CNS: dizzy, anxiety, nightmare, depression;
+Jaundice;
+Abdominal pain;
+Persistent headaches",,Side Effects,Question,Coded,,
+b0058799-4655-471d-8124-6acd14c6beb1,"Toxicity/side effects;
+Share with others;
+Forgot;
+Felt better;
+Too ill;
+Stigma, disclosure or privacy issues;
+Drug stock out—dispensary;
+Patient lost/ran out of pills;
+Delivery/travel problems;
+Inability to pay;
+Alcohol/Drugs;
+Depression;
+pill burden;
+Other Adherence Reason",,Reason why Adherence is Poor,Question,Coded,,
+d0f3605e-f026-4ef8-973a-f471a236049a,"Toxicity/side effects;
+Share with others;
+Forgot;
+Felt better;
+Too ill;
+Stigma, disclosure or privacy issues;
+Drug stock out—dispensary;
+Patient lost/ran out of pills;
+Delivery/travel problems;
+Inability to pay;
+Alcohol/Drugs;
+Depression;
+pill burden;
+Other Adherence Reason",,Reason why Adherence is Fair,Question,Coded,,
+fa688045-dcfc-48bd-b2fc-1ddf8ff33ecb,,Opportunistic Infections,Opportunistic Infections Section,Misc,N/A,,
+9b8347e7-3e90-4857-b5cf-7bc449ae21ec,Yes; No,,Is the client Represented?,Question,Coded,,
+7cecb44e-82d8-4126-b385-2c2549731156,Yes; No,,Is client eligible for TPT?,Question,Coded,,
+12ec18dc-5311-427d-a3cb-0a9ae64610d8,,"First EAC Session Date;
+Classification Of Adherence(First EAC session);
+Adherence Barriers;
+First EAC Barrier Reason Specify;
+First EAC Service;
+First EAC Tools;
+Specify Other Tools for First EAC;
+Pill intake;
+Pill percentage",First EAC Form,Misc,N/A,,
+57a3514d-28cd-4340-9ebf-4d3e1f3c5efd,,"Second EAC Session Date; 
+Classification Of Adherence(Second EAC session); 
+Second EAC Adherence Barriers; 
+Second EAC Barrier Reason Specify; 
+Second EAC Service; 
+Second EAC Tools; 
+Specify Other Tools for Second EAC; 
+Pill Intake Second EAC; 
+Second EAC Pill percentage",Second EAC Session Form,Misc,N/A,,
+360bc040-6d64-4b6a-8405-87cfd081880c,,"Third EAC Session Date; 
+Classification Of Adherence(Third EAC session); 
+Third EAC Adherence Barriers; 
+Third EAC Barrier Reason Specify;
+Third EAC Service;
+Third EAC Tools;
+Specify Other Tools for Third EAC;
+Pill Intake Third EAC;
+Third EAC Pill percentage",Third EAC Session Form,Misc,N/A,,
