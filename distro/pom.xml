@@ -412,7 +412,6 @@
         </plugins>
       </build>
     </profile>
-  <profiles>
     <profile>
       <id>repsy</id>
       <repositories>
