@@ -67,7 +67,6 @@
     <o3forms.version>2.3.0</o3forms.version>
 
     <ssemrws.version>1.0.0-SNAPSHOT</ssemrws.version>
-    <ssemrreports.version>1.0.0-SNAPSHOT</ssemrreports.version>
     <mamba-etl.version>1.0.1-SNAPSHOT</mamba-etl.version>
 
     <reference-content.version>1.4.0</reference-content.version>
