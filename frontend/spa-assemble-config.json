@@ -30,6 +30,10 @@
     "@openmrs/esm-system-admin-app": "next",
     "@openmrs/esm-user-onboarding-app": "next",
     "@openmrs/esm-ward-app": "next",
+    "@openmrs/esm-reports-app": "next",
+    "@openmrs/esm-dispensing-app": "next",
+    "@openmrs/esm-patient-task-list-app": "next",
+    "@openmrs/esm-patient-tests-app": "next",
     "@ssemr/esm-login-app": "1.0.1",
     "@ssemr/esm-patient-summary-app": "next",
     "@ssemr/esm-patient-notifications-app": "next",
@@ -39,8 +43,7 @@
     "@ssemr/esm-patient-list-management-app": "next",
     "@ssemr/esm-reports-dashboard":"next",
     "@ssemr/esm-patient-forms-app": "next",
-    "@ohri/openmrs-esm-ohri-form-render-app":"2.3.7-pre.507",
-    "@openmrs/esm-reports-app": "next"
+    "@ohri/openmrs-esm-ohri-form-render-app":"2.3.7-pre.507"
   },
   "excludedFrontendModules": []
 }
