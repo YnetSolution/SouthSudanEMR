@@ -9,8 +9,8 @@ ARG APP_SHELL_VERSION=next
 RUN mkdir -p /app
 WORKDIR /app
 
-RUN echo "//repo.repsy.io/npm/ynetsolutions/npm/:_authToken=rdt-AYA2VhmQ6oI-ze6HiZzOHIdA7NdvqxAm9SaKEeQh0xI" > .npmrc && \
-    echo "@ssemrapp:registry=https://repo.repsy.io/ynetsolutions/npm/" >> .npmrc && \
+RUN echo "//repsy.io/ynetsolutions/npm/:_authToken=rdt-AYA2VhmQ6oI-ze6HiZzOHIdA7NdvqxAm9SaKEeQh0xI" > .npmrc && \
+    echo "@ssemrapp:registry=https://repsy.io/ynetsolutions/npm" >> .npmrc && \
     echo "registry=https://registry.npmjs.org/" >> .npmrc
 
 COPY spa-assemble-config.json .
