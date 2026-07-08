@@ -34,6 +34,7 @@
     "@openmrs/esm-dispensing-app": "next",
     "@openmrs/esm-patient-task-list-app": "next",
     "@openmrs/esm-patient-tests-app": "next",
+    "@openmrs/esm-patient-forms-app": "next",
     "@ssemr/esm-login-app": "1.0.1",
     "@ssemr/esm-patient-summary-app": "next",
     "@ssemr/esm-patient-notifications-app": "next",
