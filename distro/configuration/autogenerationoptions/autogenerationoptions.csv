@@ -1,2 +1,4 @@
 Uuid,Identifier Type,Location,Identifier Source,Manual Entry Enabled,Auto Generation Enabled,_order:2000
 2be74f07-a4a0-4bfc-a943-8555d0074a74,OpenMRS ID,,8549f706-7e85-4c1d-9424-217d50a2988b,false,true,
+05641609-6f74-4b63-a2a1-91a95949f282,OPD Number,,663c6988-c2ef-47c0-8f90-1633930eee0b,false,true,
+16897961-700b-4a0a-bb35-01a63b39d8ba,Inpatient Number,,b3acfb29-9480-40c5-bf35-b4b9ec42a36d,false,true,
