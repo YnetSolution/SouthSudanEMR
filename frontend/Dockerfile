@@ -9,18 +9,23 @@ ARG APP_SHELL_VERSION=next
 RUN mkdir -p /app
 WORKDIR /app
 
-RUN echo "@ssemrapp:registry=https://repo.repsy.io/ynetsolutions/npm/" > .npmrc && \
-    echo "//repo.repsy.io/ynetsolutions/npm/:_authToken=rdt-AYA2VhmQ6oI-ze6HiZzOHIdA7NdvqxAm9SaKEeQh0xI" >> .npmrc && \
-    echo "registry=https://registry.npmjs.org/" >> .npmrc
-
 COPY spa-assemble-config.json .
 COPY spa-build-config.json .
 COPY /assets /app/assets
+COPY proxy.js .
+
+RUN echo "@ssemrapp:registry=http://127.0.0.1:4873/ynetsolutions/npm/" > .npmrc && \
+    echo "//127.0.0.1:4873/ynetsolutions/npm/:_authToken=rdt-AYA2VhmQ6oI-ze6HiZzOHIdA7NdvqxAm9SaKEeQh0xI" >> .npmrc && \
+    echo "registry=https://registry.npmjs.org/" >> .npmrc
 
 ARG CACHE_BUST
 RUN npm install -g npm@latest
-RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} assemble --manifest --mode config --config spa-assemble-config.json --target ./spa
-RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} build --build-config spa-build-config.json --target ./spa
+
+RUN node proxy.js & PROXY_PID=$! ; \
+    sleep 2 ; \
+    npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} assemble --manifest --mode config --config spa-assemble-config.json --target ./spa && \
+    npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} build --build-config spa-build-config.json --target ./spa && \
+    kill $PROXY_PID
 
 # Copying required files
 RUN echo "Copying required files ..." && \
