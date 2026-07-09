@@ -39,7 +39,7 @@
     "@ssemrapp/esm-patient-summary-app": "0.0.2",
     "@ssemr/esm-patient-notifications-app": "next",
     "@ssemrapp/esm-patient-registration-app": "0.0.4",
-    "@ssemrapp/esm-patient-hiv-art-app": "0.0.1",
+    "@ssemrapp/esm-patient-hiv-art-app": "0.0.2",
     "@ssemr/esm-patient-flags-app": "next",
     "@ssemr/esm-patient-list-management-app": "next",
     "@ssemr/esm-reports-dashboard":"next",
