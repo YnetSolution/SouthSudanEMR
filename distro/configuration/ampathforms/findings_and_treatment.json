@@ -1,0 +1,1616 @@
+{
+  "name": "2. Findings and Treatment",
+  "version": "1.0.0",
+  "published": true,
+  "retired": false,
+  "encounter": "Findings and Treatment",
+  "pages": [
+    {
+      "label": "Client details",
+      "sections": [
+        {
+          "label": "Patient referred",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Patient referred from another facility?",
+              "type": "obs",
+              "required": false,
+              "id": "isPatientReferred",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "32c2d223-6a01-4ede-8224-7feeb073e2ab",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Type of facility referred from",
+              "type": "obs",
+              "required": false,
+              "id": "facilityRefferedFrom",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "44335370-b96b-405e-97ad-ea4d4451a2ca",
+                "answers": [
+                  {
+                    "concept": "93c07155-1e4f-4996-9f78-0f476f11605a",
+                    "label": "Referred from Community Unit"
+                  },
+                  {
+                    "concept": "9b31621c-17c2-46c7-98ce-051dc8564dc7",
+                    "label": "Referred from Within"
+                  },
+                  {
+                    "concept": "ccda26b2-a73f-4dcb-be03-1572eb6cf7b9",
+                    "label": "N/A"
+                  },
+                  {
+                    "concept": "61f9ac9f-4743-4f95-bd83-02881612083c",
+                    "label": "Referred From other facility"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "isPatientReferred !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Specify Facility referred from",
+              "required": false,
+              "id": "facilityReferredFromSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "140425BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "answers": []
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "facilityRefferedFrom !== '61f9ac9f-4743-4f95-bd83-02881612083c'"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Client details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Chief Complain",
+              "id": "co",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "f3c308eb-224a-4f36-9b1e-bea4b5030eb7"
+              }
+            }
+          ]
+        },
+        {
+          "label": "History of Presenting illness",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "History of Presenting illness",
+              "id": "historyOfPresentingIllness",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "940e138d-399f-42dc-a28c-1d7709e917cc"
+              }
+            }
+          ]
+        },
+        {
+          "label": "",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Number of previous pregnancies",
+              "type": "obs",
+              "id": "numberOfPreviousPregnancies",
+              "required": false,
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "9adb2c60-b34d-4c3e-961b-03bd0c581e45",
+                "min": "0"
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'M' || !(age >= 9 && age <= 45)"
+              }
+            },
+            {
+              "label": "LMP",
+              "type": "obs",
+              "id": "lmp",
+              "required": false,
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "1427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'M' || !(age >= 9 && age <= 45)"
+              }
+            },
+            {
+              "label": "Family planning",
+              "type": "obs",
+              "id": "familyPlanning",
+              "required": false,
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "2eac1d32-0d14-43d7-b188-a6acb215e626",
+                "answers": [
+                  {
+                    "concept": "b0863993-4b65-4d34-82a8-ed8bc1bd2598",
+                    "label": "Abstinence"
+                  },
+                  {
+                    "concept": "410d7684-2045-4eff-9af3-1fb57a406123",
+                    "label": "Other"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'M' || !(age >= 9 && age <= 45)"
+              }
+            },
+            {
+              "label": "Other Family Planning Specify",
+              "type": "obs",
+              "id": "otherFamilyPlanning",
+              "required": false,
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "62340009-748b-4b4c-87fa-8d1b2ca96ea0"
+              },
+              "hide": {
+                "hideWhenExpression": "familyPlanning !== '410d7684-2045-4eff-9af3-1fb57a406123'"
+              }
+            }
+          ],
+          "hide": {
+            "hideWhenExpression": "sex === 'M' || !(age >= 9 && age <= 45)"
+          }
+        },
+        {
+          "label": "Obstetrics and Gynaecology",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Obstetrics and Gynaecology",
+              "type": "obs",
+              "id": "obsAndGynaecology",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "d85b298f-2819-49b1-b716-1c0cee69212c"
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'M' || !(age >= 9)"
+              }
+            }
+          ],
+          "hide": {
+            "hideWhenExpression": "sex === 'M' || !(age >= 9)"
+          }
+        },
+        {
+          "label": "General Examination",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "General Examination",
+              "id": "generalExamination",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "5f9375cd-3138-4f41-96a1-ffab4910ce98",
+                "answers": [
+                  {
+                    "concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal"
+                  },
+                  {
+                    "concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Abnormal"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "General Examination Comment",
+              "id": "generalExaminationComment",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "daf8e0c0-ef5b-4568-8564-6a57358e1756"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Systemic Examination",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Systemic Examination",
+              "id": "systemicExamination",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "1882a72e-388e-40a7-8fcf-a6c46528fe8b",
+                "answers": [
+                  {
+                    "concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal"
+                  },
+                  {
+                    "concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Abnormal"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Systemic Examination Comment",
+              "id": "systemicExaminationComment",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "d5771e6e-0f9c-4d3f-b9ab-56e545bc3e10"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Investigation",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Investigation",
+              "id": "investigation",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "6508b46e-1fef-455b-aedc-b8fddc7309af"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Impressions/Diagnosis",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Impressions/Diagnosis",
+              "id": "impressionsDiagnosisChildren",
+              "type": "obs",
+              "required": true,
+              "questionOptions": {
+                "rendering": "multiCheckbox",
+                "concept": "759bf916-5549-4fe1-a588-a399ba04dfd5",
+                "answers": [
+                  {
+                    "concept": "395596de-a8f0-41aa-b1a3-db457e3a391d",
+                    "label": "Diarrhoea with no dehydration"
+                  },
+                  {
+                    "concept": "ead479da-2930-46ff-8eb2-80373c88cdce",
+                    "label": "Diarrhoea with some dehydration"
+                  },
+                  {
+                    "concept": "d97d9d7d-03c5-43da-a115-5e8a4a7adaca",
+                    "label": "Diarrhoea with severe dehydration"
+                  },
+                  {
+                    "concept": "122604AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Cholera"
+                  },
+                  {
+                    "concept": "f7b62c18-afa4-4428-8b63-08391cf210f2",
+                    "label": "Dysentery (Bloody diarrhoea)"
+                  },
+                  {
+                    "concept": "1768581a-3a0a-4625-8ad6-5bf61f2df635",
+                    "label": "Gastroenteritis"
+                  },
+                  {
+                    "concept": "114100AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Pneumonia"
+                  },
+                  {
+                    "concept": "dc3c23be-25fd-4ee2-a73e-373e9a32263d",
+                    "label": "Severe pneumonia"
+                  },
+                  {
+                    "concept": "2d221b92-dee2-43a0-b77b-fe445289e18b",
+                    "label": "Upper Respiratory Tract Infections"
+                  },
+                  {
+                    "concept": "729c22a1-7a24-4f48-9502-38cffaa10cec",
+                    "label": "Lower Respiratory Tract Infections"
+                  },
+                  {
+                    "concept": "121375AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Asthma"
+                  },
+                  {
+                    "concept": "155f11df-5823-4c3e-abd3-89fec68a3e1c",
+                    "label": "Presumed Tuberculosis"
+                  },
+                  {
+                    "concept": "ab01a44e-5a44-4d36-a8e4-8794d8026222",
+                    "label": "Suspected/Tested Malaria"
+                  },
+                  {
+                    "concept": "110d072b-fa9c-4898-aa0e-63846c79d1f1",
+                    "label": "Confirmed Malaria (only positive cases)"
+                  },
+                  {
+                    "concept": "141585AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Ear Infections/ Conditions"
+                  },
+                  {
+                    "concept": "3726d866-bd35-4180-b20e-019d0443d670",
+                    "label": "Malnutrition"
+                  },
+                  {
+                    "concept": "121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Anaemia"
+                  },
+                  {
+                    "concept": "47afdfa3-fbce-42b7-976c-604bb9c2825e",
+                    "label": "Meningococcal Meningitis"
+                  },
+                  {
+                    "concept": "5f373b9c-93fe-4371-8fa8-39c05aed4323",
+                    "label": "Other Menigitis"
+                  },
+                  {
+                    "concept": "2ce3ab4d-acb7-4b62-8537-96f1f402428f",
+                    "label": "Neonatal Sepsis"
+                  },
+                  {
+                    "concept": "9d8cd8b0-787a-4d96-9f89-db4e5937eb27",
+                    "label": "Neonatal Tetanus"
+                  },
+                  {
+                    "concept": "264d3b5e-0cda-47cf-bd1a-9c8f71313cff",
+                    "label": "Poliomyelitis (AFP)"
+                  },
+                  {
+                    "concept": "211a8eb0-be4d-4334-8560-e3d85b81f1b6",
+                    "label": "Chicken Pox"
+                  },
+                  {
+                    "concept": "134561AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Measles"
+                  },
+                  {
+                    "concept": "49402458-7e45-410e-8bb6-180518dc4840",
+                    "label": "Hepatitis"
+                  },
+                  {
+                    "concept": "0de700ed-39e2-4c53-a218-b21e672c6b18",
+                    "label": "Amoebiasis"
+                  },
+                  {
+                    "concept": "5fbdb90b-b06f-4f08-8e90-92805db5a379",
+                    "label": "Mumps"
+                  },
+                  {
+                    "concept": "141AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Typhoid fever"
+                  },
+                  {
+                    "concept": "ff84ebd8-50a0-4cb7-a7c8-96517d7b54a0",
+                    "label": "Bilharzia (Schistosomiasis)"
+                  },
+                  {
+                    "concept": "67347e15-05e3-4a54-b4c3-e474d13641cd",
+                    "label": "Intestinal worms"
+                  },
+                  {
+                    "concept": "210bb549-f0f6-4dc5-9cb6-caf54ef02e9e",
+                    "label": "Eye Infections"
+                  },
+                  {
+                    "concept": "598d46d5-48d0-4c00-8844-4e875b03a08b",
+                    "label": "Tonsillitis"
+                  },
+                  {
+                    "concept": "111633AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Urinary Tract Infection"
+                  },
+                  {
+                    "concept": "77AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Mental Disorders"
+                  },
+                  {
+                    "concept": "b30ad39e-e46f-4e74-a587-f91d66a8e9ac",
+                    "label": "Dental Disorders"
+                  },
+                  {
+                    "concept": "7a61f196-32a4-4066-b493-d90b9b9177fd",
+                    "label": "Jiggers Infestation"
+                  },
+                  {
+                    "concept": "898c8c12-f95d-4f84-a9e1-5be87c52451c",
+                    "label": "Diseases of the skin"
+                  },
+                  {
+                    "concept": "94ee72e9-0994-400a-bc08-11c588c95a08",
+                    "label": "Down’s syndrome"
+                  },
+                  {
+                    "concept": "71293391-dc75-4c90-a4bc-5da60442b60c",
+                    "label": "Poisoning"
+                  },
+                  {
+                    "concept": "da454f8c-ccbf-42f6-b046-38f6036bc347",
+                    "label": "Road Traffic Injuries"
+                  },
+                  {
+                    "concept": "ee534d5b-6320-4790-bfcc-a47e09964351",
+                    "label": "Deaths due to Road Trafic injuries"
+                  },
+                  {
+                    "concept": "2cb58ab3-ddd3-49ed-b2fa-aae6bf9e2ee6",
+                    "label": "Violence related  injuries"
+                  },
+                  {
+                    "concept": "cafabbfc-4776-4ff6-8c6d-4aee5c200ef4",
+                    "label": "Other Injuries"
+                  },
+                  {
+                    "concept": "0b1b1a73-62c7-4a98-847d-9917ebbdfcef",
+                    "label": "Sexual Violence"
+                  },
+                  {
+                    "concept": "9ffa7692-97a0-44a7-8abd-da07de5bdf22",
+                    "label": "Burns"
+                  },
+                  {
+                    "concept": "3d3b4a56-69e8-4a12-9f78-d0b9f52bd92e",
+                    "label": "Snake Bites"
+                  },
+                  {
+                    "concept": "d02121cb-f47e-479f-b065-2dcdeec2ccb7",
+                    "label": "Dog Bites"
+                  },
+                  {
+                    "concept": "4bfbdee8-2574-4ed3-b9e3-295ae2bc6754",
+                    "label": "Other Bites"
+                  },
+                  {
+                    "concept": "119481AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Diabetes"
+                  },
+                  {
+                    "concept": "19ff0ea5-18cf-4840-9add-bc0979f02023",
+                    "label": "Epilepsy"
+                  },
+                  {
+                    "concept": "988b26cc-369e-42bf-9162-4e5380a45342",
+                    "label": "Other Convulsive Disorders"
+                  },
+                  {
+                    "concept": "78e0def5-8587-4ed8-9d10-ff94c45503f9",
+                    "label": "Rheumatic Fever"
+                  },
+                  {
+                    "concept": "5ffbcd33-57ca-4cfb-9c13-6d15f77a1b7b",
+                    "label": "Brucellosis"
+                  },
+                  {
+                    "concept": "52ac8884-2f04-4950-9311-86484e6a9f0e",
+                    "label": "Rickets"
+                  },
+                  {
+                    "concept": "82788d82-e44d-4f3b-bf41-9700d2bfa5f1",
+                    "label": "Cerebral Palsy"
+                  },
+                  {
+                    "concept": "1b4d77eb-3e30-4b6d-9602-a01b6a55dbce",
+                    "label": "Autism"
+                  },
+                  {
+                    "concept": "7554c625-e185-4c6c-9753-6506e5e2b85f",
+                    "label": "Trypanosomiasis"
+                  },
+                  {
+                    "concept": "7f4a2e54-63c9-4c7c-bddc-41418030398d",
+                    "label": "Yellow Fever"
+                  },
+                  {
+                    "concept": "1482d7d6-b75d-410d-9357-6cb2c8d92882",
+                    "label": "Viral Haemorrhagic Fever"
+                  },
+                  {
+                    "concept": "63613c65-9ea3-4479-be52-cbd0b8ad0753",
+                    "label": "Rift valley fever"
+                  },
+                  {
+                    "concept": "f1295de2-8c5b-4f3b-904a-671bdd89b1eb",
+                    "label": "Chikungunya"
+                  },
+                  {
+                    "concept": "e5f90432-77ac-49fe-a34f-f816cca666b7",
+                    "label": "Dengue fever"
+                  },
+                  {
+                    "concept": "526bda40-2fce-45fd-8ba9-c1921a25d5f6",
+                    "label": "Kalaar (Leishmaniasis)"
+                  },
+                  {
+                    "concept": "9b757626-dd2e-488d-84a0-ca3f4d1a8e51",
+                    "label": "Cutaneous leishmaniasis"
+                  },
+                  {
+                    "concept": "b0a9fc8e-312b-45d8-b17a-5f96c431552e",
+                    "label": "Suspected Anthrax"
+                  },
+                  {
+                    "concept": "6e0dea57-a96a-46f5-9b22-75fee201949c",
+                    "label": "Suspected Childhood Cancers"
+                  },
+                  {
+                    "concept": "b061a625-e12a-4f44-9c59-489a1fd15f88",
+                    "label": "Hypoxaemia (Spo2<90%)"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other Diseases"
+                  }
+                ]
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age >= 5"
+              }
+            },
+            {
+              "label": "Impressions/Diagnosis",
+              "id": "impressionsDiagnosisAdults",
+              "type": "obs",
+              "required": true,
+              "questionOptions": {
+                "rendering": "multiCheckbox",
+                "concept": "759bf916-5549-4fe1-a588-a399ba04dfd5",
+                "answers": [
+                  {
+                    "concept": "142412AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Diarrhoea"
+                  },
+                  {
+                    "concept": "112141AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Tuberculosis"
+                  },
+                  {
+                    "concept": "f7b62c18-afa4-4428-8b63-08391cf210f2",
+                    "label": "Dysentery (Blood Diarrhoea)"
+                  },
+                  {
+                    "concept": "122604AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Cholera"
+                  },
+                  {
+                    "concept": "47afdfa3-fbce-42b7-976c-604bb9c2825e",
+                    "label": "Meningococcal Meningitis"
+                  },
+                  {
+                    "concept": "5f373b9c-93fe-4371-8fa8-39c05aed4323",
+                    "label": "Other Menigitis"
+                  },
+                  {
+                    "concept": "0ac9cb12-b0b8-49a1-b142-323f69c592e9",
+                    "label": "Tetanus"
+                  },
+                  {
+                    "concept": "264d3b5e-0cda-47cf-bd1a-9c8f71313cff",
+                    "label": "Poliomyelitis (AFP)"
+                  },
+                  {
+                    "concept": "211a8eb0-be4d-4334-8560-e3d85b81f1b6",
+                    "label": "Chicken Pox"
+                  },
+                  {
+                    "concept": "134561AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Measles"
+                  },
+                  {
+                    "concept": "49402458-7e45-410e-8bb6-180518dc4840",
+                    "label": "Hepatitis"
+                  },
+                  {
+                    "concept": "5fbdb90b-b06f-4f08-8e90-92805db5a379",
+                    "label": "Mumps"
+                  },
+                  {
+                    "concept": "ab01a44e-5a44-4d36-a8e4-8794d8026222",
+                    "label": "Suspected/Tested Malaria"
+                  },
+                  {
+                    "concept": "110d072b-fa9c-4898-aa0e-63846c79d1f1",
+                    "label": "Confirmed Malaria (only positive cases)"
+                  },
+                  {
+                    "concept": "cdd15a79-7583-48e3-8bc9-2b02553bdf91",
+                    "label": "Malaria in Pregnancy"
+                  },
+                  {
+                    "concept": "0de700ed-39e2-4c53-a218-b21e672c6b18",
+                    "label": "Amoebiasis"
+                  },
+                  {
+                    "concept": "141AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Typhoid fever"
+                  },
+                  {
+                    "concept": "7b10c20d-410b-4671-a0c8-bf8acca096bb",
+                    "label": "Sexually Transmitted Infections"
+                  },
+                  {
+                    "concept": "111633AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Urinary Tract Infection"
+                  },
+                  {
+                    "concept": "ff84ebd8-50a0-4cb7-a7c8-96517d7b54a0",
+                    "label": "Bilharzia (Schistosomiasis)"
+                  },
+                  {
+                    "concept": "67347e15-05e3-4a54-b4c3-e474d13641cd",
+                    "label": "Intestinal worms"
+                  },
+                  {
+                    "concept": "3726d866-bd35-4180-b20e-019d0443d670",
+                    "label": "Malnutrition"
+                  },
+                  {
+                    "concept": "121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Anaemia"
+                  },
+                  {
+                    "concept": "210bb549-f0f6-4dc5-9cb6-caf54ef02e9e",
+                    "label": "Eye Infections"
+                  },
+                  {
+                    "concept": "141585AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Ear Infection/Conditions"
+                  },
+                  {
+                    "concept": "2d221b92-dee2-43a0-b77b-fe445289e18b",
+                    "label": "Upper Respiratory Tract Infections"
+                  },
+                  {
+                    "concept": "121375AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Asthma"
+                  },
+                  {
+                    "concept": "114100AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Pneumonia"
+                  },
+                  {
+                    "concept": "a4744bfc-034f-46ff-8996-033bcbaa374d",
+                    "label": "Other Diseases of the Respiratory System"
+                  },
+                  {
+                    "concept": "075a227e-f9ed-4b88-ac13-0d253ba15567",
+                    "label": "Abortion"
+                  },
+                  {
+                    "concept": "0e6a103e-92b3-4d28-a7c9-f12987039470",
+                    "label": "Disease of Puerperium and Childbirth"
+                  },
+                  {
+                    "concept": "117399AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Hypertension"
+                  },
+                  {
+                    "concept": "77AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Mental Disorders"
+                  },
+                  {
+                    "concept": "b30ad39e-e46f-4e74-a587-f91d66a8e9ac",
+                    "label": "Dental Disorders"
+                  },
+                  {
+                    "concept": "7a61f196-32a4-4066-b493-d90b9b9177fd",
+                    "label": "Jiggers Infestation"
+                  },
+                  {
+                    "concept": "898c8c12-f95d-4f84-a9e1-5be87c52451c",
+                    "label": "Diseases of the skin"
+                  },
+                  {
+                    "concept": "70b56907-cbe6-4796-868e-2ba0dcfba833",
+                    "label": "Athritis, Joint Pains"
+                  },
+                  {
+                    "concept": "71293391-dc75-4c90-a4bc-5da60442b60c",
+                    "label": "Poisoning"
+                  },
+                  {
+                    "concept": "da454f8c-ccbf-42f6-b046-38f6036bc347",
+                    "label": "Road Traffic Injuries"
+                  },
+                  {
+                    "concept": "ee534d5b-6320-4790-bfcc-a47e09964351",
+                    "label": "Death due to Road Trafic injuries"
+                  },
+                  {
+                    "concept": "cafabbfc-4776-4ff6-8c6d-4aee5c200ef4",
+                    "label": "Other Injuries"
+                  },
+                  {
+                    "concept": "0b1b1a73-62c7-4a98-847d-9917ebbdfcef",
+                    "label": "Sexual Violence"
+                  },
+                  {
+                    "concept": "2cb58ab3-ddd3-49ed-b2fa-aae6bf9e2ee6",
+                    "label": "Violence related  injuries"
+                  },
+                  {
+                    "concept": "9ffa7692-97a0-44a7-8abd-da07de5bdf22",
+                    "label": "Burns"
+                  },
+                  {
+                    "concept": "4bfbdee8-2574-4ed3-b9e3-295ae2bc6754",
+                    "label": "Snake Bites"
+                  },
+                  {
+                    "concept": "d02121cb-f47e-479f-b065-2dcdeec2ccb7",
+                    "label": "Dog Bites"
+                  },
+                  {
+                    "concept": "4bfbdee8-2574-4ed3-b9e3-295ae2bc6754",
+                    "label": "Other Bites"
+                  },
+                  {
+                    "concept": "119481AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Diabetes"
+                  },
+                  {
+                    "concept": "19ff0ea5-18cf-4840-9add-bc0979f02023",
+                    "label": "Epilepsy"
+                  },
+                  {
+                    "concept": "5ffbcd33-57ca-4cfb-9c13-6d15f77a1b7b",
+                    "label": "Brucellosis"
+                  },
+                  {
+                    "concept": "429275a6-bcc2-4334-9a1c-0f058dd7176a",
+                    "label": "Cardiovascular Conditions"
+                  },
+                  {
+                    "concept": "3323a2ea-c61a-4d37-adf0-525613d6381b",
+                    "label": "Central Nervous System Conditions"
+                  },
+                  {
+                    "concept": "114413AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Overweight (BMI > 25)"
+                  },
+                  {
+                    "concept": "3d71e005-45b6-4b01-a5cb-a3e423c539f7",
+                    "label": "Muscular Skeletal Conditions"
+                  },
+                  {
+                    "concept": "140601d1-c6a5-46c3-85ac-ad2dc096f19f",
+                    "label": "Fistula (Birth Related)"
+                  },
+                  {
+                    "concept": "24504273-7e73-4579-b7c4-f945ab59599b",
+                    "label": "Suspected Neoplams/Cancers"
+                  },
+                  {
+                    "concept": "98275ba9-ef92-473b-bf90-f69d3402ccb8",
+                    "label": "Physical Disability"
+                  },
+                  {
+                    "concept": "7554c625-e185-4c6c-9753-6506e5e2b85f",
+                    "label": "Trypanosomiasis"
+                  },
+                  {
+                    "concept": "63613c65-9ea3-4479-be52-cbd0b8ad0753",
+                    "label": "Rift Valley Fever"
+                  },
+                  {
+                    "concept": "7f4a2e54-63c9-4c7c-bddc-41418030398d",
+                    "label": "Yellow Fever"
+                  },
+                  {
+                    "concept": "1482d7d6-b75d-410d-9357-6cb2c8d92882",
+                    "label": "Viral Haemorrhagic Fever"
+                  },
+                  {
+                    "concept": "f1295de2-8c5b-4f3b-904a-671bdd89b1eb",
+                    "label": "Chikungunya"
+                  },
+                  {
+                    "concept": "e5f90432-77ac-49fe-a34f-f816cca666b7",
+                    "label": "Dengue Fever"
+                  },
+                  {
+                    "concept": "526bda40-2fce-45fd-8ba9-c1921a25d5f6",
+                    "label": "Kalazar (Leishmaniasis)"
+                  },
+                  {
+                    "concept": "9b757626-dd2e-488d-84a0-ca3f4d1a8e51",
+                    "label": "Cutaneous Leishmaniasis"
+                  },
+                  {
+                    "concept": "b0a9fc8e-312b-45d8-b17a-5f96c431552e",
+                    "label": "Suspected Anthrax"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other Diseases"
+                  }
+                ]
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age < 5"
+              }
+            },
+            {
+              "label": "Other Menengitis Specify",
+              "id": "otherMenigitisChildrenSpecify",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "b0fef4a0-a77b-4cce-8a1b-d60d2bcd6e8e"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisChildren) || !arrayContains(impressionsDiagnosisChildren, '5f373b9c-93fe-4371-8fa8-39c05aed4323')"
+              }
+            },
+            {
+              "label": "Other Menengitis Specify",
+              "id": "otherMenigitisAdultSpecify",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "b0fef4a0-a77b-4cce-8a1b-d60d2bcd6e8e"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisAdults) || !arrayContains(impressionsDiagnosisAdults, '5f373b9c-93fe-4371-8fa8-39c05aed4323')"
+              }
+            },
+            {
+              "label": "Other Diagnosis Specify",
+              "id": "diagnosisOtherChildrenSpecify",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "410d7684-2045-4eff-9af3-1fb57a406123"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisChildren) || !arrayContains(impressionsDiagnosisChildren, '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            },
+            {
+              "label": "Other Diagnosis Specify",
+              "id": "diagnosisOtherAdultsSpecify",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "410d7684-2045-4eff-9af3-1fb57a406123"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisAdults) || !arrayContains(impressionsDiagnosisAdults, '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            },
+            {
+              "label": "Other Convulsive Disorders Specify",
+              "id": "otherConvulsiveChildrenSpecify",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "4dbab2e3-d47d-49dc-8dbe-e9a83567f230"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisChildren) || !arrayContains(impressionsDiagnosisChildren, '988b26cc-369e-42bf-9162-4e5380a45342')"
+              }
+            },
+            {
+              "label": "Other bites Specify",
+              "id": "otherBitesChildrenSpecify",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "4b503f44-f9ff-4444-a8bd-2c928c3ae5c4"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisChildren) || !arrayContains(impressionsDiagnosisChildren, '4bfbdee8-2574-4ed3-b9e3-295ae2bc6754')"
+              }
+            },
+            {
+              "label": "Other bites Specify",
+              "id": "otherBitesAdultsSpecify",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "4b503f44-f9ff-4444-a8bd-2c928c3ae5c4"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisAdults) || !arrayContains(impressionsDiagnosisAdults, '4bfbdee8-2574-4ed3-b9e3-295ae2bc6754')"
+              }
+            },
+            {
+              "label": "Other injuries Specify",
+              "id": "otherInjuriesChildrenSpecify",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "7e57cd52-4bd0-45ed-9dd1-582dfe7cad60"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisChildren) || !arrayContains(impressionsDiagnosisChildren, 'cafabbfc-4776-4ff6-8c6d-4aee5c200ef4')"
+              }
+            },
+            {
+              "label": "Other injuries Specify",
+              "id": "otherInjuriesAdultsSpecify",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "7e57cd52-4bd0-45ed-9dd1-582dfe7cad60"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisAdults) || !arrayContains(impressionsDiagnosisAdults, 'cafabbfc-4776-4ff6-8c6d-4aee5c200ef4')"
+              }
+            },
+            {
+              "label": "Other disease of respiratory Specify",
+              "id": "otherRespiratoryDiseaseAdultsSpecify",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "33d8508e-fdf0-499e-bf7a-a8cc2c1be09a"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisAdults) || !arrayContains(impressionsDiagnosisAdults, 'a4744bfc-034f-46ff-8996-033bcbaa374d')"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Treatment Plan",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Treatment Plan",
+              "id": "treatment",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "e670dc2a-0c21-4fda-a8df-d9b7b1ca87ec"
+              }
+            }
+          ]
+        },
+        {
+          "label": "TCA",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "TCA",
+              "id": "tca",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "338d28f6-0095-4898-a11f-84bb646e612b",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              },
+              "alert": {
+                "alertWhenExpression": "tca === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
+                "message": "Please place an appointment for the Patient"
+              }
+            },
+            {
+              "label": "Please place an appointment for the Patient",
+              "required": false,
+              "id": "appointmentWorkspaceLauncher",
+              "questionOptions": {
+                "rendering": "workspace-launcher",
+                "buttonLabel": "Add appointments",
+                "workspaceName": "appointments-form-workspace"
+              },
+              "hide": {
+                "hideWhenExpression": "tca !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "TCA",
+              "id": "tcaComment",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "d08b33dd-d807-460a-a91e-049c30b7a0aa"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Other details",
+      "sections": [
+        {
+          "label": "Other details (< 5)",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Caregiver’s Telephone No.",
+              "required": false,
+              "id": "careGiverTelephone",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "109096BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age > 5"
+              }
+            },
+            {
+              "label": "Danger signs baby",
+              "type": "obs",
+              "required": false,
+              "id": "dangerSignsBaby",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "7230eb74-e60a-4031-a7c1-26281add0db4",
+                "answers": [
+                  {
+                    "concept": "107349BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Unable to drink or breastfeed"
+                  },
+                  {
+                    "concept": "140528BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Vomiting everything"
+                  },
+                  {
+                    "concept": "13688BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Convulsions"
+                  },
+                  {
+                    "concept": "23889BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Unconscious"
+                  },
+                  {
+                    "concept": "140529BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Currently convulsing"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "age > 5"
+              }
+            },
+            {
+              "label": "Duration of Illness (days)",
+              "required": false,
+              "id": "durationOfIllness",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1817BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "min": 0
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "durationOfIllness < 0",
+                  "message": "Duration of Illness cannot be less than 0"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "Suspected Malaria cases(all clients presenting with symptoms of Malaria)",
+              "type": "obs",
+              "required": false,
+              "id": "suspectedMalariaCases",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "answers": [
+                  {
+                    "concept": "5902fc83-0742-4eb2-bd02-823f71d0e641",
+                    "label": "Presenting with symptoms but NOT tested"
+                  },
+                  {
+                    "concept": "1923BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "RAPID TEST FOR MALARIA"
+                  },
+                  {
+                    "concept": "307a4edd-6a8b-4a49-842e-34117cbea114",
+                    "label": "Microscopy Tested (-ve)"
+                  },
+                  {
+                    "concept": "23889BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Unconscious"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "Tracer Drugs Prescribed",
+              "type": "obs",
+              "required": false,
+              "id": "tracerDrugsPrescribed",
+              "questionOptions": {
+                "rendering": "multiCheckbox",
+                "concept": "c422af79-d5b7-4560-9320-7f53045deaaa",
+                "answers": [
+                  {
+                    "concept": "7e062525-598e-4634-868d-1d015badbd36",
+                    "label": "ORS & Zinc"
+                  },
+                  {
+                    "concept": "382BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "ORAL REHYDRATION SALTS"
+                  },
+                  {
+                    "concept": "a7587ce7-f402-4ee3-b36b-4ab78d93d221",
+                    "label": "ZINC"
+                  },
+                  {
+                    "concept": "86339AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "VITAMIN A"
+                  },
+                  {
+                    "concept": "c0595755-f114-4800-88dc-ac97b7d62ec8",
+                    "label": "Amox DT"
+                  },
+                  {
+                    "concept": "7127BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "OXYGEN"
+                  },
+                  {
+                    "concept": "8f668b49-584f-4cba-b0f2-817a8aaf50c4",
+                    "label": "ALBENDAZOLE"
+                  },
+                  {
+                    "concept": "2045BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "INTRAVENOUS FLUID ADMINISTRATION"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "IMNCI Classifications",
+              "required": false,
+              "id": "imnciClassification",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "7e0cb443-eece-40da-9acd-94888a7695b1"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "Quantity of medication prescribed per dose (pills/grams)",
+              "required": false,
+              "id": "quantityOfMedicationPrescribed",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "109537BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "min": 0
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "quantityOfMedicationPrescribed < 0",
+                  "message": "Quantity of medication prescribed per dose cannot be less than 0"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "All other treatments",
+              "required": false,
+              "id": "allOtherTreatments",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "04088077-2c91-4fa8-9406-7005d884d151"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "Immunization status up to date",
+              "type": "obs",
+              "required": false,
+              "id": "immunizationUpToDate",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "efa157c0-4d93-4e7a-886b-b2af02a30374",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "TB Screening",
+              "type": "obs",
+              "required": false,
+              "id": "tbScreening",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "42eb7cdc-bd89-4b20-8e52-699a7e685181",
+                "answers": [
+                  {
+                    "concept": "106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Presumed diagnosis"
+                  },
+                  {
+                    "concept": "1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Not done"
+                  },
+                  {
+                    "concept": "1928BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Patient referred"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "Nutrition and diatetics",
+              "type": "obs",
+              "required": false,
+              "id": "nutritionAndDietetics",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f5a93555-0455-4de9-93c7-92111d8ddb72",
+                "answers": [
+                  {
+                    "concept": "1502BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "NUTRITION COUNSELING"
+                  },
+                  {
+                    "concept": "9822d9da-7feb-4da6-8a99-6f842540931b",
+                    "label": "Nutrition therupetic supplements"
+                  },
+                  {
+                    "concept": "da9055e2-17a1-4042-8e38-cf396a1ce88f",
+                    "label": " Diatetics"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            }
+          ],
+          "hide": {
+            "hideWhenExpression": " age > 5"
+          }
+        },
+        {
+          "label": "Visual Acuity **RE / LE**",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visual acuity right eye",
+              "type": "obs",
+              "required": false,
+              "id": "visualAcuityRightEye",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "108485BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Visual acuity left eye",
+              "type": "obs",
+              "required": false,
+              "id": "visualAcuityLeftEye",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "108483BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            }
+          ],
+          "hide": {
+            "hideWhenExpression": "age <= 5"
+          }
+        },
+        {
+          "label": "Other details ()",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Screened for tuberculosis",
+              "type": "obs",
+              "required": false,
+              "id": "tbScreeningAdults",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "42eb7cdc-bd89-4b20-8e52-699a7e685181",
+                "answers": [
+                  {
+                    "concept": "106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Presumed diagnosis"
+                  },
+                  {
+                    "concept": "1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Not done"
+                  },
+                  {
+                    "concept": "1928BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Patient referred"
+                  },
+                  {
+                    "concept": "1969BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "On TB Treatment"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Suspected Malaria cases(all clients presenting with symptoms of Malaria)",
+              "type": "obs",
+              "required": false,
+              "id": "suspectedMalariaCasesAdults",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "answers": [
+                  {
+                    "concept": "5902fc83-0742-4eb2-bd02-823f71d0e641",
+                    "label": "Presenting with symptoms but NOT tested"
+                  },
+                  {
+                    "concept": "1923BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "RAPID TEST FOR MALARIA"
+                  },
+                  {
+                    "concept": "307a4edd-6a8b-4a49-842e-34117cbea114",
+                    "label": "Microscopy Tested (-ve)"
+                  },
+                  {
+                    "concept": "23889BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Unconscious"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Record the name of  Drugs from the prescription or drug codes if provided",
+              "type": "obs",
+              "required": false,
+              "id": "nameOfDrugs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "7976446e-3fbd-4cd0-871a-cbdc621998fc"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Prescription",
+              "type": "obs",
+              "required": false,
+              "id": "prescriptionAdults",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "efce67b4-7402-45d0-bc54-dfd840fdc463"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Nutritional interventions provided ",
+              "type": "obs",
+              "required": false,
+              "id": "nutritionInterventions",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f570fc3a-e021-4475-92aa-84ad9592cbb9",
+                "answers": [
+                  {
+                    "concept": "f18c2f4e-3937-4898-89d6-7c6f917157c6",
+                    "label": "Nutrition assessment"
+                  },
+                  {
+                    "concept": "1435e7ff-1ba9-4ea7-900a-181c2d1507e2",
+                    "label": "Nutrition education"
+                  },
+                  {
+                    "concept": "341e525d-f1ac-41d2-a5f6-cc0a97ec372d",
+                    "label": " Nutrition supplements"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Refer Patient",
+      "sections": [
+        {
+          "label": "Refer Patient",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Is Patient being referred to Another facility?",
+              "type": "obs",
+              "required": false,
+              "id": "isBeingPatientReferred",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "0a9deaf2-cd0d-4af7-85b1-7db013e448e4",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Type of facility referred to",
+              "type": "obs",
+              "required": false,
+              "id": "typeOfFacilityReferredToAdults",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "a9b68c20-8ace-459a-8e7b-68c9a8487aba",
+                "answers": [
+                  {
+                    "concept": "4ca6ae87-7a34-4079-a67b-7107156f30e8",
+                    "label": "Referred to Community Unit"
+                  },
+                  {
+                    "concept": "ffc9af40-cfb6-4edf-89a8-d478a1ed00f6",
+                    "label": "Referred to other facility"
+                  },
+                  {
+                    "concept": "76252f2b-4a80-4414-a630-a2bee89c00a0",
+                    "label": "Referred Within"
+                  },
+                  {
+                    "concept": "ccda26b2-a73f-4dcb-be03-1572eb6cf7b9",
+                    "label": "N/A"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "isBeingPatientReferred !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Specify Facility referred to",
+              "required": false,
+              "id": "facilityReferredToSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "2c69e8af-4500-4bf2-b8f6-0d38d5c546ad",
+                "answers": []
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "typeOfFacilityReferredToAdults !== 'ffc9af40-cfb6-4edf-89a8-d478a1ed00f6'"
+              }
+            },
+            {
+              "label": "REMARKS/Outome",
+              "required": false,
+              "id": "remarks",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "6990f720-b0f7-405d-bfb6-7a1f058109bb"
+              },
+              "validators": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "description": "Findings and Treatment",
+  "encounterType": "f02fecec-4d74-4430-8e59-5150016551e5",
+  "uuid": "95301452-081a-44e2-a561-fe83d6f02a1f"
+}
