@@ -43,7 +43,7 @@
     "@openmrs/esm-patient-lists-app": "next",
     "@openmrs/esm-patient-procedures-app": "next",
     "@openmrs/esm-patient-results-app": "next",
-    "@ssemrapp/esm-login-app": "0.0.2",
+    "@ssemrapp/esm-login-app": "0.0.3",
     "@ssemrapp/esm-patient-summary-app": "0.0.2",
     "@ssemr/esm-patient-notifications-app": "next",
     "@ssemrapp/esm-patient-registration-app": "0.0.4",
