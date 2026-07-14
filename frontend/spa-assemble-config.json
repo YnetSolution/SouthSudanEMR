@@ -39,8 +39,6 @@
     "@openmrs/esm-patient-allergies-app": "next",
     "@openmrs/esm-patient-attachments-app": "next",
     "@openmrs/esm-patient-conditions-app": "next",
-    "@openmrs/esm-patient-list-management-app": "next",
-    "@openmrs/esm-patient-lists-app": "next",
     "@openmrs/esm-patient-procedures-app": "next",
     "@ssemrapp/esm-login-app": "0.0.3",
     "@ssemrapp/esm-patient-summary-app": "0.0.2",
