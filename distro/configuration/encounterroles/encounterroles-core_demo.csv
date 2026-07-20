@@ -1,3 +1,7 @@
 Uuid,Void/Retire,Name,Description
 a0b03050-c99b-11e0-9572-0800200c9a66,,Unknown,Unknown encounter role for legacy providers with no encounter role set
 240b26f9-dd88-4172-823d-4a8bfeb7841f,,Clinician,"Doctor or Nurse who is the primary provider for an encounter, and will sign the note"
+550e8400-e29b-41d4-a716-446655440000,,Admitting Physician,Physician admitting the patient
+41f7aa30-0773-4189-8341-cd5097886aa3,,Discharging Physician,Physician discharging the patient
+8119c725-0d4f-4955-929e-e61d2e21996d,,Ordering Provider,Provider ordering the tests and procedures
+321b3d62-1500-41d9-946a-353ef86800e9,,Results Reviewer,Physician reviewing the test results

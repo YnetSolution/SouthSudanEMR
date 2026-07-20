@@ -1,0 +1,260 @@
+{
+    "name": "4. UltraSound",
+    "version": "1.0.0",
+    "published": true,
+    "retired": false,
+    "encounter": "Ultra Sound",
+    "pages": [
+      {
+        "label": "Ultrasound Details",
+        "sections": [
+          {
+            "label": "Ultrasound Details",
+            "isExpanded": "true",
+            "questions": [
+                {
+                    "label": "Exam Requested",
+                    "type": "obs",
+                    "required": true,
+                    "id": "examRequested",
+                    "questionOptions": {
+                        "rendering": "radio",
+                        "concept": "e1449ab7-dd55-4443-a7c1-bf77b39ea386",
+                        "answers": [
+                            {
+                                "concept": "fda5119b-6a0f-4016-8ecf-90c619a42b5f",
+                                "label": "Routine"
+                            },
+                            {
+                                "concept": "dc3492ef-24a5-4fd9-b58d-4fd2acf7071f",
+                                "label": "Urgent"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "label": "Referral",
+                    "type": "obs",
+                    "required": true,
+                    "id": "referral",
+                    "questionOptions": {
+                        "rendering": "radio",
+                        "concept": "d1e2f14d-cc8c-4fb2-ba44-04c2f223d294",
+                        "answers": [
+                            {
+                                "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                "label": "Yes"
+                            },
+                            {
+                                "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                "label": "No"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "label": "Date of Referral",
+                    "type": "obs",
+                    "required": true,
+                    "id": "dateOfReferral",
+                    "questionOptions": {
+                        "rendering": "date",
+                        "concept": "9a4112f5-5233-49d8-8ccf-c1ffc5ace7a3",
+                        "answers": []
+                    },
+                    "hide":{
+                        "hideWhenExpression":"referral !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    }
+                },
+                {
+                    "label": "In From",
+                    "type": "obs",
+                    "required": true,
+                    "id": "inFrom",
+                    "questionOptions": {
+                        "rendering": "text",
+                        "concept": "eb3adf82-dea1-4a97-803c-852f61dec950",
+                        "answers": []
+                    },
+                    "hide":{
+                        "hideWhenExpression":"referral !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    }
+                },
+                {
+                    "label": "Out to",
+                    "type": "obs",
+                    "required": true,
+                    "id": "outTo",
+                    "questionOptions": {
+                        "rendering": "text",
+                        "concept": "e133db61-3fb6-44e1-988b-98d8eec0148e",
+                        "answers": []
+                    },
+                    "hide":{
+                        "hideWhenExpression":"referral !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    }
+                },
+                {
+                    "label": "Reason for referral",
+                    "type": "obs",
+                    "required": true,
+                    "id": "reasonForReferral",
+                    "questionOptions": {
+                        "rendering": "text",
+                        "concept": "cebe3be9-7d72-4478-a7e2-015e4ed87f46",
+                        "answers": []
+                    },
+                    "hide":{
+                        "hideWhenExpression":"referral !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    }
+                },
+                {
+                    "label": "referral form/image",
+                    "id": "referralImageFormProvided",
+                    "questionOptions": {
+                        "concept": "a7a1f899-135b-49b3-a1fe-d9ef0b50c40b",
+                        "showDate": "false",
+                        "rendering": "file",
+                        "shownDateOptions": {
+                            "validators": [
+                                {
+                                    "type": "date"
+                                }
+                            ]
+                        }
+                    },
+                    "type": "obs",
+                    "validators": [],
+                    "hide":{
+                        "hideWhenExpression":"referral !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    }
+                }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Relevant History",
+        "sections": [
+          {
+            "label": "Relevant History",
+            "isExpanded": "true",
+            "questions": [
+                {
+                    "label": "Relevant History",
+                    "type": "obs",
+                    "required": true,
+                    "id": "relevantHistory",
+                    "questionOptions": {
+                        "rendering": "textarea",
+                        "concept": "684e52f3-dd08-465b-ac6c-5aca23cb19d9",
+                        "answers": []
+                    }
+                }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Services",
+        "sections": [
+          {
+            "label": "Services",
+            "isExpanded": "true",
+            "questions": [
+                {
+                    "label": "Services",
+                    "type": "obs",
+                    "required": true,
+                    "id": "services",
+                    "questionOptions": {
+                        "rendering": "select",
+                        "concept": "a9a88d26-1704-4ddf-9e31-6b137432b60d",
+                        "answers": [
+                            {
+                                "label":"Obstetric Ultrasound",
+                                "concept": "aa2b62ca-f798-40c8-ba88-bcff78be1fbe"
+                            },
+                            {
+                                "label":"Pelvic Ultrasound",
+                                "concept": "b2f6cbd3-c9f1-4796-9b17-71b79d3083b9"
+                            },
+                            {
+                                "label":"Abdominal Ultrasound",
+                                "concept": "924e2c88-6c77-47d1-a8ae-a2c14e537ca8"
+                            },
+                            {
+                                "label":"Doppler Ultrasound",
+                                "concept": "adfff9e4-7d2a-4c37-8442-987100e03397"
+                            },
+                            {
+                                "label":"Breast Ultrasound",
+                                "concept": "8fabe61d-b2ef-414a-bfb5-d2c3dfc67343"
+                            },
+                            {
+                                "label":"Thyroid Ultrasound",
+                                "concept": "e6f837c0-5362-4c29-acfc-2eaec54f96d4"
+                            },
+                            {
+                                "label":"Prostate Ultrasound",
+                                "concept": "87ba416e-019a-43fc-8e3e-d9129c532175"
+                            },
+                            {
+                                "label":"Transvaginal Ultrasound",
+                                "concept": "9b423453-cdb2-4f29-8636-7fbdc9f52050"
+                            },
+                            {
+                                "label":"Regional Ultrasound",
+                                "concept": "399853b4-9d99-434c-b463-5f468c9dfb93"
+                            },
+                            {
+                                "label":"Testicular Ultrasound",
+                                "concept": "b19257f3-36fd-4d68-a0b3-65c85623201e"
+                            },
+                            {
+                                "label":"Anomaly Scan",
+                                "concept": "c39a3a0d-b767-4a3b-be37-ea42884eb152"
+                            },
+                            {
+                                "label":"Scrotal Ultrasound",
+                                "concept": "b3665c93-5043-4b7e-aae6-f803b80e1f21"
+                            },
+                            {
+                                "label":"Superficial Ultrasound",
+                                "concept": "9bde7d89-3a34-4f69-aa21-bd617f144e85"
+                            },
+                            {
+                                "label":"Locating IUCD, Implant (Foreign Body) Ultrasound",
+                                "concept": "46cdba72-d273-4377-ac76-0b31fc3a9195"
+                            },
+                            {
+                                "label":"Other exam or procedure",
+                                "concept": "be00e6f9-9f53-4b73-95bc-c6ed517a98e1"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "label": "Other exam or procedure (specify)",
+                    "type": "obs",
+                    "required": true,
+                    "id": "otherExamOrProcedureSpecify",
+                    "questionOptions": {
+                        "rendering": "text",
+                        "concept": "54653ef2-d689-47bb-9efa-1f4b58220cb3",
+                        "answers": []
+                    },
+                    "hide": 
+                    {
+                        "hideWhenExpression":"services !== 'be00e6f9-9f53-4b73-95bc-c6ed517a98e1'"
+                    }
+                }
+            ]
+          }
+        ]
+      }
+    ],
+    "description": "Ultra Sound Form",
+    "encounterType": "001309ab-10e3-4b4d-9706-6982cfabc5fe",
+    "uuid": ""
+  }

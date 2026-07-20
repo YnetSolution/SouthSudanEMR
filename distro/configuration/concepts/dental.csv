@@ -1,0 +1,51 @@
+Uuid,Void/Retire,Same as mappings,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:1001,Data class,Data type,Answers,Members
+af52b90b-ead9-4cbb-a99a-137e154db272,,,Adult,Adult,,,,,Misc,N/A,,
+aff3fd37-3723-4acf-9e3d-91b650bbfec2,,,Child,Child,,,,,Misc,N/A,,
+0e267726-c004-4ffd-956d-1c8401cf08b5,,,Patient Type,Patient Type,,,,,Question,Coded,"Adult;
+Child",
+"ca004964-0fb0-486c-8f23-cc53ed27ece0
+",,,Dental Procedure Notes,Dental Procedure Notes,,,,,Question,Text,,
+8d758a04-541f-4502-9bb5-742cecc8a691,,,Medications Prescribed,Medications Prescribed,,,,,Question,Text,,
+3b7fcddc-092d-4e4a-81ff-57e2e9d61e23,,,Filling,Filling,,,,,Misc,N/A,,
+b612c8fd-34e7-4c92-ab13-3054184dd557,,,Extraction,Extraction,,,,,Misc,N/A,,
+bbe168c4-d6ba-449f-b900-3100c585dbfb,,,Adult Extraction,Adult Extraction,,,,,Misc,N/A,,
+28b3d4af-7e1a-4a32-b7a7-f953e01876d9,,,Child Extraction,Child Extraction,,,,,Misc,N/A,,
+2de902fa-22b2-4daa-b42a-4ee3b221f7c4,,,Root Canal treatment,Root Canal treatment,,,,,Misc,N/A,,
+fbcc905d-6584-471b-9702-99bc277729a8,,,Full Mouth Scaling,Full Mouth Scaling,,,,,Misc,N/A,,
+d51be43f-4781-4b58-833e-2b08badcb84f,,,Extraction Last Molars,Extraction Last Molars,,,,,Misc,N/A,,
+00d5340c-a53b-4b94-9f2e-ed2d51d57173,,,Masking Per Tooth,Masking Per Tooth,,,,,Misc,N/A,,
+a4cebf9a-8757-406d-99c7-4aa11436d70c,,,Crown & Bridge,Crown & Bridge,,,,,Misc,N/A,,
+50840634-21b3-44c0-b176-70c2392fb191,,,Partial Dentures,Partial Dentures ,,,,,Misc,N/A,,
+166b3f83-036d-4192-99c3-014439c28ad6,,,Full Dentures,Full Dentures,,,,,Misc,N/A,,
+0eab3473-ac47-485c-9692-42a329187d5f,,,Braces,Braces,,,,,Misc,N/A,,
+a1b74c6d-e6be-491b-af49-feb7a3a48bf7,,,Pulpectomy,Pulpectomy,,,,,Misc,N/A,,
+71c2d90f-e3c2-445f-9982-cb10abcde860,,,Socket Fixation,Socket Fixation,,,,,Misc,N/A,,
+3e8b2d29-9bd2-4b96-8702-9f05b8b548ec,,,Masking,Masking,,,,,Misc,N/A,,
+23ef1211-3473-44b4-b0fc-aca22b505363,,,Disimpation,Disimpation,,,,,Misc,N/A,,
+4af9bdc8-b210-45f0-b859-0065e482390c,,,Suturing,Suturing,,,,,Misc,N/A,,
+531efe1a-22ca-4a82-a375-363848b8a392,,,Spinting,Spinting,,,,,Misc,N/A,,
+4d7029fe-53a3-45e6-a90b-84c6aaa7562a,,,MMF(Maxillo Mandibular Fixation),MMF(Maxillo Mandibular Fixation),,,,,Misc,N/A,,
+1af9817b-f08b-440b-909b-acd39bc1d080,,,Reenforcement,Reenforcement,,,,,Misc,N/A,,
+595fd534-3612-422a-9dfa-e4cd34cdb337,,,Other Dental procedure,Other Dental procedure,,,,,Misc,N/A,,
+d7183d0d-1f07-4dc4-a16a-a66e9e4a22b3,,,Dental procedure,,,,,,Question,Coded,"Filling;
+Extraction;
+Root Canal treatment;
+Full Mouth Scaling;
+Extraction Last Molars;
+Masking Per Tooth;
+Crown & Bridge;
+Partial Dentures;
+Full Dentures;
+Braces;
+Pulpectomy;
+Socket Fixation;
+Masking;
+Disimpation;
+Suturing;
+Spinting;
+MMF(Maxillo Mandibular Fixation);
+Reenforcement;
+Other Dental procedure",
+0e6c3b2e-cd0c-4eb1-a6e8-bdc4855d81d5,,,Other Dental procedure Specify,,,,,,Question,Text,,
+2dd2e395-858b-4754-878c-bc22afe0f3d6,,,Dental findings,Dental findings,,,,,Question,Text,,
+889cf3ab-3361-4f67-9819-181b5735e562,,,Drug,Drug,,,,,Drug,Text,,

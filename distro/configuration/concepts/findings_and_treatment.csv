@@ -1,0 +1,43 @@
+Uuid,Void/Retire,Same as mappings,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:150,Data class,Data type,Answers,Members
+32c2d223-6a01-4ede-8224-7feeb073e2ab,,,Patient referred from another facility?,Patient referred?,,,,,Question,Coded,"Yes;
+No",
+0a9deaf2-cd0d-4af7-85b1-7db013e448e4,,,Is Patient being referred to Another facility?,Is Patient being referred to Another facility?,,,,,Question,Coded,"Yes;
+No",
+f3c308eb-224a-4f36-9b1e-bea4b5030eb7,,,Chief Complain,Chief Complain,,,,,Question,Text,,
+940e138d-399f-42dc-a28c-1d7709e917cc,,,History of Presenting illness,History of Presenting illness,,,,,Question,Text,,
+5f9375cd-3138-4f41-96a1-ffab4910ce98,,,General Examination,General Examination,,,,,Question,Coded,"Normal;
+Abnormal",
+5d72820a-de18-4de3-bd88-803abc61a0ba,,,General Examination Explain,General Examination Explain,,,,,Question,Text,,
+daf8e0c0-ef5b-4568-8564-6a57358e1756,,,General Examination Comment,General Examination Comment,,,,,Question,Text,,
+1882a72e-388e-40a7-8fcf-a6c46528fe8b,,,Systemic Examination,Systemic Examination,,,,,Question,Coded,"Normal;
+Abnormal",
+c0462e9b-d91b-4e14-a249-4120362ad0da,,,Systemic Examination Explain,Systemic Examination Explain,,,,,Question,Text,,
+d5771e6e-0f9c-4d3f-b9ab-56e545bc3e10,,,Systemic Examination Comment,Systemic Examination Comment,,,,,Question,Text,,
+6508b46e-1fef-455b-aedc-b8fddc7309af,,,Investigation,Investigation,,,,,Question,Text,,
+e670dc2a-0c21-4fda-a8df-d9b7b1ca87ec,,,Treatment Plan,Treatment Plan,,,,,Question,Text,,
+338d28f6-0095-4898-a11f-84bb646e612b,,,TCA,TCA,,,,,Question,Coded,"Yes;
+No",
+d08b33dd-d807-460a-a91e-049c30b7a0aa,,,TCA Comment,TCA Comment,,,,,Question,Text,,
+45e967c8-a275-4000-93c1-172559a96dc2,,,Labs,Labs,,,,,Question,Text,,
+5f45f154-a8cc-4a00-8930-8afbcc71a70b,,,Chief Complain Section,Chief Complain Section,,,,,Misc,N/A,,Chief Complain
+adbfa883-efa1-4393-a9ab-015566c6ea42,,,History of Presenting illness Section,History of Presenting illness Section,,,,,Misc,N/A,,History of Presenting illness
+b2eb5496-e708-44ad-bce4-8a976941ca44,,,General Examination Section,General Examination Section,,,,,Misc,N/A,,"General Examination; 
+General Examination Explain"
+98554c7b-cdec-41cb-b1f6-10972a6139b2,,,Systemic Examination Section,Systemic Examination Section,,,,,Misc,N/A,,"Systemic Examination;
+Systemic Examination Explain"
+35b212be-b951-484e-ab67-7e27f65445c3,,,Impressions/Diagnosis Section,Impressions/Diagnosis Section,,,,,Misc,N/A,,Impressions/Diagnosis
+d0327c30-66b0-46bf-9649-f0f740273dde,,,Treatment Plan Section,Treatment Plan Section,,,,,Misc,N/A,,Treatment Plan
+7619cf81-313d-4fcd-bdb1-57f94c376d58,,,TCA Section,TCA Section,,,,,Misc,N/A,,TCA; TCA Comment
+160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:160632;AMPATH:1915;LOINC:48767-8 ,Free text general,"	
+Freetext general",This is a freetext field for general use. It should be tied to another concept as a child.,,,,Question,Text,,
+160430AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,,Reason for Visit,Reason for Visit,,,,,Question,Text,,
+159395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,,Triage Notes,Triage Notes,,,,,Question,Text,,
+d85b298f-2819-49b1-b716-1c0cee69212c,,,Obstetrics and Gynaecology,Obstetrics and Gynaecology,,,,,Question,Text,,
+b0863993-4b65-4d34-82a8-ed8bc1bd2598,,,Abstinence,Abstinence,,,,,Misc,N/A,,
+f8e6bcff-4557-408a-8797-dabb64ccfd57,,,Other Family Planning,Other Family Planning,,,,,Misc,N/A,,
+2eac1d32-0d14-43d7-b188-a6acb215e626,,,Family planning,Family planning,,,,,Question,Coded,"Abstinence;
+Other Family Planning",
+62340009-748b-4b4c-87fa-8d1b2ca96ea0,,,Other Family Planning Specify,Other Family Planning Specify,,,,,Question,Text,,
+"9adb2c60-b34d-4c3e-961b-03bd0c581e45
+",,,Number of previous pregnancies,Number of previous pregnancies,,,,,Question,Numeric,,
+7976446e-3fbd-4cd0-871a-cbdc621998fc,,,Record the name of  Drugs from the prescription or drug codes if provided,Record the name of  Drugs from the prescription or drug codes if provided,,,,,Question,Text,,

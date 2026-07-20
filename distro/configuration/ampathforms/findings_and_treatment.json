@@ -1,0 +1,908 @@
+{
+  "name": "2. Findings and Treatment",
+  "version": "1.0.0",
+  "published": true,
+  "retired": false,
+  "encounter": "Findings and Treatment",
+  "pages": [
+    {
+      "label": "Client details",
+      "sections": [
+        {
+          "label": "Patient referred",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Patient referred from another facility?",
+              "type": "obs",
+              "required": false,
+              "id": "isPatientReferred",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "32c2d223-6a01-4ede-8224-7feeb073e2ab",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Type of facility referred from",
+              "type": "obs",
+              "required": false,
+              "id": "facilityRefferedFrom",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "44335370-b96b-405e-97ad-ea4d4451a2ca",
+                "answers": [
+                  {
+                    "concept": "93c07155-1e4f-4996-9f78-0f476f11605a",
+                    "label": "Referred from Community Unit"
+                  },
+                  {
+                    "concept": "9b31621c-17c2-46c7-98ce-051dc8564dc7",
+                    "label": "Referred from Within"
+                  },
+                  {
+                    "concept": "946febb7-94d0-4fe5-9555-fc483a1e0d7c",
+                    "label": "N/A"
+                  },
+                  {
+                    "concept": "61f9ac9f-4743-4f95-bd83-02881612083c",
+                    "label": "Referred From other facility"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "isPatientReferred !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Specify Facility referred from",
+              "required": false,
+              "id": "facilityReferredFromSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "140425BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "answers": []
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "facilityRefferedFrom !== '61f9ac9f-4743-4f95-bd83-02881612083c'"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Client details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Chief Complain",
+              "id": "co",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "f3c308eb-224a-4f36-9b1e-bea4b5030eb7"
+              }
+            }
+          ]
+        },
+        {
+          "label": "History of Presenting illness",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "History of Presenting illness",
+              "id": "historyOfPresentingIllness",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "940e138d-399f-42dc-a28c-1d7709e917cc"
+              }
+            }
+          ]
+        },
+        {
+          "label": "",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Number of previous pregnancies",
+              "type": "obs",
+              "id": "numberOfPreviousPregnancies",
+              "required": false,
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "9adb2c60-b34d-4c3e-961b-03bd0c581e45",
+                "min": "0"
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'M' || !(age >= 9 && age <= 45)"
+              }
+            },
+            {
+              "label": "LMP",
+              "type": "obs",
+              "id": "lmp",
+              "required": false,
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "1427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'M' || !(age >= 9 && age <= 45)"
+              }
+            },
+            {
+              "label": "Family planning",
+              "type": "obs",
+              "id": "familyPlanning",
+              "required": false,
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "2eac1d32-0d14-43d7-b188-a6acb215e626",
+                "answers": [
+                  {
+                    "concept": "b0863993-4b65-4d34-82a8-ed8bc1bd2598",
+                    "label": "Abstinence"
+                  },
+                  {
+                    "concept": "410d7684-2045-4eff-9af3-1fb57a406123",
+                    "label": "Other"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'M' || !(age >= 9 && age <= 45)"
+              }
+            },
+            {
+              "label": "Other Family Planning Specify",
+              "type": "obs",
+              "id": "otherFamilyPlanning",
+              "required": false,
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "62340009-748b-4b4c-87fa-8d1b2ca96ea0"
+              },
+              "hide": {
+                "hideWhenExpression": "familyPlanning !== '410d7684-2045-4eff-9af3-1fb57a406123'"
+              }
+            }
+          ],
+          "hide": {
+            "hideWhenExpression": "sex === 'M' || !(age >= 9 && age <= 45)"
+          }
+        },
+        {
+          "label": "Obstetrics and Gynaecology",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Obstetrics and Gynaecology",
+              "type": "obs",
+              "id": "obsAndGynaecology",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "d85b298f-2819-49b1-b716-1c0cee69212c"
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'M' || !(age >= 9)"
+              }
+            }
+          ],
+          "hide": {
+            "hideWhenExpression": "sex === 'M' || !(age >= 9)"
+          }
+        },
+        {
+          "label": "General Examination",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "General Examination",
+              "id": "generalExamination",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "5f9375cd-3138-4f41-96a1-ffab4910ce98",
+                "answers": [
+                  {
+                    "concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal"
+                  },
+                  {
+                    "concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Abnormal"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "General Examination Comment",
+              "id": "generalExaminationComment",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "daf8e0c0-ef5b-4568-8564-6a57358e1756"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Systemic Examination",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Systemic Examination",
+              "id": "systemicExamination",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "1882a72e-388e-40a7-8fcf-a6c46528fe8b",
+                "answers": [
+                  {
+                    "concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal"
+                  },
+                  {
+                    "concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Abnormal"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Systemic Examination Comment",
+              "id": "systemicExaminationComment",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "d5771e6e-0f9c-4d3f-b9ab-56e545bc3e10"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Investigation",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Investigation",
+              "id": "investigation",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "6508b46e-1fef-455b-aedc-b8fddc7309af"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Treatment Plan",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Treatment Plan",
+              "id": "treatment",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "e670dc2a-0c21-4fda-a8df-d9b7b1ca87ec"
+              }
+            }
+          ]
+        },
+        {
+          "label": "TCA",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "TCA",
+              "id": "tca",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "338d28f6-0095-4898-a11f-84bb646e612b",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              },
+              "alert": {
+                "alertWhenExpression": "tca === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
+                "message": "Please place an appointment for the Patient"
+              }
+            },
+            {
+              "label": "Please place an appointment for the Patient",
+              "required": false,
+              "id": "appointmentWorkspaceLauncher",
+              "questionOptions": {
+                "rendering": "workspace-launcher",
+                "buttonLabel": "Add appointments",
+                "workspaceName": "appointments-form-workspace"
+              },
+              "hide": {
+                "hideWhenExpression": "tca !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "TCA",
+              "id": "tcaComment",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "rows": 5,
+                "concept": "d08b33dd-d807-460a-a91e-049c30b7a0aa"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Other details",
+      "sections": [
+        {
+          "label": "Other details (< 5)",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Caregiver’s Telephone No.",
+              "required": false,
+              "id": "careGiverTelephone",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "109096BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age > 5"
+              }
+            },
+            {
+              "label": "Danger signs baby",
+              "type": "obs",
+              "required": false,
+              "id": "dangerSignsBaby",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "7230eb74-e60a-4031-a7c1-26281add0db4",
+                "answers": [
+                  {
+                    "concept": "107349BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Unable to drink or breastfeed"
+                  },
+                  {
+                    "concept": "140528BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Vomiting everything"
+                  },
+                  {
+                    "concept": "113054AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Convulsions"
+                  },
+                  {
+                    "concept": "23889BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Unconscious"
+                  },
+                  {
+                    "concept": "140529BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Currently convulsing"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "age > 5"
+              }
+            },
+            {
+              "label": "Duration of Illness (days)",
+              "required": false,
+              "id": "durationOfIllness",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1817BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "min": 0
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "durationOfIllness < 0",
+                  "message": "Duration of Illness cannot be less than 0"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "Suspected Malaria cases(all clients presenting with symptoms of Malaria)",
+              "type": "obs",
+              "required": false,
+              "id": "suspectedMalariaCases",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "answers": [
+                  {
+                    "concept": "5902fc83-0742-4eb2-bd02-823f71d0e641",
+                    "label": "Presenting with symptoms but NOT tested"
+                  },
+                  {
+                    "concept": "1643AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "RAPID TEST FOR MALARIA"
+                  },
+                  {
+                    "concept": "307a4edd-6a8b-4a49-842e-34117cbea114",
+                    "label": "Microscopy Tested (-ve)"
+                  },
+                  {
+                    "concept": "23889BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Unconscious"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "Tracer Drugs Prescribed",
+              "type": "obs",
+              "required": false,
+              "id": "tracerDrugsPrescribed",
+              "questionOptions": {
+                "rendering": "multiCheckbox",
+                "concept": "c422af79-d5b7-4560-9320-7f53045deaaa",
+                "answers": [
+                  {
+                    "concept": "7e062525-598e-4634-868d-1d015badbd36",
+                    "label": "ORS & Zinc"
+                  },
+                  {
+                    "concept": "382BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "ORAL REHYDRATION SALTS"
+                  },
+                  {
+                    "concept": "a7587ce7-f402-4ee3-b36b-4ab78d93d221",
+                    "label": "ZINC"
+                  },
+                  {
+                    "concept": "86339AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "VITAMIN A"
+                  },
+                  {
+                    "concept": "c0595755-f114-4800-88dc-ac97b7d62ec8",
+                    "label": "Amox DT"
+                  },
+                  {
+                    "concept": "7127BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "OXYGEN"
+                  },
+                  {
+                    "concept": "8f668b49-584f-4cba-b0f2-817a8aaf50c4",
+                    "label": "ALBENDAZOLE"
+                  },
+                  {
+                    "concept": "2045BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "INTRAVENOUS FLUID ADMINISTRATION"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "IMNCI Classifications",
+              "required": false,
+              "id": "imnciClassification",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "7e0cb443-eece-40da-9acd-94888a7695b1"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "Quantity of medication prescribed per dose (pills/grams)",
+              "required": false,
+              "id": "quantityOfMedicationPrescribed",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "109537BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "min": 0
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "quantityOfMedicationPrescribed < 0",
+                  "message": "Quantity of medication prescribed per dose cannot be less than 0"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "All other treatments",
+              "required": false,
+              "id": "allOtherTreatments",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "04088077-2c91-4fa8-9406-7005d884d151"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "Immunization status up to date",
+              "type": "obs",
+              "required": false,
+              "id": "immunizationUpToDate",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "efa157c0-4d93-4e7a-886b-b2af02a30374",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "TB Screening",
+              "type": "obs",
+              "required": false,
+              "id": "tbScreening",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "42eb7cdc-bd89-4b20-8e52-699a7e685181",
+                "answers": [
+                  {
+                    "concept": "106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Presumed diagnosis"
+                  },
+                  {
+                    "concept": "1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Not done"
+                  },
+                  {
+                    "concept": "1928BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Patient referred"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            },
+            {
+              "label": "Nutrition and diatetics",
+              "type": "obs",
+              "required": false,
+              "id": "nutritionAndDietetics",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f5a93555-0455-4de9-93c7-92111d8ddb72",
+                "answers": [
+                  {
+                    "concept": "1502BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "NUTRITION COUNSELING"
+                  },
+                  {
+                    "concept": "9822d9da-7feb-4da6-8a99-6f842540931b",
+                    "label": "Nutrition therupetic supplements"
+                  },
+                  {
+                    "concept": "da9055e2-17a1-4042-8e38-cf396a1ce88f",
+                    "label": " Diatetics"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": " age > 5"
+              }
+            }
+          ],
+          "hide": {
+            "hideWhenExpression": " age > 5"
+          }
+        },
+        {
+          "label": "Visual Acuity **RE / LE**",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visual acuity right eye",
+              "type": "obs",
+              "required": false,
+              "id": "visualAcuityRightEye",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "108485BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Visual acuity left eye",
+              "type": "obs",
+              "required": false,
+              "id": "visualAcuityLeftEye",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "108483BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            }
+          ],
+          "hide": {
+            "hideWhenExpression": "age <= 5"
+          }
+        },
+        {
+          "label": "Other details ()",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Screened for tuberculosis",
+              "type": "obs",
+              "required": false,
+              "id": "tbScreeningAdults",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "42eb7cdc-bd89-4b20-8e52-699a7e685181",
+                "answers": [
+                  {
+                    "concept": "106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Presumed diagnosis"
+                  },
+                  {
+                    "concept": "1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Not done"
+                  },
+                  {
+                    "concept": "1928BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Patient referred"
+                  },
+                  {
+                    "concept": "58ab89cd-6674-480b-95a0-5b761b0275cb",
+                    "label": "On TB Treatment"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Suspected Malaria cases(all clients presenting with symptoms of Malaria)",
+              "type": "obs",
+              "required": false,
+              "id": "suspectedMalariaCasesAdults",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "answers": [
+                  {
+                    "concept": "5902fc83-0742-4eb2-bd02-823f71d0e641",
+                    "label": "Presenting with symptoms but NOT tested"
+                  },
+                  {
+                    "concept": "1923BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "RAPID TEST FOR MALARIA"
+                  },
+                  {
+                    "concept": "307a4edd-6a8b-4a49-842e-34117cbea114",
+                    "label": "Microscopy Tested (-ve)"
+                  },
+                  {
+                    "concept": "23889BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Unconscious"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Record the name of  Drugs from the prescription or drug codes if provided",
+              "type": "obs",
+              "required": false,
+              "id": "nameOfDrugs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "7976446e-3fbd-4cd0-871a-cbdc621998fc"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Prescription",
+              "type": "obs",
+              "required": false,
+              "id": "prescriptionAdults",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "efce67b4-7402-45d0-bc54-dfd840fdc463"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Nutritional interventions provided ",
+              "type": "obs",
+              "required": false,
+              "id": "nutritionInterventions",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f570fc3a-e021-4475-92aa-84ad9592cbb9",
+                "answers": [
+                  {
+                    "concept": "f18c2f4e-3937-4898-89d6-7c6f917157c6",
+                    "label": "Nutrition assessment"
+                  },
+                  {
+                    "concept": "1435e7ff-1ba9-4ea7-900a-181c2d1507e2",
+                    "label": "Nutrition education"
+                  },
+                  {
+                    "concept": "341e525d-f1ac-41d2-a5f6-cc0a97ec372d",
+                    "label": " Nutrition supplements"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Refer Patient",
+      "sections": [
+        {
+          "label": "Refer Patient",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Is Patient being referred to Another facility?",
+              "type": "obs",
+              "required": false,
+              "id": "isBeingPatientReferred",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "0a9deaf2-cd0d-4af7-85b1-7db013e448e4",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Type of facility referred to",
+              "type": "obs",
+              "required": false,
+              "id": "typeOfFacilityReferredToAdults",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "a9b68c20-8ace-459a-8e7b-68c9a8487aba",
+                "answers": [
+                  {
+                    "concept": "4ca6ae87-7a34-4079-a67b-7107156f30e8",
+                    "label": "Referred to Community Unit"
+                  },
+                  {
+                    "concept": "ffc9af40-cfb6-4edf-89a8-d478a1ed00f6",
+                    "label": "Referred to other facility"
+                  },
+                  {
+                    "concept": "76252f2b-4a80-4414-a630-a2bee89c00a0",
+                    "label": "Referred Within"
+                  },
+                  {
+                    "concept": "946febb7-94d0-4fe5-9555-fc483a1e0d7c",
+                    "label": "N/A"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "isBeingPatientReferred !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Specify Facility referred to",
+              "required": false,
+              "id": "facilityReferredToSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "2c69e8af-4500-4bf2-b8f6-0d38d5c546ad",
+                "answers": []
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "typeOfFacilityReferredToAdults !== 'ffc9af40-cfb6-4edf-89a8-d478a1ed00f6'"
+              }
+            },
+            {
+              "label": "REMARKS/Outome",
+              "required": false,
+              "id": "remarks",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "6990f720-b0f7-405d-bfb6-7a1f058109bb"
+              },
+              "validators": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "description": "Findings and Treatment",
+  "encounterType": "f02fecec-4d74-4430-8e59-5150016551e5",
+  "uuid": "95301452-081a-44e2-a561-fe83d6f02a1f"
+}

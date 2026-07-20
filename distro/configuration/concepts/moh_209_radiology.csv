@@ -1,0 +1,18 @@
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:150,Data class,Data type,Answers
+9be6a543-018e-489b-9505-9f328f37968f,,IP Number,IP Number,"Record the OPD number of the patient who 
+returns to the health facility for service or 
+follow ups as per IMNCI recommendations.",,,,Finding,numeric,
+aa20fecd-0b50-4ceb-8353-4576555bdd20,,X-Ray/ imaging Number,X-Ray/ imaging Number,"Record the unique identification X-ray unit number, that keeps the patient individually identified.",,,,Question,numeric,
+5d869902-6004-4464-8e5c-6505a4a8b073,,Previous Report,Previous Report,Record any previous X-ray/ imaging report,,,,Finding,Text,
+54812c29-0fc9-46a4-86ce-664294463a6d,,Type of Examination,Type of Examination,Record the kind of examination (s) carried out,,,,Finding,Text,
+108191BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Provisional Diagnosis,Provisional Diagnosis,Record clinical impression (suspicion) of the referring clinician.,,,,Misc,N/A,
+1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Yes,Yes,,,,,Misc,N/A,
+1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,No,No,,,,,Misc,N/A,
+50819BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Radiotherapy Follow-up examination,Radiotherapy Follow-up examination,Record 'Y' if a patient received radiotherapy and 'N' if not,,,,Question,Coded,"Yes;
+No"
+0b2da3fc-397b-41ae-be02-6eceb1371eb0,,Current Report,Current Report,Record the current examination  report,,,,Finding,Text,
+140313BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Reason for referral (text),Reason for referral (text),Record reason(s) for patient referral from or to another HF,,,,Question,Text,
+cdeef503-a8f9-4f6e-8e51-5ba4349a7b0a,,Size of Film,Size of Film,Record the size of the film/recording plate used,,,,Finding,numeric,
+e728deb4-3b23-4ab6-979c-80d42814b059,,Amount charged,Amount charged,Record the total amount or fee charged for the services received or amount waived or exempted.,,,,Finding,numeric,
+aca7b177-a660-4a48-a93f-c4acc82c6416,,Receipt number,Receipt number,Record the number on the receipt given to the patient from the cash office or invoice number,,,,Finding,numeric,
+1685BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Name of health care provider,Name of health care provider,Record the name of the Requesting Clinician,,,,Question,Text,

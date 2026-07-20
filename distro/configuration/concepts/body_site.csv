@@ -1,0 +1,104 @@
+Uuid,Void/Retire,Same as mappings,Fully specified name:en,Fully specified name:fr,Short name:en,Short name:fr,Description:en,Description:fr,Data class,Data type,Answers,Members,_version:1,_order:1001
+160495AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,SNOMED NP:71836000; SNOMED CT:181200003;CIEL:160495,Nasopharynx,,Nasopharynx,,Body structure,,Anatomy,N/A,,,,
+162669AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:181216001;	
+SNOMED NP:39607008;	
+CIEL:162669",Lung,,Lung,,Body structure,,Anatomy,N/A,,,,
+162670AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:181246003;
+CIEL:162670;	
+SNOMED NP:69695003",Stomach,,Stomach,,Body structure,,Anatomy,N/A,,,,
+162671AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:256876008;	
+SNOMED NP:113276009;	
+CIEL:162671",Intestine,,Intestine,,Body structure,,Anatomy,N/A,,,,
+162673AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,, ,Vagina,,Vagina,,Body structure,,Anatomy,N/A,,,,
+162919AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL:162919;
+SNOMED CT:122489005	",Urinary system structure,,Urinary system structure,,Body structure,,Anatomy,N/A,,,,
+162920AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL:162920;
+SNOMED NP:39937001",Intravenous line insertion site,,Intravenous line insertion site,,The physical part of the skin where an IV line was inserted. This is not a question which receives an answer of a particular location.,,Anatomy,N/A,,,,
+120202AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL:120202;
+SNOMED CT:116224001;	
+IMO ProblemIT:197237;
+ICD-10-WHO:T81.9",Complication of Procedure,,Complication of Procedure,,,,Diagnosis,N/A,,,,
+162668AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED NP:364684009;        
+CIEL:162668",Bleeding site,,Bleeding site,,Question identifying site of bleeding,,Question,Coded,"Nasopharynx;
+Lung;
+Stomach;
+Intestine;
+Vagina;
+Urinary system structure;
+Intravenous line insertion site;
+Complication of Procedure;
+Unknown",,,
+145884AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"IMO ProblemIT:15625;
+3BT:10000766;	
+ICPC2:N73;	
+SNOMED NP:44823006;
+ICD-10-WHO:G06.0;	
+CIEL:145884;
+SNOMED CT:60404007	",Cerebral Abscess,,,,"A circumscribed collection of purulent exudate in the brain, due to bacterial and other infections. The majority are caused by spread of infected material from a focus of suppuration elsewhere in the body, notably the PARANASAL SINUSES, middle ear (see EAR, MIDDLE), HEART (see also ENDOCARDITIS, BACTERIAL), and LUNG. Penetrating CRANIOCEREBRAL TRAUMA and NEUROSURGICAL PROCEDURES may also be associated with this condition. Clinical manifestations include HEADACHE, SEIZURES, focal neurologic deficits, and alterations of consciousness. (Adams et al., Principles of Neurology, 6th ed, pp712-6)",,Diagnosis,N/A,,,,
+114108AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"ICD-10-WHO:J94.8;
+IMO ProblemIT:33940963;	
+AMPATH:1136;	
+CIEL:114108;	
+SNOMED CT:60046008;	
+IMO ProblemIT:52342",Pleural effusion,,,,,,Diagnosis,N/A,,,,
+1004AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:45710003;       
+AMPATH:1004;        
+org.openmrs.module.mdrtb:SPUTUM;        
+CIEL:1004",Sputum,,,,"Matter coughed up and usually ejected from the mouth, including saliva, foreign material, and substances such as mucus or phlegm, from the respiratory tract.",,Specimen,N/A,,,,
+159992AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL:159992;	
+SNOMED CT:119199005	",Pulmonary tissue,,,,A sputum sample source used in a TB test,,Anatomy,N/A,,,,
+159993AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL:159993;
+SNOMED CT:39477002	",Feces,,,,Waste matter discharged from the intestines through the anus; excrement (from Dictionary.com),,Specimen,N/A,,,,
+159998AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL:159998;
+SNOMED CT:119379005	",Specimen from stomach,,,,,,Specimen,N/A,,,,
+159994AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:78014005;
+CIEL:159994	",Urine,,,,"Waste material that is secreted by the kidney, is rich in end products (as urea, uric acid, and creatinine) of protein metabolism together with salts and pigments, and forms a clear amber and usually slightly acid fluid (from Dictionary.com)",,Specimen,N/A,,,,
+159996AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL:159996;
+SNOMED CT:431898009	",Joint fluid,,,,A source of a sputum sample used in a TB test,,Specimen,N/A,,,,
+159995AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL:159995;
+SNOMED CT:65216001",Cerebrospinal fluid,,,,"The serumlike fluid that circulates through the ventricles of the brain, the cavity of the spinal cord, and the subarachnoid space, functioning in shock absorption (from Dictionary.com)",,Specimen,N/A,,,,
+159999AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:258446004;
+CIEL:159999	",Bronchial aspirate,,,,A sample collection source,,Specimen,N/A,,,,
+166694AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL:166694;
+SNOMED CT:430268003	",Bone specimen,,,,,,Misc,N/A,,,,
+166697AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:309072003;
+CIEL:166697	",Specimen from soft tissue,,,,,,Misc,N/A,,,,
+166698AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:122566000;	
+CIEL:166698",Fluid specimen from wound,,,,,,Misc,N/A,,,,
+159959AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"org.openmrs.module.mdrtb:TUBERCULOSIS SAMPLE SOURCE;
+SNOMED CT:246087005;
+CIEL:159959",Specimen source,,,,Where did you get the specimen from?,,Question,Coded,"Cerebral Abscess;
+Pleural effusion;
+Sputum;
+Pulmonary tissue;
+Feces;
+Specimen from stomach;
+Urine;
+Joint fluid;
+Cerebrospinal fluid;
+Bronchial aspirate;
+Bone specimen;
+Specimen from soft tissue;
+Fluid specimen from wound",,,
+162403AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:309201001;	
+CIEL:162403",Ascitic fluid,,,,,,Specimen,N/A,,,,
+1002AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:50863008;
+CIEL:1002;	
+AMPATH:1002	",Plasma,,,,,,Specimen,N/A,,,,
+1001AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"AMPATH:1001;
+SNOMED CT:67922002;
+CIEL:1001",Serum,,,,Blood supernatent product after blood clots,,Specimen,N/A,,,,
+1000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"PIH:1000;   
+AMPATH:1000;  
+CIEL:1000;       
+SNOMED CT:258580003        ",Whole blood sample,,,,"Blood samples not separated into subtypes (RBC, WBC, Platelets)",,Specimen,N/A,,,,
+162476AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:246087005;	
+CIEL:162476",Specimen sources,,,,Convenience set of specimen sources,,ConvSet,N/A,,"Ascitic fluid;
+Cerebrospinal fluid;
+Feces;
+Plasma;
+Serum;
+Sputum;
+Urine;
+Whole blood sample",,
+d641e616-886d-4493-8b4d-c50bcd29b980,,,Other Body Site,,,,,,Question,Text,,,,

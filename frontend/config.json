@@ -477,9 +477,9 @@
   "@openmrs/esm-patient-vitals-app": {
     "vitals": {
       "useFormEngine": true,
-      "formName": "F. 8 - Follow up",
-      "formUuid": "0ea6b2d5-28cc-3a65-9155-b60e0c09d118",
-      "encounterTypeUuid": "e8481555-9dd1-4bb5-ba8c-cb721dafb166"
+      "formName": "1. Triage",
+      "formUuid": "1165eb3a-73f4-3cbe-ae87-a30a05d89b88",
+      "encounterTypeUuid": "3ccde6e2-9730-46a3-8f69-8a5e0cc48128"
     },
     "concepts": {
       "systolicBloodPressureUuid": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -491,7 +491,9 @@
       "weightUuid":"5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "respiratoryRateUuid":"5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "midUpperArmCircumferenceUuid":"1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-      "generalPatientNoteUuid": "160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      "generalPatientNoteUuid": "160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "bmiUuid": "1342AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "muacUuid": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
     },
     "Translation overrides": {
       "en": {
