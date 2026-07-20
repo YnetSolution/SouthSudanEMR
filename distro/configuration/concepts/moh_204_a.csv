@@ -7,7 +7,7 @@ follow ups as per IMNCI recommendations.",,,,Misc,N/A,
 61f9ac9f-4743-4f95-bd83-02881612083c,,Referred From other facility,Referred From other facility,,,,,Misc,N/A,
 9b31621c-17c2-46c7-98ce-051dc8564dc7,,Referred from Within,Referred from Within,,,,,Misc,N/A,
 ccda26b2-a73f-4dcb-be03-1572eb6cf7b9,,N/A,N/A,,,,,Misc,N/A,
-44335370-b96b-405e-97ad-ea4d4451a2ca,,SJH-Type of facility referred from,Type of facility referred from,"If patient was referred to this facility, record as 
+44335370-b96b-405e-97ad-ea4d4451a2ca,,Type of facility referred from,Type of facility referred from,"If patient was referred to this facility, record as 
 per 1=CU, 2=From other facility, 3= Within ,4=N/A",,,,Misc,Coded,"Revisit;
 Referred from Community Unit;
 Referred From other facility;
@@ -29,7 +29,6 @@ Yellow;
 Red"
 107349BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Unable to drink or breastfeed,Unable to drink or breastfeed,,,,,Misc,N/A,
 140528BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Vomiting everything,Vomiting everything,,,,,Misc,N/A,
-13688BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Convulsions,Convulsions,,,,,Misc,N/A,
 23889BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Unconscious,Unconscious,,,,,Misc,N/A,
 140529BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Currently convulsing,Currently convulsing,,,,,Misc,N/A,
 7230eb74-e60a-4031-a7c1-26281add0db4,,SJH-Danger signs baby,Danger signs baby,,,,,Question,Coded,"Unable to drink or breastfeed;
@@ -39,7 +38,6 @@ Unconscious;
 Currently convulsing"
 1817BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,DURATION OF ILLNESS,DURATION OF ILLNESS,,,,,Question,Numeric,
 5902fc83-0742-4eb2-bd02-823f71d0e641,,Presenting with symptoms but NOT tested,Presenting with symptoms but NOT tested,,,,,Misc,N/A,
-1923BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,RAPID TEST FOR MALARIA,RAPID TEST FOR MALARIA,,,,,Misc,N/A,
 307a4edd-6a8b-4a49-842e-34117cbea114,,Microscopy Tested (-ve) ,Microscopy Tested (-ve),,,,,Misc,N/A,
 23889BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Unconscious,Unconscious,,,,,Misc,N/A,
 0b288300-83af-4b60-938f-62bf38f4ce2b,,Microscopy Tested (+ve ) for patients presented with symptoms of malaria,Microscopy Tested (+ve ) for patients presented with symptoms of malaria,,,,,Misc,N/A,
@@ -50,7 +48,7 @@ NOT tested 2.RDT Tested (-ve)
 4.RDT Tested  (+ve) 5. Microscopy 
 Tested (+ve ) for patients presented
  with symptoms of malaria ",,1,,Diagnosis,Coded,"Presenting with symptoms but NOT tested;
-RAPID TEST FOR MALARIA;
+Rapid test for malaria;
 Microscopy Tested (-ve);
 Unconscious;
 Microscopy Tested (+ve ) for patients presented with symptoms of malaria"
@@ -63,7 +61,7 @@ c0595755-f114-4800-88dc-ac97b7d62ec8,,Amox DT,Amox DT,,,,,Misc,N/A,
 7127BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,OXYGEN,OXYGEN,,,,,Misc,N/A,
 8f668b49-584f-4cba-b0f2-817a8aaf50c4,,ALBENDAZOLE,ALBENDAZOLE,,,,,Misc,N/A,
 2045BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,INTRAVENOUS FLUID ADMINISTRATION,INTRAVENOUS FLUID ADMINISTRATION,,,,,Misc,N/A,
-c422af79-d5b7-4560-9320-7f53045deaaa,,SJH-Tracer Drugs Prescribed,Tracer Drugs Prescribed,,,,,Question,Coded,"ORS & Zinc;
+c422af79-d5b7-4560-9320-7f53045deaaa,,Tracer Drugs Prescribed,Tracer Drugs Prescribed,,,,,Question,Coded,"ORS & Zinc;
 ORAL REHYDRATION SALTS;
 ZINC;
 VITAMIN A;
@@ -76,7 +74,7 @@ INTRAVENOUS FLUID ADMINISTRATION"
 04088077-2c91-4fa8-9406-7005d884d151,,all other treatments,,,,,,Finding,Text,
 1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Yes,Yes,,,,,Misc,N/A,
 1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,No,No,,,,,Misc,N/A,
-efa157c0-4d93-4e7a-886b-b2af02a30374,,SJH-Immunization status up to date (Y/N),Immunization status up to date (Y/N),"Indicate the immunization status as captured in the 
+efa157c0-4d93-4e7a-886b-b2af02a30374,,Immunization status up to date (Y/N),Immunization status up to date (Y/N),"Indicate the immunization status as captured in the 
 mother child handbook. Record Yes (Y) for a child 
 whose immunization is on schedule and No (N) if 
 not on schedule",,,,Question,Coded,"Yes;
@@ -91,14 +89,14 @@ Patient referred"
 1502BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,NUTRITION COUNSELING,NUTRITION COUNSELING,,,,,Misc,N/A,
 9822d9da-7feb-4da6-8a99-6f842540931b,,Nutrition therupetic supplements ,Nutrition therupetic supplements ,,,,,Misc,N/A,
 da9055e2-17a1-4042-8e38-cf396a1ce88f,, Diatetics, Diatetics,,,,,Misc,N/A,
-f5a93555-0455-4de9-93c7-92111d8ddb72,,SJH-Nutrition and diatetics,Nutrition and diatetics,,,,,Question,Coded,"NUTRITION COUNSELING;
+f5a93555-0455-4de9-93c7-92111d8ddb72,,Nutrition and diatetics,Nutrition and diatetics,,,,,Question,Coded,"NUTRITION COUNSELING;
 Nutrition therupetic supplements;
  Diatetics"
 4ca6ae87-7a34-4079-a67b-7107156f30e8,,Referred to Community Unit,Referred to Community Unit,,,,,Misc,N/A,
  ffc9af40-cfb6-4edf-89a8-d478a1ed00f6,,Referred to other facility,Referred to other facility,,,,,Misc,N/A,
 76252f2b-4a80-4414-a630-a2bee89c00a0,,Referred Within,Referred Within,,,,,Misc,N/A,
  ccda26b2-a73f-4dcb-be03-1572eb6cf7b9,,N/A,N/A,,,,,Misc,N/A,
-a9b68c20-8ace-459a-8e7b-68c9a8487aba,,SJH-Type of facility referred to,Type of facility referred to,,,,,Question,Coded,"Referred to Community Unit;
+a9b68c20-8ace-459a-8e7b-68c9a8487aba,,Type of facility referred to,Type of facility referred to,,,,,Question,Coded,"Referred to Community Unit;
 Referred to other facility;
 Referred Within;
 N/A"

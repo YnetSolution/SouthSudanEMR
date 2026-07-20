@@ -50,7 +50,7 @@
                     "label": "Referred from Within"
                   },
                   {
-                    "concept": "ccda26b2-a73f-4dcb-be03-1572eb6cf7b9",
+                    "concept": "946febb7-94d0-4fe5-9555-fc483a1e0d7c",
                     "label": "N/A"
                   },
                   {
@@ -333,7 +333,7 @@
                     "label": "Dysentery (Bloody diarrhoea)"
                   },
                   {
-                    "concept": "1768581a-3a0a-4625-8ad6-5bf61f2df635",
+                    "concept": "117889AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Gastroenteritis"
                   },
                   {
@@ -373,7 +373,7 @@
                     "label": "Ear Infections/ Conditions"
                   },
                   {
-                    "concept": "3726d866-bd35-4180-b20e-019d0443d670",
+                    "concept": "115122AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Malnutrition"
                   },
                   {
@@ -409,15 +409,15 @@
                     "label": "Measles"
                   },
                   {
-                    "concept": "49402458-7e45-410e-8bb6-180518dc4840",
+                    "concept": "116986AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Hepatitis"
                   },
                   {
-                    "concept": "0de700ed-39e2-4c53-a218-b21e672c6b18",
+                    "concept": "124AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Amoebiasis"
                   },
                   {
-                    "concept": "5fbdb90b-b06f-4f08-8e90-92805db5a379",
+                    "concept": "133671AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Mumps"
                   },
                   {
@@ -465,7 +465,7 @@
                     "label": "Down’s syndrome"
                   },
                   {
-                    "concept": "71293391-dc75-4c90-a4bc-5da60442b60c",
+                    "concept": "114088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Poisoning"
                   },
                   {
@@ -509,7 +509,7 @@
                     "label": "Diabetes"
                   },
                   {
-                    "concept": "19ff0ea5-18cf-4840-9add-bc0979f02023",
+                    "concept": "155AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Epilepsy"
                   },
                   {
@@ -517,7 +517,7 @@
                     "label": "Other Convulsive Disorders"
                   },
                   {
-                    "concept": "78e0def5-8587-4ed8-9d10-ff94c45503f9",
+                    "concept": "127447AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Rheumatic Fever"
                   },
                   {
@@ -525,7 +525,7 @@
                     "label": "Brucellosis"
                   },
                   {
-                    "concept": "52ac8884-2f04-4950-9311-86484e6a9f0e",
+                    "concept": "127394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Rickets"
                   },
                   {
@@ -541,11 +541,11 @@
                     "label": "Trypanosomiasis"
                   },
                   {
-                    "concept": "7f4a2e54-63c9-4c7c-bddc-41418030398d",
+                    "concept": "122759AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Yellow Fever"
                   },
                   {
-                    "concept": "1482d7d6-b75d-410d-9357-6cb2c8d92882",
+                    "concept": "123112AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Viral Haemorrhagic Fever"
                   },
                   {
@@ -565,7 +565,7 @@
                     "label": "Kalaar (Leishmaniasis)"
                   },
                   {
-                    "concept": "9b757626-dd2e-488d-84a0-ca3f4d1a8e51",
+                    "concept": "143074AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Cutaneous leishmaniasis"
                   },
                   {
@@ -625,7 +625,7 @@
                     "label": "Other Menigitis"
                   },
                   {
-                    "concept": "0ac9cb12-b0b8-49a1-b142-323f69c592e9",
+                    "concept": "124957AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Tetanus"
                   },
                   {
@@ -641,11 +641,11 @@
                     "label": "Measles"
                   },
                   {
-                    "concept": "49402458-7e45-410e-8bb6-180518dc4840",
+                    "concept": "116986AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Hepatitis"
                   },
                   {
-                    "concept": "5fbdb90b-b06f-4f08-8e90-92805db5a379",
+                    "concept": "133671AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Mumps"
                   },
                   {
@@ -661,7 +661,7 @@
                     "label": "Malaria in Pregnancy"
                   },
                   {
-                    "concept": "0de700ed-39e2-4c53-a218-b21e672c6b18",
+                    "concept": "124AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Amoebiasis"
                   },
                   {
@@ -685,7 +685,7 @@
                     "label": "Intestinal worms"
                   },
                   {
-                    "concept": "3726d866-bd35-4180-b20e-019d0443d670",
+                    "concept": "115122AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Malnutrition"
                   },
                   {
@@ -717,7 +717,7 @@
                     "label": "Other Diseases of the Respiratory System"
                   },
                   {
-                    "concept": "075a227e-f9ed-4b88-ac13-0d253ba15567",
+                    "concept": "f1d88434-62db-417b-81c2-245d7955564c",
                     "label": "Abortion"
                   },
                   {
@@ -749,7 +749,7 @@
                     "label": "Athritis, Joint Pains"
                   },
                   {
-                    "concept": "71293391-dc75-4c90-a4bc-5da60442b60c",
+                    "concept": "114088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Poisoning"
                   },
                   {
@@ -777,7 +777,7 @@
                     "label": "Burns"
                   },
                   {
-                    "concept": "4bfbdee8-2574-4ed3-b9e3-295ae2bc6754",
+                    "concept": "3d3b4a56-69e8-4a12-9f78-d0b9f52bd92e",
                     "label": "Snake Bites"
                   },
                   {
@@ -793,7 +793,7 @@
                     "label": "Diabetes"
                   },
                   {
-                    "concept": "19ff0ea5-18cf-4840-9add-bc0979f02023",
+                    "concept": "155AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Epilepsy"
                   },
                   {
@@ -837,11 +837,11 @@
                     "label": "Rift Valley Fever"
                   },
                   {
-                    "concept": "7f4a2e54-63c9-4c7c-bddc-41418030398d",
+                    "concept": "122759AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Yellow Fever"
                   },
                   {
-                    "concept": "1482d7d6-b75d-410d-9357-6cb2c8d92882",
+                    "concept": "123112AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Viral Haemorrhagic Fever"
                   },
                   {
@@ -857,7 +857,7 @@
                     "label": "Kalazar (Leishmaniasis)"
                   },
                   {
-                    "concept": "9b757626-dd2e-488d-84a0-ca3f4d1a8e51",
+                    "concept": "143074AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Cutaneous Leishmaniasis"
                   },
                   {
@@ -1118,7 +1118,7 @@
                     "label": "Vomiting everything"
                   },
                   {
-                    "concept": "13688BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "concept": "113054AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Convulsions"
                   },
                   {
@@ -1169,7 +1169,7 @@
                     "label": "Presenting with symptoms but NOT tested"
                   },
                   {
-                    "concept": "1923BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "concept": "1643AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "RAPID TEST FOR MALARIA"
                   },
                   {
@@ -1424,7 +1424,7 @@
                     "label": "Patient referred"
                   },
                   {
-                    "concept": "1969BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "concept": "58ab89cd-6674-480b-95a0-5b761b0275cb",
                     "label": "On TB Treatment"
                   }
                 ]
@@ -1572,7 +1572,7 @@
                     "label": "Referred Within"
                   },
                   {
-                    "concept": "ccda26b2-a73f-4dcb-be03-1572eb6cf7b9",
+                    "concept": "946febb7-94d0-4fe5-9555-fc483a1e0d7c",
                     "label": "N/A"
                   }
                 ]

@@ -30,8 +30,8 @@ d0327c30-66b0-46bf-9649-f0f740273dde,,,Treatment Plan Section,Treatment Plan Sec
 7619cf81-313d-4fcd-bdb1-57f94c376d58,,,TCA Section,TCA Section,,,,,Misc,N/A,,TCA; TCA Comment
 160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:160632;AMPATH:1915;LOINC:48767-8 ,Free text general,"	
 Freetext general",This is a freetext field for general use. It should be tied to another concept as a child.,,,,Question,Text,,
-7c972f28-dbdf-4a8a-8b60-937ef2592324,,,Reason for Visit,Reason for Visit,,,,,Question,Text,,
-324e55a6-2a39-496a-8e56-54281efcfebd,,,Triage Notes,Triage Notes,,,,,Question,Text,,
+160430AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,,Reason for Visit,Reason for Visit,,,,,Question,Text,,
+159395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,,Triage Notes,Triage Notes,,,,,Question,Text,,
 d85b298f-2819-49b1-b716-1c0cee69212c,,,Obstetrics and Gynaecology,Obstetrics and Gynaecology,,,,,Question,Text,,
 b0863993-4b65-4d34-82a8-ed8bc1bd2598,,,Abstinence,Abstinence,,,,,Misc,N/A,,
 f8e6bcff-4557-408a-8797-dabb64ccfd57,,,Other Family Planning,Other Family Planning,,,,,Misc,N/A,,

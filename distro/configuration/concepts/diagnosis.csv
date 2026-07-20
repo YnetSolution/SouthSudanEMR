@@ -20,7 +20,6 @@ CIEL: 122604;
 ICD-10-WHO: A00.0",Cholera due to Vibrio cholerae,,,,,,Diagnosis,N/A,,,,
 47afdfa3-fbce-42b7-976c-604bb9c2825e,,,MENINGOCOCCAL MENINGITIS,,,,,,Misc,N/A,,,,
 5f373b9c-93fe-4371-8fa8-39c05aed4323,,,OTHER MENINGITIS,,,,,,Misc,N/A,,,,
-0ac9cb12-b0b8-49a1-b142-323f69c592e9,,,TETANUS,,,,,,Misc,N/A,,,,
 264d3b5e-0cda-47cf-bd1a-9c8f71313cff,,,POLIOMYELITIS(AFP),,,,,,Misc,N/A,,,,
 211a8eb0-be4d-4334-8560-e3d85b81f1b6,,,CHICKEN POX,,,,,,Misc,N/A,,,,
 134561AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT: 14189004;
@@ -30,17 +29,9 @@ CIEL: 134561;
 PIH: 63;
 ICD-10-WHO: B05.9;
 IMO ProblemIT: 28601",Measles,,,,,,Diagnosis,N/A,,,,
-49402458-7e45-410e-8bb6-180518dc4840,,"PIH: 29;
-CIEL: 116986;
-IMO ProblemIT: 1717636;
-SNOMED CT: 128241005;
-AMPATH: 5019;
-AMPATH: 29",HEPATITIS,,,,,,Diagnosis,N/A,,,,
-5fbdb90b-b06f-4f08-8e90-92805db5a379,,,MUMPS,,,,,,Misc,N/A,,,,
 ab01a44e-5a44-4d36-a8e4-8794d8026222,,,SUSPECTED/TESTED MALARIA,,,,,,Misc,N/A,,,,
 110d072b-fa9c-4898-aa0e-63846c79d1f1,,,CONFIRMED MALARIA (Only positive cases),,,,,,Misc,N/A,,,,
 cdd15a79-7583-48e3-8bc9-2b02553bdf91,,,MALARIA IN PREGNANCY ,,,,,,Misc,N/A,,,,
-0de700ed-39e2-4c53-a218-b21e672c6b18,,,Amoebiasis,,,,,,Misc,N/A,,,,
 141AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"AMPATH: 141;
 ICD-11-WHO: 1A07.Z;
 ICPC2: D70;
@@ -59,7 +50,6 @@ CIEL: 111633;
 AMPATH: 55",Urinary tract infection,,,,,,Diagnosis,N/A,,,,
 ff84ebd8-50a0-4cb7-a7c8-96517d7b54a0,,,Bilharzia (Schistosomiasis),,,,,,Misc,N/A,,,,
 67347e15-05e3-4a54-b4c3-e474d13641cd,,,INTESTINAL WORMS,,,,,,Misc,N/A,,,,
-3726d866-bd35-4180-b20e-019d0443d670,,,MALNUTRITION,,,,,,Misc,N/A,,,,
 121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"ICPC2: B82;
 CIEL: 121629;
 AMPATH: 3;
@@ -90,7 +80,6 @@ AMPATH: 5969;
 ICPC2: R81;
 SNOMED CT: 233604007",Pneumonia,,,,,,Diagnosis,N/A,,,,
 a4744bfc-034f-46ff-8996-033bcbaa374d,,,OTHER DIS. OF RESPIRATORY SYSTEM,,,,,,Misc,N/A,,,,
-075a227e-f9ed-4b88-ac13-0d253ba15567,,,ABORTION,,,,,,Misc,N/A,,,,
 0e6a103e-92b3-4d28-a7c9-f12987039470,,,DIS. OF PUERPERIUM & CHILDBATH,,,,,,Misc,N/A,,,,
 117399AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT: 38341003;
 IMO ProblemIT: 86491;
@@ -99,11 +88,10 @@ ANCDAK: ANC.B6.DE96",Hypertension,,,,,,Diagnosis,N/A,,,,
 77AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"AMPATH: 77;
 CIEL: 77;
 SNOMED CT: 74732009",Mental disorders,,,,,,ConvSet,N/A,,,,
-b30ad39e-e46f-4e74-a587-f91d66a8e9ac,,,DENTAL  DISORDERS,,,,,,Misc,N/A,,,,
+b30ad39e-e46f-4e74-a587-f91d66a8e9ac,,,DENTAL DISORDERS,,,,,,Misc,N/A,,,,
 7a61f196-32a4-4066-b493-d90b9b9177fd,,,JIGGERS INFESTATION,,,,,,Misc,N/A,,,,
 898c8c12-f95d-4f84-a9e1-5be87c52451c,,,DISEASE OF THE SKIN,,,,,,Misc,N/A,,,,
 70b56907-cbe6-4796-868e-2ba0dcfba833,,,"ANTHRITIS, JOINT PAINS",,,,,,Misc,N/A,,,,
-71293391-dc75-4c90-a4bc-5da60442b60c,,,POISONING,,,,,,Misc,N/A,,,,
 da454f8c-ccbf-42f6-b046-38f6036bc347,,,ROAD TRAFFIC INJURIES,,,,,,Misc,N/A,,,,
 ee534d5b-6320-4790-bfcc-a47e09964351,,,DEATH DUE TO ROAD TRAFFIC INJURIES,,,,,,Misc,N/A,,,,
 cafabbfc-4776-4ff6-8c6d-4aee5c200ef4,,,OTHER INJURIES,,,,,,Misc,N/A,,,,
@@ -121,7 +109,6 @@ ANCDAK: ANC.B6.DE91;
 IMO ProblemIT: 29688;
 CIEL: 119481;
 PIH Malawi: 3720",Diabetes mellitus,,,,,,Diagnosis,Coded,,,,
-19ff0ea5-18cf-4840-9add-bc0979f02023,,,EPILEPSY,,,,,,Misc,N/A,,,,
 5ffbcd33-57ca-4cfb-9c13-6d15f77a1b7b,,,BRUCELLOSIS,,,,,,Misc,N/A,,,,
 429275a6-bcc2-4334-9a1c-0f058dd7176a,,,CARDIOVASCULAR CONDITIONS,,,,,,Misc,N/A,,,,
 3323a2ea-c61a-4d37-adf0-525613d6381b,,,CENTRAL NERVOUS SYSTEM CONDITIONS,,,,,,Misc,N/A,,,,
@@ -138,18 +125,14 @@ CIEL: 114413;
 98275ba9-ef92-473b-bf90-f69d3402ccb8,,,PHYSICAL DISABILITY,,,,,,Misc,N/A,,,,
 7554c625-e185-4c6c-9753-6506e5e2b85f,,,TRYPANOSOMIASIS,,,,,,Misc,N/A,,,,
 63613c65-9ea3-4479-be52-cbd0b8ad0753,,,Rift valley fever,,,,,,Misc,N/A,,,,
-7f4a2e54-63c9-4c7c-bddc-41418030398d,,,YELLOW FEVER,,,,,,Misc,N/A,,,,
-1482d7d6-b75d-410d-9357-6cb2c8d92882,,,VIRAL HAEMORRHAGIC FEVER,,,,,,Misc,N/A,,,,
 f1295de2-8c5b-4f3b-904a-671bdd89b1eb,,,Chikungunya,,,,,,Misc,N/A,,,,
 e5f90432-77ac-49fe-a34f-f816cca666b7,,,Dengue fever,,,,,,Misc,N/A,,,,
 526bda40-2fce-45fd-8ba9-c1921a25d5f6,,,KALAZAR (LEISHMANIASIS),,,,,,Misc,N/A,,,,
-9b757626-dd2e-488d-84a0-ca3f4d1a8e51,,,Cutaneous leishmaniasis,,,,,,Misc,N/A,,,,
 b0a9fc8e-312b-45d8-b17a-5f96c431552e,,,Suspected Anthrax,,,,,,Misc,N/A,,,,
 395596de-a8f0-41aa-b1a3-db457e3a391d,,,Diarrhoea with no dehydration,,,,,,Misc,N/A,,,,
 ead479da-2930-46ff-8eb2-80373c88cdce,,,Diarrhoea with some dehydration,,,,,,Misc,N/A,,,,
 d97d9d7d-03c5-43da-a115-5e8a4a7adaca,,,Diarrhoea with severe dehydration,,,,,,Misc,N/A,,,,
 f7b62c18-afa4-4428-8b63-08391cf210f2,,,Dysentery (Bloody diarrhoea),,,,,,Misc,N/A,,,,
-1768581a-3a0a-4625-8ad6-5bf61f2df635,,,Gastroenteritis,,,,,,Misc,N/A,,,,
 dc3c23be-25fd-4ee2-a73e-373e9a32263d,,,Severe Pneumonia,,,,,,Misc,N/A,,,,
 729c22a1-7a24-4f48-9502-38cffaa10cec,,,Lower Respiratory Tract Infections,,,,,,Misc,N/A,,,,
 155f11df-5823-4c3e-abd3-89fec68a3e1c,,,Presumed Tuberculosis,,,,,,Misc,N/A,,,,
@@ -158,8 +141,6 @@ dc3c23be-25fd-4ee2-a73e-373e9a32263d,,,Severe Pneumonia,,,,,,Misc,N/A,,,,
 598d46d5-48d0-4c00-8844-4e875b03a08b,,,Tonsilities,,,,,,Misc,N/A,,,,
 94ee72e9-0994-400a-bc08-11c588c95a08,,,Down’s syndrome,,,,,,Misc,N/A,,,,
 988b26cc-369e-42bf-9162-4e5380a45342,,,Other Convulsive Disorders,,,,,,Misc,N/A,,,,
-78e0def5-8587-4ed8-9d10-ff94c45503f9,,,Rheumatic Fever,,,,,,Misc,N/A,,,,
-52ac8884-2f04-4950-9311-86484e6a9f0e,,,Rickets,,,,,,Misc,N/A,,,,
 82788d82-e44d-4f3b-bf41-9700d2bfa5f1,,,Cerebral Palsy,,,,,,Misc,N/A,,,,
 1b4d77eb-3e30-4b6d-9602-a01b6a55dbce,,,Autism,,,,,,Misc,N/A,,,,
 6e0dea57-a96a-46f5-9b22-75fee201949c,,,Suspected Childhood Cancers,,,,,,Misc,N/A,,,,
@@ -169,12 +150,12 @@ Tuberculosis;
 Cholera due to Vibrio cholerae;
 MENINGOCOCCAL MENINGITIS;
 OTHER MENINGITIS;
-TETANUS;
+Tetanus;
 POLIOMYELITIS(AFP);
 CHICKEN POX;
 Measles;
-HEPATITIS;
-MUMPS;
+Hepatitis;
+Mumps;
 SUSPECTED/TESTED MALARIA;
 CONFIRMED MALARIA (Only positive cases);
 MALARIA IN PREGNANCY; 
@@ -184,7 +165,7 @@ SEXUALLY TRANSMITTED INFECTIONS;
 Urinary tract infection;
 Bilharzia (Schistosomiasis);
 INTESTINAL WORMS;
-MALNUTRITION;
+Malnutrition;
 Anaemia;
 EYE INFECTIONS;
 Ear Problem;
@@ -192,15 +173,15 @@ UPPER RESPIRATORY TRACT INFECTIONS;
 Asthma;
 Pneumonia;
 OTHER DIS. OF RESPIRATORY SYSTEM;
-ABORTION;
+Abortion;
 DIS. OF PUERPERIUM & CHILDBATH;
 Hypertension;
 Mental disorders;
-DENTAL  DISORDERS;
+DENTAL DISORDERS;
 JIGGERS INFESTATION;
 DISEASE OF THE SKIN;
 ANTHRITIS, JOINT PAINS;
-POISONING;
+Poisoning;
 ROAD TRAFFIC INJURIES;
 DEATH DUE TO ROAD TRAFFIC INJURIES;
 OTHER INJURIES;
@@ -211,7 +192,7 @@ Snake Bite;
 DOG BITES;
 OTHER BITES;
 Diabetes mellitus;
-EPILEPSY;
+Epilepsy;
 BRUCELLOSIS;
 CARDIOVASCULAR CONDITIONS;
 CENTRAL NERVOUS SYSTEM CONDITIONS;
@@ -222,8 +203,8 @@ Suspected Neoplams/Cancers;
 PHYSICAL DISABILITY;
 TRYPANOSOMIASIS;
 Rift valley fever;
-YELLOW FEVER;
-VIRAL HAEMORRHAGIC FEVER;
+Yellow fever;
+Viral haemorrhagic fever;
 Chikungunya;
 Dengue fever;
 KALAZAR (LEISHMANIASIS);
@@ -242,7 +223,7 @@ Neonatal Tetanus;
 Tonsilities;
 Down’s syndrome;
 Other Convulsive Disorders;
-Rheumatic Fever;
+Rheumatic fever;
 Rickets;
 Cerebral Palsy;
 Autism;

@@ -54,7 +54,7 @@
               "type": "obs",
               "id": "visitReason",
               "questionOptions": {
-                "concept": "7c972f28-dbdf-4a8a-8b60-937ef2592324",
+                "concept": "160430AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "textarea"
               }
             }
@@ -273,7 +273,7 @@
               "required": false,
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "324e55a6-2a39-496a-8e56-54281efcfebd"
+                "concept": "159395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
               "id": "triageNotes"
             }

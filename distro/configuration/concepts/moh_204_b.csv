@@ -16,7 +16,6 @@ Visual acuity left eye"
 106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Presumed diagnosis,Presumed diagnosis,,,,,Misc,N/A,
 1193BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Not done,Not done,,,,,Misc,N/A,
 1928BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Patient referred,Patient referred,,,,,Misc,N/A,
-1969BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,On TB Treatment,On TB Treatment,,,,,Misc,N/A,
 42eb7cdc-bd89-4b20-8e52-699a7e685181,,Screened for tuberculosis,TB Screening,"Indicate if TB screening is done.   
 1. presumed TB 2.Not done   3. Refered",,,,Question,Coded,"Presumed diagnosis;
 Not done;
@@ -38,7 +37,6 @@ Microscopy Tested (-ve);
 RAPID TEST FOR MALARIA"
 159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Presumed diagnosis,Presumed diagnosis,,,,,Misc,N/A,
 1940BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,No signs or symptoms of disease,No signs or symptoms of disease,,,,,Misc,N/A,
-1969BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,On TB Treatment,On TB Treatment,,,,,Misc,N/A,
 1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Not Done,Not Done,,,,,Misc,N/A,
 140998BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Screened for tuberculosis,Screened for tuberculosis,"Indicate if TB screening is done.   
 1. presumed TB 2. No signs 
