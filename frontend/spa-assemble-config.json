@@ -38,7 +38,7 @@
     "@ssemrapp/esm-login-app": "0.0.5",
     "@ssemrapp/esm-patient-summary-app": "0.0.2",
     "@ssemrapp/esm-patient-notifications-app": "0.0.2",
-    "@ssemrapp/esm-patient-registration-app": "0.0.5",
+    "@ssemrapp/esm-patient-registration-app": "0.0.6",
     "@ssemrapp/esm-patient-hiv-art-app": "0.0.2",
     "@ssemrapp/esm-patient-flags-app": "0.0.2",
     "@ssemrapp/esm-patient-list-management-app": "0.0.2",
