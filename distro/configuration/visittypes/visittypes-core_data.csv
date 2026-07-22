@@ -1,4 +1,11 @@
 Uuid,Void/Retire,Name,Description,_version:1
+287463d3-2233-4c69-9851-5841a1f5e109,,OPD Visit,OPD Visit,
+68391cec-08be-454d-8182-ff4e567de66d,,OPD Revisit,OPD Revisit,
+78370d15-38ad-48a1-825f-f0e9ff60d5a1,,Group Session,Visit type for group sessions (used in Fast Data Entry),
+e9650500-ead5-4b42-9a2a-a2f7a1c19211,,Dental Visit, Visit type for Dental,
+232e222a-36a1-4cb2-8ef2-8a4ce7b43e67,,Laboratory Visit, Visit type for lab,
+ae4af671-eb55-40a1-92f0-e441186575c2,,Pharmacy Visit, Visit type for pharmacy,
+0408ada4-ba7a-4ee5-8052-01ea721e11eb,,Ultrasound Visit, Visit type for Ultrasound,
 3972fca0-96ed-4c89-832d-e182345f4fe6,,ART Initiation,ART Initiation,
 45c4eb10-3fcd-405e-ae2f-a8350fb84b51,,First EAC,First EAC,
 9788003c-b4fd-49f6-b2f0-17a9916e178e,,Second EAC,Second EAC,
@@ -14,3 +21,4 @@ a469b8d3-7a61-4a62-9ca7-adbcaf5cec11,,EID sample collection,EID sample collectio
 43583f69-00d5-49fb-9899-03d1fba4d30d,,Receiving EID result,Receiving EID result,
 24cc61f2-565f-4b22-a3f9-32f7311446bd,,Client Represented,Client Represented,
 5532b8be-2b98-4bff-997b-66e9873a95bd,,Other (specify),Other (specify),
+
