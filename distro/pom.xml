@@ -68,6 +68,9 @@
 
     <ssemrws.version>1.0.0-SNAPSHOT</ssemrws.version>
     <mamba-etl.version>1.0.1-SNAPSHOT</mamba-etl.version>
+
+    <reference-content.version>1.4.0</reference-content.version>
+    <reference-demo-content.version>1.9.3-SNAPSHOT</reference-demo-content.version>
   </properties>
 
     <repositories>
