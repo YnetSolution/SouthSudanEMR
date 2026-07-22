@@ -1,15 +1,15 @@
 Uuid,Void/Retire,Name,Description,Duration,Start Time,End Time,Max Load,Speciality,Location,Label Colour
-f047a5a2-d60e-4532-9180-41b9eaa0db75,,"Routine Clinical Consultation and Refill, including fast tracking/CARG","Routine Clinical Consultation and Refill",15,08:00,17:00,100,General,Munuki PHCC,#0070E7
-11954dec-21b8-48da-a3b6-89fc524cc69b,,Viral load sample collection,"Viral load sample collection",15,08:00,17:00,100,General,Munuki PHCC,#3A9D23
-7c098337-d291-46b7-9d5b-cc53fbc78938,,Receiving VL result,"Receiving VL result",15,08:00,17:00,100,General,Munuki PHCC,#B52F2F
-3c619052-8d1f-43e3-99b9-7405604a2ab1,,EID sample collection,"EID sample collection",15,08:00,17:00,100,Pediatrics,Munuki PHCC,#D5A129
-17a18551-56a6-4b63-a893-33a7408eaddc,,Receiving EID result,"Receiving EID result",15,08:00,17:00,100,Pediatrics,Munuki PHCC,#8D2FA5
-bd2f2773-e364-47c1-b824-07a5e6efbe06,,First EAC,"First EAC",15,08:00,17:00,100,General,Munuki PHCC,#1EA3A3
-759a95da-c775-497d-8df9-8e8d7c4ff960,,Second EAC Service,"Second EAC Service",15,08:00,17:00,100,General,Munuki PHCC,#5C5C5C
-29d17d06-1e19-4977-a3c7-449ac9124955,,Third EAC,"Third EAC",15,08:00,17:00,100,General,Munuki PHCC,#C26D1D
-e5cef99f-8b9b-4f8e-bd7e-0fd4bb364344,,Extended EAC,"Extended EAC",15,08:00,17:00,100,General,Munuki PHCC,#7E542C
-cddd3567-b318-48c8-8dd6-a4546865fe72,,Repeat Sample Collection,"Repeat Sample Collection",15,08:00,17:00,100,General,Munuki PHCC,#3266A8
-0bfa8bf8-e4e8-4b31-b520-582143ee8dea,,Receiving repeat VL result/Switch to 2nd line,"Receiving repeat VL result/Switch to 2nd line",15,08:00,17:00,100,General,Munuki PHCC,#6B37B3
-b9c1c891-0da7-4c83-aca2-eed6e2cfa852,,Routine Clinical consultation ,"Routine Clinical consultation",15,08:00,17:00,100,General,Munuki PHCC,#0070E7
-3a17725f-3c84-4741-b9d2-83628e93ef09,,Routine VL sample collection,"Routine VL sample collection",15,08:00,17:00,100,General,Munuki PHCC,#3A9D23
-fbec4378-2d0d-4509-a56e-be0a53700708,,General Medicine service,"General Medicine service",15,08:00,17:00,100,General,Munuki PHCC,#0070E7
+f047a5a2-d60e-4532-9180-41b9eaa0db75,,"Routine Clinical Consultation and Refill, including fast tracking/CARG","Routine Clinical Consultation and Refill",15,08:00,17:00,100,General,,#0070E7
+11954dec-21b8-48da-a3b6-89fc524cc69b,,Viral load sample collection,"Viral load sample collection",15,08:00,17:00,100,General,,#3A9D23
+7c098337-d291-46b7-9d5b-cc53fbc78938,,Receiving VL result,"Receiving VL result",15,08:00,17:00,100,General,,#B52F2F
+3c619052-8d1f-43e3-99b9-7405604a2ab1,,EID sample collection,"EID sample collection",15,08:00,17:00,100,Pediatrics,,#D5A129
+17a18551-56a6-4b63-a893-33a7408eaddc,,Receiving EID result,"Receiving EID result",15,08:00,17:00,100,Pediatrics,,#8D2FA5
+bd2f2773-e364-47c1-b824-07a5e6efbe06,,First EAC,"First EAC",15,08:00,17:00,100,General,,#1EA3A3
+759a95da-c775-497d-8df9-8e8d7c4ff960,,Second EAC Service,"Second EAC Service",15,08:00,17:00,100,General,,#5C5C5C
+29d17d06-1e19-4977-a3c7-449ac9124955,,Third EAC,"Third EAC",15,08:00,17:00,100,General,,#C26D1D
+e5cef99f-8b9b-4f8e-bd7e-0fd4bb364344,,Extended EAC,"Extended EAC",15,08:00,17:00,100,General,,#7E542C
+cddd3567-b318-48c8-8dd6-a4546865fe72,,Repeat Sample Collection,"Repeat Sample Collection",15,08:00,17:00,100,General,,#3266A8
+0bfa8bf8-e4e8-4b31-b520-582143ee8dea,,Receiving repeat VL result/Switch to 2nd line,"Receiving repeat VL result/Switch to 2nd line",15,08:00,17:00,100,General,,#6B37B3
+b9c1c891-0da7-4c83-aca2-eed6e2cfa852,,Routine Clinical consultation ,"Routine Clinical consultation",15,08:00,17:00,100,General,,#0070E7
+3a17725f-3c84-4741-b9d2-83628e93ef09,,Routine VL sample collection,"Routine VL sample collection",15,08:00,17:00,100,General,,#3A9D23
+fbec4378-2d0d-4509-a56e-be0a53700708,,General Medicine service,"General Medicine service",15,08:00,17:00,100,General,,#0070E7

@@ -1,0 +1,10 @@
+Uuid,Fully specified name:en,Short name:en,Data class,Data type,_version:1,_order:100
+d62d58e9-ec91-4108-9643-00f5f23bf51c,Outpatient Triage,Triage,Service,N/A,,
+e96e2ce6-e326-46f2-8015-17572689c401,Outpatient Consultation,Consultation,Service,N/A,,
+91fd8d3f-13df-4d92-aed7-ff1d34ad2774,Dental,Dental,Service,N/A,,
+52c4102a-b030-4a68-830c-74b44eeebc0b,Laboratory,Laboratory,Service,N/A,,
+eb0e54ca-d4bf-470e-8a63-aaf65381367a,Pharmacy,Pharmacy,Service,N/A,,
+4e283ef5-714d-494c-a2bb-14aa3cc3b19a,Ultrasound,Ultrasound,Service,N/A,,
+5e89d15c-3f2d-45db-9494-1a65f973715c,ANC,ANC,Service,N/A,,
+7b5387db-0cf1-4ec1-ae1a-bf4c4784a0d9,CWC,CWC,Service,N/A,,
+4b3e8ab2-140c-4fa2-938b-d72b53f65e27,Inpatient Service,Inpatient,Service,N/A,,
