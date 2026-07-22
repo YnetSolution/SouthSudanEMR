@@ -169,7 +169,7 @@
         "uuid": "8f0a2a16-c073-4622-88ad-a11f2d6966ad",
         "label": "Telephone Number (starting with country code e.g +211)",
         "validation": {
-          "required": false,
+          "required": true,
           "matches": "^\\+[0-9]{1,3}[0-9]{9}$"
         }
       },      
