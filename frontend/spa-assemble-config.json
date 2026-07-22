@@ -25,7 +25,7 @@
     "@openmrs/esm-patient-notes-app": "next",
     "@openmrs/esm-patient-orders-app": "next",
     "@openmrs/esm-patient-programs-app": "next",
-     "@openmrs/esm-service-queues-app": "next",
+     "@openmrs/esm-service-queues-app": "11.1.1-pre.9018",
     "@openmrs/esm-stock-management-app": "next",
     "@openmrs/esm-system-admin-app": "next",
     "@openmrs/esm-user-onboarding-app": "next",
