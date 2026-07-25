@@ -112,7 +112,7 @@ jobs:
               docker compose up -d $SERVICES
             fi
 
-            echo "=== Pruning unused Docker images ==="
-            docker image prune -f
+            echo "=== Pruning Docker system and build cache ==="
+            docker system prune -af --volumes
 
             echo "=== Deployment Completed Successfully ==="
