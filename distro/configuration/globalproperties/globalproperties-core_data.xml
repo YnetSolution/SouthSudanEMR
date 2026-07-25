@@ -12,5 +12,26 @@
             <property>visits.assignmentHandler</property>
             <value>org.openmrs.api.handler.ExistingVisitAssignmentHandler</value>
         </globalProperty>
+
+        <!-- Queue Configuration -->
+        <globalProperty>
+            <property>queue.serviceConceptSetName</property>
+            <value>a8f3f64a-11d5-4a09-b0fb-c8118fa349f3</value>
+        </globalProperty>
+
+        <globalProperty>
+            <property>queue.priorityConceptSetName</property>
+            <value>78063dec-b6d8-40c1-9483-dd4d3c3ca434</value>
+        </globalProperty>
+
+        <globalProperty>
+            <property>queue.statusConceptSetName</property>
+            <value>d60ffa60-fca6-4c60-aea9-a79469ae65c7</value>
+        </globalProperty>
+
+        <globalProperty>
+            <property>queue.sortWeightGenerator</property>
+            <value>basicPrioritySortWeightGenerator</value>
+        </globalProperty>
     </globalProperties>
 </config>
