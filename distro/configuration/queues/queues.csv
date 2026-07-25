@@ -1,4 +1,4 @@
-Uuid,Name,Service,Location,Status Concept Set,Priority Concept Set
+Uuid,Name,Service,Location,Allowed Statuses,Allowed Priorities
 d692a223-e140-11ee-bad2-0242ac120002,Outpatient Triage,d62d58e9-ec91-4108-9643-00f5f23bf51c,44c3efb0-2583-4c80-a79e-1f756a03c0a1,d60ffa60-fca6-4c60-aea9-a79469ae65c7,78063dec-b6d8-40c1-9483-dd4d3c3ca434,
 13b656d3-e141-11ee-bad2-0242ac120002,Outpatient Consultation,e96e2ce6-e326-46f2-8015-17572689c401,44c3efb0-2583-4c80-a79e-1f756a03c0a1,d60ffa60-fca6-4c60-aea9-a79469ae65c7,78063dec-b6d8-40c1-9483-dd4d3c3ca434,
 d04f63b2-6ea5-468d-877d-cb7038da3549,Dental,91fd8d3f-13df-4d92-aed7-ff1d34ad2774,c973996d-23c8-4908-8f1e-baa07fc100fb,d60ffa60-fca6-4c60-aea9-a79469ae65c7,78063dec-b6d8-40c1-9483-dd4d3c3ca434,

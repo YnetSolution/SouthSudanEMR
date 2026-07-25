@@ -84,6 +84,12 @@
     "logo": {
       "src": "/openmrs/spa/primary-navigation.png"
     },
+    "showServiceQueueFields": true,
+    "visitQueueNumberAttributeUuid": "c0c579b0-8e59-401d-8a4a-976a0b183519",
+    "concepts": {
+      "servicesConceptSetUuid": "a8f3f64a-11d5-4a09-b0fb-c8118fa349f3",
+      "queueServicesConceptSetUuid": "a8f3f64a-11d5-4a09-b0fb-c8118fa349f3"
+    },
     "extensionSlots": {
       "patient-highlights-bar-slot": {
         "remove": ["patient-flag-tags"]
@@ -412,8 +418,18 @@
     "priorityConfigs": [
       {
         "conceptUuid": "04f6f7e0-e3cb-4e13-a133-4479f759574e",
-        "tagClassName": "tag",
-        "tagType": "red"
+        "style": "none",
+        "color": "red"
+      },
+      {
+        "conceptUuid": "f4620bfa-3625-4883-bd3f-84c2cce14470",
+        "style": "none",
+        "color": "green"
+      },
+      {
+        "conceptUuid": "dc3492ef-24a5-4fd9-b58d-4fd2acf7071f",
+        "style": "none",
+        "color": "orange"
       }
     ],
     "statusConfigs": [
@@ -438,7 +454,8 @@
       "servicesConceptSetUuid": "a8f3f64a-11d5-4a09-b0fb-c8118fa349f3",
       "queueServicesConceptSetUuid": "a8f3f64a-11d5-4a09-b0fb-c8118fa349f3"
     },
-    "visitQueueNumberAttributeUuid": "",
+    "showServiceQueueFields": true,
+    "visitQueueNumberAttributeUuid": "c0c579b0-8e59-401d-8a4a-976a0b183519",
     "defaultFacilityUrl": ""
   },
   "@openmrs/esm-home-app": {
