@@ -46,6 +46,7 @@ jobs:
             cd ${{ secrets.SERVER_PROJECT_PATH }}
 
             echo "=== Pulling latest changes from main branch ==="
+            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
             git pull origin main
 
             SERVICES=""
