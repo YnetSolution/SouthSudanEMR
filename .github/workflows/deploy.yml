@@ -53,6 +53,14 @@ jobs:
               - 'nginx/**'
               - 'docker-compose*.yml'
 
+      - name: Log Detected Changed Files
+        if: github.event_name == 'push'
+        run: |
+          echo "=== Changed Files Detection Summary ==="
+          echo "Backend Changed:  ${{ steps.changes.outputs.backend }}"
+          echo "Frontend Changed: ${{ steps.changes.outputs.frontend }}"
+          echo "Gateway Changed:  ${{ steps.changes.outputs.gateway }}"
+
       - name: Deploy to Remote Server via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
@@ -60,19 +68,21 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: ${{ secrets.SERVER_PORT || 22 }}
+          request_pty: true
           script: |
             set -e
             cd ${{ secrets.SERVER_PROJECT_PATH }}
 
-            echo "=== Pulling latest changes from main branch ==="
+            echo "::group::1. Pulling latest code from main branch"
             git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
             git pull origin main
+            echo "::endgroup::"
 
             SERVICES=""
             BUILD_ARGS=""
 
             if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-              echo "=== Manual Trigger Received ==="
+              echo "::group::2. Processing Manual Workflow Dispatch Trigger"
               SELECTED_SERVICE="${{ github.event.inputs.service }}"
               NO_CACHE="${{ github.event.inputs.no_cache }}"
 
@@ -84,8 +94,10 @@ jobs:
               if [ "$SELECTED_SERVICE" != "all" ]; then
                 SERVICES="$SELECTED_SERVICE"
               fi
+              echo "Target services: ${SERVICES:-all}"
+              echo "::endgroup::"
             else
-              echo "=== Push Trigger Received - Detecting Changes ==="
+              echo "::group::2. Detecting Changed Services"
               if [ "${{ steps.changes.outputs.backend }}" == "true" ]; then
                 echo "-> Backend changes detected."
                 SERVICES="$SERVICES backend"
@@ -100,19 +112,30 @@ jobs:
                 echo "-> Gateway / Config changes detected."
                 SERVICES="$SERVICES gateway"
               fi
+              echo "Target services: ${SERVICES:-all}"
+              echo "::endgroup::"
             fi
 
             if [ -z "$SERVICES" ]; then
-              echo "-> Rebuilding and restarting ALL services..."
+              echo "::group::3. Building Docker Images (All Services)"
               docker compose build $BUILD_ARGS
+              echo "::endgroup::"
+
+              echo "::group::4. Starting Docker Containers (All Services)"
               docker compose up -d
+              echo "::endgroup::"
             else
-              echo "-> Rebuilding and restarting affected services:$SERVICES"
+              echo "::group::3. Building Docker Images ($SERVICES)"
               docker compose build $BUILD_ARGS $SERVICES
+              echo "::endgroup::"
+
+              echo "::group::4. Starting Docker Containers ($SERVICES)"
               docker compose up -d $SERVICES
+              echo "::endgroup::"
             fi
 
-            echo "=== Pruning Docker system and build cache ==="
+            echo "::group::5. Pruning System & Build Cache"
             docker system prune -af --volumes
+            echo "::endgroup::"
 
             echo "=== Deployment Completed Successfully ==="
