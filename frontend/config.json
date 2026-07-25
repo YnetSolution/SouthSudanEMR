@@ -92,8 +92,6 @@
         "add": ["allergies-details-widget", "immunization-overview-widget"]
       },
       "patient-chart-dashboard-slot": {
-        "remove": ["test-results-summary-dashboard", "results-summary-dashboard", 
-        "programs-summary-dashboard", "patient-chart-vitals-biometrics-dashboard-slot"],
         "Translation overrides": {
           "en": {
             "Patient Summary": "Client Summary",
