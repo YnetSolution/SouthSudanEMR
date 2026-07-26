@@ -139,6 +139,16 @@
       },
       {
         "id": "nextOfKin",
+        "name": "Next of Kin Details",
+        "fields": [
+          "kinName",
+          "kinRelationship",
+          "kinPhone",
+          "kinLocation"
+        ]
+      },
+      {
+        "id": "treatmentSupporter",
         "name": "Treatment Supporter Details",
         "fields": [
           "txSupporterName",
@@ -163,10 +173,49 @@
     "sections": [
       "demographics",
       "contact",
+      "nextOfKin",
       "hivTestingInformation",
-      "nextOfKin"
+      "treatmentSupporter"
     ],
     "fieldDefinitions": [
+      {
+        "id": "kinName",
+        "type": "person attribute",
+        "uuid": "48e0f9e5-3ce6-41aa-bd86-fc226821ec4d",
+        "label": "Next of Kin Name",
+        "validation": {
+          "required": false,
+          "matches": "^[a-zA-Z\\s'\\.-]+$"
+        }
+      },
+      {
+        "id": "kinRelationship",
+        "type": "person attribute",
+        "uuid": "e23be2e9-00d1-4cfc-aa2e-0598b1dd3c3f",
+        "label": "Relationship",
+        "validation": {
+          "required": false
+        }
+      },
+      {
+        "id": "kinPhone",
+        "type": "person attribute",
+        "uuid": "bc851ec1-9fb7-49da-acd7-1a61168002fe",
+        "label": "Next of Kin Telephone Number (starting with country code e.g +211)",
+        "validation": {
+          "required": false,
+          "matches": "^\\+[0-9]{1,3}[0-9]{9}$"
+        }
+      },
+      {
+        "id": "kinLocation",
+        "type": "person attribute",
+        "uuid": "b4417be2-9990-4e33-8e28-42b6453c13fb",
+        "label": "Next of Kin Address/Location",
+        "validation": {
+          "required": false
+        }
+      },
       {
         "id": "clientPhone",
         "type": "person attribute",
