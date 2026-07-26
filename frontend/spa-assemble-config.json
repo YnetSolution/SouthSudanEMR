@@ -42,7 +42,7 @@
     "@ssemrapp/esm-patient-hiv-art-app": "0.0.2",
     "@ssemrapp/esm-patient-flags-app": "0.0.2",
     "@ssemrapp/esm-patient-list-management-app": "0.0.2",
-    "@ssemr/esm-reports-dashboard": "next",
+    "@ssemrapp/esm-reports-dashboard": "next",
     "@ssemrapp/esm-patient-forms-app": "0.0.2"
   },
   "excludedFrontendModules": []
