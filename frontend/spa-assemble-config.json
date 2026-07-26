@@ -35,15 +35,15 @@
     "@openmrs/esm-patient-task-list-app": "12.3.4",
     "@openmrs/esm-patient-tests-app": "12.3.4",
     "@openmrs/esm-patient-forms-app": "12.3.4",
-    "@ssemrapp/esm-login-app": "0.0.6",
-    "@ssemrapp/esm-patient-summary-app": "0.0.2",
-    "@ssemrapp/esm-patient-notifications-app": "0.0.2",
-    "@ssemrapp/esm-patient-registration-app": "0.0.7",
-    "@ssemrapp/esm-patient-hiv-art-app": "0.0.2",
-    "@ssemrapp/esm-patient-flags-app": "0.0.2",
-    "@ssemrapp/esm-patient-list-management-app": "0.0.2",
+    "@ssemrapp/esm-login-app": "next",
+    "@ssemrapp/esm-patient-summary-app": "next",
+    "@ssemrapp/esm-patient-notifications-app": "next",
+    "@ssemrapp/esm-patient-registration-app": "next",
+    "@ssemrapp/esm-patient-hiv-art-app": "next",
+    "@ssemrapp/esm-patient-flags-app": "next",
+    "@ssemrapp/esm-patient-list-management-app": "next",
     "@ssemrapp/esm-reports-dashboard": "next",
-    "@ssemrapp/esm-patient-forms-app": "0.0.2"
+    "@ssemrapp/esm-patient-forms-app": "next"
   },
   "excludedFrontendModules": []
 }

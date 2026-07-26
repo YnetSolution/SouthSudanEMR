@@ -70,7 +70,7 @@
     "Brand color #3": "#017BFC",
     "Brand color #2": "#005CBF"
   },
-  "@ssemr/esm-login-app": {
+  "@ssemrapp/esm-login-app": {
     "logo": {
       "src": "/openmrs/spa/login-icon.png"
     }
@@ -126,7 +126,7 @@
       }
     }
   },
-  "@ssemr/esm-patient-registration-app": {
+  "@ssemrapp/esm-patient-registration-app": {
     "sectionDefinitions": [
       {
         "id": "contact",
@@ -480,9 +480,9 @@
       }
     }
   },
-  "@ssemr/esm-reports-dashboard": {
+  "@ssemrapp/esm-reports-dashboard": {
     "extensionSlots": {
-      "@ssemr/esm-reports-dashboard": {
+      "@ssemrapp/esm-reports-dashboard": {
         "Translation overrides": {
           "en": {
             "reports": "Reports and Line Lists"
@@ -524,7 +524,7 @@
       "privileges": ["View Vitals and Biometrics"]
     }
   },
-  "@ssemr/esm-patient-summary-app": {
+  "@ssemrapp/esm-patient-summary-app": {
     "viralLoad": {
       "useFormEngine": true,
       "formName": "F. 8 - Follow up",
