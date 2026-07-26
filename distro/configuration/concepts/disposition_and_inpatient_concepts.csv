@@ -1,0 +1,11 @@
+Uuid,Fully specified name:en,Short name:en,Data class,Data type,Answers,Members
+168619AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Admit to hospital,Admit,Misc,N/A,,
+167731AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Internal transfer,Transfer,Misc,N/A,,
+169401AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Discharged,Discharge,Misc,N/A,,
+169402AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Disposition,Disposition,Question,Coded,Admit to hospital; Internal transfer; Discharged,
+162724AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Admission Location,Admission Location,Question,Text,,
+1543AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Date of death,Date of death,Question,Date,,
+160288AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Admission note,Admission note,Question,Text,,
+165086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Discharge note,Discharge note,Question,Text,,
+160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Inpatient diagnosis,Inpatient diagnosis,Question,Text,,
+161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Clinical note,Clinical note,Question,Text,,
