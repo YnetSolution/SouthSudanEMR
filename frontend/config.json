@@ -95,7 +95,39 @@
         "remove": ["patient-flag-tags"]
       },
       "patient-chart-summary-dashboard-slot": {
-        "add": ["allergies-details-widget", "immunization-overview-widget"]
+        "add": ["allergies-details-widget", "immunization-overview-widget"],
+        "configure": {
+          "patient-program-summary": {
+            "Display conditions": {
+              "expression": "session.sessionLocation ? session.sessionLocation.uuid !== '44c3efb0-2583-4c80-a79e-1f756a03c0a1' && session.sessionLocation.uuid !== 'ba685651-ed3b-4e63-9b35-78893060758a' : true"
+            }
+          },
+          "patient-viral-load-history": {
+            "Display conditions": {
+              "expression": "session.sessionLocation ? session.sessionLocation.uuid !== '44c3efb0-2583-4c80-a79e-1f756a03c0a1' && session.sessionLocation.uuid !== 'ba685651-ed3b-4e63-9b35-78893060758a' : true"
+            }
+          },
+          "patient-viral-load-eligibility": {
+            "Display conditions": {
+              "expression": "session.sessionLocation ? session.sessionLocation.uuid !== '44c3efb0-2583-4c80-a79e-1f756a03c0a1' && session.sessionLocation.uuid !== 'ba685651-ed3b-4e63-9b35-78893060758a' : true"
+            }
+          },
+          "linkage-to-chw-summary": {
+            "Display conditions": {
+              "expression": "session.sessionLocation ? session.sessionLocation.uuid !== '44c3efb0-2583-4c80-a79e-1f756a03c0a1' && session.sessionLocation.uuid !== 'ba685651-ed3b-4e63-9b35-78893060758a' : true"
+            }
+          },
+          "index-family-info": {
+            "Display conditions": {
+              "expression": "session.sessionLocation ? session.sessionLocation.uuid !== '44c3efb0-2583-4c80-a79e-1f756a03c0a1' && session.sessionLocation.uuid !== 'ba685651-ed3b-4e63-9b35-78893060758a' : true"
+            }
+          },
+          "more-patient-summary": {
+            "Display conditions": {
+              "expression": "session.sessionLocation ? session.sessionLocation.uuid !== '44c3efb0-2583-4c80-a79e-1f756a03c0a1' && session.sessionLocation.uuid !== 'ba685651-ed3b-4e63-9b35-78893060758a' : true"
+            }
+          }
+        }
       },
       "patient-chart-dashboard-slot": {
         "Translation overrides": {
