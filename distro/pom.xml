@@ -74,7 +74,7 @@
     <repositories>
         <repository>
             <id>repsy</id>
-            <url>https://repo.repsy.io/mvn/intellisoftdev/ssemr</url>
+            <url>https://repo.repsy.io/ynetsolutions/ssemr</url>
         </repository>
         <repository>
             <id>openmrs-repo</id>
@@ -438,7 +438,7 @@
       <repositories>
         <repository>
           <id>repsy</id>
-          <url>https://repo.repsy.io/mvn/intellisoftdev/ssemr</url>
+          <url>https://repo.repsy.io/ynetsolutions/ssemr</url>
         </repository>
       </repositories>
     </profile>

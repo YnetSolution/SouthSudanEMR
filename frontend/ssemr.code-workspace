@@ -5,6 +5,15 @@
 		},
 		{
 			"path": "../../ssemr-esm-3.x"
+		},
+		{
+			"path": "../../openmrs-module-ssemrws"
+		},
+		{
+			"path": "../../openmrs-module-ssemretl"
+		},
+		{
+			"path": "../../openmrs-module-ohri-mamba"
 		}
 	],
 	"settings": {
