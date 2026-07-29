@@ -73,7 +73,7 @@ jobs:
             set -e
             cd ${{ secrets.SERVER_PROJECT_PATH }}
 
-            echo "::group::1. Pulling latest code from main branch"
+            echo "::group::Git Pull Latest Code"
             git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
             git pull origin main
             echo "::endgroup::"
@@ -82,60 +82,52 @@ jobs:
             BUILD_ARGS=""
 
             if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-              echo "::group::2. Processing Manual Workflow Dispatch Trigger"
               SELECTED_SERVICE="${{ github.event.inputs.service }}"
               NO_CACHE="${{ github.event.inputs.no_cache }}"
-
               if [ "$NO_CACHE" == "true" ]; then
-                echo "-> Building WITHOUT Docker cache (--no-cache)"
                 BUILD_ARGS="--no-cache"
               fi
-
               if [ "$SELECTED_SERVICE" != "all" ]; then
                 SERVICES="$SELECTED_SERVICE"
+              else
+                SERVICES="backend frontend gateway"
               fi
-              echo "Target services: ${SERVICES:-all}"
-              echo "::endgroup::"
             else
-              echo "::group::2. Detecting Changed Services"
               if [ "${{ steps.changes.outputs.backend }}" == "true" ]; then
-                echo "-> Backend changes detected."
                 SERVICES="$SERVICES backend"
               fi
-
               if [ "${{ steps.changes.outputs.frontend }}" == "true" ]; then
-                echo "-> Frontend changes detected."
                 SERVICES="$SERVICES frontend"
               fi
-
               if [ "${{ steps.changes.outputs.gateway }}" == "true" ]; then
-                echo "-> Gateway / Config changes detected."
                 SERVICES="$SERVICES gateway"
               fi
-              echo "Target services: ${SERVICES:-all}"
-              echo "::endgroup::"
+              if [ -z "$SERVICES" ]; then
+                SERVICES="backend frontend gateway"
+              fi
             fi
 
-            if [ -z "$SERVICES" ]; then
-              echo "::group::3. Building Docker Images (All Services)"
-              docker compose build $BUILD_ARGS
-              echo "::endgroup::"
+            echo "=================================================="
+            echo " Target Services to Build & Deploy: $SERVICES"
+            echo "=================================================="
 
-              echo "::group::4. Starting Docker Containers (All Services)"
-              docker compose up -d
+            for SERVICE in $SERVICES; do
+              echo "::group::Building Docker Image: [$SERVICE]"
+              echo "--> Starting docker compose build for $SERVICE..."
+              docker compose build $BUILD_ARGS $SERVICE
+              echo "--> Successfully built $SERVICE"
               echo "::endgroup::"
-            else
-              echo "::group::3. Building Docker Images ($SERVICES)"
-              docker compose build $BUILD_ARGS $SERVICES
-              echo "::endgroup::"
+            done
 
-              echo "::group::4. Starting Docker Containers ($SERVICES)"
-              docker compose up -d $SERVICES
-              echo "::endgroup::"
-            fi
+            echo "::group::Starting Docker Containers ($SERVICES)"
+            docker compose up -d $SERVICES
+            docker compose ps
+            echo "::endgroup::"
 
-            echo "::group::5. Pruning System & Build Cache"
+            echo "::group::Pruning Docker Build Cache & Volumes"
             docker system prune -af --volumes
             echo "::endgroup::"
 
-            echo "=== Deployment Completed Successfully ==="
+            echo "=================================================="
+            echo "   DEPLOYMENT COMPLETED SUCCESSFULLY"
+            echo "=================================================="
