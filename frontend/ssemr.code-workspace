@@ -14,6 +14,9 @@
 		},
 		{
 			"path": "../../openmrs-module-ohri-mamba"
+		},
+		{
+			"path": "../../openmrs-module-ssemrreports"
 		}
 	],
 	"settings": {
