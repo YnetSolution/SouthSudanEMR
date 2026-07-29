@@ -9,3 +9,5 @@ Uuid,Fully specified name:en,Short name:en,Data class,Data type,Answers,Members
 165086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Discharge note,Discharge note,Question,Text,,
 160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Inpatient diagnosis,Inpatient diagnosis,Question,Text,,
 161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Clinical note,Clinical note,Question,Text,,
+169405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Disposition Construct,Disposition Construct,ConvSet,N/A,,
+169403AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Admit to location,Admit to location,Question,Text,,
