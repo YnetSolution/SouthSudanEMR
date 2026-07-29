@@ -1,13 +1,13 @@
-Uuid,Fully specified name:en,Short name:en,Data class,Data type,Answers,Members
-168619AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Admit to hospital,Admit,Misc,N/A,,
-167731AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Internal transfer,Transfer,Misc,N/A,,
-169401AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Discharged,Discharge,Misc,N/A,,
-169402AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Disposition,Disposition,Question,Coded,Admit to hospital; Internal transfer; Discharged,
-162724AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Admission Location,Admission Location,Question,Text,,
-1543AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Date of death,Date of death,Question,Date,,
-160288AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Admission note,Admission note,Question,Text,,
-165086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Discharge note,Discharge note,Question,Text,,
-160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Inpatient diagnosis,Inpatient diagnosis,Question,Text,,
-161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Clinical note,Clinical note,Question,Text,,
-169405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Disposition Construct,Disposition Construct,ConvSet,N/A,,Disposition; Admission Location
-169403AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Admit to location,Admit to location,Question,Text,,
+Uuid,Void/Retire,Same-as mappings,Fully specified name:en,Short name:en,Description:en,Data class,Data type,Answers,Members
+168619AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:168619,Admit to hospital,Admit,,Misc,N/A,,
+167731AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:167731,Internal transfer,Transfer,,Misc,N/A,,
+169401AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:169401,Discharged,Discharge,,Misc,N/A,,
+169402AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:169402;org.openmrs.module.emrapi:Disposition,Disposition,Disposition,,Question,Coded,Admit to hospital; Internal transfer; Discharged,
+162724AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:162724;org.openmrs.module.emrapi:Admission Location;org.openmrs.module.emrapi:Internal Transfer Location,Admission Location,Admission Location,,Question,Text,,
+1543AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:1543;org.openmrs.module.emrapi:Date of death,Date of death,Date of death,,Question,Date,,
+160288AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:160288,Admission note,Admission note,,Question,Text,,
+165086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:165086,Discharge note,Discharge note,,Question,Text,,
+160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:160632,Inpatient diagnosis,Inpatient diagnosis,,Question,Text,,
+161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:161011,Clinical note,Clinical note,,Question,Text,,
+169405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:169405;org.openmrs.module.emrapi:Disposition Concept Set,Disposition Construct,Disposition Construct,,ConvSet,N/A,,Disposition; Admit to location; Admission Location
+169403AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:169403;org.openmrs.module.emrapi:Admission Location;org.openmrs.module.emrapi:Internal Transfer Location,Admit to location,Admit to location,,Question,Text,,
