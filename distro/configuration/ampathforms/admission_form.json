@@ -39,7 +39,7 @@
                   "required": true,
                   "questionOptions": {
                     "rendering": "ui-select-extended",
-                    "concept": "CIEL:162724",
+                    "concept": "CIEL:169403",
                     "datasource": {
                       "name": "location_datasource",
                       "config": {
