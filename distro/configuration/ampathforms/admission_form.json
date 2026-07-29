@@ -19,13 +19,15 @@
                 {
                   "id": "disposition",
                   "type": "obs",
+                  "label": "Disposition",
                   "required": true,
                   "questionOptions": {
                     "rendering": "radio",
                     "concept": "CIEL:169402",
                     "answers": [
                       {
-                        "concept": "CIEL:168619"
+                        "concept": "CIEL:168619",
+                        "label": "Admit to hospital"
                       }
                     ]
                   }
@@ -33,10 +35,11 @@
                 {
                   "id": "admitToLocation",
                   "type": "obs",
+                  "label": "Admission Location",
                   "required": true,
                   "questionOptions": {
                     "rendering": "ui-select-extended",
-                    "concept": "CIEL:169403",
+                    "concept": "CIEL:162724",
                     "datasource": {
                       "name": "location_datasource",
                       "config": {
