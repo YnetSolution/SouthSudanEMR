@@ -33,5 +33,11 @@
             <property>queue.sortWeightGenerator</property>
             <value>basicPrioritySortWeightGenerator</value>
         </globalProperty>
+
+        <!-- Reporting Whitelist Configuration for XStream Deserialization -->
+        <globalProperty>
+            <property>reporting.serializer.whitelist.types</property>
+            <value>org.openmrs.module.reporting.**,org.openmrs.module.ssemrreports.**,org.openmrs.module.ssemrws.**,org.openmrs.module.ssemretl.**</value>
+        </globalProperty>
     </globalProperties>
 </config>
