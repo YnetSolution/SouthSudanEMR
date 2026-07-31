@@ -585,5 +585,16 @@
       "dateVLResultsReceived": "80e34f1b-26e8-49ea-9b6e-d7d903a91e26",
       "viralLoadValue": "01c3ce55-b7eb-45f5-93d5-bace353e3cfd"
     }
+  },
+  "@openmrs/esm-ward-app": {
+    "encounterRoleUuid": "240b26f9-dd88-4172-823d-4a8bfeb7841f",
+    "encounterTypes": {
+      "admission": "e22e39fd-7db2-45e7-80f1-60fa0d5a4378",
+      "discharge": "181820aa-88c9-479b-9077-af92f5364329"
+    },
+    "concepts": {
+      "dischargeNote": "165086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "disposition": "169402AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    }
   }
 }
