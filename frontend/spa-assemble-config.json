@@ -17,7 +17,6 @@
     "@openmrs/esm-primary-navigation-app": "10.0.0",
     "@openmrs/esm-patient-banner-app": "12.3.4",
     "@openmrs/esm-patient-chart-app": "12.3.4",
-    "@ssemrapp/esm-appointments-app": "0.0.2",
     "@openmrs/esm-bed-management-app": "11.1.0",
     "@openmrs/esm-patient-immunizations-app": "12.3.4",
     "@openmrs/esm-patient-label-printing-app": "12.3.4",
@@ -25,7 +24,6 @@
     "@openmrs/esm-patient-notes-app": "12.3.4",
     "@openmrs/esm-patient-orders-app": "12.3.4",
     "@openmrs/esm-patient-programs-app": "12.3.4",
-    "@openmrs/esm-service-queues-app": "11.1.0",
     "@openmrs/esm-stock-management-app": "3.2.1",
     "@openmrs/esm-system-admin-app": "4.4.0",
     "@openmrs/esm-user-onboarding-app": "4.1.0",
@@ -43,7 +41,9 @@
     "@ssemrapp/esm-patient-flags-app": "next",
     "@ssemrapp/esm-patient-list-management-app": "next",
     "@ssemrapp/esm-reports-dashboard": "next",
-    "@ssemrapp/esm-patient-forms-app": "next"
+    "@ssemrapp/esm-patient-forms-app": "next",
+    "@ssemrapp/esm-appointments-app": "next",
+    "@ssemrapp/esm-service-queues-app": "next"
   },
   "excludedFrontendModules": []
 }

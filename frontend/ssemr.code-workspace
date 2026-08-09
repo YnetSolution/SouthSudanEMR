@@ -17,6 +17,9 @@
 		},
 		{
 			"path": "../../openmrs-module-ssemrreports"
+		},
+		{
+			"path": "../../openmrs-module-queue"
 		}
 	],
 	"settings": {
