@@ -68,14 +68,16 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: ${{ secrets.SERVER_PORT || 22 }}
-          request_pty: true
+          request_pty: false
           script: |
             set -e
             cd ${{ secrets.SERVER_PROJECT_PATH }}
+            export BUILDKIT_PROGRESS=plain
+            export DOCKER_CLI_HINTS=false
 
             echo "::group::Git Pull Latest Code"
             git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-            git pull origin main
+            git pull --quiet origin main
             echo "::endgroup::"
 
             SERVICES=""
@@ -114,7 +116,7 @@ jobs:
             for SERVICE in $SERVICES; do
               echo "::group::Building Docker Image: [$SERVICE]"
               echo "--> Starting docker compose build for $SERVICE..."
-              docker compose build $BUILD_ARGS $SERVICE
+              docker compose build --progress=plain $BUILD_ARGS $SERVICE
               echo "--> Successfully built $SERVICE"
               echo "::endgroup::"
             done
@@ -125,7 +127,7 @@ jobs:
             echo "::endgroup::"
 
             echo "::group::Pruning Docker Build Cache & Volumes"
-            docker system prune -af --volumes
+            docker system prune -af --volumes > /dev/null 2>&1 || true
             echo "::endgroup::"
 
             echo "=================================================="
