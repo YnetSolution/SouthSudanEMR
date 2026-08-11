@@ -171,7 +171,7 @@
           },
           "patient-appointments-summary-dashboard": {
             "Display conditions": {
-              "expression": "session.sessionLocation ? session.sessionLocation.uuid !== '5c18a24d-08b2-4d76-8f3e-8c9f21b7405e' && session.sessionLocation.uuid !== '44c3efb0-2583-4c80-a79e-1f756a03c0a1' && session.sessionLocation.uuid !== 'ba685651-ed3b-4e63-9b35-78893060758a' : true"
+              "expression": "true"
             }
           }
         }
@@ -612,7 +612,7 @@
           },
           "clinical-appointments-dashboard-link": {
             "Display conditions": {
-              "expression": "session.sessionLocation ? session.sessionLocation.uuid !== '5c18a24d-08b2-4d76-8f3e-8c9f21b7405e' && session.sessionLocation.uuid !== '44c3efb0-2583-4c80-a79e-1f756a03c0a1' && session.sessionLocation.uuid !== 'ba685651-ed3b-4e63-9b35-78893060758a' : true"
+              "expression": "true"
             }
           }
         }
