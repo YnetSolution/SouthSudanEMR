@@ -1,0 +1,2 @@
+Uuid,Void/Retire,Same as mappings,Fully specified name:en,Short name:en,Description:en,Data class,Data type
+159395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:159395;org.openmrs.module.emrapi:Consult Free Text Comments,Clinical impression comment,Clinical impression,Free text comment recorded on an inpatient encounter. Backs the EMR-API 'Consult Free Text Comments' concept used by the ward app for discharge/transfer/admission notes.,Finding,Text
