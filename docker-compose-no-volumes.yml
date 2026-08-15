@@ -23,7 +23,7 @@ services:
   # MariaDB
   db:
     image: mariadb:10.8.2
-    command: "mysqld --character-set-server=utf8 --collation-server=utf8_general_ci --datadir=/openmrs-db"
+    command: "mysqld --character-set-server=utf8 --collation-server=utf8_general_ci --datadir=/openmrs-db --optimizer-search-depth=0"
     environment:
       MYSQL_DATABASE: openmrs
       MYSQL_USER: ${OPENMRS_DB_USER:-openmrs}
