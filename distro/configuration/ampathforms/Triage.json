@@ -31,7 +31,8 @@
               "label": "Provider:",
               "type": "encounterProvider",
               "questionOptions": {
-                "rendering": "ui-select-extended"
+                "rendering": "ui-select-extended",
+                "isSearchable": true
               },
               "id": "encProvider "
             },
@@ -39,7 +40,8 @@
               "label": "Location:",
               "type": "encounterLocation",
               "questionOptions": {
-                "rendering": "ui-select-extended"
+                "rendering": "ui-select-extended",
+                "isSearchable": true
               },
               "id": "encLocation"
             }
@@ -169,7 +171,7 @@
               "label": "Weight(kg):",
               "id": "weight",
               "type": "obs",
-              "required": "true",
+              "required": false,
               "historicalExpression": "age <= 5 ? HD.getObject('prevEnc')?.getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || '' : ''",
               "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -185,7 +187,7 @@
               "label": "Weight(kg):",
               "id": "weightForBMI",
               "type": "obs",
-              "required": "true",
+              "required": false,
               "historicalExpression": "age > 5 ? HD.getObject('prevEnc')?.getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || '' : ''",
               "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -201,7 +203,7 @@
               "label": "Height(cm):",
               "id": "height",
               "type": "obs",
-              "required": "true",
+              "required": false,
               "historicalExpression": "age <= 5 ? HD.getObject('prevEnc')?.getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || '' : ''",
               "questionOptions": {
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -217,7 +219,7 @@
               "label": "Height(cm):",
               "id": "heightForBMI",
               "type": "obs",
-              "required": "true",
+              "required": false,
               "historicalExpression": "age > 5 ? HD.getObject('prevEnc')?.getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || '' : ''",
               "questionOptions": {
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",

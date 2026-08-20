@@ -20,6 +20,7 @@
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "32c2d223-6a01-4ede-8224-7feeb073e2ab",
+                "defaultValue": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "answers": [
                   {
                     "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -158,7 +159,7 @@
                     "label": "Abstinence"
                   },
                   {
-                    "concept": "410d7684-2045-4eff-9af3-1fb57a406123",
+                    "concept": "f8e6bcff-4557-408a-8797-dabb64ccfd57",
                     "label": "Other"
                   }
                 ]
@@ -177,7 +178,7 @@
                 "concept": "62340009-748b-4b4c-87fa-8d1b2ca96ea0"
               },
               "hide": {
-                "hideWhenExpression": "familyPlanning !== '410d7684-2045-4eff-9af3-1fb57a406123'"
+                "hideWhenExpression": "familyPlanning !== 'f8e6bcff-4557-408a-8797-dabb64ccfd57'"
               }
             }
           ],
@@ -373,7 +374,7 @@
       ]
     },
     {
-      "label": "Other details",
+      "label": "Clinical Assessment and Management",
       "sections": [
         {
           "label": "Other details (< 5)",
@@ -739,7 +740,7 @@
                     "label": "Presenting with symptoms but NOT tested"
                   },
                   {
-                    "concept": "1923BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "concept": "1643AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "RAPID TEST FOR MALARIA"
                   },
                   {
