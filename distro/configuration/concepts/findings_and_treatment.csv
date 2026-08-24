@@ -38,6 +38,5 @@ f8e6bcff-4557-408a-8797-dabb64ccfd57,,,Other Family Planning,Other Family Planni
 2eac1d32-0d14-43d7-b188-a6acb215e626,,,Family planning,Family planning,,,,,Question,Coded,"Abstinence;
 Other Family Planning",
 62340009-748b-4b4c-87fa-8d1b2ca96ea0,,,Other Family Planning Specify,Other Family Planning Specify,,,,,Question,Text,,
-"9adb2c60-b34d-4c3e-961b-03bd0c581e45
-",,,Number of previous pregnancies,Number of previous pregnancies,,,,,Question,Numeric,,
+9adb2c60-b34d-4c3e-961b-03bd0c581e45,,,Number of previous pregnancies,Number of previous pregnancies,,,,,Question,Numeric,,
 7976446e-3fbd-4cd0-871a-cbdc621998fc,,,Record the name of  Drugs from the prescription or drug codes if provided,Record the name of  Drugs from the prescription or drug codes if provided,,,,,Question,Text,,
