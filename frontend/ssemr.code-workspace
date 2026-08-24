@@ -20,6 +20,12 @@
 		},
 		{
 			"path": "../../openmrs-module-queue"
+		},
+		{
+			"path": "../../ssemr-dhis2-mediator"
+		},
+		{
+			"path": "../../openmrs-module-ssemrdhis2"
 		}
 	],
 	"settings": {
