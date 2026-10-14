@@ -4,7 +4,10 @@
 #--------------------------------------------
 FROM --platform=$BUILDPLATFORM node:22-alpine as dev
 
-ARG APP_SHELL_VERSION=next
+# Pinned to match the `@openmrs/esm-framework: 10.x` peer dependency of the modules in
+# spa-assemble-config.json. Do NOT use `next` - it tracks unreleased core majors (11.x)
+# which break the pinned apps (React error #130, duplicate workspace registrations).
+ARG APP_SHELL_VERSION=10.0.0
 
 RUN mkdir -p /app
 WORKDIR /app
@@ -38,7 +41,13 @@ RUN echo "Copying required files ..." && \
 RUN if [ ! -f ./spa/index.html ]; then echo 'Build failed. Please check the logs above for details. This may have happened because of an update to a library that OpenMRS depends on.'; exit 1; fi
 
 # Modify page title
-RUN sed -i 's/<title>.*<\/title>/<title>SSEMR<\/title>/' ./spa/index.html
+# NOTE: newer app-shell builds emit a minified, single-line index.html that also
+# contains a <title> inside the loading spinner SVG. A greedy `.*` would match from
+# the page <title> all the way to the SVG's </title>, deleting the openmrs.js
+# <script>, stylesheets and <body> (blank SPA). `[^<]*` only replaces the first,
+# real page title.
+RUN sed -i 's/<title>[^<]*<\/title>/<title>SSEMR<\/title>/' ./spa/index.html && \
+    grep -q 'openmrs\.[^"]*\.js' ./spa/index.html || { echo 'index.html is missing the app shell script'; exit 1; }
 
 FROM nginx:1.23-alpine
 
