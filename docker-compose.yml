@@ -33,7 +33,10 @@ services:
     image: openmrs/openmrs-reference-application-3-backend:${TAG:-qa}
     restart: "unless-stopped"
     depends_on:
-      - db
+      db:
+        condition: service_started
+      db-setup:
+        condition: service_completed_successfully
     environment:
       OMRS_CONFIG_MODULE_WEB_ADMIN: "true"
       OMRS_CONFIG_AUTO_UPDATE_DATABASE: "true"
@@ -57,7 +60,8 @@ services:
     # optimizer-search-depth=0 lets the optimizer pick its own (greedy) search depth.
     # The default of 62 makes it enumerate join orders exhaustively, which never
     # terminates on the 36-table join Hibernate emits for a queue-entry search.
-    command: "mysqld --character-set-server=utf8 --collation-server=utf8_general_ci --optimizer-search-depth=0"
+    # event-scheduler=ON runs the scheduled MAMBA ETL; without it the analysis tables never refresh.
+    command: "mysqld --character-set-server=utf8 --collation-server=utf8_general_ci --optimizer-search-depth=0 --event-scheduler=ON"
     healthcheck:
       test: "mysql --user=${OMRS_DB_USER:-openmrs} --password=${OMRS_DB_PASSWORD:-openmrs} --execute \"SHOW DATABASES;\""
       interval: 3s
@@ -70,6 +74,25 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-openmrs}
     volumes:
       - db-data:/var/lib/mysql
+    networks:
+      - ssemr-network
+
+  # One-shot: creates the MAMBA ETL database and grants the OpenMRS user access to it, so no one
+  # has to do this by hand on each server. Runs on every "up"; every step is safe to repeat.
+  db-setup:
+    image: mariadb:10.8.2
+    restart: "no"
+    depends_on:
+      db:
+        condition: service_healthy
+    entrypoint: ["bash", "/etl-database-setup.sh"]
+    environment:
+      DB_HOST: db
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-openmrs}
+      OPENMRS_DB_USER: ${OPENMRS_DB_USER:-openmrs}
+      ETL_DATABASE: ${ETL_DATABASE:-ssemr_etl}
+    volumes:
+      - ./db/etl-database-setup.sh:/etl-database-setup.sh:ro
     networks:
       - ssemr-network
 

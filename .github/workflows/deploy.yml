@@ -44,7 +44,7 @@ jobs:
               - 'distro/**'
               - 'pom.xml'
               - 'Dockerfile'
-              - 'runtime-properties-config'
+              - 'db/**'
               - 'update_scheduler.sql'
             frontend:
               - 'frontend/**'

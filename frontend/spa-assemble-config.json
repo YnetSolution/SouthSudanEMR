@@ -43,7 +43,8 @@
     "@ssemrapp/esm-patient-forms-app": "next",
     "@ssemrapp/esm-appointments-app": "next",
     "@ssemrapp/esm-service-queues-app": "next",
-    "@ssemrapp/esm-dhis2-sync-app":"next"
+    "@ssemrapp/esm-dhis2-sync-app":"next",
+    "@ssemrapp/esm-etl-config-app": "next"
   },
   "excludedFrontendModules": []
 }

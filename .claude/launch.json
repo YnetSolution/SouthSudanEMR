@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "etl-config-dev",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "cd '/Users/mac/Documents/South Sudan/ssemr-esm-3.x' && node_modules/.bin/openmrs develop --sources packages/esm-etl-config-app --backend http://localhost:80 --importmap http://localhost/openmrs/spa/importmap.json --config-url http://localhost/openmrs/spa/config.json --port 8090"
+      ],
+      "port": 8090
+    }
+  ]
+}

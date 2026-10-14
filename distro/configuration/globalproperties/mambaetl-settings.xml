@@ -1,0 +1,40 @@
+<config>
+    <!--
+      Starting values for the MAMBA ETL. Loaded once by Initializer, then managed from
+      System Administration > ETL Configuration (spa/etl-config).
+
+      Initializer only reloads this file when its contents change, so edits made on the dashboard
+      are kept across restarts. Changing a value here in a later release overwrites the dashboard
+      value for that setting on every server that picks up the release.
+    -->
+    <globalProperties>
+        <globalProperty>
+            <property>mambaetl.settings.openmrsDatabase</property>
+            <value>openmrs</value>
+        </globalProperty>
+        <globalProperty>
+            <property>mambaetl.settings.etlDatabase</property>
+            <value>ssemr_etl</value>
+        </globalProperty>
+        <globalProperty>
+            <property>mambaetl.settings.locale</property>
+            <value>en</value>
+        </globalProperty>
+        <globalProperty>
+            <property>mambaetl.settings.columns</property>
+            <value>100</value>
+        </globalProperty>
+        <globalProperty>
+            <property>mambaetl.settings.incrementalMode</property>
+            <value>1</value>
+        </globalProperty>
+        <globalProperty>
+            <property>mambaetl.settings.automatedFlattening</property>
+            <value>0</value>
+        </globalProperty>
+        <globalProperty>
+            <property>mambaetl.settings.intervalSeconds</property>
+            <value>43200</value>
+        </globalProperty>
+    </globalProperties>
+</config>
