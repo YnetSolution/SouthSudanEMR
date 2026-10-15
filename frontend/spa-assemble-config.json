@@ -44,7 +44,8 @@
     "@ssemrapp/esm-appointments-app": "next",
     "@ssemrapp/esm-service-queues-app": "next",
     "@ssemrapp/esm-dhis2-sync-app":"next",
-    "@ssemrapp/esm-etl-config-app": "next"
+    "@ssemrapp/esm-etl-config-app": "next",
+    "@ssemrapp/esm-backup-config-app": "next"
   },
   "excludedFrontendModules": []
 }

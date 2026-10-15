@@ -96,9 +96,34 @@ services:
     networks:
       - ssemr-network
 
+  # Scheduled database backups, configured from System Administration > Backups. Keeps copies in
+  # BACKUP_HOST_DIR (default ./backups) and sends them to the receiving server over SSH.
+  backup:
+    build:
+      context: ./backup
+    restart: "unless-stopped"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_HOST: db
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-openmrs}
+      OPENMRS_DB_USER: ${OPENMRS_DB_USER:-openmrs}
+      # Only read once, to carry settings from older .env files into the database.
+      FACILITY_NAME: ${FACILITY_NAME:-}
+      REMOTE_HOST: ${REMOTE_HOST:-}
+      REMOTE_USER: ${REMOTE_USER:-}
+      REMOTE_DIR: ${REMOTE_DIR:-}
+    volumes:
+      - ${BACKUP_HOST_DIR:-./backups}:/backups
+      - backup-ssh:/ssh
+    networks:
+      - ssemr-network
+
 volumes:
   openmrs-data: ~
   db-data: ~
+  backup-ssh: ~
 
 networks:
   ssemr-network:

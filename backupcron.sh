@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Superseded by the "backup" service in docker-compose.yml, configured from System Administration >
+# Backups. While that service runs, this script stands down so existing cron entries don't make
+# duplicate backups. It still works on its own as a fallback if the service is not running.
+if "$(command -v docker || echo /usr/bin/docker)" ps --format '{{.Names}}' 2>/dev/null | grep -q -- '-backup-1$'; then
+  echo "$(date): the backup service is running; backups are managed from the dashboard. Nothing to do." | tee -a /opt/ssemr/backup.log
+  exit 0
+fi
+
 # Define the path to the .env file
 ENV_FILE="/opt/ssemr/.env"
 

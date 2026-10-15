@@ -16,6 +16,7 @@ on:
           - 'backend'
           - 'frontend'
           - 'gateway'
+          - 'backup'
           - 'backend frontend'
       no_cache:
         description: 'Build without Docker cache (--no-cache)'
@@ -48,6 +49,8 @@ jobs:
               - 'update_scheduler.sql'
             frontend:
               - 'frontend/**'
+            backup:
+              - 'backup/**'
             gateway:
               - 'gateway/**'
               - 'nginx/**'
@@ -92,7 +95,7 @@ jobs:
               if [ "$SELECTED_SERVICE" != "all" ]; then
                 SERVICES="$SELECTED_SERVICE"
               else
-                SERVICES="backend frontend gateway"
+                SERVICES="backend frontend gateway backup"
               fi
             else
               if [ "${{ steps.changes.outputs.backend }}" == "true" ]; then
@@ -104,8 +107,11 @@ jobs:
               if [ "${{ steps.changes.outputs.gateway }}" == "true" ]; then
                 SERVICES="$SERVICES gateway"
               fi
+              if [ "${{ steps.changes.outputs.backup }}" == "true" ]; then
+                SERVICES="$SERVICES backup"
+              fi
               if [ -z "$SERVICES" ]; then
-                SERVICES="backend frontend gateway"
+                SERVICES="backend frontend gateway backup"
               fi
             fi
 

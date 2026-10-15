@@ -1,52 +1,48 @@
 #!/bin/bash
+#
+# Restores the OpenMRS database from a backup made by the backup service (or by the old backup
+# scripts). Run from the project folder on the server:
+#
+#   ./restore.sh                 restore the newest backup
+#   ./restore.sh <file>          restore a specific .sql or .sql.gz file
+#
+# Backups are looked for in BACKUP_HOST_DIR (default ./backups, where the backup service writes) and
+# then in ~/Data_Backup, where the old scripts wrote. The database's own root login is used, so no
+# credentials need to be configured. This REPLACES the current data, so OpenMRS is stopped first.
 
-# Load environment variables from .env file
-if [ -f .env ]; then
-  export $(cat .env | xargs)
+set -euo pipefail
+
+BACKUP_DIRS=("${BACKUP_HOST_DIR:-./backups}" "$HOME/Data_Backup")
+DB_NAME="${OPENMRS_DB_NAME:-openmrs}"
+
+if docker compose version >/dev/null 2>&1; then COMPOSE="docker compose"; else COMPOSE="docker-compose"; fi
+
+if [ $# -ge 1 ]; then
+  BACKUP="$1"
 else
-  echo ".env file not found."
+  BACKUP=$(ls -t $(for d in "${BACKUP_DIRS[@]}"; do printf '%s/*.sql %s/*.sql.gz ' "$d" "$d"; done) 2>/dev/null | head -n 1 || true)
+fi
+
+if [ -z "${BACKUP:-}" ] || [ ! -f "$BACKUP" ]; then
+  echo "No backup found (looked in: ${BACKUP_DIRS[*]})."
   exit 1
 fi
 
-# Variables
-LOCAL_DIR="$HOME/Data_Backup"
-BACKUP_DIR="/opt"
+echo "This will REPLACE the '$DB_NAME' database with: $BACKUP"
+read -r -p "Type RESTORE to continue: " answer
+[ "$answer" = "RESTORE" ] || { echo "Cancelled."; exit 1; }
 
-# Find the latest .sql file in the local backup directory
-LATEST_BACKUP=$(ls -t "$LOCAL_DIR"/*.sql 2>/dev/null | head -n 1)
+echo "Stopping OpenMRS while the database is restored..."
+$COMPOSE stop backend
 
-# Check if a backup file was found
-if [ -z "$LATEST_BACKUP" ]; then
-  echo "No SQL backup file found in $LOCAL_DIR."
-  exit 1
+echo "Restoring..."
+if [[ "$BACKUP" == *.gz ]]; then
+  gzip -dc "$BACKUP" | $COMPOSE exec -T db sh -c "mysql -uroot -p\"\$MYSQL_ROOT_PASSWORD\" '$DB_NAME'"
+else
+  $COMPOSE exec -T db sh -c "mysql -uroot -p\"\$MYSQL_ROOT_PASSWORD\" '$DB_NAME'" < "$BACKUP"
 fi
 
-# Extract the filename from the full path
-LATEST_BACKUP_FILE=$(basename "$LATEST_BACKUP")
+echo "Starting OpenMRS..."
+$COMPOSE start backend
 
-# Check Docker container status
-sudo docker ps -a | grep $DB_CONTAINER > /dev/null
-if [ $? -ne 0 ]; then
-  echo "Docker container $DB_CONTAINER not found."
-  exit 1
-fi
-
-# Copy the latest SQL file into the Docker container
-sudo docker cp "$LATEST_BACKUP" "$DB_CONTAINER:$BACKUP_DIR/"
-if [ $? -ne 0 ]; then
-  echo "Failed to copy the SQL file to Docker container."
-  exit 1
-fi
-
-# Restore the database using the latest SQL file
-sudo docker exec -it $DB_CONTAINER bash -c "mysql -u $DB_USER -p$DB_PASS $DB_NAME < $BACKUP_DIR/$LATEST_BACKUP_FILE"
-if [ $? -ne 0 ]; then
-  echo "Database restoration failed."
-  exit 1
-fi
-
-# Clean up: remove the SQL file inside the Docker container
-sudo docker exec $DB_CONTAINER rm "$BACKUP_DIR/$LATEST_BACKUP_FILE"
-
-echo "Database restored successfully from $LATEST_BACKUP_FILE."
-exit 0
+echo "Database restored from $(basename "$BACKUP")."
