@@ -3,8 +3,9 @@
 # Gives the OpenMRS database user what the MAMBA ETL needs, so nobody has to log in to a server
 # to create the analysis database or grant privileges by hand.
 #
-# Run by the one-shot "db-setup" service in docker-compose.yml on every "docker compose up",
-# after the database is healthy and before OpenMRS starts. Every statement is safe to repeat.
+# Run by the one-shot "db-setup" service in docker-compose.yml, which only starts when asked
+# ("docker compose --profile setup run --rm db-setup"): by the deploy workflow when this file
+# changes, and by setup.sh for a new environment. Every statement is safe to repeat.
 #
 # What it does, as the MariaDB root user:
 #   - creates the analysis database (ETL_DATABASE, default ssemr_etl) as utf8mb4, or converts the

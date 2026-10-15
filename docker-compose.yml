@@ -33,10 +33,7 @@ services:
     image: openmrs/openmrs-reference-application-3-backend:${TAG:-qa}
     restart: "unless-stopped"
     depends_on:
-      db:
-        condition: service_started
-      db-setup:
-        condition: service_completed_successfully
+      - db
     environment:
       OMRS_CONFIG_MODULE_WEB_ADMIN: "true"
       OMRS_CONFIG_AUTO_UPDATE_DATABASE: "true"
@@ -45,11 +42,14 @@ services:
       OMRS_CONFIG_CONNECTION_DATABASE: openmrs
       OMRS_CONFIG_CONNECTION_USERNAME: ${OPENMRS_DB_USER:-openmrs}
       OMRS_CONFIG_CONNECTION_PASSWORD: ${OPENMRS_DB_PASSWORD:-openmrs}
+      SSEMR_BACKUP_DIR: /openmrs/backups
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/openmrs"]
       timeout: 5s
     volumes:
       - openmrs-data:/openmrs/data
+      # The backup service's folder, so the Backups dashboard can download and delete copies.
+      - ${BACKUP_HOST_DIR:-./backups}:/openmrs/backups
     networks:
       - ssemr-network
 
@@ -78,9 +78,14 @@ services:
       - ssemr-network
 
   # One-shot: creates the MAMBA ETL database and grants the OpenMRS user access to it, so no one
-  # has to do this by hand on each server. Runs on every "up"; every step is safe to repeat.
+  # has to do this by hand on each server. Behind the "setup" profile, so a normal "up" never starts
+  # it; it runs only when asked:
+  #   docker compose --profile setup run --rm db-setup
+  # The deploy workflow does this when db/ changes, and setup.sh does it for a new environment.
+  # Every step is safe to repeat.
   db-setup:
     image: mariadb:10.8.2
+    profiles: ["setup"]
     restart: "no"
     depends_on:
       db:

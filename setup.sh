@@ -126,6 +126,11 @@ if ! $DOCKER_COMPOSE_CMD -f "$DOCKER_COMPOSE_FILE" up -d --build; then
 fi
 
 print_success "Application is starting in the background!"
+print_info "Preparing the analytics (ETL) database and its permissions..."
+if ! $DOCKER_COMPOSE_CMD -f "$DOCKER_COMPOSE_FILE" --profile setup run --rm db-setup; then
+    print_warning "Database setup did not complete; run '$DOCKER_COMPOSE_CMD --profile setup run --rm db-setup' once the database is up."
+fi
+
 print_info "To view logs, run: $DOCKER_COMPOSE_CMD -f $DOCKER_COMPOSE_FILE logs -f"
 print_info "Once the health checks pass, the application will be available at http://localhost"
 

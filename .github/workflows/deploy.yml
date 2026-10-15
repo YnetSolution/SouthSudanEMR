@@ -17,6 +17,7 @@ on:
           - 'frontend'
           - 'gateway'
           - 'backup'
+          - 'db-setup'
           - 'backend frontend'
       no_cache:
         description: 'Build without Docker cache (--no-cache)'
@@ -45,8 +46,9 @@ jobs:
               - 'distro/**'
               - 'pom.xml'
               - 'Dockerfile'
-              - 'db/**'
               - 'update_scheduler.sql'
+            dbsetup:
+              - 'db/**'
             frontend:
               - 'frontend/**'
             backup:
@@ -85,6 +87,8 @@ jobs:
 
             SERVICES=""
             BUILD_ARGS=""
+            # The database setup (ETL database and grants) only runs when its script changes or is asked for.
+            RUN_DB_SETUP="false"
 
             if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
               SELECTED_SERVICE="${{ github.event.inputs.service }}"
@@ -92,7 +96,9 @@ jobs:
               if [ "$NO_CACHE" == "true" ]; then
                 BUILD_ARGS="--no-cache"
               fi
-              if [ "$SELECTED_SERVICE" != "all" ]; then
+              if [ "$SELECTED_SERVICE" == "db-setup" ]; then
+                RUN_DB_SETUP="true"
+              elif [ "$SELECTED_SERVICE" != "all" ]; then
                 SERVICES="$SELECTED_SERVICE"
               else
                 SERVICES="backend frontend gateway backup"
@@ -110,7 +116,10 @@ jobs:
               if [ "${{ steps.changes.outputs.backup }}" == "true" ]; then
                 SERVICES="$SERVICES backup"
               fi
-              if [ -z "$SERVICES" ]; then
+              if [ "${{ steps.changes.outputs.dbsetup }}" == "true" ]; then
+                RUN_DB_SETUP="true"
+              fi
+              if [ -z "$SERVICES" ] && [ "$RUN_DB_SETUP" != "true" ]; then
                 SERVICES="backend frontend gateway backup"
               fi
             fi
@@ -127,10 +136,18 @@ jobs:
               echo "::endgroup::"
             done
 
-            echo "::group::Starting Docker Containers ($SERVICES)"
-            docker compose up -d $SERVICES
-            docker compose ps
-            echo "::endgroup::"
+            if [ "$RUN_DB_SETUP" == "true" ]; then
+              echo "::group::Database setup (ETL database and grants)"
+              docker compose --profile setup run --rm db-setup
+              echo "::endgroup::"
+            fi
+
+            if [ -n "$SERVICES" ]; then
+              echo "::group::Starting Docker Containers ($SERVICES)"
+              docker compose up -d $SERVICES
+              docker compose ps
+              echo "::endgroup::"
+            fi
 
             echo "::group::Pruning Docker Build Cache & Volumes"
             docker system prune -af --volumes > /dev/null 2>&1 || true

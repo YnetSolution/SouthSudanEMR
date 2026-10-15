@@ -317,8 +317,17 @@ latest_due_slot() {
 
 # ---------------------------------------------------------------- main loop
 
+# OpenMRS (user 1001, group 0 in its container) reads and deletes backups from this folder for the
+# dashboard's Download and Delete. Group 0 may read and write; nobody else can see the dumps.
+secure_backup_dir() {
+  umask 0027
+  chgrp 0 "$BACKUP_DIR" && chmod 2770 "$BACKUP_DIR"
+  find "$BACKUP_DIR" -maxdepth 1 -type f \( -name '*.sql' -o -name '*.sql.gz' \) -exec chgrp 0 {} + -exec chmod 0640 {} +
+}
+
 main() {
   log "SSEMR backup service $VERSION starting"
+  secure_backup_dir || log "Could not set permissions on $BACKUP_DIR"
   wait_for_database || exit 1
   prepare_database || exit 1
   import_env_settings
