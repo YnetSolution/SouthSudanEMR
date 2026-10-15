@@ -191,7 +191,6 @@ c3bd1d31-fbad-4e75-aabf-4f9000acb36e,,Getting from family member,,,,,,Misc,N/A,
 c3103ad9-a5ff-4e8f-b382-90c8c6030e67,,"Illness, hospitalization",,,,,,Misc,N/A,
 b6d43865-1a80-4f69-97b9-4425c019e435,,Drugs out of stock,,,,,,Misc,N/A,
 6fc682fa-e683-42de-ba48-719430065f56,,Transport challenge,,,,,,Misc,N/A,
-cd20a916-e12f-435d-afef-6b29f48c4057,,Lack of food,,,,,,Misc,N/A,
 3d2e64cc-9262-49be-aab7-082b18cd2601,,Drug abuse,,,,,,Misc,N/A,
 42f493ad-29a5-47d1-9518-61164b10aa1b,,Staff attitude towards clients,,,,,,Misc,N/A,
 8b3e209c-3557-4137-a127-583d8bbbd290,,Stigma and disclosure issue,,,,,,Misc,N/A,
@@ -200,7 +199,6 @@ cd20a916-e12f-435d-afef-6b29f48c4057,,Lack of food,,,,,,Misc,N/A,
 b4a3e18d-71ee-4e73-8502-e2962d215bb1,,Co-infection treatment/ Pill burden,,,,,,Misc,N/A,
 8a9f51ef-08f1-4c3a-98e1-20c6444d9b53,,Health System Challenges,,,,,,Misc,N/A,
 9c125fc3-9c99-488b-85e5-182b43593727,,Psychological Factors,,,,,,Misc,N/A,
-9cee5302-2399-4f3d-9bfe-cc8fbfd8c4d7,,Substance Abuse,,,,,,Misc,N/A,
 fb137449-ee69-492a-8b04-024f52a15d15,,Migration and Mobility,,,,,,Misc,N/A,
 f6ae430a-a197-426e-b54f-08f45fae0ad0,,Other (specify),,,,,,Misc,N/A,
 949c3f14-03af-4a00-9647-5f7575ed0719,,Reasons for ART Interruption,Reasons for ART Interruption,,,,,Question,Coded,"Toxicity/side effects;
@@ -250,8 +248,6 @@ b8b2bd85-52eb-4b80-9842-88fd177befe3,,Breast milk only,Breast milk only,,,,,Misc
 Mixed Feeding(> 6 Months);
 RF-Replacement feeding(Never Breastfeed)"
 c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,,,,,Misc,N/A,
-54798d14-ae3b-4666-8667-a9be973f9996,,Moderate Acute Malnutrition,Moderate Acute Malnutrition,,,,,Misc,N/A,
-258d897f-da46-4d35-ae1f-f6517117bd01,,Severe Acute Malnutrition,Severe Acute Malnutrition,,,,,Misc,N/A,
 ef666995-65d6-4031-b4b8-8e6c13d39b84,,Nutritional Status,Nutritional Status,,,,,Question,Coded,"Normal;
 Moderate Acute Malnutrition;
 Severe Acute Malnutrition"
@@ -314,8 +310,6 @@ Parotid Enlargement Bilateral"
 a68c104e-0e7b-4c04-966d-a9e37a1d6f71,,Findings - Respiratory/Chest,,,,,,Question,Coded,"Normal;
 Abnormal"
 17aded46-0c88-4434-ab3d-37858affbaee,,Retractions(Chest in drawing),,,,,,Misc,N/A,
-9584a97a-29e2-4ced-9995-e975ba399920,,Cyanosis,,,,,,Misc,N/A,
-224b7592-4e15-11e4-8a57-0800271c1b75,,Wheezing,,,,,,Misc,N/A,
 5bcc8c89-37b6-4ac6-94fd-3f4b39081394,,Abnormal Findings - Respiratory/Chest,,,,,,Question,Coded,"Retractions(Chest in drawing);
 Cyanosis;
 Wheezing;
@@ -324,9 +318,6 @@ c5cc6779-7b23-40ef-8d39-28f92d70a144,,Findings - CVS/Heart,,,,,,Question,Coded,"
 Abnormal"
 05c4679b-2531-44db-82c0-35022a3b9606,,Findings - Abdomen,,,,,,Question,Coded,"Normal;
 Abnormal"
-80a1d3c1-588c-405d-ab6c-1c33df571f75,,Hepatomegaly,,,,,,Misc,N/A,
-b861a0f1-40d3-4fba-8500-a3edeefc414c,,Splenomegaly,,,,,,Misc,N/A,
-1cca1230-3125-4d21-93c0-12ba43d566d9,,Ascites,,,,,,Misc,N/A,
 be31e243-c2a5-4fa4-9f93-d5e06bc78293,,Abnormal Findings - Abdomen,,,,,,Question,Coded,"Hepatomegaly;
 Splenomegaly;
 Ascites;

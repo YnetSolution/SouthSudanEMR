@@ -64,8 +64,6 @@ c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
 5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
 a68c104e-0e7b-4c04-966d-a9e37a1d6f71,,Respiratory,Respiratory,Respiratory,,,,Misc,Coded,Normal; Abnormal
 17aded46-0c88-4434-ab3d-37858affbaee,,Retractions(Chest in drawing),Retractions(Chest in drawing),Retractions(Chest in drawing),,,,Misc,N/A,
-9584a97a-29e2-4ced-9995-e975ba399920,,Cyanosis,Cyanosis,Cyanosis,,,,Misc,N/A,
-224b7592-4e15-11e4-8a57-0800271c1b75,,Wheezing,Wheezing,Wheezing,,,,Misc,N/A,
 c6b7d217-b492-4035-a7d9-e091179ec510,,Abnormal Other,Abnormal Other,Abnormal Other,,,,Misc,N/A,
 6e2c2365-b5e7-40b1-ba5f-848b2979249b,,Respiratory/Chest - If abnormal tick and /or describe additional findings,,,,,,Misc,Coded,"Retractions(Chest in drawing); Cyanosis, Wheezing; Abnormal Other"
 33db6704-6cdd-46e0-b8ee-b7a874789d71,,Abnormal findings Respiratory/Chest Other specify,,,,,,Question,Text,
@@ -76,9 +74,6 @@ f4866b75-de82-4deb-81fb-f6350a9aeae1,,CVS/Heart Abnormal describe,,,,,,Question,
 c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
 5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
 05c4679b-2531-44db-82c0-35022a3b9606,,SYSTEMIC FINDINGS Abdomen,,,,,,Misc,Coded,Normal; Abnormal
-80a1d3c1-588c-405d-ab6c-1c33df571f75,,Hepatomegaly,Hepatomegaly,Hepatomegaly,,,,Misc,N/A,
-b861a0f1-40d3-4fba-8500-a3edeefc414c,,Splenomegaly,Splenomegaly,Splenomegaly,,,,Misc,N/A,
-1cca1230-3125-4d21-93c0-12ba43d566d9,,Ascites,Ascites,Ascites,,,,Misc,N/A,
 c6b7d217-b492-4035-a7d9-e091179ec510,,Abnormal Other,Abnormal Other,Abnormal Other,,,,Misc,N/A,
 0b8a1b8f-156e-415b-bef4-428c56841ecf,,Abdomen - If abnormal tick and /or describe additional findings,,,,,,Misc,Coded,Hepatomegaly; Splenomegaly; Ascites; Abnormal Other
 f0d2047e-1bf4-4076-968c-0d45a879cd57,,Abnormal findings Abdomen Other specify,,,,,,Question,Text,
@@ -98,13 +93,9 @@ ce7561e1-36fb-4ec9-9951-a0805c967889,,Musculoskeletal system/Limbs - If abnormal
 c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
 5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
 ea723122-0da5-4c1b-b82a-8e17707ea364,,Skin - Organ system,,,,,,Misc,Coded,Normal; Abnormal
-37ecf958-4a2f-460c-b407-ff901b6607a8,,Molluscum Contagiosum,Molluscum Contagiosum,Molluscum Contagiosum,,,,Misc,N/A,
 62c4be97-6593-46e4-b5ed-22dc776f5996,,Warts,Warts,Warts,,,,Misc,N/A,
-cc23bab5-d6eb-4e16-948b-25a366080dba,,Papular pruritic eruption,Papular pruritic eruption,Papular pruritic eruption,,,,Misc,N/A,
-c5281bd2-70b1-4efb-8863-afc296c38a95,,Pyoderma,Pyoderma,Pyoderma,,,,Misc,N/A,
 c6b7d217-b492-4035-a7d9-e091179ec510,,Abnormal Other,Abnormal Other,Abnormal Other,,,,Misc,N/A,
-383d1116-edbb-41ae-82f3-9a712049904d,,Skin - If abnormal tick and /or describe additional findings,,,,,,Misc,Coded,"Molluscum; 
-Contagiosum; 
+383d1116-edbb-41ae-82f3-9a712049904d,,Skin - If abnormal tick and /or describe additional findings,,,,,,Misc,Coded,"1212AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA; 
 Warts;
 Papular pruritic eruption;
 Pyoderma;

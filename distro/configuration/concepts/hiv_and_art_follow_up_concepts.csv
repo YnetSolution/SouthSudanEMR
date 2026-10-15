@@ -5,7 +5,6 @@ a226366c-01ca-4c6c-8817-15ccceba3263,,Follow up - Scheduled,Scheduled,Follow up 
 ee31f5fc-40b8-417d-8350-1a74431c220b,,ART Follow up Date,Date,ART Follow up - Scheduled Date,,,,Question,Date,
 9efbdca3-7ca8-4205-8285-46151802a887,,Duration For Current Regimen,Duration For Current Regimen,Duration For Current Regimen,,,,Question,Date,
 8df413d9-e018-4a38-817f-fcf718f0df2f,,Current on FP,Current on FP,Current on FP,,,,Question,Coded,Yes;No
-1fe0597e-470d-49bd-9d82-9c7b7342dab0,,Condoms,Condoms,,,,,Misc,N/A,
 3c8d2964-2794-4c75-b544-5806b55d5c9d,,Implant,Implant,,,,,Misc,N/A,
 ea6ad667-d1d8-409d-abbb-0ddbcb46bee1,,Depo,Depo,,,,,Misc,N/A,
 5279AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,I-Injectable,Injectable,,,,,Misc,N/A,
@@ -48,14 +47,11 @@ d02b83cd-eaff-4015-a434-01406239c298,,4 Am-Mfx-Pto-Clz-Z-H high-dose-E/5 Mfx-Cfx
 5ba046b4-42e9-4ffb-81a2-6cd4fc03ee70,,TB Regimen Second Line,TB Regimen Second Line,TB Regimen Second Line,,,,Question,Coded,4 Am-Mfx-Pto-Clz-Z-H high-dose-E/5 Mfx-Cfx-Cfz-Z-E
 4199b8d5-ab1f-4623-9083-a6764059f424,,TB Regimen For Children,TB Regimen For Children,TB Regimen For Children,,,,Question,Coded,2HRZE/10RH
 1c44444b-ac9a-4d2a-bb83-9299ab05668c,,TB Regimen On,TB Regimen On,TB Regimen On,,,,Question,Coded,2HRZE/4RH ; 2SHRZE/1HRZE/5RH
-e31c3a3c-8156-4896-812c-be78fee13273,,Nausea,Nausea,,,,,Misc,N/A,
 512AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Rash,Rash,,,,,Misc,N/A,
 47be2dc7-acfc-43e8-8c27-4331856164db,,Headache,Headache,,,,,Misc,N/A,
 f2cc0f34-6546-4af3-bd2d-3466047c0ce5,,Diarrhoea,Diarrhoea,,,,,Misc,N/A,
 121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Anaemia,Anaemia,,,,,Misc,N/A,
-f20b15b2-4e14-11e4-8a57-0800271c1b75,,Jaundice,Jaundice,,,,,Misc,N/A,
 a1656477-2650-4861-bdbd-84a7d985fa5a,,Fatigue,Fatigue,,,,,Misc,N/A,
-1dfb0948-4e15-11e4-8a57-0800271c1b75,,Abdominal pain,Abdominal pain,,,,,Misc,N/A,
 acecabeb-008a-4924-981f-fcc2807087f6,,FAT changes,FAT changes,,,,,Misc,N/A,
 50622f1f-9367-4a4e-a510-e969681d8df0,,"B, N burning, numb, tingling","B, N burning/numb/tingling",,,,,Misc,N/A,
 db99694b-a058-48a9-832c-64c28847a1a9,,"CNS: dizzy, anxiety, nightmare, depression",CNS: dizzy/anxiety/nightmare/depression ,,,,,Misc,N/A,
@@ -202,7 +198,6 @@ e126652c-8d02-4c4b-a49d-5bac03eb4d03,,ARV Adherence,ARV Adherence,ARV Adherence,
 9959c107-2771-4221-a31b-38861cd56526,,Delivery/travel problems,Delivery/travel problems,,,,,Misc,N/A,
 45724737-ec75-41e6-b7a3-f0289888bf76,,Inability to pay,Inability to pay,,,,,Misc,N/A,
 a2832452-f729-4d85-87ff-04caa9185a5b,,Alcohol/Drugs;,Alcohol/Drugs;,,,,,Misc,N/A,
-506d37ec-84b7-418c-925e-2a0ff9d72300,,Depression,Depression,,,,,Misc,N/A,
 68a10b27-ab05-470c-b2c0-0a13e26b14c1,,pill burden,pill burden,,,,,Misc,N/A,
 64cac639-8e44-4059-90e8-16984280e7a7,,Other Adherence Reason,Other Adherence Reason,,,,,Misc,N/A,
 d0f3605e-f026-4ef8-973a-f471a236049a,,Reason why Adherence is Fair,Reason why Adherence is Fair,,,,,Question,Coded,"Toxicity/side effects;
@@ -231,7 +226,6 @@ b31d8882-4c3d-4cd6-b6fa-d6bc1165922e,,Too ill,Too ill,,,,,Misc,N/A,
 9959c107-2771-4221-a31b-38861cd56526,,Delivery/travel problems,Delivery/travel problems,,,,,Misc,N/A,
 45724737-ec75-41e6-b7a3-f0289888bf76,,Inability to pay,Inability to pay,,,,,Misc,N/A,
 a2832452-f729-4d85-87ff-04caa9185a5b,,Alcohol/Drugs,Alcohol/Drugs,,,,,Misc,N/A,
-506d37ec-84b7-418c-925e-2a0ff9d72300,,Depression,Depression,,,,,Misc,N/A,
 68a10b27-ab05-470c-b2c0-0a13e26b14c1,,pill burden,pill burden,,,,,Misc,N/A,
 64cac639-8e44-4059-90e8-16984280e7a7,,Other Adherence Reason,Other Adherence Reason,,,,,Misc,N/A,
 b0058799-4655-471d-8124-6acd14c6beb1,,Reason why Adherence Poor,Reason why Adherence Poor,,,,,Question,Coded,"Toxicity/side effects;
@@ -249,16 +243,16 @@ Depression;
 pill burden;
 Other Adherence Reason"
 58ab093d-6cee-4b2d-a85f-dd40e1025a42,,Adherence Why Poor Other (specify),Adherence Why Poor Other (specify),,,,,Question,Text,
-6ad327aa-d514-4b31-b21c-294a62a6fb30,,Classification Of Adherence,EAC Results,Classification Of Adherence,,,,Question,Coded,Adherence Good ; Adherence Fair ; Adherence Poor
-1a07bffa-2e01-43bb-880e-c68c02300b36,,EAC Results,EAC Results,Classification Of Adherence,,,,Question,Coded,Adherence Good ; Adherence Fair ; Adherence Poor
+6ad327aa-d514-4b31-b21c-294a62a6fb30,,Classification Of Adherence,EAC Results,Classification Of Adherence,,,,Question,Coded,714752ad-61df-44e0-ae40-fa9bf4f9d831 ; 535ea56b-0138-4804-ab23-e70f2dbe0b61 ; f05f31c1-5f06-4ada-8cbd-a877cb06442a
+1a07bffa-2e01-43bb-880e-c68c02300b36,,EAC Results,EAC Results,Classification Of Adherence,,,,Question,Coded,714752ad-61df-44e0-ae40-fa9bf4f9d831 ; 535ea56b-0138-4804-ab23-e70f2dbe0b61 ; f05f31c1-5f06-4ada-8cbd-a877cb06442a
 206cb019-fd89-46a5-8731-abe3cdcaac8c,,Counselling Date,Counselling Date,,,,,Question,Date,
 039704e4-7d5c-4062-b490-8252069ba142,,First EAC Session Date,First EAC Session Date,,,,,Question,Date,
-46ae050e-e1b6-48e6-aa1f-bba975347f5a,,Classification Of Adherence(First EAC session),Adherence( First Session),,,,,Question,Coded,Adherence Good ; Adherence Fair ; Adherence Poor
+46ae050e-e1b6-48e6-aa1f-bba975347f5a,,Classification Of Adherence(First EAC session),Adherence( First Session),,,,,Question,Coded,714752ad-61df-44e0-ae40-fa9bf4f9d831 ; 535ea56b-0138-4804-ab23-e70f2dbe0b61 ; f05f31c1-5f06-4ada-8cbd-a877cb06442a
 4bf2af69-1576-44a9-ae60-95cd3ca2ae72,,Second EAC Session Date,Second EAC Session Date,,,,,Question,Date,
-7c9976a3-f646-4ed4-8d2f-ab133ea9b292,,Classification Of Adherence(Second EAC session),Adherence(Second session),,,,,Question,Coded,Adherence Good ; Adherence Fair ; Adherence Poor
+7c9976a3-f646-4ed4-8d2f-ab133ea9b292,,Classification Of Adherence(Second EAC session),Adherence(Second session),,,,,Question,Coded,714752ad-61df-44e0-ae40-fa9bf4f9d831 ; 535ea56b-0138-4804-ab23-e70f2dbe0b61 ; f05f31c1-5f06-4ada-8cbd-a877cb06442a
 599137e4-9f91-4b51-aa73-c9b68fe81ac5,,Third EAC Session Date,Third EAC Session Date,,,,,Question,Date,
-6851bf56-ded4-4b89-ba93-d9d380927e15,,Classification Of Adherence(Third EAC session),Adherence(Third session),,,,,Question,Coded,Adherence Good ; Adherence Fair ; Adherence Poor
-ee910383-e469-4eab-a634-76a2f7a762c9,,Classification Of Adherence After EAC,Adherence After EAC,,,,,Question,Coded,Adherence Good ; Adherence Fair ; Adherence Poor
+6851bf56-ded4-4b89-ba93-d9d380927e15,,Classification Of Adherence(Third EAC session),Adherence(Third session),,,,,Question,Coded,714752ad-61df-44e0-ae40-fa9bf4f9d831 ; 535ea56b-0138-4804-ab23-e70f2dbe0b61 ; f05f31c1-5f06-4ada-8cbd-a877cb06442a
+ee910383-e469-4eab-a634-76a2f7a762c9,,Classification Of Adherence After EAC,Adherence After EAC,,,,,Question,Coded,714752ad-61df-44e0-ae40-fa9bf4f9d831 ; 535ea56b-0138-4804-ab23-e70f2dbe0b61 ; f05f31c1-5f06-4ada-8cbd-a877cb06442a
 eeb4976d-704f-4dd0-a84b-34cfb06a52d6,,MDT Held?,MDT Held?,Multi-displinary team,,,,Question,Coded,Yes; No
 f46b65c5-f62b-4ad9-a8c8-30cc6aca82f2,,Date MDT Held,Date MDT Held,,,,,Question,Date,
 2252b2e9-adcd-4ee0-8bac-b74ce21a4627,,Extending EAC,Extending EAC,Extending EAC,,,,Misc,N/A,
@@ -270,7 +264,6 @@ c417a890-ceea-487e-b19f-6358a6e39379,,Feeling Better,Feeling Better,,,,,Misc,N/A
 f94de22a-75cc-4361-afb8-57ebc2f95579,,Concurrent illness,Concurrent illness,,,,,Misc,N/A,
 a2832452-f729-4d85-87ff-04caa9185a5b,,Alcohol/Drugs,Alcohol/Drugs,,,,,Misc,N/A,
 d7be0a00-82a2-47ef-87f7-13a25f881dc1,,Health/Beliefs/Alternate Remedies,Health/Beliefs/Alternate Remedies,,,,,Misc,N/A,
-506d37ec-84b7-418c-925e-2a0ff9d72300,,Depression,Depression,,,,,Misc,N/A,
 2a28777a-037f-4334-af14-a8feb6acfb2d,,Fear Disclosure,Fear Disclosure,,,,,Misc,N/A,
 6ff84fab-c338-42f6-9e43-aebdd72a12a8,,Lack of Familiy/Partner Support,Lack of Familiy/Partner Support,,,,,Misc,N/A,
 68a10b27-ab05-470c-b2c0-0a13e26b14c1,,Pill Burden,Pill Burden,,,,,Misc,N/A,
@@ -583,7 +576,6 @@ RFTs;
 LFTs;
 No Information;
 Not Applicable"
-e8efb800-7c83-4616-ad7e-46c74ef0acd0,,Nutritional support,Nutritional support,,,,,Misc,N/A,
 99d197a6-c316-11e9-9cb5-2a2ae2dbcce4,,Infant feeding,Infant feeding,,,,,Misc,N/A,
 d3f86020-1ce2-4bff-8dbc-42bc98fcf080,,Community Health Worker,Community Health Worker,,,,,Misc,N/A,
 449c62ad-689f-4b6c-8623-d95e1ec7c9cd,,Orphans & Vulnerable Children (OVC),Orphans & Vulnerable Children (OVC),,,,,Misc,N/A,

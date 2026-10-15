@@ -1,8 +1,8 @@
 Uuid,Answers,Members,Fully specified name:en,Short name:en,Data class,Data type,_version:3,_order:148
-46ae050e-e1b6-48e6-aa1f-bba975347f5a,Adherence Good ; Adherence Fair ; Adherence Poor,,Classification Of Adherence(First EAC session),First EAC Session,Question,Coded,,
-7c9976a3-f646-4ed4-8d2f-ab133ea9b292,Adherence Good ; Adherence Fair ; Adherence Poor,,Classification Of Adherence(Second EAC session),Second EAC Session,Question,Coded,,
-6851bf56-ded4-4b89-ba93-d9d380927e15,Adherence Good ; Adherence Fair ; Adherence Poor,,Classification Of Adherence(Third EAC session),Third EAC Session,Question,Coded,,
-ee910383-e469-4eab-a634-76a2f7a762c9,Adherence Good ; Adherence Fair ; Adherence Poor,,Classification Of Adherence After EAC,"",Question,Coded,,
+46ae050e-e1b6-48e6-aa1f-bba975347f5a,714752ad-61df-44e0-ae40-fa9bf4f9d831 ; 535ea56b-0138-4804-ab23-e70f2dbe0b61 ; f05f31c1-5f06-4ada-8cbd-a877cb06442a,,Classification Of Adherence(First EAC session),First EAC Session,Question,Coded,,
+7c9976a3-f646-4ed4-8d2f-ab133ea9b292,714752ad-61df-44e0-ae40-fa9bf4f9d831 ; 535ea56b-0138-4804-ab23-e70f2dbe0b61 ; f05f31c1-5f06-4ada-8cbd-a877cb06442a,,Classification Of Adherence(Second EAC session),Second EAC Session,Question,Coded,,
+6851bf56-ded4-4b89-ba93-d9d380927e15,714752ad-61df-44e0-ae40-fa9bf4f9d831 ; 535ea56b-0138-4804-ab23-e70f2dbe0b61 ; f05f31c1-5f06-4ada-8cbd-a877cb06442a,,Classification Of Adherence(Third EAC session),Third EAC Session,Question,Coded,,
+ee910383-e469-4eab-a634-76a2f7a762c9,714752ad-61df-44e0-ae40-fa9bf4f9d831 ; 535ea56b-0138-4804-ab23-e70f2dbe0b61 ; f05f31c1-5f06-4ada-8cbd-a877cb06442a,,Classification Of Adherence After EAC,"",Question,Coded,,
 eeb4976d-704f-4dd0-a84b-34cfb06a52d6,,,MDT Held?,"",Question,Boolean,,
 85221b4d-ae80-402a-9d9a-8c9ba504771c,Extending EAC;Switch Regimen,,MDT Outcome,"",Question,Coded,,
 4d1b1fcb-2f88-4c54-b81c-b80faea42146,Knowledge ; Forgot ; Feeling Better ; Concurrent illness ; Alcohol/Drugs ; Health/Beliefs/Alternate Remedies ; Depression ; Fear Disclosure ; Lack of Familiy/Partner Support ; Pill Burden ; Child Behaviour/Refusing for Children on ART ; Side Effects ; Ran out Of Medcation ; Lost/Damaged ; Sharing Medications ; Transport ; Scheduling ; Failure To Adjust To food Insecurity ; Drug Stock Out ; Long Wait ;Stigma ; Political Crisis ; Other First EAC Barrier Reason,,First EAC Adherence Barriers,Barriers,Question,Coded,,

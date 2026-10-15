@@ -159,7 +159,7 @@
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
                   {
-                    "concept": "49b1128f-5d64-4373-a6ea-9d329e2e54a6",
+                    "concept": "117543AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Herpes Zoster",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
@@ -174,7 +174,7 @@
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
                   {
-                    "concept": "cc23bab5-d6eb-4e16-948b-25a366080dba",
+                    "concept": "1249AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Papular pruritic eruption",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
@@ -219,7 +219,7 @@
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
                   {
-                    "concept": "82a4cd70-96be-4c8d-9e7e-9c871e1e4953",
+                    "concept": "113116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Seborrheic dermatitis",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
@@ -285,7 +285,7 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "concept": "1fc47a4b-e35d-4f89-953e-52c4c6a69eb5",
+                    "concept": "832AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Weight loss",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
@@ -300,7 +300,7 @@
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
                   {
-                    "concept": "2934795c-486e-4819-a4ac-b476630c710c",
+                    "concept": "120655AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Chronic fatigue",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
@@ -310,7 +310,7 @@
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
                   {
-                    "concept": "b50b5dc9-9a05-4190-9db3-f157477ed2d5",
+                    "concept": "6023AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Irritability",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
@@ -325,12 +325,12 @@
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
                   {
-                    "concept": "5e20b5a6-571f-483d-95f2-822a66ff77b1",
+                    "concept": "133469AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Neck pain",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
                   {
-                    "concept": "886c7ef0-b104-49bf-bd54-23429eec070d",
+                    "concept": "133027AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Night Sweats",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
@@ -345,12 +345,12 @@
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
                   {
-                    "concept": "f20b15b2-4e14-11e4-8a57-0800271c1b75",
+                    "concept": "136443AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Jaundice",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
                   {
-                    "concept": "203d9e67-4e15-11e4-8a57-0800271c1b75",
+                    "concept": "133473AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Nausea w/ vomiting",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
@@ -365,17 +365,17 @@
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
                   {
-                    "concept": "1dfb0948-4e15-11e4-8a57-0800271c1b75",
+                    "concept": "151AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Abdominal pain",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
                   {
-                    "concept": "978573fd-04cb-4fa2-aa79-53064e6d0aea",
+                    "concept": "6019AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Abdominal swelling",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
                   {
-                    "concept": "39acc2a5-564b-4879-ac91-eb719a752084",
+                    "concept": "135592AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "loss of consciousness",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
@@ -420,12 +420,12 @@
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
                   {
-                    "concept": "19909766-298e-4595-942e-f8df8c293231",
+                    "concept": "122496AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Dyspnea",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
                   {
-                    "concept": "1f6a5ea9-4e15-11e4-8a57-0800271c1b75",
+                    "concept": "138905AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Hemoptysis",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
@@ -469,7 +469,7 @@
                 "answers": []
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(currentSymptoms) || !arrayContains(currentSymptoms, '1fc47a4b-e35d-4f89-953e-52c4c6a69eb5')",
+                "hideWhenExpression": "isEmpty(currentSymptoms) || !arrayContains(currentSymptoms, '832AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
                 "validators": []
               }
             },
@@ -1427,7 +1427,7 @@
                     "label": "Fungal nail infection"
                   },
                   {
-                    "concept": "49b1128f-5d64-4373-a6ea-9d329e2e54a6",
+                    "concept": "117543AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Herpes Zoster"
                   },
                   {
@@ -1435,7 +1435,7 @@
                     "label": "Moderate unexplained weight loss (< 10% of body weight)"
                   },
                   {
-                    "concept": "cc23bab5-d6eb-4e16-948b-25a366080dba",
+                    "concept": "1249AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Papular pruritic eruption"
                   },
                   {
@@ -1447,7 +1447,7 @@
                     "label": "Recurrent oral ulcerations (two or more episodes in last 6 months)"
                   },
                   {
-                    "concept": "82a4cd70-96be-4c8d-9e7e-9c871e1e4953",
+                    "concept": "113116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Seborrheic dermatitis"
                   },
                   {
@@ -1585,7 +1585,7 @@
                     "label": "HIV-associated cardiomyopathy"
                   },
                   {
-                    "concept": "5815ef40-1adc-4623-a820-be214aa85d41",
+                    "concept": "153701AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "HIV-associated nephropathy"
                   },
                   {
