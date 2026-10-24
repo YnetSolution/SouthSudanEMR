@@ -1,5 +1,6 @@
 const http = require('http');
 const https = require('https');
+const zlib = require('zlib');
 
 const PORT = 4873;
 const TOKEN = 'rdt-AYA2VhmQ6oI-ze6HiZzOHIdA7NdvqxAm9SaKEeQh0xI';
@@ -55,12 +56,30 @@ const server = http.createServer((req, res) => {
   if (!headers.authorization) {
     headers.authorization = `Bearer ${TOKEN}`;
   }
+  // The metadata is rewritten below, so it has to arrive as plain JSON. npm and the openmrs CLI
+  // ask for gzip; passing that on made Repsy compress the JSON, the rewrite failed, and the
+  // tarball links kept pointing at Repsy, which then refused the unauthenticated download.
+  headers['accept-encoding'] = 'identity';
   
   const targetReq = https.get(targetUrl, { headers }, (targetRes) => {
     let body = [];
     targetRes.on('data', (chunk) => body.push(chunk));
     targetRes.on('end', () => {
       let data = Buffer.concat(body);
+
+      // Decompress anyway if the registry ignored the request for an uncompressed response.
+      const encoding = (targetRes.headers['content-encoding'] || '').toLowerCase();
+      try {
+        if (encoding === 'gzip') data = zlib.gunzipSync(data);
+        else if (encoding === 'deflate') data = zlib.inflateSync(data);
+        else if (encoding === 'br') data = zlib.brotliDecompressSync(data);
+        if (encoding) {
+          delete targetRes.headers['content-encoding'];
+          targetRes.headers['content-length'] = data.length;
+        }
+      } catch (e) {
+        console.error(`[Proxy] Could not decompress ${encoding} response:`, e);
+      }
       
       if (targetRes.statusCode === 200 && (req.url.includes('@ssemrapp') || req.url.includes('%2f') || req.url.includes('%2F'))) {
         try {

@@ -26,6 +26,9 @@
 		},
 		{
 			"path": "../../openmrs-module-ssemrdhis2"
+		},
+		{
+			"path": "../../cura-emr-website"
 		}
 	],
 	"settings": {
