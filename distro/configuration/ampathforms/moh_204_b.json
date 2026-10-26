@@ -1,9 +1,9 @@
 {
-  "name": "MOH 204 B Registration Form",
+  "name": "MOH 204 B Form",
   "version": "1.0.0",
   "published": false,
   "retired": true,
-  "encounter": "MOH 204 B Over 5 Years Register",
+  "encounter": "MOH 204 B Over 5 Years",
   "pages": [
     {
       "label": "Visit details",
