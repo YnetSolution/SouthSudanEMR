@@ -9,6 +9,11 @@
 # Backups are looked for in BACKUP_HOST_DIR (default ./backups, where the backup service writes) and
 # then in ~/Data_Backup, where the old scripts wrote. The database's own root login is used, so no
 # credentials need to be configured. This REPLACES the current data, so OpenMRS is stopped first.
+#
+# The database is dropped and created again before loading, so nothing from the current database
+# survives. Loading over an existing database left behind tables the backup does not contain (for
+# example from modules added since), and OpenMRS then failed to start those modules because their
+# tables existed while the restored change log said they had never been created.
 
 set -euo pipefail
 
@@ -56,11 +61,17 @@ read -r -p "Type RESTORE to continue: " answer
 echo "Stopping OpenMRS while the database is restored..."
 $COMPOSE stop backend
 
+echo "Emptying the '$DB_NAME' database..."
+$COMPOSE exec -T db sh -c "mysql -uroot -p\"\$MYSQL_ROOT_PASSWORD\" -e 'DROP DATABASE IF EXISTS \`$DB_NAME\`; CREATE DATABASE \`$DB_NAME\`;'"
+
+# Dumps from newer mariadb-dump clients start with a "sandbox mode" line this server cannot read.
+without_sandbox_line() { sed -e '1{/enable the sandbox mode/d;}'; }
+
 echo "Restoring..."
 if [[ "$BACKUP" == *.gz ]]; then
-  read_backup | gzip -dc | $COMPOSE exec -T db sh -c "mysql -uroot -p\"\$MYSQL_ROOT_PASSWORD\" '$DB_NAME'"
+  read_backup | gzip -dc | without_sandbox_line | $COMPOSE exec -T db sh -c "mysql -uroot -p\"\$MYSQL_ROOT_PASSWORD\" '$DB_NAME'"
 else
-  read_backup | $COMPOSE exec -T db sh -c "mysql -uroot -p\"\$MYSQL_ROOT_PASSWORD\" '$DB_NAME'"
+  read_backup | without_sandbox_line | $COMPOSE exec -T db sh -c "mysql -uroot -p\"\$MYSQL_ROOT_PASSWORD\" '$DB_NAME'"
 fi
 
 echo "Starting OpenMRS..."
