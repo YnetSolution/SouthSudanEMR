@@ -33,6 +33,8 @@ RUN node proxy.js & PROXY_PID=$! ; \
 # Copying required files
 RUN echo "Copying required files ..." && \
     cp ./assets/login-icon.png ./spa && \
+    cp ./assets/careconnect-logo.png ./spa && \
+    cp ./assets/login-background.jpg ./spa && \
     cp ./assets/primary-navigation.png ./spa && \
     cp ./assets/favicon.ico ./spa && \
     cp spa-build-config.json ./spa
