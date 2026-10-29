@@ -72,15 +72,7 @@
   },
   "@ssemrapp/esm-login-app": {
     "logo": {
-      "src": "/openmrs/spa/careconnect-logo.png",
-      "alt": "CareConnect EMR logo"
-    },
-    "backgroundImage": {
-      "src": "/openmrs/spa/login-background.jpg"
-    },
-    "poweredByLogo": {
-      "src": "/openmrs/spa/careconnect-logo.png",
-      "alt": "CareConnect EMR logo"
+      "src": "/openmrs/spa/login-icon.png"
     }
   },
   "@openmrs/esm-primary-navigation-app": {
